@@ -10,4 +10,4 @@ or
 
 `agave`
 
-[Quick Recipes]('quick-recipes')
+[Quick Recipes](quick-recipes)
