@@ -2,8 +2,12 @@
 
 This blog has been generated via agave.
 
-`yarn global add agave`
+`yarn global add agave-generator`
 
 or
 
-`npm install agave -g`
+`npm install agave-generator -g`
+
+`agave`
+
+[Quick Recipes]('quick-recipes')
