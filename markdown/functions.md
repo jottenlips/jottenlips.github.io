@@ -7,7 +7,7 @@ These posts are designed to familiarize yourself with modern web development too
 > - node and NPM
 > - Your favorite text or code editor, sublime text or vscode for me
 
-First install [homebrew](https://brew.sh) This is a package manager for macOS
+First install [homebrew](https://brew.sh) This is a package manager for MacOS.
 
 Then, open the terminal app and type.
 
