@@ -1,6 +1,6 @@
 # Intro to JS: functions
 
-These posts are designed to familiarize yourself with modern web development tools as well as teach you Javascript. I will be using MacOS for these tutorials. Here is a list of tools for getting started.
+These posts are designed to familiarize yourself with modern web development tools as well as teach you JavaScript. I will be using MacOS for these tutorials. Here is a list of tools for getting started.
 
 > - The terminal app
 > - homebrew
