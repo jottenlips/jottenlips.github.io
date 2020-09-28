@@ -1,4 +1,4 @@
-# Quick low waste recipes
+# Micro Recipes
 
 ## Almond milk
 

@@ -2,8 +2,10 @@
 
 This blog has been generated via [agave](https://github.com/jottenlips/agave).
 
-`yarn global add agave-generator`
+[Like what I do?](contribute)
 
-[Quick Recipes](quick-recipes)
+Site map:
+
+[Micro Recipes](micro-recipes)
 
 [Music](music)
