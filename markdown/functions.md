@@ -1,8 +1,6 @@
 # Intro to JS: functions
 
-These posts are not exactly how I would build something for production, but I think they will help familiarize you with some of the basic technologies of modern web development. I will be using MacOS for these tutorials. Sorry windows lovers! Here is a list of tools for getting started.
-
-🔧
+These posts are designed to familiarize yourself with modern web development tools as well as teach you Javascript. I will be using MacOS for these tutorials. Here is a list of tools for getting started.
 
 > - The terminal app
 > - homebrew
@@ -115,4 +113,4 @@ Open mynewfile.js, write your own function, and run again.
 node mynewfile.js
 ```
 
-Congratulations! you have written your first function. Tomorrow we will cover making your first Web App.
+✨ Congratulations! you have written your first function. Tomorrow we will cover making your first Web App.
