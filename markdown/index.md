@@ -9,3 +9,7 @@ Site map:
 [Micro Recipes](micro-recipes)
 
 [Music](music)
+
+Programming:
+
+[Intro to Javascript: functions](functions)
