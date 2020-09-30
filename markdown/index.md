@@ -6,7 +6,9 @@ This blog has been generated via [agave](https://github.com/jottenlips/agave).
 
 Black Lives Matter
 
-Please vote trump out of office.
+🏳️‍🌈
+
+Please vote trump out of office. Don't give into fascists or their lies and fear tactics.
 
 Site map:
 
