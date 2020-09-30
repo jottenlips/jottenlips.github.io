@@ -14,6 +14,6 @@ Site map:
 
 [Music](music)
 
-[Recipes](micro-recipes)
+[Recipes](recipes)
 
 [Blog](blog)
