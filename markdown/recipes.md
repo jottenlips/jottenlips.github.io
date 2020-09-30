@@ -1,1 +1,1 @@
-[Micro recipes](recipes/)
+[Micro recipes](micro-recipes/)
