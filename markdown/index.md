@@ -8,7 +8,7 @@ Black Lives Matter
 
 🏳️‍🌈
 
-Please vote trump out of office. Don't give into fascists or their lies and fear tactics.
+Please vote trump out of Office. Don't give into fascists or their lies and fear tactics.
 
 Site map:
 
