@@ -1,1 +1,1 @@
-[Intro to Javascript: functions](functions)
+[Intro to Javascript: functions](functions/)
