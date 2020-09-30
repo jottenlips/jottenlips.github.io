@@ -6,10 +6,10 @@ This blog has been generated via [agave](https://github.com/jottenlips/agave).
 
 Site map:
 
-[Micro Recipes](micro-recipes)
+[Programming](programming)
 
 [Music](music)
 
-Programming:
+[Recipes](micro-recipes)
 
-[Intro to Javascript: functions](functions)
+[Blog](blog)
