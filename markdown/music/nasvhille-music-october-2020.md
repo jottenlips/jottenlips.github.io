@@ -3,8 +3,7 @@
 [Burglar Alarm Pts. 1 and 2 by Willie Dustice](https://willie-dustice.bandcamp.com/)
 
 With all of the layering of instrumentation on Burglar Alarm, it is hard to believe it is just one person
-playing everything. It sounds like an entire band with every instrument contributing a different personality.
-Slaps.
+playing everything. It sounds like an entire band with every instrument contributing a different personality. The parallel vocal, keyboard, and guitar lines make an entirely new blend of sound like when John McLaughlin's guitar mixes with Jean-Luc Ponty's violin. Slaps.
 
 [Freedom by Eve Maret](https://evemaret.bandcamp.com/album/stars-aligned)
 
