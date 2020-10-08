@@ -22,4 +22,4 @@ Microwave for 3 minutes.
 
 Season and Enjoy.
 
-Buying kernals in bulk is a great way to have an eco snack.
+Buying kernels in bulk is a great way to have an eco snack.
