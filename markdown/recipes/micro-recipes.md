@@ -10,7 +10,7 @@ Blend 1 tbsp almond butter to 1 cup water.
 
 Mash 1 16oz block of tofu with a large pinch of salt and a whole squeezed lemon with its zest.
 
-[![nytimes](https://static01.nyt.com/newsgraphics/2019/04/08/climate-faq/3f91bddbd24a79e96611388a1ced20d4b7b5d812/protein-Artboard-720.png =250x)](https://www.nytimes.com/interactive/2019/04/30/dining/climate-change-food-eating-habits.html)
+[![nytimes](greenhouse-gas.png =250x)](https://www.nytimes.com/interactive/2019/04/30/dining/climate-change-food-eating-habits.html)
 
 ## Microwave Popcorn 🍿
 
