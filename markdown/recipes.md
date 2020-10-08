@@ -1,1 +1,1 @@
-[Micro recipes](micro-recipes/)
+[Eco Micro recipes](micro-recipes/)
