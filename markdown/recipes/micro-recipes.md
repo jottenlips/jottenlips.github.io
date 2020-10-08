@@ -4,13 +4,13 @@
 
 Blend 1 tbsp almond butter to 1 cup water.
 
-[![bbc](https://ichef.bbci.co.uk/news/800/cpsprodpb/9123/production/\_105755173_milk_alternatives-updated-optimised-nc.png =250x)](https://www.bbc.com/news/science-environment-46654042#:~:text=A%20scientific%20study%20suggests%20the,lower%20than%20for%20dairy%20milk.&text=Almond%20milk%20requires%20more%20water,more%20than%20a%20typical%20shower.)
+[![bbc](https://ichef.bbci.co.uk/news/800/cpsprodpb/9123/production/_105755173_milk_alternatives-updated-optimised-nc.png){width=200px}](https://www.bbc.com/news/science-environment-46654042#:~:text=A%20scientific%20study%20suggests%20the,lower%20than%20for%20dairy%20milk.&text=Almond%20milk%20requires%20more%20water,more%20than%20a%20typical%20shower.)
 
 ## Tofu Ricotta 🧀
 
 Mash 1 16oz block of tofu with a large pinch of salt and a whole squeezed lemon with its zest.
 
-[![nytimes](greenhouse-gas.png =250x)](https://www.nytimes.com/interactive/2019/04/30/dining/climate-change-food-eating-habits.html)
+[![nytimes](greenhouse-gas.png){width=200px}](https://www.nytimes.com/interactive/2019/04/30/dining/climate-change-food-eating-habits.html)
 
 ## Microwave Popcorn 🍿
 
