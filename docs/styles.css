@@ -60,8 +60,8 @@ pre {
 }
 .block {
   max-width: 800px;
-  min-width: 300px;
-  width: 100%;
+  min-width: 270px;
+  width: 90%;
   background-color: #ebebeb;
   padding: 20px;
   margin: 15px;
@@ -71,7 +71,7 @@ pre {
 .nav {
   max-width: 800px;
   min-width: 300px;
-  width: 100%;
+  width: 90%;
   background-color: #ebebeb;
   padding: 20px;
   margin: 15px;
@@ -80,6 +80,7 @@ pre {
   align-items: space-between;
   justify-content: space-between;
   display: flex;
+  flex-wrap: wrap;
 }
 .nav:hover {
 }
