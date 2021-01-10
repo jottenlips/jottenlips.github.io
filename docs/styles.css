@@ -73,8 +73,7 @@ pre {
   min-width: 300px;
   width: 90%;
   background-color: #ebebeb;
-  padding: 20px;
-  margin: 15px;
+  padding: 5px;
   overflow-y: scroll;
   border-radius: 6px;
   align-items: space-between;
