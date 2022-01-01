@@ -10,6 +10,6 @@ Black Lives Matter ❤️
 
 ---
 
-This blog is generated via [agave](https://github.com/jottenlips/agave), a static site generator I wrote with reasonml 🧑‍💻.
+This blog is generated via [agave](https://github.com/jottenlips/agave), a static site generator I wrote with reasonml that turns markdown files into html 🧑‍💻.
 
 [Help fund this blog](contribute)
