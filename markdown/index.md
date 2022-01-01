@@ -1,4 +1,4 @@
-# ohn Franke's Blog, Welcome!
+# John Franke's Blog, Welcome!
 
 Hey, I am a musician, artist, and programmer living in Nashville TN. This site is a catchall for my creative processes, general ongoings, and opinions.
 
