@@ -61,6 +61,7 @@ pre {
   align-items: center;
   min-height: 100vh;
   z-index: 99;
+  opacity: 1;
 }
 .block {
   max-width: 800px;
@@ -71,6 +72,7 @@ pre {
   margin-bottom: 15px;
   overflow-y: scroll;
   border-radius: 6px;
+  opacity: 1;
 }
 .nav {
   max-width: 800px;
@@ -85,6 +87,7 @@ pre {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 10px;
+  opacity: 1;
 }
 .nav:hover {
 }
