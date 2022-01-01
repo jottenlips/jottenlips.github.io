@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Epilogue&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 html {
-  background: linear-gradient(-45deg, #ef7455, #e84c7e, #32a6d6, #23eeab);
 }
 body {
   font-family: "Epilogue", sans-serif;
   line-height: 26px;
   margin: 0;
+  background: linear-gradient(-45deg, #ef7455, #e84c7e, #32a6d6, #23eeab);
 }
 
 img[alt*="small"] {
