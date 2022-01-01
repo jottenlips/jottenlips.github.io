@@ -21,7 +21,7 @@ img[alt*="small"] {
   background-attachment: fixed;
   min-width: 100%;
   height: 100%;
-  opacity: 0.85;
+  opacity: 0.9;
   z-index: 98;
 }
 h1 {
