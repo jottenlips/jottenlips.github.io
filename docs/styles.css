@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Epilogue&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 html {
-  background: #dd7755;
+  background: linear-gradient(-45deg, #ef7455, #e84c7e, #32a6d6, #23eeab);
 }
 body {
   font-family: "Epilogue", sans-serif;
@@ -94,4 +94,15 @@ a:hover {
   -ms-transform: scale(1.1);
   transform: scale(1.1);
   color: #4e2f61;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
