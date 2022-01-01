@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 html {
   background: linear-gradient(-45deg, #ef7455, #e84c7e, #32a6d6, #23eeab);
+  animation: gradient 15s ease infinite;
 }
 body {
   font-family: "Epilogue", sans-serif;
