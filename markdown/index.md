@@ -4,7 +4,7 @@ Hey, I am a musician, artist, and programmer living in Nashville TN. This site i
 
 Thanks for reading,
 
-- John Franke
+`- John Franke`
 
 Black Lives Matter ❤️
 
