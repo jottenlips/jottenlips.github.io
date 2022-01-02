@@ -2,12 +2,16 @@
 
 ## Personal Experiences
 
-I started improvising well before I learned what changes were or how to read music. My first experiences
-with improvising were playing boomer bends and licks over I-IV-V blues songs at the Roadhouse in St. Louis.
-At the same time, I was jamming over everything from Nirvana to Phish in the back of David's guitar loft.
+I started improvising on guitar well before I learned what changes were or how to read music. My first experiences
+with improvising were playing boomer bends and licks over I-IV-V blues songs with my Dad at the Roadhouse in St. Louis.
+At the same time, I was jamming over everything from Nirvana to Phish in the back of David's Guitar Loft.
 
 Eventually, I was waking up for combos and big band every morning in high school at 0-hour (7 am) before the "real" classes began.
-I tried out for both mid-state jazz band and the jazz at the bistro all-stars and failed pretty epically both times.
+Often in combos we would play everything but the tune assigned to us, we would sneak in swing versions of Freedom by RATM while the
+band director was busy trying to get through to other sleepy students. We also naturally split off into bands performing long meandering
+improvised jams in eachothers basements.
+
+Back in school, I tried out for both mid-state jazz band and the jazz at the bistro all-stars and failed pretty epically both times.
 For the mid-state audition, I failed to get a single note out 😅. I was very nervous and terrible at sight-reading.
 
 Somehow, This didn't stop me from pursuing a musical education.
@@ -17,7 +21,7 @@ With that out of the way, here are some of the important things that got me thro
 
 ## The theory
 
-Modes
+### Modes
 
 ```
 
@@ -34,11 +38,11 @@ If you skip every other note C, E, G, B etc. you get the chord for that scale.
 All of the chords you find in this chart are in the key of C.
 
 A good tune to practice playing your modes over is "So What" by Miles Davis.
-This is also an excellent tune to introduce you to changes because it has a half step key change.
+This is also an excellent tune to introduce you to changes because it has a half-step key change.
 
 ---
 
-Inversions
+### Inversions
 
 - start with triads (C,E,G) on the first three strings (guitar). Learn the inversions for maj, min, aug, dim.
 
@@ -48,7 +52,7 @@ You will be playing chord melodies in no time 😎
 
 ---
 
-Scale degrees and Extensions
+### Scale degrees and Extensions
 
 You can label every note in the key of C as scale degrees.
 
@@ -83,7 +87,7 @@ This pattern is how you get chords like CMaj9.
 
 ---
 
-Secondary Dominants
+### Secondary Dominants
 
 Secondary dominants are chords used to change keys in a lot of tunes.
 These are dominant 7 chords that voice-lead to the new key. It is typically the 5th
@@ -149,3 +153,28 @@ V7 (not the secondary dominant, really depends on the tune)
 sound: "Rainbow"
 extensions: [b9, 9, #9, 11, #11, b13, 13]
 ```
+
+---
+
+### Tips
+
+- I find it best to think about modes when there are few key changes like "So What" or in most jazz fusion settings.
+
+- Secondary dominants with arpeggios and extensions are a bettery tool for bebop style changes and songs with rhyhm changes or ii V I changes.
+
+- Learning how to walk bass will help navigate changes via arpeggios
+
+- Don't be scared to use chromatic notes that fall outside of the reccommended extensions, especially if they are used in off beats or passing tones.
+
+- A convincing rhtyhm or phrasing can cover up "wrong" notes
+
+- You are always a half step away from a "correct" note
+
+---
+
+### Further Reading
+
+[The Demystification: Science and Mathematics for Guitar by Nathan Foley](https://nathanfoley.bandcamp.com/merch/the-demystification-science-and-mathematics-for-guitar)
+
+For a more in depth look at a lot of these topics check out Nathan Foley's Book. It goes much deeper than this post, especially if you are a guitarist.
+I cannot reccomend this book enough for anyone trying to better understand the fretboard.
