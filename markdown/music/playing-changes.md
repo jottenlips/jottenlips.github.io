@@ -6,12 +6,12 @@ I started improvising on guitar well before I learned what changes were or how t
 with improvising were playing boomer bends and licks over I-IV-V blues songs with my Dad at the Roadhouse in St. Louis.
 At the same time, I was jamming over everything from Nirvana to Phish in the back of David's Guitar Loft.
 
-Eventually, I was waking up for combos and big band every morning in high school at 0-hour (7 am) before the "real" classes began.
+Eventually, I had to wake up for combos and big band every morning for high school at 0-hour (7 am) before the "real" classes began.
 Often in combos, we would play everything but the tune assigned to us. We would sneak in swing versions of Freedom by RATM while the
 band director was busy trying to get through to other sleepy students. We also naturally split off into bands performing long meandering
 improvised jams in each other's basements.
 
-Back in school, I tried out for both mid-state jazz band and the jazz at the bistro all-stars. These auditions did not go well.
+Back at school, I tried out for both mid-state jazz band and the jazz at the bistro all-stars. These auditions did not go well.
 For the mid-state audition, I failed to get a single note out 😅. I was very nervous and terrible at sight-reading.
 
 Somehow, This didn't stop me from pursuing a musical education.
