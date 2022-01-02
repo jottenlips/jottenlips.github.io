@@ -166,7 +166,9 @@ extensions: [b9, 9, #9, 11, #11, b13, 13]
 
 - Don't be scared to use chromatic notes that fall outside of the reccommended extensions, especially if they are used in off beats or passing tones.
 
-- A convincing rhtyhm or phrasing can cover up "wrong" notes
+- A convincing rhtyhm or phrasing can cover up "wrong" notes.
+
+- Steal rhtyhms from bebop songs like Donna Lee or Joy Spring
 
 - You are always a half step away from a "correct" note
 
