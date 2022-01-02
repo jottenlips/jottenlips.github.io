@@ -89,7 +89,7 @@ This pattern is how you get chords like CMaj9.
 
 ### Secondary Dominants
 
-Secondary dominants are chords used to change keys in a lot of tunes.
+Secondary dominants are a common way to use chords to change key centers in a tune.
 These are dominant 7 chords that voice-lead to the new key. It is typically the 5th
 of the new key. For example, G7 leads to CMaj. Seven chords have a gravitational force that
 pulls you to the new key. What helps the changes sound smooth is playing the compatible
