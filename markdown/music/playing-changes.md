@@ -162,7 +162,7 @@ extensions: [b9, 9, #9, 11, #11, b13, 13]
 
 - Secondary dominants with arpeggios and extensions are a better tool for bebop style changes and songs with rhyhm changes or ii V I changes.
 
-- Learning how to walk bass will help navigate changes via arpeggios
+- Learning how to walk bass will help navigate changes via arpeggios and passing tones. This can be a good fall back for a solo.
 
 - Don't be scared to use chromatic notes that fall outside of the reccommended extensions, especially if they are used in off beats or passing tones.
 
