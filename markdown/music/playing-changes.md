@@ -149,25 +149,25 @@ extensions: [b9, 9, #9, 11, #11, b13, 13]
 
 ### Tips
 
-- I find it best to think about modes when there are few key changes like "So What" or in most jazz fusion settings.
+- I find it best to think about modes when there are simple key changes like "So What" or in most jazz fusion settings.
 
-- Secondary dominants with arpeggios and extensions are a better tool for bebop style changes and songs with rhyhm changes or ii V I changes.
+- Secondary dominants with arpeggios and extensions are a better tool for bebop style changes and songs with rhythm changes or ii V I changes.
 
-- Learning how to walk bass will help navigate changes via arpeggios and passing tones. This can be a good fall back for a solo.
+- Learning how to walk bass will help navigate changes via arpeggios and passing tones. This can be a good fallback for a solo.
 
-- Don't be scared to use chromatic notes that fall outside of the reccommended extensions, especially if they are used in off beats or passing tones.
+- Don't be scared to use chromatic notes that fall outside of the recommended extensions, especially if they are used in off beats or passing tones.
 
-- A convincing rhtyhm or phrasing can cover up "wrong" notes.
+- A convincing rhythm or phrasing can cover up "wrong" notes.
 
-- Steal rhtyhms from bebop songs like Donna Lee or Joy Spring
+- Steal rhythms from bebop songs like Donna Lee or Joy Spring
 
 - You are always a half step away from a "correct" note
 
-- if you don't know the notes to play for a measure, hit the chord stylistically with a cool rythm
+- if you don't know the notes to play for a measure, hit the chord stylistically with a cool rhythm
 
-- keep it simple, focus on thirds and fifths and sevenths
+- keep it simple, focus on thirds and fifths, and sevenths
 
-- practice to a metranome at slower speeds
+- practice to a metronome at slower speeds
 
 ---
 
@@ -175,5 +175,5 @@ extensions: [b9, 9, #9, 11, #11, b13, 13]
 
 [The Demystification: Science and Mathematics for Guitar by Nathan Foley](https://nathanfoley.bandcamp.com/merch/the-demystification-science-and-mathematics-for-guitar)
 
-For a more in depth look at a lot of these topics check out Nathan Foley's book. It goes much deeper than this post, especially if you are a guitarist.
-I cannot reccomend this book enough for anyone trying to better understand the fretboard.
+For a more in-depth look at these topics, check out Nathan Foley's book listed above. It goes much deeper than this post, especially if you are a guitarist.
+I cannot recommend this book enough for anyone trying to understand the fretboard.
