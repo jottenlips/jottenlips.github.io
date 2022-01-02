@@ -103,7 +103,7 @@ they get an E7. The notes you would want to play over E7 in this case are:
 
 and E7 will most likely resolve to AMaj, our new key center.
 
-Try jamming over these changes:
+Try jamming over these changes by arpeggiating the notes of each chord and sprinkling the E7 extensions over E7 for more color.
 
 ```
 Dmin7 | G7 | CMaj7 | Bmin | E7 | AMaj7
