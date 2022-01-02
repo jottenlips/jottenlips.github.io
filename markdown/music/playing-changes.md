@@ -111,9 +111,10 @@ Dmin7 | G7 | CMaj7 | Bmin | E7 | AMaj7
 
 You have successfully gone from CMaj to Amaj! 🎉
 
-Try making other chord progressions with differnt scale degrees as the secondary dominant.
-
-The pattern above is called a ii-V-I and is very common in jazz.
+Try making other chord progressions with different scale degrees as the secondary dominant.
+The pattern above is called a ii-V-I and is very common in jazz. To make more interesting lines
+try mixing arpeggios with scale runs or chromatic passing tones, and don't forget to use your
+Secondary Dominant extensions.
 
 ```
 III7 VI7 VII7
