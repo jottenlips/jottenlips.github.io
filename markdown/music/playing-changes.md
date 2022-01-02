@@ -60,7 +60,7 @@ You can label every note in the key of C as scale degrees.
 | c | d | e | f | g | a | b |
 ```
 
-Extensions typically go from 9 to 13
+Extensions alternate notes from 9 to 13
 
 9 is the second note of the scale played an octave up
 11 is the fourth an octave up
