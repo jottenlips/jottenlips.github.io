@@ -176,6 +176,8 @@ extensions: [b9, 9, #9, 11, #11, b13, 13]
 
 - keep it simple, focus on thirds and fifths and sevenths
 
+- practice to a metranome at slower speeds
+
 ---
 
 ### Further Reading
