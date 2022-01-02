@@ -172,6 +172,10 @@ extensions: [b9, 9, #9, 11, #11, b13, 13]
 
 - You are always a half step away from a "correct" note
 
+- if you don't know the notes to play for a measure, hit the chord stylistically with a cool rythm
+
+- keep it simple, focus on thirds and fifths and sevenths
+
 ---
 
 ### Further Reading
