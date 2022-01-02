@@ -79,7 +79,7 @@ pre {
   padding: 10px;
   overflow-y: scroll;
   border-radius: 6px;
-  align-items: space-evenly;
+  align-items: center;
   justify-content: space-evenly;
   display: flex;
   flex-wrap: wrap;
