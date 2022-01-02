@@ -83,6 +83,23 @@ pre {
   flex-wrap: wrap;
   margin-bottom: 10px;
 }
+@media only screen and (max-width: 600px) {
+  .nav {
+    max-width: 800px;
+    min-width: 300px;
+    width: 90%;
+    background-color: #ebebeb;
+    padding: 10px;
+    overflow-y: scroll;
+    border-radius: 6px;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    flex-direction: column;
+  }
+}
 .nav:hover {
 }
 a {
