@@ -99,6 +99,17 @@ pre {
     margin-bottom: 10px;
     flex-direction: column;
   }
+  .coverimage {
+    background: transparent;
+    /* RANDOM PHOTO */
+    /* background: url(https://picsum.photos/2000/1500); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-width: 100%;
+    max-width: 300%;
+    height: 100%;
+  }
 }
 .nav:hover {
 }
