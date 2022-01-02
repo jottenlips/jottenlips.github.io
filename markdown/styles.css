@@ -90,6 +90,7 @@ pre {
 a {
   text-decoration: none;
   color: #dd7755;
+  align-items: center;
 }
 a:hover {
   -webkit-transform: scale(1.1);
