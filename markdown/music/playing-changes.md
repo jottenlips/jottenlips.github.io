@@ -20,6 +20,7 @@ With that out of the way, here are some of the important things that got me thro
 Modes
 
 ```
+
 | c | d | e | f | g | a | b | Ionian, CMaj7, Major scale
 | d | e | f | g | a | b | c | Dorian, Dmin7
 | e | f | g | a | b | c | d | Phrygian, Emin7
@@ -52,6 +53,7 @@ Scale degrees and Extensions
 You can label every note in the key of C as scale degrees.
 
 ```
+
 | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
 | c | d | e | f | g | a | b |
 ```
@@ -63,6 +65,7 @@ Extensions typically go from 9 to 13
 13 is the 6th played an octave up
 
 ```
+
 |   | 9 |   | 11 |   | 13 |   |
 | c | d | e | f  | g | a  | b |
 ```
@@ -74,6 +77,7 @@ These extensions are a continuation of the every other note pattern that makes t
 This pattern is how you get chords like CMaj9.
 
 ```
+
 | c |   | e |   | g |   | b |  | d (octave up) | CMaj9
 ```
 
@@ -112,30 +116,35 @@ Try making other chord progressions with differnt scale degrees as the secondary
 The pattern above is called a ii-V-I and is very common in jazz.
 
 ```
+
 III7 VI7 VII7
 sound: "Altered"
 extenions: [b9, #9, 11, b13]
 ```
 
 ```
+
 bII bIII7 bVI7 bVII7
 sound: "Lydian Dominant"
 extension [9, #11, 13]
 ```
 
 ```
+
 II7 IV7
 sound: "Mixolydian" / "Lydian Dominant"
 extension [9, 11/#11, 13]
 ```
 
 ```
+
 bV7
 sound: "Whole Tone"
 extensions: [9, #11, b13]
 ```
 
 ```
+
 V7 (not the secondary dominant, really depends on the tune)
 sound: "Rainbow"
 extensions: [b9, 9, #9, 11, #11, b13, 13]
