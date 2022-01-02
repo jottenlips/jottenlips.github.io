@@ -110,6 +110,15 @@ pre {
     max-width: 300%;
     height: 100%;
   }
+  .container {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
 }
 .nav:hover {
 }
