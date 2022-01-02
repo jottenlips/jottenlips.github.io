@@ -20,6 +20,7 @@ With that out of the way, here are some of the important things that got me thro
 Modes
 
 ```
+
 | c | d | e | f | g | a | b | Ionian, CMaj7, Major scale
 | d | e | f | g | a | b | c | Dorian, Dmin7
 | e | f | g | a | b | c | d | Phrygian, Emin7
@@ -27,6 +28,7 @@ Modes
 | g | a | b | c | d | e | f | Mixolydian, G7
 | a | b | c | d | e | f | g | Aeolian, Amin7, Minor Scale
 | b | c | d | e | f | g | a | Locrian, Bdim
+
 ```
 
 If you skip every other note C, E, G, B etc. you get the chord for that scale.
