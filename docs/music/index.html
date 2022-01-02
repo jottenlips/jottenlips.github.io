@@ -5,6 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>John Ottenlips | Blog | Music | Programming | Recipes</title>
     <link rel="stylesheet" href="/styles.css" />
+    <script type="module">
+      {% comment %} import "/styles.css"; {% endcomment %}
+      import * as THREE from "https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js";
+
+      const scene = new THREE.Scene();
+      const camera = new THREE.PerspectiveCamera(
+        75,
+        window.innerWidth / window.innerHeight,
+        0.1,
+        1000
+      );
+      const renderer = new THREE.WebGLRenderer();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      document.querySelector("#app").appendChild(renderer.domElement);
+
+      const geometry = new THREE.BoxGeometry(1, 1, 1);
+      const material = new THREE.MeshBasicMaterial({ color: 0xffbb00 });
+      const cube = new THREE.Mesh(geometry, material);
+      scene.add(cube);
+      camera.position.z = 5;
+
+      function animate() {
+        requestAnimationFrame(animate);
+        cube.rotation.x += 0.01;
+        cube.rotation.y += 0.01;
+        renderer.render(scene, camera);
+      }
+
+      animate();
+    </script>
   </head>
   <body>
     <div class="coverimage" />
@@ -23,7 +53,7 @@
         </a>
         <a class="link" href="https://ottobahn.bandcamp.com/">
           <img
-            style="width: 25px; height: 25px"
+            style="width: 26px; height: 25px"
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Bandcamp-button-bc-circle-black.svg/600px-Bandcamp-button-bc-circle-black.svg.png"
           />
         </a>
