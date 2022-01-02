@@ -11,3 +11,7 @@
 # 📃 Music reviews
 
 [My October 2020 Nashville Playlist](nasvhille-music-october-2020)
+
+# Music Theory
+
+[Playing Changes](playing-changes)
