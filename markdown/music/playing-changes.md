@@ -129,7 +129,7 @@ extension [9, #11, 13]
 
 ```
 II7 IV7
-sound: "Mixolydian" / "Lydian Dominant"
+sound: "Mixolydian" / "Lydian Dominant" - I usualy think of Jerry Garcia playing Fire on The Mountain for this one.
 extension [9, 11/#11, 13]
 ```
 
