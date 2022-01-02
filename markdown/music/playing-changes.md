@@ -176,5 +176,5 @@ extensions: [b9, 9, #9, 11, #11, b13, 13]
 
 [The Demystification: Science and Mathematics for Guitar by Nathan Foley](https://nathanfoley.bandcamp.com/merch/the-demystification-science-and-mathematics-for-guitar)
 
-For a more in depth look at a lot of these topics check out Nathan Foley's Book. It goes much deeper than this post, especially if you are a guitarist.
+For a more in depth look at a lot of these topics check out Nathan Foley's book. It goes much deeper than this post, especially if you are a guitarist.
 I cannot reccomend this book enough for anyone trying to better understand the fretboard.
