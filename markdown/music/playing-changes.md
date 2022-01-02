@@ -19,19 +19,15 @@ With that out of the way, here are some of the important things that got me thro
 
 Modes
 
+```
 | c | d | e | f | g | a | b | Ionian, CMaj7, Major scale
-
 | d | e | f | g | a | b | c | Dorian, Dmin7
-
 | e | f | g | a | b | c | d | Phrygian, Emin7
-
 | f | g | a | b | c | d | e | Lydian, Fmaj7
-
 | g | a | b | c | d | e | f | Mixolydian, G7
-
 | a | b | c | d | e | f | g | Aeolian, Amin7, Minor Scale
-
 | b | c | d | e | f | g | a | Locrian, Bdim
+```
 
 If you skip every other note C, E, G, B etc. you get the chord for that scale.
 All of the chords you find in this chart are in the key of C.
