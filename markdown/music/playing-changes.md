@@ -165,7 +165,7 @@ extensions: [b9, 9, #9, 11, #11, b13, 13]
 
 - if you don't know the notes to play for a measure, hit the chord stylistically with a cool rhythm
 
-- keep it simple, focus on thirds and fifths, and sevenths
+- keep it simple, focus on thirds, fifths, and sevenths
 
 - practice to a metronome at slower speeds
 
