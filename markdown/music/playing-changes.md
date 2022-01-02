@@ -71,7 +71,7 @@ Extensions alternate notes from 9 to 13
 | c | d | e | f  | g | a  | b |
 ```
 
-You can add these extensions to c hords for extra color.
+You can add these extensions to chords for extra color.
 
 These extensions are a continuation of the every other note pattern that makes the base chords like CMaj7.
 
