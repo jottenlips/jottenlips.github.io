@@ -160,7 +160,7 @@ extensions: [b9, 9, #9, 11, #11, b13, 13]
 
 - I find it best to think about modes when there are few key changes like "So What" or in most jazz fusion settings.
 
-- Secondary dominants with arpeggios and extensions are a bettery tool for bebop style changes and songs with rhyhm changes or ii V I changes.
+- Secondary dominants with arpeggios and extensions are a better tool for bebop style changes and songs with rhyhm changes or ii V I changes.
 
 - Learning how to walk bass will help navigate changes via arpeggios
 
