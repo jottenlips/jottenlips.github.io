@@ -83,16 +83,6 @@ pre {
   flex-wrap: wrap;
   margin-bottom: 10px;
 }
-.back {
-  border-color: #dd7755;
-  background-color: #ebebeb;
-  color: #4e2f61;
-  padding: 4px 8px;
-  text-decoration: none;
-  cursor: pointer;
-  border-radius: 2px;
-  border-width: 1px;
-}
 
 @media only screen and (max-width: 500px) {
   .nav {
@@ -143,4 +133,7 @@ a:hover {
   -ms-transform: scale(1.1);
   transform: scale(1.1);
   color: #4e2f61;
+}
+.back {
+  text-decoration: underline;
 }
