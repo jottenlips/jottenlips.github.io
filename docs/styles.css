@@ -83,11 +83,11 @@ pre {
   flex-wrap: wrap;
   margin-bottom: 10px;
 }
-.back_button {
+#back_button {
   background-color: #dd7755;
   border: none;
   color: #4e2f61;
-  padding: 16px 32px;
+  padding: 4px 8px;
   text-decoration: none;
   cursor: pointer;
   border-radius: 6px;
