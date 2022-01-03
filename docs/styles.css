@@ -84,13 +84,14 @@ pre {
   margin-bottom: 10px;
 }
 .back {
-  background-color: #dd7755;
-  border: none;
+  border-color: #dd7755;
+  background-color: transparent;
   color: #4e2f61;
   padding: 4px 8px;
   text-decoration: none;
   cursor: pointer;
-  border-radius: 6px;
+  border-radius: 2px;
+  border-width: 1px;
 }
 
 @media only screen and (max-width: 500px) {
