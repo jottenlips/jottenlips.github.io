@@ -89,11 +89,11 @@ This pattern is how you get chords like CMaj9.
 
 Secondary dominants are a common way to use chords to change key centers in a tune.
 These are dominant 7 chords that voice-lead to the new key. It is typically the 5th
-of the new key. For example, G7 leads to CMaj. Seven chords have a gravitational force that
+of the new key. For example, G7 leads to CMaj. Dominant seven chords have a gravitational force that
 pulls you to the new key. What helps the changes sound smooth is playing the compatible
 extensions on these dominant chords.
 
-What this chart means by III7 is if the third chord in a key is a dominant seventh chord instead
+What the chart below means by III7 is if the third chord in a key is a dominant seventh chord instead
 of what the listener is expecting (min7) play the notes in the dominant 7 triad with the extensions provided.
 
 In C, instead of getting Emin7 (third chord of C Maj)
@@ -117,6 +117,8 @@ Try making other chord progressions with different scale degrees as the secondar
 The pattern above is called a ii-V-I and is very common in jazz. To make more interesting lines
 try mixing arpeggios with scale runs or chromatic passing tones, and don't forget to use your
 Secondary Dominant extensions.
+
+Secondary Dominant Chart:
 
 ```
 III7 VI7 VII7
