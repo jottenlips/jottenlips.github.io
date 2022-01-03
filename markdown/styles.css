@@ -83,7 +83,7 @@ pre {
   flex-wrap: wrap;
   margin-bottom: 10px;
 }
-#back_button {
+.back {
   background-color: #dd7755;
   border: none;
   color: #4e2f61;
