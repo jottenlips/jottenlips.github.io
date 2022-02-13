@@ -8,8 +8,6 @@
 
 [Patreon](https://www.patreon.com/jottenlips)
 
-BTC: `16hX2P3Zv7eHzTaRE7JGJhoywbCGJc9Z7C`
+### Buy music on Bandcamp
 
-ETH: `0x9746Fb13F6696B95Cfb2A4A0CE0edAa850dA3d66`
-
-LTC: `LXftNaFPiJUfh5NqyekQosahVqhpTeD9yp`
+[Bandcamp](https://ottobahn.bandcamp.com/track/midnight)
