@@ -7,7 +7,7 @@ React
 
 # Install Git, it comes with xcode on macos
 
-````
+```
 xcode -select--install
 ```
 
@@ -142,4 +142,7 @@ git push origin master
 ```
 
 Congrats! You developed your first front-end project and put it under source control!
-````
+
+```
+
+```
