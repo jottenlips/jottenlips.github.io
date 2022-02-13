@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>John Ottenlips Franke | Blog | Music | Programming | Recipes</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <meta
+      property="og:title"
+      content="John Ottenlips Franke | Blog | Music | Programming | Recipes"
+    />
+    <meta
+      property="og:image"
+      content="https://github.com/jottenlips/jottenlips.github.io/blob/main/keyboard.jpg?raw=true"
+    />
+    <meta
+      name="twitter:title"
+      content="John Ottenlips Franke | Blog | Music | Programming | Recipes"
+    />
+    <meta
+      name="twitter:description"
+      content="Blog about music, programming, cooking, and more."
+    />
+    <meta
+      name="twitter:image"
+      content="https://github.com/jottenlips/jottenlips.github.io/blob/main/keyboard.jpg?raw=true"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+  </head>
+  <body>
+    <div class="coverimage" />
+    <div class="container">
+      <div class="nav">
+        <a class="link" href="/">Home</a>
+        <a class="link" href="/music">Music</a>
+        <a class="link" href="/blog">Blog</a>
+        <a class="link" href="/programming">Programming</a>
+        <a class="link" href="/recipes">Recipes</a>
+        <a class="link" href="https://github.com/jottenlips">
+          <img
+            style="width: 25px; height: 25px"
+            src="https://img.icons8.com/ios-filled/50/000000/git.png"
+          />
+        </a>
+        <a class="link" href="https://ottobahn.bandcamp.com/">
+          <img
+            style="width: 25px; height: 25px"
+            src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Bandcamp-button-circle-green.svg"
+          />
+        </a>
+      </div>
+      <div class="block">
+        <a href="javascript:history.go(-1)" class="back"><- Go Back</a>
+        <p>Let&#39;s start a front-end web project. Tools you will be adding to your repertoire:</p>
+<p>🛠</p>
+<p>Git
+React</p>
+<h1 id="Install-Git-it-comes-with-xcode-on-macos">Install Git, it comes with xcode on macos</h1>
+
+<p><code>xcode -select--install</code></p>
+<h1 id="Create-a-react-app-named-my-app">Create a react app named my-app</h1>
+
+<pre><code>npx create -react-app my-app
+cd my-app</code></pre>
+
+<h1 id="install-dependencies">install dependencies</h1>
+
+<p><code>npm i</code></p>
+<h1 id="run-your-app">run your app</h1>
+
+<p><code>npm start</code></p>
+<p>Now that you have your first app running, let&#39;s make a simple app using react hooks. Hooks are functions that let you &quot;hook into&quot; a components state or life-cycle. In this case, we can replace the functional component create react app gives us with our own. Ours will have a hook for the count and a button to increment the count.</p>
+<pre class='javascript'><code class='javascript'>import React from &quot;react&quot;;
+import &quot;./App.css&quot;;
+const { useState } = React;
+// We can use an arrow function here as well.
+// In react you create apps from components.
+// These components can be functions as seen below
+// Entire apps can be composed of &quot;functional components&quot;
+const App = () =&gt; {
+  const [count, setCount] = useState(0);
+  return (
+    &lt;div className=&quot;App&quot;&gt;
+      &lt;p&gt; {count} &lt;/p&gt;
+      &lt;button onClick={() =&gt; setCount(count + 1)}&gt;increment count &lt;/button&gt;
+    &lt;/div&gt;
+  );
+};
+// export default App;
+// Here is an example of a react app using hooks that tells you the fifth of any note.
+
+// App.jsx
+import React from &quot;react&quot;;
+import &quot;./App.css&quot;;
+import { getFifth } from &quot;./getFifth&quot;;
+const { useState } = React;
+const App = () =&gt; {
+  const [fifth, setFifth] = useState(&quot;&quot;);
+  return (
+    &lt;div className=&quot;App&quot;&gt;
+      &lt;p&gt; Fifth: {fifth} &lt;/p&gt;
+      &lt;input onChange={(e) =&gt; setFifth(getFifth(e.target.value))} /&gt;
+    &lt;/div&gt;
+  );
+};
+export default App;
+
+// getFifth.js
+export const getFifth = (note) =&gt; {
+  console.log(note);
+  if (!note) {
+    return &quot;&quot;;
+  }
+  const lowerCaseNote = note.toLowerCase();
+  const fifth = {
+    c: &quot;g&quot;,
+    g: &quot;d&quot;,
+    d: &quot;a&quot;,
+    a: &quot;e&quot;,
+    e: &quot;b&quot;,
+    b: &quot;f#&quot;,
+    &quot;f#&quot;: &quot;c#&quot;,
+    gb: &quot;db&quot;,
+    &quot;c#&quot;: &quot;ab&quot;,
+    db: &quot;ab&quot;,
+    ab: &quot;eb&quot;,
+    eb: &quot;bb&quot;,
+    bb: &quot;f&quot;,
+    f: &quot;c&quot;,
+  }[lowerCaseNote];
+  if (!fifth) {
+    return &quot;&quot;;
+  }
+  const formattedNote = `${fifth.charAt(0).toUpperCase()}${fifth.slice(1)}`;
+  return formattedNote;
+};</code></pre>
+
+<p>Try to make an app for making a list of groceries, chores, mood-board, or something simple.</p>
+<p>Hint: You can use useState with other data types like arrays and objects.</p>
+<pre><code>const [groceries, setGroceries] = useState([])</code></pre>
+
+<p>You can also &quot;spread&quot; old items with a new item to make a new array with all of the items. ... is the spread operator.</p>
+<pre><code>setGroceries([...groceries, newGroceryItem])</code></pre>
+
+<p>For more info on React, Check out the docs</p>
+<p>Once you are happy with your app. Let&#39;s make sure your code is under version control for future updates and collaboration with other developers using Git. First sign-up or login to Github, https: //github.com/. Make a new repository for my-app.</p>
+<h1 id="cd-to-your-project">cd to your project</h1>
+
+<p><code>git init # initialize a git repo in your project</code></p>
+<h1 id="add-the-remote-to-your-local-git-repo">add the remote to your local git repo</h1>
+
+<p><code>git remote add origin https://github.com/username/my-app</code></p>
+<h1 id="make-a-gitignore">make a .gitignore</h1>
+
+<p><code>touch .gitignore</code></p>
+<h1 id="ignore-your-node-modules-by-adding-node-modules-to-this-file">ignore your node_modules by adding node_modules to this file</h1>
+
+<p><code>echo node_modules &gt;&gt; .gitignore</code></p>
+<h1 id="add-your-code-to-the-staging-area">add your code to the staging area</h1>
+
+<p><code>git add --all</code></p>
+<h1 id="commit-your-changes">commit your changes</h1>
+
+<p><code>git commit -m&quot;initial commit&quot;</code></p>
+<h1 id="push-your-changes-to-Github">push your changes to Github</h1>
+
+<p><code>git push origin master</code></p>
+<p>Congrats! You developed your first front-end project and put it under source control!</p>
+
+      </div>
+    </div>
+  </body>
+</html>
