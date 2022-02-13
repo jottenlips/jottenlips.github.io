@@ -2,9 +2,9 @@ Let's start a front-end web project. Tools you will be adding to your repertoire
 
 🛠 Tools you will be learning
 
-Git
+- Git
 
-React
+- React
 
 # Install Git, it comes with xcode on macos
 
