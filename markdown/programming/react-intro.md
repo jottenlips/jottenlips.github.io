@@ -7,7 +7,9 @@ React
 
 # Install Git, it comes with xcode on macos
 
-`xcode -select--install`
+````
+xcode -select--install
+```
 
 # Create a react app named my-app
 
@@ -18,11 +20,15 @@ cd my-app
 
 # install dependencies
 
-`npm i`
+```
+npm i
+```
 
 # run your app
 
-`npm start`
+```
+npm start
+```
 
 Now that you have your first app running, let's make a simple app using react hooks. Hooks are functions that let you "hook into" a components state or life-cycle. In this case, we can replace the functional component create react app gives us with our own. Ours will have a hook for the count and a button to increment the count.
 
@@ -111,32 +117,29 @@ For more info on React, Check out the docs
 
 Once you are happy with your app. Let's make sure your code is under version control for future updates and collaboration with other developers using Git. First sign-up or login to Github, https: //github.com/. Make a new repository for my-app.
 
-# cd to your project
-
-`git init # initialize a git repo in your project`
+```
+## cd to your project
+git init # initialize a git repo in your project
 
 # add the remote to your local git repo
 
-`git remote add origin https://github.com/username/my-app`
+git remote add origin https://github.com/username/my-app
 
 # make a .gitignore
-
-`touch .gitignore`
+touch .gitignore
 
 # ignore your node_modules by adding node_modules to this file
-
-`echo node_modules >> .gitignore`
+echo node_modules >> .gitignore
 
 # add your code to the staging area
-
-`git add --all`
+git add --all
 
 # commit your changes
-
-`git commit -m"initial commit"`
+git commit -m"initial commit"
 
 # push your changes to Github
-
-`git push origin master`
+git push origin master
+```
 
 Congrats! You developed your first front-end project and put it under source control!
+````
