@@ -57,20 +57,32 @@
 React</p>
 <h1 id="Install-Git-it-comes-with-xcode-on-macos">Install Git, it comes with xcode on macos</h1>
 
-<p><code>xcode -select--install</code></p>
-<h1 id="Create-a-react-app-named-my-app">Create a react app named my-app</h1>
+<pre><code>xcode -select--install
+```
 
-<pre><code>npx create -react-app my-app
-cd my-app</code></pre>
+# Create a react app named my-app
 
-<h1 id="install-dependencies">install dependencies</h1>
+```
+npx create -react-app my-app
+cd my-app
+```
 
-<p><code>npm i</code></p>
-<h1 id="run-your-app">run your app</h1>
+# install dependencies
 
-<p><code>npm start</code></p>
-<p>Now that you have your first app running, let&#39;s make a simple app using react hooks. Hooks are functions that let you &quot;hook into&quot; a components state or life-cycle. In this case, we can replace the functional component create react app gives us with our own. Ours will have a hook for the count and a button to increment the count.</p>
-<pre class='javascript'><code class='javascript'>import React from &quot;react&quot;;
+```
+npm i
+```
+
+# run your app
+
+```
+npm start
+```
+
+Now that you have your first app running, let&#39;s make a simple app using react hooks. Hooks are functions that let you &quot;hook into&quot; a components state or life-cycle. In this case, we can replace the functional component create react app gives us with our own. Ours will have a hook for the count and a button to increment the count.
+
+```javascript
+import React from &quot;react&quot;;
 import &quot;./App.css&quot;;
 const { useState } = React;
 // We can use an arrow function here as well.
@@ -133,40 +145,52 @@ export const getFifth = (note) =&gt; {
   }
   const formattedNote = `${fifth.charAt(0).toUpperCase()}${fifth.slice(1)}`;
   return formattedNote;
-};</code></pre>
+};
+```
 
-<p>Try to make an app for making a list of groceries, chores, mood-board, or something simple.</p>
-<p>Hint: You can use useState with other data types like arrays and objects.</p>
-<pre><code>const [groceries, setGroceries] = useState([])</code></pre>
+Try to make an app for making a list of groceries, chores, mood-board, or something simple.
 
-<p>You can also &quot;spread&quot; old items with a new item to make a new array with all of the items. ... is the spread operator.</p>
-<pre><code>setGroceries([...groceries, newGroceryItem])</code></pre>
+Hint: You can use useState with other data types like arrays and objects.
 
-<p>For more info on React, Check out the docs</p>
-<p>Once you are happy with your app. Let&#39;s make sure your code is under version control for future updates and collaboration with other developers using Git. First sign-up or login to Github, https: //github.com/. Make a new repository for my-app.</p>
-<h1 id="cd-to-your-project">cd to your project</h1>
+```
+const [groceries, setGroceries] = useState([])
+```
 
-<p><code>git init # initialize a git repo in your project</code></p>
-<h1 id="add-the-remote-to-your-local-git-repo">add the remote to your local git repo</h1>
+You can also &quot;spread&quot; old items with a new item to make a new array with all of the items. ... is the spread operator.
 
-<p><code>git remote add origin https://github.com/username/my-app</code></p>
-<h1 id="make-a-gitignore">make a .gitignore</h1>
+```
+setGroceries([...groceries, newGroceryItem])
+```
 
-<p><code>touch .gitignore</code></p>
-<h1 id="ignore-your-node-modules-by-adding-node-modules-to-this-file">ignore your node_modules by adding node_modules to this file</h1>
+For more info on React, Check out the docs
 
-<p><code>echo node_modules &gt;&gt; .gitignore</code></p>
-<h1 id="add-your-code-to-the-staging-area">add your code to the staging area</h1>
+Once you are happy with your app. Let&#39;s make sure your code is under version control for future updates and collaboration with other developers using Git. First sign-up or login to Github, https: //github.com/. Make a new repository for my-app.
 
-<p><code>git add --all</code></p>
-<h1 id="commit-your-changes">commit your changes</h1>
+```
+## cd to your project
+git init # initialize a git repo in your project
 
-<p><code>git commit -m&quot;initial commit&quot;</code></p>
-<h1 id="push-your-changes-to-Github">push your changes to Github</h1>
+# add the remote to your local git repo
 
-<p><code>git push origin master</code></p>
-<p>Congrats! You developed your first front-end project and put it under source control!</p>
+git remote add origin https://github.com/username/my-app
 
+# make a .gitignore
+touch .gitignore
+
+# ignore your node_modules by adding node_modules to this file
+echo node_modules &gt;&gt; .gitignore
+
+# add your code to the staging area
+git add --all
+
+# commit your changes
+git commit -m&quot;initial commit&quot;
+
+# push your changes to Github
+git push origin master
+```
+
+Congrats! You developed your first front-end project and put it under source control!</code></pre>
       </div>
     </div>
   </body>
