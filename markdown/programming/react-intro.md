@@ -1,31 +1,31 @@
-Let's start a front-end web project. Tools you will be adding to your repertoire:
+# Let's start a front-end web project.
 
-🛠 Tools you will be learning
+🛠 Tools you will be adding to your repertoire:
 
 - Git
 
 - React
 
-# Install Git, it comes with xcode on macos
+## Install Git, it comes with xcode on macos
 
 ```
 xcode -select--install
 ```
 
-# Create a react app named my-app
+## Create a react app named my-app
 
 ```
 npx create -react-app my-app
 cd my-app
 ```
 
-# install dependencies
+## install dependencies
 
 ```
 npm i
 ```
 
-# run your app
+## run your app
 
 ```
 npm start
