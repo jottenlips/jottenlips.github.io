@@ -126,6 +126,7 @@ Once you are happy with your app. Let's make sure your code is under version con
 ```
 ## cd to your project
 git init # initialize a git repo in your project
+git checkout -b main
 
 # add the remote to your local git repo
 
@@ -144,7 +145,7 @@ git add --all
 git commit -m"initial commit"
 
 # push your changes to Github
-git push origin master
+git push --set-upstream origin main
 ```
 
 Congrats! You developed your first front-end project and put it under source control!
