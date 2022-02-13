@@ -34,19 +34,20 @@ h3 {
   color: #dd7755;
 }
 code {
+  border-radius: 6px;
   background-color: #000000;
   color: #a5d79d;
   line-height: 200%;
   word-wrap: break-word;
+}
+pre {
+  background-color: #000000;
+  width: 90%;
   border-radius: 6px;
   padding-top: 10px;
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 10px;
-}
-pre {
-  background-color: #000000;
-  width: 90%;
   overflow-x: scroll;
 }
 .container {
