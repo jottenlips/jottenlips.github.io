@@ -153,6 +153,7 @@ export const getFifth = (note) =&gt; {
 <p>Once you are happy with your app. Let&#39;s make sure your code is under version control for future updates and collaboration with other developers using Git. First sign-up or login to Github, https: //github.com/. Make a new repository for my-app.</p>
 <pre><code>## cd to your project
 git init # initialize a git repo in your project
+git checkout -b main
 
 # add the remote to your local git repo
 
@@ -171,7 +172,7 @@ git add --all
 git commit -m&quot;initial commit&quot;
 
 # push your changes to Github
-git push origin master</code></pre>
+git push --set-upstream origin main</code></pre>
 
 <p>Congrats! You developed your first front-end project and put it under source control!</p>
 
