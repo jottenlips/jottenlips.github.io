@@ -26,12 +26,15 @@ img[alt*="small"] {
 }
 h1 {
   color: #4e2f61;
+  line-height: 110%;
 }
 h2 {
   color: #5c578c;
+  line-height: 110%;
 }
 h3 {
   color: #dd7755;
+  line-height: 110%;
 }
 code {
   border-radius: 3px;
