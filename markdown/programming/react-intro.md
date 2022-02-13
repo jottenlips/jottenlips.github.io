@@ -51,6 +51,9 @@ const App = () => {
   );
 };
 // export default App;
+```
+
+```javascript
 // Here is an example of a react app using hooks that tells you the fifth of any note.
 
 // App.jsx
