@@ -71,7 +71,9 @@ const App = () => {
   );
 };
 export default App;
+```
 
+```
 // getFifth.js
 export const getFifth = (note) => {
   console.log(note);
