@@ -58,11 +58,15 @@
             if (window.location.pathname === '/') {
                 window.document.getElementsByClassName('back')[0].style.display = 'none';
             }
-
-            const elements = window.document.getElementsByClassName('javascript')
-            Array.from(elements).forEach(el => el.classList.add('language-javascript'))
-
         }
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.querySelectorAll('code').forEach((el) => {
+                if (el.className == "javascript") {
+                    el.classList.add('language-javascript')
+                    hljs.highlightElement(el);
+                }
+            });
+        });
     </script>
 
 </body>
