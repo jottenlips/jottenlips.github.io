@@ -25,14 +25,14 @@ or [Help fund this blog](contribute)
 
 This blog was generated via [agave](https://github.com/jottenlips/agave), a static site generator I wrote with ReasonML that turns markdown files (.md) into custom styled html and css.
 
-Agave is as simple as:
-
 ```bash
 npm i -g agave-generator
 # for theming your own site
+mkdir markdown
+cd markdown
 echo '<html><body><!-- MARKDOWN --></body></html>' >> base.html
 touch index.md && touch styles.css
-# magic
+cd ..
 agave -p docs
 ```
 
