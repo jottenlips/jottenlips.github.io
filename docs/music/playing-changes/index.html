@@ -13,19 +13,9 @@
     <meta name="twitter:image" content="https://github.com/jottenlips/jottenlips.github.io/blob/main/keyboard.jpg?raw=true" />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="stylesheet" href="https://raw.githubusercontent.com/jottenlips/jottenlips.github.io/main/prism.css">
-
-    <script>
-        // hide back button on home page
-        window.onload = function() {
-            if (window.location.pathname === '/') {
-                window.document.getElementsByClassName('back')[0].style.display = 'none';
-            }
-        }
-    </script>
 </head>
 
 <body>
-    <script src="https://raw.githubusercontent.com/jottenlips/jottenlips.github.io/main/prism.js"></script>
     <div class="coverimage" />
     <div class="container">
         <div class="nav">
@@ -172,6 +162,16 @@ I cannot recommend this book enough for anyone trying to understand the fretboar
 
         </div>
     </div>
+    <script src="https://raw.githubusercontent.com/jottenlips/jottenlips.github.io/main/prism.js"></script>
+
+    <script>
+        // hide back button on home page
+        window.onload = function() {
+            if (window.location.pathname === '/') {
+                window.document.getElementsByClassName('back')[0].style.display = 'none';
+            }
+        }
+    </script>
 
 </body>
 
