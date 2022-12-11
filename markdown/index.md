@@ -37,3 +37,5 @@ agave -p docs
 ```
 
 And push to your GitHub io page, or upload to any other static site hosting service.
+
+For code syntax highlighting, I am using [highlight.js](https://highlightjs.org/) in my base.html file.
