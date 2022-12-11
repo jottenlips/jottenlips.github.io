@@ -19,7 +19,13 @@ jobs:
           npm install
           pwd
           ls
-          ./node_modules/.bin/agave -p docs
+          cd node_modules
+          ls
+          cd .bin
+          ls
+          cd ..
+          cd ..
+          ./node_modules/.bin/Agave -p docs
 
       - name: git config
         run: |
