@@ -41,16 +41,17 @@
         <div class="block">
             <a href="javascript:history.go(-1)" class="back">
                 <- Go Back</a>
-                    <h1 id="Let-39-s-start-a-front-end-web-project">Let&#39;s start a front-end web project.</h1>
+                    <h1 id="Let-39-s-make-a-React-App">Let&#39;s make a React App.</h1>
 
+<p>A common pattern in modern web development is the Single Page Application, or (SPA). This concept is where a single index.html file is sent to a browser that contains the code to run your application. It may request other resources like css files and javascript chunks depending on the size of your application and the framework and libraries you use. For this tutorial we will use create-react-app to spin up your first app. We will also put the app behind version control.</p>
 <p>🛠 Tools you will be adding to your repertoire:</p>
-<ul><li><p>Git</p>
+<blockquote><ul><li><p>Git</p>
 </li><li><p>React</p>
-</li></ul>
+</li></ul></blockquote>
 
-<h2 id="Install-Git-it-comes-with-xcode-on-macos">Install Git, it comes with xcode on macos</h2>
+<h2 id="Install-Git-it-comes-with-xcode-select-on-macos">Install Git, it comes with xcode-select on macos</h2>
 
-<pre><code>xcode -select--install</code></pre>
+<pre><code>xcode-select --install</code></pre>
 
 <h2 id="Create-a-react-app-named-my-app">Create a react app named my-app</h2>
 
@@ -69,7 +70,7 @@ cd my-app</code></pre>
 <pre class='javascript'><code class='javascript'>import React from &quot;react&quot;;
 import &quot;./App.css&quot;;
 const { useState } = React;
-// We can use an arrow function here as well.
+// We can use an arrow function here, personal preference.
 // In react you create apps from components.
 // These components can be functions as seen below
 // Entire apps can be composed of &quot;functional components&quot;
@@ -103,7 +104,7 @@ const App = () =&gt; {
 };
 export default App;</code></pre>
 
-<pre><code>// getFifth.js
+<pre class='javascript'><code class='javascript'>// getFifth.js
 export const getFifth = (note) =&gt; {
   console.log(note);
   if (!note) {
@@ -144,17 +145,16 @@ export const getFifth = (note) =&gt; {
 <p>Once you are happy with your app. Let&#39;s make sure your code is under version control for future updates and collaboration with other developers using Git. First sign-up or login to Github, https: //github.com/. Make a new repository for my-app.</p>
 <pre><code>## cd to your project
 git init # initialize a git repo in your project
-git checkout -b main
+git switch -c main
 
-# add the remote to your local git repo
-
+# add the remote to your local git repo, replace username with your username
 git remote add origin https://github.com/username/my-app
 
 # make a .gitignore
 touch .gitignore
 
 # ignore your node_modules by adding node_modules to this file
-echo node_modules &gt;&gt; .gitignore
+echo &quot;node_modules/&quot; &gt;&gt; .gitignore
 
 # add your code to the staging area
 git add --all
