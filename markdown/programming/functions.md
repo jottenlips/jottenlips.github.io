@@ -13,14 +13,14 @@ Install [homebrew](https://brew.sh) This is a package manager for MacOS.
 open the terminal app and type.
 
 ```shell
-# current homebrew install command
+# current homebrew install command, may take a minute
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 # installs node version manager, it may give you additional steps to follow.
 brew install nvm 
+nvm install --lts # installs latest node and npm
 # which node will tell you if node is in the correct path
 # it should include nvm in the output
 which node
-nvm install --lts # installs latest node and npm
 ```
 
 Install a text editor.
