@@ -68,12 +68,13 @@ This site is a catchall for my creative processes, general ongoings, and opinion
 <p><a href='https://projecthealthychildren.org/'>Donate to Project Health Children</a></p>
 <p>or <a href='contribute'>Help fund this blog</a></p>
 <p><hr/>This blog was generated via <a href='https://github.com/jottenlips/agave'>agave</a>, a static site generator I wrote with ReasonML that turns markdown files (.md) into custom styled html and css.</p>
-<p>Agave is as simple as:</p>
 <pre class='bash'><code class='bash'>npm i -g agave-generator
 # for theming your own site
+mkdir markdown
+cd markdown
 echo &#39;&lt;html&gt;&lt;body&gt;&lt;!-- MARKDOWN --&gt;&lt;/body&gt;&lt;/html&gt;&#39; &gt;&gt; base.html
 touch index.md &amp;&amp; touch styles.css
-# magic
+cd ..
 agave -p docs</code></pre>
 
 <p>And push to your GitHub io page, or upload to any other static site hosting service.</p>
