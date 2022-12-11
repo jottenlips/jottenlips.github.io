@@ -1,19 +1,21 @@
-# John Franke's Blog, Welcome!
+> # John Franke's Blog, Welcome!
 
 > Hey, I am a musician, artist, and programmer living in Nashville TN.
 > This site is a catchall for my creative processes, general ongoings, and opinions.
 >
 > Thanks for reading,
 >
-> -- John Franke
 
 ---
 
-[Help fund this blog](contribute)
+Feeling generous?
 
-[Donate to Paradox Sports Mile 🧗](https://paradoxsports.salsalabs.org/pdxmile-climb-nashville22/p/johnfranke/index.html)
+[Nashville Community Fridge](https://www.instagram.com/nashvillecommunityfridge)
 
-This February, I am climbing a mile for Paradox Sports. [Donate Here](https://paradoxsports.salsalabs.org/pdxmile-climb-nashville22/p/johnfranke/index.html)
+Last February, I climbed a mile for Paradox Sports, thank you everyone for helping me hit my goal. To continue to support Paradox Sports you can [Donate Here](https://paradoxsports.salsalabs.org/pdxmile-climb-nashville22/p/johnfranke/index.html)
+
+or [Help fund this blog](contribute)
+
 
 ---
 
@@ -30,4 +32,4 @@ touch index.md && touch styles.css
 agave -p docs
 ```
 
-And push to your GitHub
+And push to your GitHub io page, or upload to any other static site hosting service.
