@@ -18,8 +18,7 @@ jobs:
         run: |
           npm i --prefix /usr/local -g esy 
           npm install
-          chmod +x ./node_modules/.bin/Agave
-          ./node_modules/.bin/Agave -p docs
+          sudo esy b dune exec ./node_modules/.bin/Agave -p docs
 
       - name: git config
         run: |
