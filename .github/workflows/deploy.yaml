@@ -5,7 +5,7 @@ on:
       - main
 jobs:
   agave:
-    runs-on: ubuntu-latest
+    runs-on: macOS-12
     steps:
       - name: checkout
         uses: actions/checkout@v2
@@ -18,7 +18,7 @@ jobs:
         run: |
           npm i --prefix /usr/local -g esy 
           npm install
-          sudo esy b dune exec ./node_modules/.bin/Agave -p docs
+          ./node_modules/.bin/Agave -p docs
 
       - name: git config
         run: |
