@@ -11,7 +11,7 @@
 
 Here are a few of my favorite charities.
 
-[Nashville Community Fridge 🥕🍉🥑🍅🍇🥝🥔🍍🍊🍌🍈🥭🍎🍒🍠🍓🥜🍑🥒🍋](https://www.instagram.com/nashvillecommunityfridge)
+[Nashville Community Fridge](https://www.instagram.com/nashvillecommunityfridge) 🥕🍉🥑🍅🍇🥝🍍🍊🍌🍈🥭
 
 Last February, I climbed a mile for Paradox Sports, thank you everyone for helping me hit my goal. To continue to support you can [Donate to Paradox Sports](https://paradoxsports.salsalabs.org/pdxmile-climb-nashville22/p/johnfranke/index.html) through my page.
 
