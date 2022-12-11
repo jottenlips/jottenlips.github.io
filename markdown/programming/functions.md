@@ -73,7 +73,7 @@ touch musicTheory.js
 
 Open the file in vscode or an editor of your choice.
 
-```javascript
+```language-javascript
 # musicTheory.js
 const getFifth = (note) => {
     // make the input note lowercase
