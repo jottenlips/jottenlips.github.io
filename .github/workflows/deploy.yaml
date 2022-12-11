@@ -18,7 +18,7 @@ jobs:
         run: |
           # do some operation that changes a file in the git repo
           npm i
-          npm run build
+          npx agave -p docs
 
       - name: git config
         run: |
