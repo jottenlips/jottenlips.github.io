@@ -16,8 +16,7 @@ jobs:
       - name: build site
         run: |
           # do some operation that changes a file in the git repo
-          export NPM_CONFIG_PREFIX=~/.npm-global
-          npm i -g agave-generator
+          sudo npm i -g agave-generator
           agave -p docs
 
       - name: git config
