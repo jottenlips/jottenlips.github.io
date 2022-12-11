@@ -44,14 +44,14 @@ h3 {
 
 code {
     border-radius: 3px;
-    background-color: #000000;
+    background-color: #303030;
     color: #ffffff;
     line-height: 200%;
     word-wrap: break-word;
 }
 
 pre {
-    background-color: #000000;
+    background-color: #303030;
     width: 90%;
     border-radius: 6px;
     padding-top: 10px;
