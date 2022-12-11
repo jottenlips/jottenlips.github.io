@@ -18,14 +18,7 @@ jobs:
         run: |
           npm install
           pwd
-          ls
-          cd node_modules
-          ls
-          cd .bin
-          ls
-          cd ..
-          cd ..
-          ./node_modules/.bin/Agave -p docs
+          sudo ./node_modules/.bin/Agave -p docs
 
       - name: git config
         run: |
