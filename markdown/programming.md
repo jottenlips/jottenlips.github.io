@@ -1,5 +1,5 @@
-[Intro to Node.js and JavaScript: functions](functions/)
+[1. Intro to Node.js, local development, and JavaScript functions](functions/)
 
-[Intro to React](react-intro/)
+[2. Intro to React](react-intro/)
 
 [Using MIDI in the Browser Example](https://jottenlips.github.io/making-midi)
