@@ -17,7 +17,7 @@ jobs:
       - name: build site
         run: |
           # do some operation that changes a file in the git repo
-          npm i
+          npm install -g agave-generator
           npx agave -p docs
 
       - name: git config
