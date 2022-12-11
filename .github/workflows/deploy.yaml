@@ -18,7 +18,7 @@ jobs:
         run: |
           # do some operation that changes a file in the git repo
           npm install -g agave-generator
-          npx agave -p docs
+          ./node_modules/.bin/agave -p docs
 
       - name: git config
         run: |
