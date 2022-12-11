@@ -1,59 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>John Ottenlips Franke | Blog | Music | Programming | Recipes</title>
     <link rel="stylesheet" href="/styles.css" />
-    <meta
-      property="og:title"
-      content="John Ottenlips Franke | Blog | Music | Programming | Recipes"
-    />
-    <meta
-      property="og:image"
-      content="https://github.com/jottenlips/jottenlips.github.io/blob/main/keyboard.jpg?raw=true"
-    />
-    <meta
-      name="twitter:title"
-      content="John Ottenlips Franke | Blog | Music | Programming | Recipes"
-    />
-    <meta
-      name="twitter:description"
-      content="Blog about music, programming, cooking, and more."
-    />
-    <meta
-      name="twitter:image"
-      content="https://github.com/jottenlips/jottenlips.github.io/blob/main/keyboard.jpg?raw=true"
-    />
+    <meta property="og:title" content="John Ottenlips Franke | Blog | Music | Programming | Recipes" />
+    <meta property="og:image" content="https://github.com/jottenlips/jottenlips.github.io/blob/main/keyboard.jpg?raw=true" />
+    <meta name="twitter:title" content="John Ottenlips Franke | Blog | Music | Programming | Recipes" />
+    <meta name="twitter:description" content="Blog about music, programming, cooking, and more." />
+    <meta name="twitter:image" content="https://github.com/jottenlips/jottenlips.github.io/blob/main/keyboard.jpg?raw=true" />
     <meta name="twitter:card" content="summary_large_image" />
-  </head>
-  <body>
+    <script>
+        // hide back button on home page
+        if (window.location.pathname === '/') {
+            back = document.getElementsById("back")
+            back.style.display = "none";
+        }
+    </script>
+</head>
+
+<body>
     <div class="coverimage" />
     <div class="container">
-      <div class="nav">
-        <a class="link" href="/">Home</a>
-        <a class="link" href="/music">Music</a>
-        <!-- <a class="link" href="/blog">Blog</a> -->
-        <a class="link" href="/programming">Programming</a>
-        <a class="link" href="/recipes">Recipes</a>
-        <a class="link" href="https://github.com/jottenlips">
-          <img
-            style="width: 25px; height: 25px"
-            src="https://img.icons8.com/ios-filled/50/000000/git.png"
-          />
-        </a>
-        <a class="link" href="https://ottobahn.bandcamp.com/">
-          <img
-            style="width: 25px; height: 25px"
-            src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Bandcamp-button-circle-green.svg"
-          />
-        </a>
-      </div>
-      <div class="block">
-        <a href="javascript:history.go(-1)" class="back"><- Go Back</a>
-        <p><a href='2020-9-29'>Sept 29 2020</a></p>
+        <div class="nav">
+            <a class="link" href="/">Home</a>
+            <a class="link" href="/music">Music</a>
+            <!-- <a class="link" href="/blog">Blog</a> -->
+            <a class="link" href="/programming">Programming</a>
+            <a class="link" href="/recipes">Recipes</a>
+            <a class="link" href="https://github.com/jottenlips">
+                <img style="width: 25px; height: 25px" src="https://img.icons8.com/ios-filled/50/000000/git.png" />
+            </a>
+            <a class="link" href="https://ottobahn.bandcamp.com/">
+                <img style="width: 25px; height: 25px" src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Bandcamp-button-circle-green.svg" />
+            </a>
+        </div>
+        <div class="block">
+            <a href="javascript:history.go(-1)" class="back" id="back">
+                <- Go Back</a>
+                    <p><a href='2020-9-29'>Sept 29 2020</a></p>
 
-      </div>
+        </div>
     </div>
-  </body>
+</body>
+
 </html>
