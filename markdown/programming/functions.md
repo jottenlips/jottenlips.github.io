@@ -50,8 +50,8 @@ const add = (x, y) => {
     return x + y;
 }
 // or
-function add(x,y) { 
-    return x+y;
+function add(x, y) { 
+    return x + y;
 }
 // it usually comes down to personal preference
 // or sometimes performance
