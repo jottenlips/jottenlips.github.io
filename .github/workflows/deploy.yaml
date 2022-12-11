@@ -16,9 +16,10 @@ jobs:
 
       - name: build site
         run: |
+          npm i --prefix /usr/local -g esy 
           npm install
-          pwd
-          sudo ./node_modules/.bin/Agave -p docs
+          chmod +x ./node_modules/.bin/Agave
+          ./node_modules/.bin/Agave -p docs
 
       - name: git config
         run: |
