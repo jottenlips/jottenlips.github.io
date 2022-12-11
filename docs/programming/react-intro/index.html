@@ -15,8 +15,7 @@
     <script>
         // hide back button on home page
         if (window.location.pathname === '/') {
-            const back = window.document.getElementById("back")
-            back.style.display = "none";
+            window.document.getElementsByClassName('back')[0].style.display = 'none';
         }
     </script>
 </head>
@@ -38,7 +37,7 @@
             </a>
         </div>
         <div class="block">
-            <a href="javascript:history.go(-1)" class="back" id="back">
+            <a href="javascript:history.go(-1)" class="back">
                 <- Go Back</a>
                     <h1 id="Let-39-s-start-a-front-end-web-project">Let&#39;s start a front-end web project.</h1>
 
