@@ -14,8 +14,10 @@
     <meta name="twitter:card" content="summary_large_image" />
     <script>
         // hide back button on home page
-        if (window.location.pathname === '/') {
-            window.document.getElementsByClassName('back')[0].style.display = 'none';
+        window.onload = function() {
+            if (window.location.pathname === '/') {
+                window.document.getElementsByClassName('back')[0].style.display = 'none';
+            }
         }
     </script>
 </head>
