@@ -7,18 +7,21 @@
 
 ---
 
-Feeling generous?
+Feeling generous? Here are a few of my favorite charities.
 
 [Nashville Community Fridge](https://www.instagram.com/nashvillecommunityfridge)
 
-Last February, I climbed a mile for Paradox Sports, thank you everyone for helping me hit my goal. To continue to support Paradox Sports you can [Donate Here](https://paradoxsports.salsalabs.org/pdxmile-climb-nashville22/p/johnfranke/index.html)
+Last February, I climbed a mile for Paradox Sports, thank you everyone for helping me hit my goal. To continue to support you can [Donate to Paradox Sports](https://paradoxsports.salsalabs.org/pdxmile-climb-nashville22/p/johnfranke/index.html) through my page.
+
+[Donate to OXFAM](https://www.oxfamamerica.org/donate/)
+
+[Donate to Project Health Children](https://projecthealthychildren.org/)
 
 or [Help fund this blog](contribute)
 
-
 ---
 
-This blog was generated via [✨ agave ✨](https://github.com/jottenlips/agave), a static site generator I wrote with ReasonML that turns markdown files into html.
+This blog was generated via [agave](https://github.com/jottenlips/agave), a static site generator I wrote with ReasonML that turns markdown files (.md) into custom styled html and css.
 
 Agave is as simple as:
 
