@@ -25,7 +25,7 @@ which node
 
 Install a text editor.
 
-https://code.visualstudio.com/Download (I use this at work usually)
+[vscode](https://code.visualstudio.com/Download) (I use this at work usually)
 
 ```shell
 # makes a folder called programming, you can name this whatever you'd like.
