@@ -7,7 +7,9 @@
 
 ---
 
-Feeling generous? Here are a few of my favorite charities.
+## Feeling generous? 
+
+Here are a few of my favorite charities.
 
 [Nashville Community Fridge](https://www.instagram.com/nashvillecommunityfridge)🥕🍉🥑🍅🍇🥝🥔🍍🍊🍌🍈🥭🍎🍒🍠🍓🥜🍑🥒🍋
 
