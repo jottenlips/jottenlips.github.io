@@ -1,14 +1,15 @@
-name: Deploy Agave Site
+name: Run Agave
 on: 
   push:
     branches:
       - main
 jobs:
-  date:
+  agave:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
         uses: actions/checkout@v2
+
       - uses: actions/setup-node@v3
         with:
           node-version: 16
@@ -16,9 +17,9 @@ jobs:
       - name: build site
         run: |
           # do some operation that changes a file in the git repo
-          sudo npm i -g agave-generator
-          agave -p docs
-
+          npm i
+          npm run build site
+          
       - name: git config
         run: |
           git config user.name "GitHub Bot"
