@@ -1,15 +1,17 @@
-# Let's start a front-end web project.
+# Let's make a React App.
+
+A common pattern in modern web development is the Single Page Application, or (SPA). This concept is where a single index.html file is sent to a browser that contains the code to run your application. It may request other resources like css files and javascript chunks depending on the size of your application and the framework and libraries you use. For this tutorial we will use create-react-app to spin up your first app. We will also put the app behind version control.
 
 🛠 Tools you will be adding to your repertoire:
 
-- Git
+> - Git
 
-- React
+> - React
 
-## Install Git, it comes with xcode on macos
+## Install Git, it comes with xcode-select on macos
 
 ```
-xcode -select--install
+xcode-select --install
 ```
 
 ## Create a react app named my-app
@@ -37,7 +39,7 @@ Now that you have your first app running, let's make a simple app using react ho
 import React from "react";
 import "./App.css";
 const { useState } = React;
-// We can use an arrow function here as well.
+// We can use an arrow function here, personal preference.
 // In react you create apps from components.
 // These components can be functions as seen below
 // Entire apps can be composed of "functional components"
@@ -74,7 +76,7 @@ const App = () => {
 export default App;
 ```
 
-```
+```javascript
 // getFifth.js
 export const getFifth = (note) => {
   console.log(note);
@@ -127,17 +129,16 @@ Once you are happy with your app. Let's make sure your code is under version con
 ```
 ## cd to your project
 git init # initialize a git repo in your project
-git checkout -b main
+git switch -c main
 
-# add the remote to your local git repo
-
+# add the remote to your local git repo, replace username with your username
 git remote add origin https://github.com/username/my-app
 
 # make a .gitignore
 touch .gitignore
 
 # ignore your node_modules by adding node_modules to this file
-echo node_modules >> .gitignore
+echo "node_modules/" >> .gitignore
 
 # add your code to the staging area
 git add --all

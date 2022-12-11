@@ -1,40 +1,39 @@
-# Intro to Node.js and JavaScript: functions
+# 1. Setup a Node.JS environment and write your first function
 
 These posts are designed to familiarize yourself with modern web development tools as well as teach you JavaScript. I will be using MacOS for these tutorials. Here is a list of tools for getting started.
 
 > - The terminal app
 > - homebrew
-> - node and NPM
+> - NVM, node, and NPM
 > - Your favorite text or code editor, sublime text or vscode for me
 
-First, install [homebrew](https://brew.sh) This is a package manager for MacOS.
+Install [homebrew](https://brew.sh) This is a package manager for MacOS.
 
-Then, open the terminal app and type.
 
-```
-brew install node # installs node and npm
+open the terminal app and type.
+
+```shell
+# current homebrew install command
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+# installs node version manager, it may give you additional steps to follow.
+brew install nvm 
+# which node will tell you if node is in the correct path
+# it should include nvm in the output
+which node
+nvm install --lts # installs latest node and npm
 ```
 
 Install a text editor.
 
-```
-# install installer for apps
-brew install caskroom / cask / brew - cask
-# verify install
-brew tap caskroom / versions
-# install Sublime Text application
-brew cask install sublime - text
-```
+https://code.visualstudio.com/Download (I use this at work usually)
 
-or https://code.visualstudio.com/Download (I use this at work)
-
-```
+```shell
 # makes a folder called programming, you can name this whatever you'd like.
 mkdir programming
 # changes directory so that you will be in your programming directory.
 cd programming
-# create a file named mynewfile.js.
-touch mynewfile.js
+# create a file named add.js.
+touch add.js
 ```
 
 There is one feature in programming that is powerful enough to do almost anything you would want, especially in JavaScript. This feature is called a function.
@@ -43,25 +42,39 @@ Functions are just how you remember them in math class, ie input => output
 
 Let's write our first function.
 
-```
+```javascript
 // Functions can be as easy as add.
-const add = (x, y) => x + y
+const add = (x, y) => x + y;
 // which is shorthand for
 const add = (x, y) => {
-    return x + y
+    return x + y;
 }
+// or
+function add(x,y) { 
+    return x+y;
+}
+// it usually comes down to personal preference
+// or sometimes performance
+
 // Here is how you can use it.
-const sum = add(1, 2)
+const sum = add(1, 2);
 // this function will print our result
 console.log(sum) // 3
+// you can also export functions so other files can see them
+export add;
 ```
 
 Think of a topic that interests you. I like music theory so I am going to write a simple function that tells me the fifth of any note I put in. Here is the code!
 
-Use your text editor to add this to mynewfile.js.
-
 ```
-# mynewfile.js
+# create the file using your terminal, or text editor
+touch musicTheory.js
+```
+
+Open the file in vscode or an editor of your choice.
+
+```javascript
+# musicTheory.js
 const getFifth = (note) => {
     // make the input note lowercase
     const lowerCaseNote = note.toLowerCase()
@@ -104,13 +117,7 @@ console.log(`The fifth of Gb is ${fifthOfGb}`)
 Run node in your terminal to run the program.
 
 ```
-node mynewfile.js
-```
-
-Open mynewfile.js, write your own function, and run again.
-
-```
-node mynewfile.js
+node musicTheory.js # or whatever file name you chose
 ```
 
 ✨ Congratulations! you have written your first function. Tomorrow we will cover making your first Web App.
