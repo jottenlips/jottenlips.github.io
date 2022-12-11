@@ -18,8 +18,8 @@ jobs:
         run: |
           # do some operation that changes a file in the git repo
           npm i
-          npm run build site
-          
+          npm run build
+
       - name: git config
         run: |
           git config user.name "GitHub Bot"
