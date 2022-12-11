@@ -12,8 +12,9 @@
     <meta name="twitter:description" content="Blog about music, programming, cooking, and more." />
     <meta name="twitter:image" content="https://github.com/jottenlips/jottenlips.github.io/blob/main/keyboard.jpg?raw=true" />
     <meta name="twitter:card" content="summary_large_image" />
-    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/javascript.min.js"></script>
 </head>
 
 <body>
@@ -69,10 +70,14 @@ agave -p docs</code></pre>
     <script>
         // hide back button on home page
         window.onload = function() {
-            if (window.location.pathname === '/') {
-                window.document.getElementsByClassName('back')[0].style.display = 'none';
-            }
-        }
+                if (window.location.pathname === '/') {
+                    window.document.getElementsByClassName('back')[0].style.display = 'none';
+                }
+
+                const elements = window.document.getElementsByClassName('javascript')
+                elements.forEach(el => el.classList.add('language-javascript')
+
+                }
     </script>
 
 </body>
