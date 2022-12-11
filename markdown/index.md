@@ -4,7 +4,6 @@
 > This site is a catchall for my creative processes, general ongoings, and opinions.
 >
 > Thanks for reading,
->
 
 ---
 
