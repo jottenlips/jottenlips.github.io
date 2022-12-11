@@ -51,14 +51,14 @@
     <script>
         // hide back button on home page
         window.onload = function() {
-                if (window.location.pathname === '/') {
-                    window.document.getElementsByClassName('back')[0].style.display = 'none';
-                }
+            if (window.location.pathname === '/') {
+                window.document.getElementsByClassName('back')[0].style.display = 'none';
+            }
 
-                const elements = window.document.getElementsByClassName('javascript')
-                elements.forEach(el => el.classList.add('language-javascript')
+            const elements = window.document.getElementsByClassName('javascript')
+            Array.from(elements).forEach(el => el.classList.add('language-javascript'))
 
-                }
+        }
     </script>
 
 </body>
