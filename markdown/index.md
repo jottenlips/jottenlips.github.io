@@ -2,7 +2,6 @@
 
 > Hey, I am a musician, artist, and programmer living in Nashville TN.
 > This site is a catchall for my creative processes, general ongoings, and opinions.
-> You can also find me at [@zerocool@mastodon.world](https://mastodon.world/@zerocool)
 >   
 > Thanks for reading,
 
