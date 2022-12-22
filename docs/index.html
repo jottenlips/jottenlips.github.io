@@ -77,8 +77,8 @@ agave -p docs</code></pre>
         }
         document.addEventListener('DOMContentLoaded', (event) => {
             document.querySelectorAll('code').forEach((el) => {
-                if (el.className == "javascript") {
-                    el.classList.add('language-javascript')
+                if (el.className == "javascript" || el.className == "bash") {
+                    el.classList.add(`language-${el.className}`)
                     hljs.highlightElement(el);
                 }
             });
