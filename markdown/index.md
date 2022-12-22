@@ -1,7 +1,7 @@
-> # John Franke's Blog, Welcome!
+> # Welcome!
 
-> Hey, I am a musician, artist, and programmer living in Nashville TN.
-> This site is a catchall for my creative processes, general ongoings, and opinions.
+> Hey, I am John Franke, a programmer and musician living in Nashville Tennessee.
+> I made this site to post tutorials, articles, and some music.
 >   
 > Thanks for reading,
 
