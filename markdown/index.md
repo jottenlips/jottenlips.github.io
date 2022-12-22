@@ -42,6 +42,6 @@ For code syntax highlighting, I am using [highlight.js](https://highlightjs.org/
 
 ## Like what I do?
 
-This blog and open source code requires a lot of caffeine.
+This blog and open source code require a lot of caffeine.
 
 [Buy me a coffee](contribute)
