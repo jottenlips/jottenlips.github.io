@@ -19,8 +19,6 @@ Last February, I climbed a mile for Paradox Sports, thank you everyone for helpi
 
 [Donate to Project Health Children](https://projecthealthychildren.org/)
 
-or [Help fund this blog](contribute)
-
 ---
 
 This blog was generated via [agave](https://github.com/jottenlips/agave), a static site generator I wrote with ReasonML that turns markdown files (.md) into custom styled html and css.
@@ -39,3 +37,11 @@ agave -p docs
 And push to your GitHub io page, or upload to any other static site hosting service.
 
 For code syntax highlighting, I am using [highlight.js](https://highlightjs.org/) in my base.html file.
+
+---
+
+## Like what I do?
+
+This blog and open source code requires a lot of caffeine.
+
+[Buy me a coffee](contribute)
