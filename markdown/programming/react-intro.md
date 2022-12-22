@@ -10,26 +10,26 @@ A common pattern in modern web development is the Single Page Application, or (S
 
 ## Install Git, it comes with xcode-select on macos
 
-```
+```bash
 xcode-select --install
 ```
 
 ## Create a react app named my-app
 
-```
+```bash
 npx create-react-app my-app
 cd my-app
 ```
 
 ## install dependencies
 
-```
+```bash
 npm i
 ```
 
 ## run your app
 
-```
+```bash
 npm start
 ```
 
@@ -112,13 +112,13 @@ Try to make an app for making a list of groceries, chores, mood-board, or someth
 
 Hint: You can use useState with other data types like arrays and objects.
 
-```
+```javascript
 const [groceries, setGroceries] = useState([])
 ```
 
 You can also "spread" old items with a new item to make a new array with all of the items. ... is the spread operator.
 
-```
+```javascript
 setGroceries([...groceries, newGroceryItem])
 ```
 
@@ -126,7 +126,7 @@ For more info on React, Check out the docs
 
 Once you are happy with your app. Let's make sure your code is under version control for future updates and collaboration with other developers using Git. First sign-up or login to Github, https: //github.com/. Make a new repository for my-app.
 
-```
+```bash
 ## cd to your project
 git init # initialize a git repo in your project
 git switch -c main
