@@ -66,7 +66,7 @@ export add;
 
 Think of a topic that interests you. I like music theory so I am going to write a simple function that tells me the fifth of any note I put in. Here is the code!
 
-```
+```bash
 # create the file using your terminal, or text editor
 touch musicTheory.js
 ```
@@ -116,7 +116,7 @@ console.log(`The fifth of Gb is ${fifthOfGb}`)
 
 Run node in your terminal to run the program.
 
-```
+```bash
 node musicTheory.js # or whatever file name you chose
 ```
 
