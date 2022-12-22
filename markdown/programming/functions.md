@@ -12,7 +12,7 @@ Install [homebrew](https://brew.sh) This is a package manager for MacOS.
 
 open the terminal app and type.
 
-```shell
+```bash
 # current homebrew install command, may take a minute
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 # installs node version manager, it may give you additional steps to follow.
@@ -27,7 +27,7 @@ Install a text editor.
 
 [vscode](https://code.visualstudio.com/Download) (I use this at work usually)
 
-```shell
+```bash
 # makes a folder called programming, you can name this whatever you'd like.
 mkdir programming
 # changes directory so that you will be in your programming directory.
