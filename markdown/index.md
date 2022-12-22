@@ -17,7 +17,7 @@ Last February, I climbed a mile for Paradox Sports. Thank you everyone for helpi
 
 [Donate to OXFAM](https://www.oxfamamerica.org/donate/)
 
-[Donate to Project Health Children](https://projecthealthychildren.org/)
+[Donate to Project Healthy Children](https://projecthealthychildren.org/)
 
 ---
 
