@@ -228,22 +228,4 @@ When you go back to the movies screen you should see all of the metadata for the
 4. Click `Find Kodi` on the mobile app and enter your username and password: `pi` and `raspberry` if you still haven't reset the password. You can and should change the password for your raspberry pi user via the `raspi-config` command. 
 
 
-# Performance
-
-If you notice some movies aren't playing you may need to turn on some hardware accelerations
-
-```bash
-sudo nano /boot/config.txt
-```
-
-```bash
-gpu_mem_1024=512
-```
-
-`Ctrl X`, `Y`, `Enter`
-
-```
-reboot
-```
-
 🍿 Congrats! You are now running your own media server on a raspberry pi! 🍿
