@@ -42,7 +42,7 @@ Password: raspberry
 sudo raspi-config
 ```
 
-1. Localisation Options
+1. Localization Options
 
 2. WLAN Country Set...
 
