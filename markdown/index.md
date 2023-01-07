@@ -1,8 +1,7 @@
-> # John Franke's Blog, Welcome!
+> # Welcome!
 
-> Hey, I am a musician, artist, and programmer living in Nashville TN.
-> This site is a catchall for my creative processes, general ongoings, and opinions.
-> You can also find me at [@zerocool@mastodon.world](https://mastodon.world/@zerocool)
+> Hey, I am John Franke, a programmer and musician living in Nashville Tennessee.
+> I made this site to post tutorials, articles, and some music.
 >   
 > Thanks for reading,
 
@@ -14,13 +13,11 @@ Here are a few of my favorite charities.
 
 [Nashville Community Fridge](https://www.instagram.com/nashvillecommunityfridge) 🥕🍉🥑🍅🍇🥝🍍🍊🍌🍈🥭
 
-Last February, I climbed a mile for Paradox Sports, thank you everyone for helping me hit my goal. To continue to support you can [Donate to Paradox Sports](https://paradoxsports.salsalabs.org/pdxmile-climb-nashville22/p/johnfranke/index.html) through my page.
+Last February, I climbed a mile for Paradox Sports. Thank you everyone for helping me hit my goal. To continue to support you can [Donate to Paradox Sports](https://paradoxsports.salsalabs.org/pdxmile-climb-nashville22/p/johnfranke/index.html) through my page.
 
 [Donate to OXFAM](https://www.oxfamamerica.org/donate/)
 
-[Donate to Project Health Children](https://projecthealthychildren.org/)
-
-or [Help fund this blog](contribute)
+[Donate to Project Healthy Children](https://projecthealthychildren.org/)
 
 ---
 
@@ -40,3 +37,11 @@ agave -p docs
 And push to your GitHub io page, or upload to any other static site hosting service.
 
 For code syntax highlighting, I am using [highlight.js](https://highlightjs.org/) in my base.html file.
+
+---
+
+## Like what I do?
+
+This blog and open source code require a lot of caffeine.
+
+[Buy me a coffee](contribute)
