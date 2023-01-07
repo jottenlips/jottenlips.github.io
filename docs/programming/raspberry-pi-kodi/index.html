@@ -36,7 +36,7 @@
         <div class="block">
             <a href="javascript:history.go(-1)" class="back">
                 <- Go Back</a>
-                    <h1 id="Raspberry-Pi-Media-Server-with-Kodi-and-ExFAT-Drive">Raspberry Pi Media Server with Kodi and ExFAT Drive</h1>
+                    <h1 id="Raspberry-Pi-Media-Server-with-Kodi-and-ExFAT-External-Drive">Raspberry Pi Media Server with Kodi and ExFAT External Drive</h1>
 
 <blockquote><p>Written January 7th, 2023</p>
 </blockquote>
@@ -182,16 +182,6 @@ network={
 </li><li><p>Download the Kodi app on the Apple or Android store.</p>
 </li><li><p>Click <code>Find Kodi</code> on the mobile app and enter your username and password: <code>pi</code> and <code>raspberry</code> if you still haven&#39;t reset the password. You can and should change the password for your raspberry pi user via the <code>raspi-config</code> command.</p>
 </li></ol>
-
-<h1 id="Performance">Performance</h1>
-
-<p>If you notice some movies aren&#39;t playing you may need to turn on some hardware accelerations</p>
-<pre class='bash'><code class='bash'>sudo nano /boot/config.txt</code></pre>
-
-<pre class='bash'><code class='bash'>gpu_mem_1024=512</code></pre>
-
-<p><code>Ctrl X</code>, <code>Y</code>, <code>Enter</code></p>
-<pre><code>reboot</code></pre>
 
 <p>🍿 Congrats! You are now running your own media server on a raspberry pi! 🍿</p>
 
