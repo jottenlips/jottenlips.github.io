@@ -112,13 +112,16 @@ network={
 
 <h1 id="Install-Kodi-exfat-fuse-and-fsauto">Install Kodi, exfat-fuse, and fsauto</h1>
 
+<ol><li>Install dependencies</li></ol>
+
 <pre><code>sudo apt-get update</code></pre>
 
 <pre><code>sudo apt-get install kodi</code></pre>
 
 <pre><code>sudo apt-get install exfat-fuse exfat-utils</code></pre>
 
-<p>Reboot and plug in your external hard drive to the usb port</p>
+<ol><li>Reboot and plug in your external hard drive to the usb port</li></ol>
+
 <pre><code>reboot</code></pre>
 
 <h1 id="Auto-mount-your-external-hard-drive">Auto mount your external hard drive</h1>
@@ -145,6 +148,8 @@ network={
 <p>add this line</p>
 <pre><code>movies -fstype=auto,uid-pi,gid=pi,rw UUID=YOUR-UUID</code></pre>
 
+<p>click <code>Ctrl X</code>, <code>Y</code>, <code>Enter</code></p>
+<p>Restart autofs</p>
 <pre><code>sudo systemctl restart autofs.service</code></pre>
 
 <h1 id="Make-Kodi-boot-on-start">Make Kodi boot on start</h1>
@@ -160,12 +165,13 @@ network={
 
 <h1 id="Add-Movie-Metadata">Add Movie Metadata</h1>
 
-<ol><li><p>Go to movies</p>
-</li><li><p>Add path to movies on hard drive</p>
-</li><li><p>Set the directory contains type to movies for scraping data</p>
-</li><li><p>Click options in the lower left corner and then update library</p>
+<ol><li><p>Go to movies, Click <code>Enter files section</code></p>
+</li><li><p>Click <code>+ Add videos</code> and then <code>Browse</code> into folder where your movies are</p>
+</li><li><p>Set the directory contains type to <code>movies</code> for scraping data</p>
+</li><li><p>Click options in the lower left corner to <code>Update library</code> under <code>Actions</code></p>
 </li></ol>
 
+<p>When you go back to the movies screen you should see all of the metadata for the movies on your drive.</p>
 <h1 id="Setup-Remote">Setup Remote</h1>
 
 <ol><li><p>Go to <code>Settings</code> via the gear icon, then =&gt; <code>Service Settings</code> =&gt; <code>Control</code></p>
