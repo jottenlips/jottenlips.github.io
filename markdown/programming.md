@@ -6,3 +6,4 @@
 
 [Using MIDI in the Browser Example](https://jottenlips.github.io/making-midi)
 
+[Running a Rust Web Server on AWS with Fargate](https://github.com/jottenlips/hello-rocket)

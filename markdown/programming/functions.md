@@ -12,7 +12,7 @@ Install [homebrew](https://brew.sh) This is a package manager for MacOS.
 
 open the terminal app and type.
 
-```shell
+```bash
 # current homebrew install command, may take a minute
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 # installs node version manager, it may give you additional steps to follow.
@@ -27,7 +27,7 @@ Install a text editor.
 
 [vscode](https://code.visualstudio.com/Download) (I use this at work usually)
 
-```shell
+```bash
 # makes a folder called programming, you can name this whatever you'd like.
 mkdir programming
 # changes directory so that you will be in your programming directory.
@@ -66,7 +66,7 @@ export add;
 
 Think of a topic that interests you. I like music theory so I am going to write a simple function that tells me the fifth of any note I put in. Here is the code!
 
-```
+```bash
 # create the file using your terminal, or text editor
 touch musicTheory.js
 ```
@@ -116,7 +116,7 @@ console.log(`The fifth of Gb is ${fifthOfGb}`)
 
 Run node in your terminal to run the program.
 
-```
+```bash
 node musicTheory.js # or whatever file name you chose
 ```
 

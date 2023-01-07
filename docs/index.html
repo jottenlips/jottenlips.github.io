@@ -12,7 +12,7 @@
     <meta name="twitter:description" content="Blog about music, programming, cooking, and more." />
     <meta name="twitter:image" content="https://github.com/jottenlips/jottenlips.github.io/blob/main/keyboard.jpg?raw=true" />
     <meta name="twitter:card" content="summary_large_image" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/dark.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github-dark.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/javascript.min.js"></script>
 </head>
@@ -21,11 +21,11 @@
     <div class="coverimage" />
     <div class="container">
         <div class="nav">
-            <a class="link" href="/">Home</a>
-            <a class="link" href="/music">Music</a>
+            <a class="link" href="/">Home 🏡</a>
+            <a class="link" href="/programming">Programming 💻</a>
             <!-- <a class="link" href="/blog">Blog</a> -->
-            <a class="link" href="/programming">Programming</a>
-            <a class="link" href="/recipes">Recipes</a>
+            <a class="link" href="/music">Music 🎸</a>
+            <a class="link" href="/recipes">Recipes 🍴</a>
             <a class="link" href="https://github.com/jottenlips">
                 <img style="width: 25px; height: 25px" src="https://img.icons8.com/ios-filled/50/000000/git.png" />
             </a>
@@ -36,11 +36,10 @@
         <div class="block">
             <a href="javascript:history.go(-1)" class="back">
                 <- Go Back</a>
-                    <blockquote><h1 id="John-Franke-39-s-Blog-Welcome">John Franke&#39;s Blog, Welcome!</h1>
+                    <blockquote><h1 id="Welcome">Welcome!</h1>
 
-<p>Hey, I am a musician, artist, and programmer living in Nashville TN.
-This site is a catchall for my creative processes, general ongoings, and opinions.
-You can also find me at <a href='https://mastodon.world/@zerocool'>@zerocool@mastodon.world</a></p>
+<p>Hey, I am John Franke, a programmer and musician living in Nashville Tennessee.
+I made this site to post tutorials, articles, and some music.</p>
 <p>Thanks for reading,</p>
 </blockquote>
 
@@ -49,10 +48,9 @@ You can also find me at <a href='https://mastodon.world/@zerocool'>@zerocool@mas
 
 <p>Here are a few of my favorite charities.</p>
 <p><a href='https://www.instagram.com/nashvillecommunityfridge'>Nashville Community Fridge</a> 🥕🍉🥑🍅🍇🥝🍍🍊🍌🍈🥭</p>
-<p>Last February, I climbed a mile for Paradox Sports, thank you everyone for helping me hit my goal. To continue to support you can <a href='https://paradoxsports.salsalabs.org/pdxmile-climb-nashville22/p/johnfranke/index.html'>Donate to Paradox Sports</a> through my page.</p>
+<p>Last February, I climbed a mile for Paradox Sports. Thank you everyone for helping me hit my goal. To continue to support you can <a href='https://paradoxsports.salsalabs.org/pdxmile-climb-nashville22/p/johnfranke/index.html'>Donate to Paradox Sports</a> through my page.</p>
 <p><a href='https://www.oxfamamerica.org/donate/'>Donate to OXFAM</a></p>
-<p><a href='https://projecthealthychildren.org/'>Donate to Project Health Children</a></p>
-<p>or <a href='contribute'>Help fund this blog</a></p>
+<p><a href='https://projecthealthychildren.org/'>Donate to Project Healthy Children</a></p>
 <p><hr/>This blog was generated via <a href='https://github.com/jottenlips/agave'>agave</a>, a static site generator I wrote with ReasonML that turns markdown files (.md) into custom styled html and css.</p>
 <pre class='bash'><code class='bash'>npm i -g agave-generator
 # for theming your own site
@@ -65,6 +63,11 @@ agave -p docs</code></pre>
 
 <p>And push to your GitHub io page, or upload to any other static site hosting service.</p>
 <p>For code syntax highlighting, I am using <a href='https://highlightjs.org/'>highlight.js</a> in my base.html file.</p>
+<p><hr/></p>
+<h2 id="Like-what-I-do">Like what I do?</h2>
+
+<p>This blog and open source code require a lot of caffeine.</p>
+<p><a href='contribute'>Buy me a coffee</a></p>
 
         </div>
     </div>
@@ -78,8 +81,8 @@ agave -p docs</code></pre>
         }
         document.addEventListener('DOMContentLoaded', (event) => {
             document.querySelectorAll('code').forEach((el) => {
-                if (el.className == "javascript") {
-                    el.classList.add('language-javascript')
+                if (el.className == "javascript" || el.className == "bash") {
+                    el.classList.add(`language-${el.className}`)
                     hljs.highlightElement(el);
                 }
             });
