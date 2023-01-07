@@ -113,6 +113,8 @@ Now you can run commands from another computer.
 
 # Install Kodi, exfat-fuse, and fsauto
 
+1. Install dependencies
+
 ```
 sudo apt-get update
 ```
@@ -125,8 +127,7 @@ sudo apt-get install kodi
 sudo apt-get install exfat-fuse exfat-utils
 ```
 
-
-Reboot and plug in your external hard drive to the usb port
+2. Reboot and plug in your external hard drive to the usb port
 
 ```
 reboot
@@ -174,6 +175,10 @@ add this line
 movies -fstype=auto,uid-pi,gid=pi,rw UUID=YOUR-UUID
 ```
 
+click `Ctrl X`, `Y`, `Enter`
+
+Restart autofs
+
 ```
 sudo systemctl restart autofs.service
 ```
@@ -200,13 +205,15 @@ reboot
 
 # Add Movie Metadata
 
-1. Go to movies
+1. Go to movies, Click `Enter files section`
 
-2. Add path to movies on hard drive
+2. Click `+ Add videos` and then `Browse` into folder where your movies are
 
-3. Set the directory contains type to movies for scraping data
+3. Set the directory contains type to `movies` for scraping data
 
-4. Click options in the lower left corner and then update library
+4. Click options in the lower left corner to `Update library` under `Actions`
+
+When you go back to the movies screen you should see all of the metadata for the movies on your drive.
 
 # Setup Remote
 
