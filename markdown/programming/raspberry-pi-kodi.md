@@ -1,4 +1,4 @@
-# Raspberry Pi Media Server with Kodi and ExFAT Drive
+# Raspberry Pi Media Server with Kodi and ExFAT External Drive
 
 > Written January 7th, 2023
 
