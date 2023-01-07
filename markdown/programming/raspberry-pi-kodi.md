@@ -33,7 +33,7 @@ Materials:
 4. Login
 
 ```bash
-raspberrypi logi: pi
+raspberrypi login: pi
 Password: raspberry
 ```
 
