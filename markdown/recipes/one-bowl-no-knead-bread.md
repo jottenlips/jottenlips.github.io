@@ -32,11 +32,9 @@ Wait for 12 hours or longer.
 ## Fold
 
 Use a spatula to fold the dough from the top and again from the sides.
-Let rest for 15 mins to 2hrs.
+Let rest for 15 min while you preheat oven to 450 F.
 
 ## Bake
-
-Preheat oven to 450 F
 
 Pour cornmeal on top of the dough ball into the bowl. Use a spoon to flip the dough ball and add more cornmeal. 
 Add a light dusting to the bottom of your dutch oven.
