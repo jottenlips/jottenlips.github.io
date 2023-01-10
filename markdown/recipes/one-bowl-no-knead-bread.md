@@ -22,6 +22,8 @@ Tools:
 
 >- spatula
 
+>- knife
+
 ## Mix
 
 Put the first three dry ingredients together in a bowl, zeroing out the scale as you go.
@@ -32,6 +34,7 @@ Wait for 12 hours or longer.
 ## Fold
 
 Use a spatula to fold the dough from the top and again from the sides.
+Slice the top with a sharp knife.
 Let rest for 15 min while you preheat oven to 450 F.
 
 ## Bake
