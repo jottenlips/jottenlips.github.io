@@ -24,6 +24,8 @@ Tools:
 
 >- knife
 
+>- wire rack
+
 ## Mix
 
 Put the first three dry ingredients together in a bowl, zeroing out the scale as you go.
@@ -44,7 +46,7 @@ Add a light dusting to the bottom of your dutch oven.
 Bake covered for 35 minutes.
 Take the cover off and bake again for 15-25, depending on how dark you want the loaf.
 
-Once you take it out of the oven, let it rest for at least 30 minutes.
+Once you take it out of the oven, let it rest for at least 30 minutes on a wire rack.
 
 🍞 Enjoy! 🥖
 
