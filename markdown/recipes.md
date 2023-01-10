@@ -1,3 +1,3 @@
 [Eco Micro recipes](micro-recipes/)
 
-[One bowl no knead bread](one-bowl-no-knead-bread/)
+[One bowl dutch oven no-knead bread](one-bowl-no-knead-bread/)
