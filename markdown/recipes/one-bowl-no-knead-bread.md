@@ -1,6 +1,6 @@
 # One bowl dutch oven no-knead bread recipe
 
-[!small](https://github.com/jottenlips/jottenlips.github.io/blob/aeed42fef1d5ffd10e69a8ea5b44de14bc0e0c85/IMG_0702.jpeg?raw=true)
+![small](https://github.com/jottenlips/jottenlips.github.io/blob/aeed42fef1d5ffd10e69a8ea5b44de14bc0e0c85/IMG_0702.jpeg?raw=true)
 
 Based on the NYT no-knead recipe, simplified.
 
