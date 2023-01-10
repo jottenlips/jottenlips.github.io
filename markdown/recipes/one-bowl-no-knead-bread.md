@@ -38,8 +38,8 @@ Let rest for 15 min while you preheat oven to 450 F.
 
 Pour cornmeal on top of the dough ball. Use a spatula to flip the dough ball and add more cornmeal. 
 Add a light dusting to the bottom of your dutch oven.
-Cook covered for 35 minutes.
-Take the cover off and cook again for 15-25, depending on how dark you want the loaf.
+Bake covered for 35 minutes.
+Take the cover off and bake again for 15-25, depending on how dark you want the loaf.
 
 Once you take it out of the oven, let it rest for at least 30 minutes.
 
