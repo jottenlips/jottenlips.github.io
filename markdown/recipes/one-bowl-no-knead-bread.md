@@ -1,12 +1,10 @@
-# One bowl, one cast iron, no knead bread recipe
+# One bowl dutch oven no-knead bread recipe
 
-Based on the NYT no knead recipe, but even more simplified
-
-I have been tweaking there recipe and this is what 
+Based on the NYT no-knead recipe, simplified.
 
 Ingredients:
 
->- 430-435 grams of all purpose flour
+>- 430-435 grams of all-purpose flour
 
 >- 4-6 grams of yeast
 
@@ -15,6 +13,14 @@ Ingredients:
 >- 345 grams of water, about 1 1/2 cups
 
 >- cornmeal for coating the dough ball
+
+Tools:
+
+>- large bowl with cover or plate
+
+>- dutch oven
+
+>- spatula
 
 ## Mix
 
@@ -25,15 +31,17 @@ Wait for 12 hours or longer.
 
 ## Fold
 
-Use a spoon to get under the dough ball, fold once from the top and again from the side.
+Use a spatula to fold the dough from the top and again from the sides.
 Let rest for 15 mins to 2hrs.
 
 ## Bake
 
-Pour corn meal on top of the dough ball in the bowl. Use a spoon to flip tbe dough ball and add more cornmeal. 
-Add a light dusting to the bottom of your cast iron or dutch oven.
-Cook covered for 35 minutes on 450 F.
-Take cover off and cook again for 15-25 depending on how dark you want the loaf
+Preheat oven to 450 F
+
+Pour cornmeal on top of the dough ball into the bowl. Use a spoon to flip the dough ball and add more cornmeal. 
+Add a light dusting to the bottom of your dutch oven.
+Cook covered for 35 minutes.
+Take the cover off and cook again for 15-25, depending on how dark you want the loaf.
 
 Once you take it out of the oven, let it rest for at least 30 minutes.
 
@@ -41,5 +49,5 @@ Once you take it out of the oven, let it rest for at least 30 minutes.
 
 ## Bonus tip
 
-You can also mix small seeds into the dough at the dry ingredient stage or cover the loaf with seeds before baking.
+You can mix tiny seeds into the dough at the dry ingredient stage or cover the loaf with seeds before baking.
 I like to use hemp seeds since they are small and nutritious.
