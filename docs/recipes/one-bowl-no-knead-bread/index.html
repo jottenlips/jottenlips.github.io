@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>John Ottenlips Franke | Blog | Music | Programming | Recipes</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <meta property="og:title" content="John Ottenlips Franke | Blog | Music | Programming | Recipes" />
+    <meta property="og:image" content="https://github.com/jottenlips/jottenlips.github.io/blob/main/keyboard.jpg?raw=true" />
+    <meta name="twitter:title" content="John Ottenlips Franke | Blog | Music | Programming | Recipes" />
+    <meta name="twitter:description" content="Blog about music, programming, cooking, and more." />
+    <meta name="twitter:image" content="https://github.com/jottenlips/jottenlips.github.io/blob/main/keyboard.jpg?raw=true" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/javascript.min.js"></script>
+</head>
+
+<body>
+    <div class="coverimage" />
+    <div class="container">
+        <div class="nav">
+            <a class="link" href="/">Home 🏡</a>
+            <a class="link" href="/programming">Programming 💻</a>
+            <!-- <a class="link" href="/blog">Blog</a> -->
+            <a class="link" href="/music">Music 🎸</a>
+            <a class="link" href="/recipes">Recipes 🍴</a>
+            <a class="link" href="https://github.com/jottenlips">
+                <img style="width: 25px; height: 25px" src="https://img.icons8.com/ios-filled/50/000000/git.png" />
+            </a>
+            <a class="link" href="https://ottobahn.bandcamp.com/">
+                <img style="width: 25px; height: 25px" src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Bandcamp-button-circle-green.svg" />
+            </a>
+        </div>
+        <div class="block">
+            <a href="javascript:history.go(-1)" class="back">
+                <- Go Back</a>
+                    <h1 id="One-bowl-one-cast-iron-no-knead-bread-recipe">One bowl, one cast iron, no knead bread recipe</h1>
+
+<p>Based on the NYT no knead recipe, but even more simplified</p>
+<p>I have been tweaking there recipe and this is what</p>
+<p>Ingredients:</p>
+<p>&gt;- 430-435 grams of all purpose flour</p>
+<p>&gt;- 4-6 grams of yeast</p>
+<p>&gt;- 6 grams salt</p>
+<p>&gt;- 345 grams of water, about 1 1/2 cups</p>
+<p>&gt;- cornmeal for coating the dough ball</p>
+<h2 id="Mix">Mix</h2>
+
+<p>Put the first three dry ingredients together in a bowl, zeroing out the scale as you go.
+Next, add the water. 
+Mix until shaggy.
+Wait for 12 hours or longer.</p>
+<h2 id="Fold">Fold</h2>
+
+<p>Use a spoon to get under the dough ball, fold once from the top and again from the side.
+Let rest for 15 mins to 2hrs.</p>
+<h2 id="Bake">Bake</h2>
+
+<p>Pour corn meal on top of the dough ball in the bowl. Use a spoon to flip tbe dough ball and add more cornmeal. 
+Add a light dusting to the bottom of your cast iron or dutch oven.
+Cook covered for 35 minutes on 450 F.
+Take cover off and cook again for 15-25 depending on how dark you want the loaf</p>
+<p>Once you take it out of the oven, let it rest for at least 30 minutes.</p>
+<p>🍞 Enjoy! 🥖</p>
+<h2 id="Bonus-tip">Bonus tip</h2>
+
+<p>You can also mix small seeds into the dough at the dry ingredient stage or cover the loaf with seeds before baking.
+I like to use hemp seeds since they are small and nutritious.</p>
+
+        </div>
+    </div>
+
+    <script>
+        // hide back button on home page
+        window.onload = function() {
+            if (window.location.pathname === '/') {
+                window.document.getElementsByClassName('back')[0].style.display = 'none';
+            }
+        }
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.querySelectorAll('code').forEach((el) => {
+                if (el.className == "javascript" || el.className == "bash") {
+                    el.classList.add(`language-${el.className}`)
+                    hljs.highlightElement(el);
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
