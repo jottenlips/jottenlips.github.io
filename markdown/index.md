@@ -13,7 +13,7 @@ Here are a few of my favorite charities.
 
 [Nashville Community Fridge](https://www.instagram.com/nashvillecommunityfridge) 🥕🍉🥑🍅🍇🥝🍍🍊🍌🍈🥭
 
-Last February, I climbed a mile for Paradox Sports. Thank you everyone for helping me hit my goal. To continue to support you can [Donate to Paradox Sports](https://paradoxsports.salsalabs.org/pdxmile-climb-nashville22/p/johnfranke/index.html) through my page.
+This February, I am climbing a mile for Paradox Sports at Climb Nashville. You can [Donate to Paradox Sports](https://paradoxsports.salsalabs.org/paradoxmileclimbnashville2023/p/johnottenlipsfranke/index.html) through my page. Last February, we hit the goal. Let's do it again this year!
 
 [Donate to OXFAM](https://www.oxfamamerica.org/donate/)
 
