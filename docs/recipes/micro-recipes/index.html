@@ -69,7 +69,7 @@ Microwave for 3 minutes.
         }
         document.addEventListener('DOMContentLoaded', (event) => {
             document.querySelectorAll('code').forEach((el) => {
-                if (el.className == "javascript" || el.className == "bash") {
+                if (el.className === "javascript" || el.className === "bash" || el.classname === 'typescript') {
                     el.classList.add(`language-${el.className}`)
                     hljs.highlightElement(el);
                 }

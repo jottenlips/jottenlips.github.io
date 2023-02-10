@@ -36,15 +36,56 @@
         <div class="block">
             <a href="javascript:history.go(-1)" class="back">
                 <- Go Back</a>
-                    <h1 id="Like-what-I-do">Like what I do?</h1>
+                    <h1 id="So-you-need-a-TypeScript-State-Machine">So you need a TypeScript State Machine?</h1>
 
-<h2 id="Support-my-web-services-bill">Support my web services bill</h2>
+<p>Here is a simple, less than 50 line, state machine example in TypeScript for a switch.</p>
+<p>This is inspired by Kent C Dodds. However, I have made a few simplifications as well as added types.</p>
+<pre class='typescript'><code class='typescript'>// the types for our state
+interface IState {
+    // You can add more states
+    on: boolean
+}
+// the types for our state machine
+interface IStateMachine {
+    state: IState
+    actions: {
+        // add more actions to modify state
+        toggle: () =&gt; void
+    }
+    dispatch: (action: keyof IStateMachine[&#39;actions&#39;]) =&gt; IState
+}
 
-<p><a href='https://ko-fi.com/K3K01P2WT'><img src='https://www.ko-fi.com/img/githubbutton_sm.svg' alt='ko-fi' /></a></p>
-<h2 id="Buy-music-on-Bandcamp">Buy music on Bandcamp</h2>
+// the types for our state machine definition
+interface IStateMachineDefition {
+    initialState: IState
+}
 
-<p><a href='https://ottobahn.bandcamp.com/'>Bandcamp</a></p>
+const createMachine = (initialState: IState): IStateMachine =&gt; {
+    const machine: IStateMachine = {
+        state: initialState,
+        actions: {
+            // add more actions to modify state
+            toggle() {
+                machine.state.on = !machine.state.on 
+            },
+        },
+        // dispatch an action
+        dispatch(action: keyof IStateMachine[&#39;actions&#39;]) {
+            machine.actions[action]()
+            return machine.state
+        },
+    }
+    return machine
+}
 
+const initialState = {
+    on: false
+}
+
+const stateMachine = createMachine(initialState)
+console.log(stateMachine.state) // off
+stateMachine.dispatch(&#39;toggle&#39;)
+console.log(stateMachine.state) // on</code></pre>
         </div>
     </div>
 
