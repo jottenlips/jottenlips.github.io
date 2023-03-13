@@ -95,19 +95,20 @@
           window.document.getElementsByClassName("back")[0].style.display =
             "none";
         }
-        document.addEventListener("DOMContentLoaded", (event) => {
-          document.querySelectorAll("code").forEach((el) => {
-            if (
-              el.className === "javascript" ||
-              el.className === "bash" ||
-              el.className === "typescript"
-            ) {
-              el.classList.add(`language-${el.className}`);
-              hljs.highlightElement(el);
-            }
-          });
-        });
       };
+
+      document.addEventListener("DOMContentLoaded", (event) => {
+        document.querySelectorAll("code").forEach((el) => {
+          if (
+            el.className === "javascript" ||
+            el.className === "bash" ||
+            el.className === "typescript"
+          ) {
+            el.classList.add(`language-${el.className}`);
+            hljs.highlightElement(el);
+          }
+        });
+      });
     </script>
   </body>
 </html>
