@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github-dark.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/typescript.min.js"></script>
+
 </head>
 
 <body>
@@ -37,6 +39,7 @@
             <a href="javascript:history.go(-1)" class="back">
                 <- Go Back</a>
                     <p><a href='micro-recipes/'>Eco Micro recipes</a></p>
+<p><a href='one-bowl-no-knead-bread/'>One bowl dutch oven no-knead bread</a></p>
 
         </div>
     </div>
@@ -50,7 +53,7 @@
         }
         document.addEventListener('DOMContentLoaded', (event) => {
             document.querySelectorAll('code').forEach((el) => {
-                if (el.className == "javascript" || el.className == "bash") {
+                if (el.className === "javascript" || el.className === "bash" || el.className === 'typescript') {
                     el.classList.add(`language-${el.className}`)
                     hljs.highlightElement(el);
                 }

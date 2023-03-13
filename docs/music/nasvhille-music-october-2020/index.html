@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github-dark.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/typescript.min.js"></script>
+
 </head>
 
 <body>
@@ -48,6 +50,7 @@
 <p>Bendrix brought out every bit of bittersweet, loneliness, and malaise with guitars, keyboards, and poetry. The rest of the review will be emojis because I cannot express myself as intimately as Bendrix. 🥀 🌘 📓 🍂 🌥</p>
 <p><a href='https://couplermusic.bandcamp.com/'>The Technocrat by Coupler</a></p>
 <p>The Technocrat is the only song I listen to in my car now. It has a cinematic quality that pairs well with the world passing by. The haunting melody is perfect for October.</p>
+<p><a href='mailto:test@example.com'>test iOS mailto</a></p>
 
         </div>
     </div>
@@ -61,7 +64,7 @@
         }
         document.addEventListener('DOMContentLoaded', (event) => {
             document.querySelectorAll('code').forEach((el) => {
-                if (el.className == "javascript" || el.className == "bash") {
+                if (el.className === "javascript" || el.className === "bash" || el.className === 'typescript') {
                     el.classList.add(`language-${el.className}`)
                     hljs.highlightElement(el);
                 }
