@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github-dark.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/typescript.min.js"></script>
+
 </head>
 
 <body>
@@ -48,7 +50,7 @@ I made this site to post tutorials, articles, and some music.</p>
 
 <p>Here are a few of my favorite charities.</p>
 <p><a href='https://www.instagram.com/nashvillecommunityfridge'>Nashville Community Fridge</a> 🥕🍉🥑🍅🍇🥝🍍🍊🍌🍈🥭</p>
-<p>Last February, I climbed a mile for Paradox Sports. Thank you everyone for helping me hit my goal. To continue to support you can <a href='https://paradoxsports.salsalabs.org/pdxmile-climb-nashville22/p/johnfranke/index.html'>Donate to Paradox Sports</a> through my page.</p>
+<p>This February, I am climbing a mile for Paradox Sports at Climb Nashville. You can <a href='https://paradoxsports.salsalabs.org/paradoxmileclimbnashville2023/p/johnottenlipsfranke/index.html'>Donate to Paradox Sports</a> through my page. Last February, we hit the goal. Let&#39;s do it again this year!</p>
 <p><a href='https://www.oxfamamerica.org/donate/'>Donate to OXFAM</a></p>
 <p><a href='https://projecthealthychildren.org/'>Donate to Project Healthy Children</a></p>
 <p><hr/>This blog was generated via <a href='https://github.com/jottenlips/agave'>agave</a>, a static site generator I wrote with ReasonML that turns markdown files (.md) into custom styled html and css.</p>
@@ -81,7 +83,7 @@ agave -p docs</code></pre>
         }
         document.addEventListener('DOMContentLoaded', (event) => {
             document.querySelectorAll('code').forEach((el) => {
-                if (el.className == "javascript" || el.className == "bash") {
+                if (el.className === "javascript" || el.className === "bash" || el.className === 'typescript') {
                     el.classList.add(`language-${el.className}`)
                     hljs.highlightElement(el);
                 }
