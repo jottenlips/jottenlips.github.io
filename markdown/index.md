@@ -17,7 +17,7 @@ Here are a few of my favorite charities.
 
 [Donate to Paradox Sports](https://paradoxsports.salsalabs.org/paradoxmileclimbnashville2023/p/johnottenlipsfranke/index.html)
 
-> This February, I am climbing a mile for Paradox Sports at Climb Nashville. We hit the goal in 2022 and 2023. Let's do it again this year!
+> Every February, I am climbing a mile for Paradox Sports at Climb Nashville. We hit the goal in 2022 and 2023. Let's do it again in 2024!
 
 [Donate to OXFAM](https://www.oxfamamerica.org/donate/)
 
@@ -25,7 +25,7 @@ Here are a few of my favorite charities.
 
 [Donate to Project Healthy Children](https://projecthealthychildren.org/)
 
-> Project Healthy Children fortifies food preventing malnourishment 
+> Project Healthy Children fortifies food, preventing malnourishment 
 
 [Donate to Palestine Children's Relief Fund 🇵🇸](https://www.pcrf.net/)
 
