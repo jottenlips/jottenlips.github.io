@@ -13,11 +13,23 @@ Here are a few of my favorite charities.
 
 [Nashville Community Fridge](https://www.instagram.com/nashvillecommunityfridge) 🥕🍉🥑🍅🍇🥝🍍🍊🍌🍈🥭
 
-This February, I am climbing a mile for Paradox Sports at Climb Nashville. You can [Donate to Paradox Sports](https://paradoxsports.salsalabs.org/paradoxmileclimbnashville2023/p/johnottenlipsfranke/index.html) through my page. Last February, we hit the goal. Let's do it again this year!
+> Nashville Community Fridge is a free fridge in Nashville that provides healthy fresh food for nearby residents.
+
+[Donate to Paradox Sports](https://paradoxsports.salsalabs.org/paradoxmileclimbnashville2023/p/johnottenlipsfranke/index.html)
+
+> This February, I am climbing a mile for Paradox Sports at Climb Nashville. We hit the goal in 2022 and 2023. Let's do it again this year!
 
 [Donate to OXFAM](https://www.oxfamamerica.org/donate/)
 
+> Oxfam provides relief via a variety of projects like clean water wells, toilets, and emergency food packages.
+
 [Donate to Project Healthy Children](https://projecthealthychildren.org/)
+
+> Project Healthy Children fortifies food preventing malnourishment 
+
+[Donate to Palestine Children's Relief Fund 🇵🇸](https://www.pcrf.net/)
+
+> Around 50% of Gaza's population is children and they are facing teh wrath of an indiscriminate bombing campaign.
 
 ---
 
