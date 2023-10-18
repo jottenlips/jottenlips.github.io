@@ -29,7 +29,7 @@ Here are a few of my favorite charities.
 
 [Donate to Palestine Children's Relief Fund 🇵🇸](https://www.pcrf.net/)
 
-> Around 50% of Gaza's population is children and they are facing teh wrath of an indiscriminate bombing campaign.
+> Around 50% of Gaza's population is children and they are facing the wrath of an indiscriminate bombing campaign.
 
 ---
 
