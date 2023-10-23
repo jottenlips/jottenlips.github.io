@@ -17,7 +17,7 @@ Here are a few of my favorite charities.
 
 [Donate to Paradox Sports](https://paradoxsports.salsalabs.org/paradoxmileclimbnashville2023/p/johnottenlipsfranke/index.html)
 
-> Every February, I am climbing a mile for Paradox Sports at Climb Nashville. We hit the goal in 2022 and 2023. Let's do it again in 2024!
+> Every February, I climb a mile for Paradox Sports at Climb Nashville. Paradox Sports offers accessible climbing opportunities for people with differing abilities, defying the perception that people with a ‘disability’ cannot lead a life of adventure. We hit the goal in 2022 and 2023. Let's do it again in 2024!
 
 [Donate to OXFAM](https://www.oxfamamerica.org/donate/)
 
