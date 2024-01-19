@@ -9,3 +9,5 @@
 [Using MIDI in the Browser Example](https://jottenlips.github.io/making-midi)
 
 [Running a Rust Web Server on AWS with Fargate](https://github.com/jottenlips/hello-rocket)
+
+[Ascend with Automation: Vestaboard and GitHub Actions Inspired Consistency in My Rock Climbing Training](https://docs.vestaboard.com/blog/vestaboard-github-actions)
