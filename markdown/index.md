@@ -15,9 +15,12 @@ Here are a few of my favorite charities.
 
 > Nashville Community Fridge is a free fridge in Nashville that provides healthy fresh food for nearby residents.
 
-[Donate to Paradox Sports](https://paradoxsports.salsalabs.org/paradoxmileclimbnashville2023/p/johnottenlipsfranke/index.html)
 
-> Every February, I climb a mile for Paradox Sports at Climb Nashville. Paradox Sports offers accessible climbing opportunities for people with differing abilities, defying the perception that people with a ‘disability’ cannot lead a life of adventure. We hit the goal in 2022 and 2023. Let's do it again in 2024!
+[Donate to Catalyst Climbing 2024](https://www.mightycause.com/story/Qw3r4g)
+
+[Donate to Paradox Sports 2023](https://paradoxsports.salsalabs.org/paradoxmileclimbnashville2023/p/johnottenlipsfranke/index.html)
+
+> Every February, I climb for charity at Climb Nashville. Paradox Sports and Catalyst Climbing both offer accessible climbing opportunities for people with differing abilities, defying the perception that people with a ‘disability’ cannot lead a life of adventure. We hit the goal in 2022 and 2023. Let's do it again in 2024!
 
 [Donate to OXFAM](https://www.oxfamamerica.org/donate/)
 
