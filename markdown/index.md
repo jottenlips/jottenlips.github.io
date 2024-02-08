@@ -13,11 +13,11 @@ Here are a few of my favorite charities.
 
 [Donate to Catalyst Sports 2024](https://www.mightycause.com/story/Qw3r4g)
 
-[Progress 📈](https://docs.google.com/spreadsheets/d/1uJNTKgVgglMxehKTQzIKUGPy7HwmveCVxHwlnvcS0rs/edit?usp=sharing)
 
 [Donate to Paradox Sports 2023](https://paradoxsports.salsalabs.org/paradoxmileclimbnashville2023/p/johnottenlipsfranke/index.html)
 
-> Every February, I climb for charity at Climb Nashville. Paradox Sports and Catalyst Sports both offer accessible climbing opportunities for people with differing abilities, defying the perception that people with a ‘disability’ cannot lead a life of adventure. We hit the goal in 2022 and 2023. Let's do it again in 2024!
+> Every February, I climb for charity at Climb Nashville. Paradox Sports and Catalyst Sports both offer accessible climbing opportunities for people with differing abilities, defying the perception that people with a ‘disability’ cannot lead a life of adventure. We hit the goal in 2022 and 2023. Let's do it again in 2024! [Progress 📈](https://docs.google.com/spreadsheets/d/1uJNTKgVgglMxehKTQzIKUGPy7HwmveCVxHwlnvcS0rs/edit?usp=sharing)
+
 
 [Nashville Community Fridge](https://www.instagram.com/nashvillecommunityfridge) 🥕🍉🥑🍅🍇🥝🍍🍊🍌🍈🥭
 
