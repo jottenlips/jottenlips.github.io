@@ -55,7 +55,7 @@ For code syntax highlighting, I am using [highlight.js](https://highlightjs.org/
 
 # [Vestaboard](https://www.vestaboard.com/)
 
-<iframe src="https://digital.vestaboard.com/599c0a40V4c65V42cdV9b44Veb5045c630f3" width="290" height="154" scrolling="no" style="border: none"></iframe>
+<iframe src="https://digital.vestaboard.com/599c0a40V4c65V42cdV9b44Veb5045c630f3" width="310" height="165" scrolling="no" style="border: none"></iframe>
 
 [Vestaboard Developer Blog](https://docs.vestaboard.com/blog)
 
