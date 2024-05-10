@@ -65,6 +65,7 @@ For code syntax highlighting, I am using [highlight.js](https://highlightjs.org/
 
 ## Like what I do?
 
-This blog and open source code require a lot of caffeine.
+Sponsor me on GitHub or buy some [music](https://ottobahn.bandcamp.com/)
 
-[Buy me a coffee](contribute)
+<iframe src="https://github.com/sponsors/jottenlips/card" title="Sponsor jottenlips" height="225" width="600" style="border: 0;"></iframe>
+
