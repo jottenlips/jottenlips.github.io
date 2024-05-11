@@ -67,5 +67,5 @@ For code syntax highlighting, I am using [highlight.js](https://highlightjs.org/
 
 Sponsor me on GitHub or buy some [music](https://ottobahn.bandcamp.com/)
 
-<iframe src="https://github.com/sponsors/jottenlips/card" title="Sponsor jottenlips" height="225" width="600" style="border: 0;"></iframe>
+<iframe src="https://github.com/sponsors/jottenlips/card" title="Sponsor jottenlips" height="225" width="340" style="border: 0;"></iframe>
 
