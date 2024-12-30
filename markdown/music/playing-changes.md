@@ -127,7 +127,7 @@ extenions: [b9, #9, 11, b13]
 ```
 
 ```
-bII bIII7 bVI7 bVII7
+bII7 bIII7 bVI7 bVII7
 sound: "Lydian Dominant"
 extension [9, #11, 13]
 ```
