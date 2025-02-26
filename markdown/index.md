@@ -11,7 +11,7 @@
 
 Here are a few of my favorite charities.
 
-[Donate to Catalyst Sports 2025](https://www.mightycause.com/story/Qw3r4g)
+[Donate to Catalyst Sports 2025](https://p2p.onecause.com/challengeforaccess2025/john-franke)
 
 > Past years:
 > [Catalyst Sports 2024](https://www.mightycause.com/story/Qw3r4g)
