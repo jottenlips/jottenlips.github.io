@@ -20,4 +20,3 @@ Bendrix brought out every bit of bittersweet, loneliness, and malaise with guita
 
 The Technocrat is the only song I listen to in my car now. It has a cinematic quality that pairs well with the world passing by. The haunting melody is perfect for October.
 
-[test iOS mailto](mailto:test@example.com)
