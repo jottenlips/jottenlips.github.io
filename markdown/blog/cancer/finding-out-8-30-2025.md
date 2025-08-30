@@ -1,89 +1,103 @@
-# Finding Out
+# Finding Out  
 
-This is a detailed account of how I learned I had cancer. This is mostly for me and to process the events that have happed this summer. I never thought I would be someone that gets cancer young. I worked out very regularly, ate well, could run 10k, climb hard, and always fealt like I had an endless pool of energy to pull from.
+This is a detailed account of how I learned I had cancer. This is mostly for me, to process the events that have happened this summer. I never thought I would be someone who gets cancer young. I worked out regularly, ate well, could run 10k, climb hard, and always felt like I had an endless pool of energy to pull from.  
 
 ---
 
-# May: Not feeling great
+# May: Something is Off 
 
-- **May - Dad sickness?**
+- **May – Dad sickness?**  
 
-This entire month I was off and on sick. I would get sick, start to feel better, then something else would come up. This was mostly sinus issues and fatigue. When the rest of the family would get sick, they would only be out for a day or two. I would feel crummy the whole week. I noticed some pain on my left side when weight lifting at the YMCA. I decided to start taking it easy. At first I went to less weight, and eventually stopped going. I continued to rock climb casually with friends when I wasn't feeling sick. I even made it out to Obed once this month. The first time I got to outside climb since becoming a new dad. We had a blast. 
+This entire month I was off and on sick. I’d get sick, start to feel better, then something else would come up. Mostly sinus issues and fatigue. When the rest of the family got sick, they were out for a day or two. I would feel crummy the whole week.  
+
+I noticed some pain on my left side when weightlifting at the YMCA. I decided to start taking it easy. At first I dropped weight, then eventually stopped going. I still rock climbed casually with friends when I wasn’t feeling sick. I even made it out to Obed once this month. It was my first time climbing outside since becoming a new dad. We had a blast.  
 
 ---
 
 ## June: The First Signs  
 
-- **June 15 - Fathers Day**
+- **June 15 – Father’s Day**  
 
-This month was much like May. It started with something viral, then the symptoms subsided and I was able to go to Mammoth cave on Father's Day to do the Frozen Niagara tour. We had a blast. A couple days later I took a turn for the worse developing a bacterial infection. My primary care physician reffered to this as a "double sickening". 
+This month was much like May. It started with something viral, then the symptoms subsided, and I was able to go to Mammoth Cave on Father’s Day to do the Frozen Niagara tour. We had a blast. A couple of days later, I took a turn for the worse and developed a bacterial infection. My primary care physician referred to this as a “double sickening.”  
 
 - **June 20 – Urgent Care**  
-I finally went to an urgent care after a pretty bad ear infection. I was given steroids and antibiotics. The ear infection cleared, but my lymph nodes were still enlarged.
+I finally went to urgent care after a pretty bad ear infection. I was given steroids and antibiotics. The ear infection cleared, but my lymph nodes stayed enlarged.  
 
 - **June 23 – Doctor’s Appointment**  
-I had made a Dr. appointment prior to going to urgent care. This was the quickets they could see me. I went in even though I fealt fine. My symptoms had subsided besides some minor lymph node swelling.
+I had already scheduled a doctor’s appointment before urgent care. This was the soonest they could see me. I went in even though I felt fine. My symptoms had mostly subsided, besides some minor lymph node swelling.  
 
-- **June 29 – Obed**  
-I woke up super early and met my good friend and belay partner at his house. We drove out to the wild and scenic Obed for a beutiful day of rock climbing, hiking, and swimming. I was projecting Heresy and finally got to the finish chains. On our hike out of the Y12 area, I became extremely fatigued after going up the ladder. I bent over for a good 2 to 3 minutes to catch my breth. It was a warm summer day and we had heavy packs on, but this is not typical behavior for me. After catching my breath, the rest of the day was fine. We got home early in the afternoon and I hung out with my wife and baby the rest of the day. 
+- **June 29 – the Obed**  
+I woke up super early and met my good friend and belay partner at his house. We drove out to the wild and scenic Obed for a beautiful day of rock climbing, hiking, and swimming. I was projecting *Heresy* and finally got to the chains.  
+
+On our hike out of the Y12 area, I became extremely fatigued after climbing the ladder. I bent over for 2–3 minutes to catch my breath. It was a warm summer day and we had heavy packs, but this was not typical behavior for me. After catching my breath, the rest of the day was fine. We got home early in the afternoon and I hung out with my wife and baby.  
 
 ---
 
-## July: Clues Start Appearing  
-- **July 12 – Band Practice**  
-The bumps were still on my neck and collarbone. My friend Willa had asked where I wanted to stand for band practice. I said I need to sit down since I can't wear a guitar strap. I showed her the bumps on my collarbone. She said I should get it looked at. I had already scheduled an appointment early next week. Other symptoms were starting to develop and interfere with my day to day life, like full body itching.
+## July: Symptoms Worsen 
 
-- **July 14 - Google**
-When I googled my symptoms, the same thing kept coming up: lymphoma. I slacked my friends about it, they calmed my fears down. Everyone knows Google will tell you the worst case
+- **July 12 – Band Practice**  
+The bumps were still on my neck and collarbone. My friend Willa asked where I wanted to stand for band practice. I told her I needed to sit down since I couldn’t wear a guitar strap. I showed her the bumps. She said I should get it checked out. I had already scheduled an appointment for early next week. Other symptoms were starting to interfere with daily life, like full-body itching.  
+
+- **July 14 – Google**  
+When I googled my symptoms, the same thing kept coming up: lymphoma. I slacked my friends about it, and they calmed me down. Google will tell you the worst-case scenario typically.  
 
 - **July 15 – Ultrasound & Appointment**  
-I went in for my Dr. appointment. I told her my symptoms. She said that it appears to be a drastic change from the previous symptoms I had. She thought it could be a mixture of a new allergy and anxiety from being sick the previous month. I went in for an ultrasound that day.
+I went in for my appointment and told my doctor about the symptoms. She said it looked like a drastic change from the previous month and thought it might be a mix of a new allergy and anxiety from being sick. I went for an ultrasound that day.  
 
+- **July 22–23 – Telehealth Call & Ultrasound Results**  
+The ultrasound results came back strange. The radiologist suggested it was simply a vascular complex or some congenital vascular disorder. But I had pictures of my neck from a January trip to Mexico. I definitely wasn’t born with this. I asked my doctor to schedule a CT. It wasn’t expedited since the ultrasound didn’t look urgent.  
 
+Meanwhile, I continued life as normal, fighting through symptoms. The allergist had me increase my antihistamine dosage, which helped mask the itching for a while.  
 
-- **July 22-23 – Telehealth Call and Ultrasound results**  
-The ultrasound results came back strange. The radiologist suggested it was simple a vascular complex or some sort of vascular disorder I was born with. I had some pictures of my neck from a trip to Mexico in January, I was definitely not born with this. I got my Dr. to schedule me a CT. This wasn't expedited since the ultrasound results did not look super serious. In the meantime, I continued life as normal and fought through the symptoms. The allergist had me up my anti-histimine dosage to help the itching. This seemed to mask the symptoms for a while.
-
-At work we finally launched our new mobile app. This project was a huge goal of ours for the year. Getting the app out into the world was a huge source of tranquilty and relief. Mentally, I was feeling very positive and had a great time hanging with our team that had flown in from all over the world. Physically, I was feeling pretty rough and my shoulder and neck were getting worse. I took a plane ride to St. Louis that night, then we drove to Wisconsin for a family vacation the next morning. I thought taking a whole week off in the fresh Wisconsin north woods air could potentially fix my immune system and calm my health anxiety. 
+At work, we finally launched our new mobile app, a goal we had been working on all year. Getting it out into the world was a big source of relief and satisfaction. Mentally I felt positive, enjoying time with teammates who had flown in from all over the world for a product summit. Physically, I was rough. My shoulder and neck were worsening and other symptoms were developing. That night I flew to St. Louis, then drove to Wisconsin for a family vacation. I hoped a week in the fresh north woods air would fix my immune system and calm my health anxiety.  
 
 ---
 
-## August: Everything Escalates  
+## August: Waiting and Diagnosis
+
 - **August 4 – CT Scan**  
-I went in for my CT scan, it was the children's underwater themed one which made me cry.
+I went in for my CT scan. It was the children’s underwater-themed one, which made me cry.  
 
 - **August 5 – Coughing Blood**  
-H*ly shit I need to go the ER. As soon as I had calmed down, I took my wife's car and went to the ER and she took him to daycare that morning.
+"Holy shit, I need to go to the ER". After calming down, I took my wife’s car and went to the ER while she took our son to daycare.  
 
-- **August 5–8 – Hospital Stay**  
-I was admitted, they put a camera down my throat, took another CT, and found a mass in my chest and neck. It is in a place they were not able to surgically remove it. Over the next four days, I had two surgical biopsies and met with several oncologist and cancer specialist. They put me through a lot of other tests due to my recent exposure to caves. One possibility was histoplasmosis, but having all the oncologist around, I had the feeling they already knew what it was. The allergist called me before a surgery, apparently I also have Alpha Gal and am allergic to red meat.
+- **August 5 – Hospital Stay**  
+I was admitted. They put a camera down my throat, did another CT, and found a mass in my chest and neck. It was in a place they couldn’t surgically remove. Over the next four days, I had two surgical biopsies and met several oncologists and cancer specialists. They also tested me for infections since I’d recently been in caves. One possibility was histoplasmosis, but with all the oncologists around, I had the feeling they already knew.  
 
-I was discharged and got to celebrate my son's summer birthday with some family that had come down to see me in the hospital. Then the waiting game began.
+The allergist also called me before one surgery. Apparently, I have Alpha-Gal and am allergic to red meat.  
+
+I was discharged in time to celebrate my son’s birthday with family who had come down to see me in the hospital. Then the waiting game began.  
 
 - **August 15 – The Diagnosis**  
-I was refreshing the portal every few hours I wasn't seeing any pathology yet. Then I got a phone call telling me  my pathology finally came back, Classical Hodgkin's Lympoma. I read the report carefully. After an hour or so, I was inundated with calls from oncologist and nurses to schedule more tests to get ready for treatment. I was assured by one Dr. "You got a 'good' cancer that we can cure". This phone call left me full of mixed emotions. I had two friends that both had this exact same diagnosis years earlier. I gave them a call. 
+I was refreshing the portal every few hours for ten days, but never got the pathology report. Then I got the call. The Dr. begcan describing Classical Hodgkin’s Lymphoma and how they were very thorough in the pathology. It is rare and difficult to diagnose.
 
-We had been planning for this eventuality. Coming up was a move back to our hometown so we could have help and get the treatment we needed. I am extremely lucky I come from a place with excellent cancer research facilities. St. Louis city has a long and tragic relationship with cancer and public health. Cold water creek is one of the worst environental disasters in all of US history. Waste from the Manhattan Project was incorrectly disposed and contaminated the entire northern half of the city. It seems unlikely that this is where my cancer had developed since I had not been living in the city for over 12 years and grew up far south of the contamination. There is no way of me knowing where this came from and it is also impossible to [prevent](https://www.mayoclinic.org/diseases-conditions/hodgkins-lymphoma/symptoms-causes/syc-20352646). 
+The pathology report showed up in the portal. I read the report carefully. Within an hour, I was inundated with calls from oncologists and nurses to schedule tests for treatment. One doctor told me, “You got a *good* cancer that we can cure. You're in good hands.” It left me with mixed emotions.
+
+Two of my friends had the same diagnosis years earlier. I called them.  
+
+We had been planning for this eventuality. Coming up was a move back to our hometown for family help and treatment. I’m extremely lucky to come from a place with excellent cancer research facilities.  
+
+St. Louis has a long, tragic history with cancer and public health. The [Mallinckrodt Coldwater Creek Nuclear Waste Site](https://en.wikipedia.org/wiki/Coldwater_Creek_(Missouri_river_tributary) is one of the worst environmental disasters in U.S. history. Weapons grade nuclear waste from the Manhattan Project contaminated the northern half of the county. It seems unlikely my cancer came from there since I haven’t lived in St. Louis for over 12 years and grew up far south of the contamination. There’s no way to know where it came from, and it’s impossible to [prevent](https://my.clevelandclinic.org/health/diseases/6206-hodgkin-lymphoma).
 
 - **August 20 – PET Scan**  
-PET scan came back showing exactly what stage I was in: stage 2 and non-bulky. We caught it fairly early. Even a late diagnosis of this disease typically has good outcomes for patients my age. The swelling from the surgery is starting to hurt and become more uncomfortable.
+The PET scan showed stage 2, non-bulky. We caught it fairly early. Even late diagnoses in patients my age tend to have good outcomes. The swelling from surgery was starting to hurt more.  
 
 - **Birthday**  
-I went to a tiki bar with a few friends to get some tacos and N/A drinks to celebrate my birthday and say goodbye before taking off to St. Louis. I was able to go bouldering with Adrienne, Nate, Hannah, and our sons one afternoon as well. I kept things very chill since my neck was hurting. 
+I went to a tiki bar with friends for tacos and N/A drinks to celebrate my birthday and say goodbye before moving to St. Louis. I also went bouldering with Adrienne, Nate, Hannah, and our babies. I kept it chill since my neck hurt.  
 
 - **August 27 – Oncologist Meeting**  
-Got into a clinical trial that will hopefully let me do immunotherapy. It is a 50/50 shot since it is a study. For the first time, there was a clear path forward. I will have to do at least 2 months of chemo. I have finally been given medicine to help the itching and the swelling in my neck. My wife has been the best advocate and I am so grateful she got me transferred to Siteman. 
+I got into a clinical trial that might let me try immunotherapy. It’s a 50/50 chance since it’s a study. But for the first time, there was a clear path forward. I’ll need at least two months of chemo. Finally, I was given medicine to help with itching and swelling. My wife has been the best advocate, and I’m eternally grateful she got me transferred to Siteman Cancer Center.  
 
-
-- **August 29 – First time climbing on ropes again**  
-A friend and accomplished climber I hadn't seen in a decade reached out to me. We met up at Climb SoILL downtown and did some top rope together. Thank you for that afternoon Jackson, you are a legend. 
+- **August 29 – First Time Climbing on Ropes Again**  
+A friend and accomplished climber I hadn’t seen in a decade reached out. We met up at Climb So iLL downtown and top-roped together. Thank you, Jackson, you’re a legend.  
 
 ---
 
-## September: Chemo-day 
+## September: Treatment
+
 - **September 3 – Chemo Begins**  
-The first day of treatment. Hoping it goes well.
+The first day of treatment. Hoping it goes well.  
 
 ---
 
-This summer has been a blur. I am grateful I got to see so many friends, go on adventures, celebrate wins at work, and spend a lot of time with family. I love you all and thank you for all of the love and support you have given me.
+This summer has been a blur. I’m grateful I got to see so many friends, go on adventures, celebrate wins at work, and spend time with family. I love you all and thank you for the love and support you’ve given me.  
