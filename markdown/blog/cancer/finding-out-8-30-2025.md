@@ -12,7 +12,7 @@ This entire month I was off and on sick. I’d get sick, start to feel better, t
 
 I noticed some pain on my left side when weightlifting at the YMCA. I decided to start taking it easy. At first I dropped weight, then eventually stopped going. I still rock climbed casually with friends when I wasn’t feeling sick. I even made it out to the Obed once this month. It was my first time climbing outside since becoming a new dad. We had a blast.  
 
-![small](https://github.com/jottenlips/jottenlips.github.io/blob/main/finding-out-8-30-2025-img/theobedriver.JPG?raw=true)
+![extrasmall](https://github.com/jottenlips/jottenlips.github.io/blob/main/finding-out-8-30-2025-img/theobedriver.JPG?raw=true)
 
 ---
 
@@ -22,8 +22,8 @@ I noticed some pain on my left side when weightlifting at the YMCA. I decided to
 
 This month was much like May. It started with something viral, then the symptoms subsided, and I was able to go to Mammoth Cave on Father’s Day to do the Frozen Niagara tour. The cave was beautiful and the family had a great time. A couple of days later, I took a turn for the worse and developed a bacterial infection. My primary care physician referred to this as a “double sickening.”  
 
-![small](https://github.com/jottenlips/jottenlips.github.io/blob/main/finding-out-8-30-2025-img/mammothcave1.JPG?raw=true)
-![small](https://github.com/jottenlips/jottenlips.github.io/blob/main/finding-out-8-30-2025-img/mammothcave2.JPG?raw=true)
+![extrasmall](https://github.com/jottenlips/jottenlips.github.io/blob/main/finding-out-8-30-2025-img/mammothcave1.JPG?raw=true)
+![extrasmall](https://github.com/jottenlips/jottenlips.github.io/blob/main/finding-out-8-30-2025-img/mammothcave2.JPG?raw=true)
 
 
 
@@ -41,10 +41,10 @@ I woke up super early and met my good friend and belay partner at his house. We 
 
 On our hike out of the Y12 area, I became extremely fatigued after climbing a ladder. I bent over for 2–3 minutes to catch my breath. It was a warm summer day and we had heavy packs, but this was not typical behavior for me. After catching my breath, the rest of the day was fine. We got home early in the afternoon and I hung out with my wife and baby.  
 
-![small](https://github.com/jottenlips/jottenlips.github.io/blob/main/finding-out-8-30-2025-img/heresy1.JPG?raw=true)
-![small](https://github.com/jottenlips/jottenlips.github.io/blob/main/finding-out-8-30-2025-img/heresy2.jpg?raw=true)
-![small](https://github.com/jottenlips/jottenlips.github.io/blob/main/finding-out-8-30-2025-img/laddery12.JPG?raw=true)
-![small](https://github.com/jottenlips/jottenlips.github.io/blob/main/finding-out-8-30-2025-img/obedriver.JPG?raw=true)
+![extrasmall](https://github.com/jottenlips/jottenlips.github.io/blob/main/finding-out-8-30-2025-img/heresy1.JPG?raw=true)
+![extrasmall](https://github.com/jottenlips/jottenlips.github.io/blob/main/finding-out-8-30-2025-img/heresy2.jpg?raw=true)
+![extrasmall](https://github.com/jottenlips/jottenlips.github.io/blob/main/finding-out-8-30-2025-img/laddery12.JPG?raw=true)
+![extrasmall](https://github.com/jottenlips/jottenlips.github.io/blob/main/finding-out-8-30-2025-img/obedriver.JPG?raw=true)
 
 
 ---
@@ -64,7 +64,7 @@ When I googled my symptoms, the same thing kept coming up: lymphoma. I texted my
 
 I went in for my appointment and told my doctor about the symptoms. She said it looked like a drastic change from the previous month and thought it might be a mix of a new allergy and anxiety from being sick. I went for an ultrasound that day.  
 
-![small](https://github.com/jottenlips/jottenlips.github.io/blob/main/finding-out-8-30-2025-img/lymphnode.png?raw=true)
+![extrasmall](https://github.com/jottenlips/jottenlips.github.io/blob/main/finding-out-8-30-2025-img/lymphnode.png?raw=true)
 
 
 **July 22–23 – Telehealth Call & Ultrasound Results**  
@@ -75,8 +75,8 @@ Meanwhile, I continued life as normal, fighting through symptoms. The allergist 
 
 At work, we finally launched our new mobile app, a goal we had been working on all year. Getting it out into the world was a big source of relief and satisfaction. Mentally I felt positive, enjoying time with teammates who had flown in from all over the world for a product summit. Physically, I was rough. My shoulder and neck were worsening and other symptoms were developing. That night I flew to St. Louis, then drove to Wisconsin for a family vacation. I hoped a week in the fresh north woods air would fix my immune system and calm my health anxiety. 
 
-![small](https://github.com/jottenlips/jottenlips.github.io/blob/main/finding-out-8-30-2025-img/wisconsin1.JPG?raw=true)
-![small](https://github.com/jottenlips/jottenlips.github.io/blob/main/finding-out-8-30-2025-img/wisconsin2.JPG?raw=true)
+![extrasmall](https://github.com/jottenlips/jottenlips.github.io/blob/main/finding-out-8-30-2025-img/wisconsin1.JPG?raw=true)
+![extrasmall](https://github.com/jottenlips/jottenlips.github.io/blob/main/finding-out-8-30-2025-img/wisconsin2.JPG?raw=true)
 
 ---
 
@@ -114,7 +114,7 @@ St. Louis has a long, tragic history with cancer and public health. [The Mallinc
 
 The PET scan showed stage 2, non-bulky. We caught it fairly early. Even late diagnoses in patients my age tend to have good outcomes. The swelling from surgery was starting to hurt more.  
 
-![small](https://github.com/jottenlips/jottenlips.github.io/blob/main/finding-out-8-30-2025-img/cancerpet.png?raw=true)
+![extrasmall](https://github.com/jottenlips/jottenlips.github.io/blob/main/finding-out-8-30-2025-img/cancerpet.png?raw=true)
 
 **Birthday** 
 
@@ -128,7 +128,7 @@ I got into a clinical trial that might let me try immunotherapy. It’s a 50/50 
 
 A friend and accomplished climber I hadn’t seen in a decade reached out. We met up at Climb So iLL downtown and top-roped together. Thank you, Jackson, you’re a legend.  
 
-![small](https://github.com/jottenlips/jottenlips.github.io/blob/main/finding-out-8-30-2025-img/climbsoill.JPG?raw=true)
+![extrasmall](https://github.com/jottenlips/jottenlips.github.io/blob/main/finding-out-8-30-2025-img/climbsoill.JPG?raw=true)
 
 ---
 

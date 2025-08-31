@@ -15,6 +15,10 @@ img[alt*="small"] {
     width: 500px;
 }
 
+img[alt*="extrasmall"] {
+    width: 250px;
+}
+
 .coverimage {
     /* background: url(https://github.com/jottenlips/jottenlips.github.io/blob/main/keyboard.jpg?raw=true); */
     /* RANDOM PHOTO */
