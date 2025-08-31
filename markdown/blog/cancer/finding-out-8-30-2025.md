@@ -101,7 +101,7 @@ I went to a tiki bar with friends for tacos and N/A drinks to celebrate my birth
 
 **August 27 – Oncologist Meeting**  
 
-I got into a clinical trial that might let me try immunotherapy. It’s a 50/50 chance since it’s a study. I’ll need at least two months of chemo. Finally, I was given medicine to help with itching and swelling. My wife has been the best advocate, and I’m eternally grateful she got me transferred to Siteman Cancer Center.  
+I got into a clinical trial that might let me try immunotherapy. It’s a 50/50 chance since it’s a study. I’ll need at least two months of chemo and likely 6 months of total treatment. Finally, I was given medicine to help with itching and swelling. My wife has been the best advocate, and I’m eternally grateful she got me transferred to Siteman Cancer Center.  
 
 **August 29 – First Time Climbing on Ropes Again** 
 
