@@ -89,7 +89,7 @@ Two of my friends had the same diagnosis years earlier. I called them.
 
 My wife and I had been planning for this diagnosis already. We decided to move back to our hometown for family help and treatment. I’m extremely lucky to come from a place with excellent cancer research facilities.
 
-St. Louis has a long, tragic history with cancer and public health. [The Mallinckrodt Coldwater Creek Nuclear Waste Site](https://en.wikipedia.org/wiki/Coldwater_Creek_(Missouri_river_tributary)) is one of the worst environmental disasters in U.S. history. Weapons grade nuclear waste from the Manhattan Project contaminated the northern half of the county. It seems unlikely my cancer came from there since I haven’t lived in St. Louis for over 12 years and grew up far south of the contamination. There’s no way to know where it came from, and it’s impossible to [prevent](https://my.clevelandclinic.org/health/diseases/6206-hodgkin-lymphoma).
+St. Louis has a long, tragic history with cancer and public health. [The Mallinckrodt Coldwater Creek Nuclear Waste Site](https://en.wikipedia.org/wiki/Coldwater_Creek_(Missouri_river_tributary)) is one of the worst environmental disasters in U.S. history. Weapons grade nuclear waste from the Manhattan Project contaminated the northern half of the county. It seems unlikely my cancer came from there since I haven’t lived in St. Louis for over 12 years and grew up far south of the contamination. There’s no way to know where it came from and [there's no way to prevent Hodgkin lymphoma](https://www.mayoclinic.org/diseases-conditions/hodgkins-lymphoma/symptoms-causes/syc-20352646).
 
 **August 20 – PET Scan**  
 
