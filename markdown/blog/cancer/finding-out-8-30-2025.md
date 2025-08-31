@@ -1,4 +1,4 @@
-# Finding Out  
+# The Summer I Found Out 
 
 This is a detailed account of how I learned I had cancer. This is mostly for me, to process the events that have happened this summer. I never thought I would be someone who gets cancer young. I worked out regularly, ate well, could run 10k, climb hard, and always felt like I had an endless pool of energy to pull from.  
 

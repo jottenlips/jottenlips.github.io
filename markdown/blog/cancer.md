@@ -1,2 +1,2 @@
 
-[Summer 2025 - Finding out](finding-out-8-30-2025/)
+[2025 - The Summer I Found Out](finding-out-8-30-2025/)
