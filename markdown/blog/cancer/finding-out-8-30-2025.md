@@ -18,7 +18,7 @@ I noticed some pain on my left side when weightlifting at the YMCA. I decided to
 
 **June 15 – Father’s Day**  
 
-This month was much like May. It started with something viral, then the symptoms subsided, and I was able to go to Mammoth Cave on Father’s Day to do the Frozen Niagara tour. We had a blast. A couple of days later, I took a turn for the worse and developed a bacterial infection. My primary care physician referred to this as a “double sickening.”  
+This month was much like May. It started with something viral, then the symptoms subsided, and I was able to go to Mammoth Cave on Father’s Day to do the Frozen Niagara tour. The cave was beautiful and the family had a great time. A couple of days later, I took a turn for the worse and developed a bacterial infection. My primary care physician referred to this as a “double sickening.”  
 
  **June 20 – Urgent Care**  
 
