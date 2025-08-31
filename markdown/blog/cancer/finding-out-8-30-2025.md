@@ -117,4 +117,4 @@ The first day of treatment. Hoping it goes well.
 
 ---
 
-This summer has been a blur. I’m grateful I got to see so many friends, go on adventures, celebrate wins at work, and spend time with family. I love you all and thank you for the love and support you’ve given me.  
+This summer has been a blur. I’m grateful I got to see so many friends, go on adventures, celebrate wins at work, and spend time with family. I love you all and thank you for the love and support you’ve given me. Everyday is a gift.
