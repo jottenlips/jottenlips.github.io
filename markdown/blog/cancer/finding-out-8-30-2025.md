@@ -10,7 +10,7 @@ This is a detailed account of how I learned I had cancer. This is mostly for me,
 
 This entire month I was off and on sick. I’d get sick, start to feel better, then something else would come up. Mostly sinus issues and fatigue. When the rest of the family got sick, they were out for a day or two. I would feel crummy the whole week.  
 
-I noticed some pain on my left side when weightlifting at the YMCA. I decided to start taking it easy. At first I dropped weight, then eventually stopped going. I still rock climbed casually with friends when I wasn’t feeling sick. I even made it out to Obed once this month. It was my first time climbing outside since becoming a new dad. We had a blast.  
+I noticed some pain on my left side when weightlifting at the YMCA. I decided to start taking it easy. At first I dropped weight, then eventually stopped going. I still rock climbed casually with friends when I wasn’t feeling sick. I even made it out to the Obed once this month. It was my first time climbing outside since becoming a new dad. We had a blast.  
 
 ---
 
