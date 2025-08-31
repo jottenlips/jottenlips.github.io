@@ -111,7 +111,7 @@ A friend and accomplished climber I hadn’t seen in a decade reached out. We me
 
 ## September: Treatment
 
-**September 3 – Chemo Begins**  
+**September 3 – Chemo**  
 
 The first day of treatment. Hoping it goes well.  
 
