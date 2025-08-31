@@ -54,7 +54,7 @@ On our hike out of the Y12 area, I became extremely fatigued after climbing a la
  
 **July 12 – Band Practice**  
 
-The bumps were still on my neck and collarbone. My friend Willa asked where I wanted to stand for band practice. I told her I needed to sit down since I couldn’t wear a guitar strap. I showed her the bumps. She said I should get it checked out. I had already scheduled an appointment for early next week. Other symptoms were starting to interfere with daily life, like full-body itching.  
+The bumps were still on my neck and collarbone. My friend Willa asked where I wanted to stand for band practice. I told her I needed to sit down since I couldn’t wear a guitar strap. I showed her the bumps. She said I should get it checked out. I had already scheduled an appointment for early next week. Other symptoms were starting to interfere with daily life, like full-body itching. Band practice went well and I hope I can play Drew's rehersal dinner in September.
 
 **July 14 – Google**  
 
@@ -92,7 +92,9 @@ I went in for my CT scan. It was the children’s underwater-themed one, which m
 
 **August 5 – Hospital Stay**  
 
-I was admitted. They put a camera down my throat, did another CT, and found a mass in my chest and neck. It was in a place they couldn’t surgically remove. Over the next four days, I had two surgical biopsies and met several oncologists and cancer specialists. They also tested me for infections since I’d recently been in caves. One possibility was histoplasmosis, but with all the oncologists around, I had the feeling they already knew.  
+I was admitted. They put a camera down my throat, did another CT, and found a mass in my chest and neck. It was in a place they couldn’t surgically remove. Over the next four days, I had two surgical biopsies and met several oncologists and cancer specialists. They also tested me for infections since I’d recently been in caves. One possibility was histoplasmosis, but with all the oncologists around, I had the feeling they already knew. 
+
+My friends Roman, Eve, and Scott came to visit and keep me company as well as my brother and family which made the days go by a bit quicker.
 
 The allergist also called me before one surgery. Apparently, I have Alpha-Gal and am allergic to red meat.  
 
@@ -104,7 +106,7 @@ I was refreshing the portal every few hours for ten days, but never got the path
 
 The pathology report showed up in the portal. I read the report carefully. Within an hour, I was inundated with calls from oncologists and nurses to schedule tests for treatment. One doctor told me, “You got a *good* cancer that we can cure. You're in good hands.” It left me with mixed emotions.
 
-Two of my friends had the same diagnosis years earlier. I called them.  
+Two of my friends from college had the same diagnosis years earlier as well as another family member. I called them and they were extermely helpful.
 
 My wife and I had been planning for this diagnosis already. We decided to move back to our hometown for family help and treatment. I’m extremely lucky to come from a place with excellent cancer research facilities.
 
@@ -118,7 +120,7 @@ The PET scan showed stage 2, non-bulky. We caught it fairly early. Even late dia
 
 **Birthday** 
 
-I went to a tiki bar with friends for tacos and N/A drinks to celebrate my birthday and say goodbye before moving to St. Louis. I also went bouldering with Adrienne, Nate, Hannah, and our babies. I kept it chill since my neck hurt.  
+I went to a tiki bar with friends for tacos and N/A drinks to celebrate my birthday and say goodbye before moving to St. Louis. I also went bouldering with Adrienne, Nate, Hannah, and our babies the day before. I kept it chill since my neck hurt. My friend Kenny was back from tour and fixed a few of my guitar pedals as well. You all made it such a special birthday.
 
 **August 27 – Oncologist Meeting**  
 
@@ -140,4 +142,7 @@ The first day of treatment. Hoping it goes well.
 
 ---
 
-This summer has been a blur. I’m grateful I got to see so many friends, go on adventures, celebrate wins at work, and spend time with family. I love you all and thank you for the love and support you’ve given me. Everyday is a gift.
+This summer has had a lot of ups and downs. I’m grateful I got to see so many friends, go on adventures, celebrate wins at work, and spend time with family. I am also super appreciative of everyone that has helped me especially my wonderful doctors and surgeons. I love you all and thank you for the love and support you’ve given me. Everyday is a gift.
+
+> Love you all,
+> John
