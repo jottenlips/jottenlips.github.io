@@ -145,4 +145,5 @@ The first day of treatment. Hoping it goes well.
 This summer has had a lot of ups and downs. I’m grateful I got to see so many friends, go on adventures, celebrate wins at work, and spend time with family. I am also super appreciative of everyone that has helped me especially my wonderful doctors and surgeons. I love you all and thank you for the love and support you’ve given me. Everyday is a gift.
 
 > Love you all,
+
 > John
