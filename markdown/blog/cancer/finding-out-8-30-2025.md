@@ -30,7 +30,7 @@ I had already scheduled a doctor’s appointment before urgent care. This was th
 
 **June 29 – the Obed**  
 
-I woke up super early and met my good friend and belay partner at his house. We drove out to the wild and scenic Obed for a beautiful day of rock climbing, hiking, and swimming. I was projecting *Heresy* and finally got to the chains.  
+I woke up super early and met my good friend and belay partner at his house. We drove out to the wild and scenic Obed for a beautiful day of rock climbing, hiking, and swimming. I was projecting *Heresy* and finally got to the chains. Thank you for the beta Nate! I hope to send it clean one day.
 
 On our hike out of the Y12 area, I became extremely fatigued after climbing a ladder. I bent over for 2–3 minutes to catch my breath. It was a warm summer day and we had heavy packs, but this was not typical behavior for me. After catching my breath, the rest of the day was fine. We got home early in the afternoon and I hung out with my wife and baby.  
 
