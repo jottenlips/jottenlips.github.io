@@ -45,7 +45,7 @@ The bumps were still on my neck and collarbone. My friend Willa asked where I wa
 
 **July 14 – Google**  
 
-When I googled my symptoms, the same thing kept coming up: lymphoma. I slacked my friends about it, and they calmed me down. Google will tell you the worst-case scenario typically.  
+When I googled my symptoms, the same thing kept coming up: lymphoma. I texted my friends about it, and they calmed me down. Google will tell you the worst-case scenario typically.  
 
 **July 15 – Ultrasound & Appointment**  
 
