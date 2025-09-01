@@ -73,7 +73,7 @@ The ultrasound results came back strange. The radiologist suggested it was simpl
 
 Meanwhile, I continued life as normal, fighting through symptoms. The allergist had me increase my antihistamine dosage, which helped mask the itching for a while.  
 
-At work, we finally launched our new mobile app, a goal we had been working on all year. Getting it out into the world was a big source of relief and satisfaction. Mentally I felt positive, enjoying time with teammates who had flown in from all over the world for a product summit. Physically, I was rough. My shoulder and neck were worsening and other symptoms were developing. That night I flew to St. Louis, then drove to Wisconsin for a family vacation. I hoped a week in the fresh north woods air would fix my immune system and calm my health anxiety. 
+At work, we finally launched our new mobile app, a goal we had been working on all year. Getting it out into the world was a big source of relief, joy, and satisfaction. Mentally I felt positive, enjoying time with teammates who had flown in from all over the world for a product summit. Physically, I was rough. My shoulder and neck were worsening and other symptoms were developing. That night I flew to St. Louis, then drove to Wisconsin for a family vacation. I hoped a week in the fresh north woods air would fix my immune system and calm my health anxiety. 
 
 ![extrasmall](https://github.com/jottenlips/jottenlips.github.io/blob/main/finding-out-8-30-2025-img/wisconsin1.JPG?raw=true)
 ![extrasmall](https://github.com/jottenlips/jottenlips.github.io/blob/main/finding-out-8-30-2025-img/wisconsin2.JPG?raw=true)
