@@ -94,7 +94,7 @@ I went in for my CT scan. It was the children’s underwater-themed one, which m
 
 I was admitted. They put a camera down my throat, did another CT, and found a mass in my chest and neck. It was in a place they couldn’t surgically remove. Over the next four days, I had two surgical biopsies and met several oncologists and cancer specialists. They also tested me for infections since I’d recently been in caves. One possibility was histoplasmosis, but with all the oncologists around, I had the feeling they already knew. 
 
-My friends Roman, Eve, and Scott came to visit and keep me company as well as my brother and family which made the days go by a bit quicker. I am also thankful for all the phone calls that kept my mind off of things. My older brother called me everyday.
+My friends Roman, Eve, and Scott came to visit and keep me company as well as my little brother and family which made the days go by a bit quicker. I am also thankful for all the phone calls that kept my mind off of things. My older brother called me everyday.
 
 The allergist also called me before one surgery. Apparently, I have Alpha-Gal and am allergic to red meat.  
 
