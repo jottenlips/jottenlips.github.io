@@ -102,7 +102,7 @@ I was discharged in time to celebrate my son’s birthday with family who had co
 
 **August 15 – The Diagnosis**  
 
-I was refreshing the portal every few hours for ten days, but never got the pathology report. Then I got the call. The Dr. begcan describing Classical Hodgkin’s Lymphoma and how they were very thorough in the pathology. It is rare and difficult to diagnose.
+I was refreshing the portal every few hours for ten days, but never got the pathology report. Then I got the call. The Dr. began describing Classical Hodgkin’s Lymphoma and how they were very thorough in the pathology. It is rare and difficult to diagnose.
 
 The pathology report showed up in the portal. I read the report carefully. Within an hour, I was inundated with calls from oncologists and nurses to schedule tests for treatment. One doctor told me, “You got a *good* cancer that we can cure. You're in good hands.” It left me with mixed emotions.
 
