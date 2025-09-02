@@ -1,7 +1,7 @@
 > # Welcome!
 
 > Hey, I am John Franke, a programmer and musician living in Nashville Tennessee.
-> I made this site to post about coding, climbing, and music. I am also battling Hodgkin's lymphoma. 
+> I made this site to post about coding, climbing, and music. I am also battling [Hodgkin's lymphoma](blog/cancer/finding-out-8-30-2025/). 
 >   
 > Thanks for reading,
 
