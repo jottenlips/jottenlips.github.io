@@ -128,7 +128,7 @@ I got into a clinical trial that might let me try immunotherapy. It’s a 50/50 
 
 **August 29 – First Time Climbing on Ropes Again** 
 
-A friend and accomplished climber I hadn’t seen in a decade reached out. We met up at Climb So iLL downtown and top-roped together. Thank you, Jackson, you’re a legend.  
+A friend and accomplished climber I hadn’t seen in a decade reached out. We met up at Climb So iLL downtown and climbed together. Thank you, Jackson, you’re a legend.  
 
 ![extrasmall](https://github.com/jottenlips/jottenlips.github.io/blob/main/finding-out-8-30-2025-img/climbsoill.JPG?raw=true)
 
