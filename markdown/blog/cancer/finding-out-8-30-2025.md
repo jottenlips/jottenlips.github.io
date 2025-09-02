@@ -73,7 +73,7 @@ The ultrasound results came back strange. The radiologist suggested it was simpl
 
 Meanwhile, I continued life as normal, fighting through symptoms. The allergist had me increase my antihistamine dosage, which helped mask the itching for a while.  
 
-At work, we finally launched our new mobile app, a goal we had been working on all year. Getting it out into the world was a big source of relief and satisfaction. Mentally I felt positive, enjoying time with teammates who had flown in from all over the world for a product summit. Physically, I was rough. My shoulder and neck were worsening and other symptoms were developing. That night I flew to St. Louis, then drove to Wisconsin for a family vacation. I hoped a week in the fresh north woods air would fix my immune system and calm my health anxiety. 
+At work, we finally launched our new mobile app, a goal we had been working on all year. Getting it out into the world was a big source of relief, joy, and satisfaction. Mentally I felt positive, enjoying time with teammates who had flown in from all over the world for a product summit. Physically, I was rough. My shoulder and neck were worsening and other symptoms were developing. That night I flew to St. Louis, then drove to Wisconsin for a family vacation. I hoped a week in the fresh north woods air would fix my immune system and calm my health anxiety. 
 
 ![extrasmall](https://github.com/jottenlips/jottenlips.github.io/blob/main/finding-out-8-30-2025-img/wisconsin1.JPG?raw=true)
 ![extrasmall](https://github.com/jottenlips/jottenlips.github.io/blob/main/finding-out-8-30-2025-img/wisconsin2.JPG?raw=true)
@@ -94,7 +94,7 @@ I went in for my CT scan. It was the children’s underwater-themed one, which m
 
 I was admitted. They put a camera down my throat, did another CT, and found a mass in my chest and neck. It was in a place they couldn’t surgically remove. Over the next four days, I had two surgical biopsies and met several oncologists and cancer specialists. They also tested me for infections since I’d recently been in caves. One possibility was histoplasmosis, but with all the oncologists around, I had the feeling they already knew. 
 
-My friends Roman, Eve, and Scott came to visit and keep me company as well as my brother and family which made the days go by a bit quicker.
+My friends Roman, Eve, and Scott came to visit and keep me company as well as my little brother and family which made the days go by a bit quicker. I am also thankful for all the phone calls that kept my mind off of things. My older brother called me everyday.
 
 The allergist also called me before one surgery. Apparently, I have Alpha-Gal and am allergic to red meat.  
 
@@ -102,7 +102,7 @@ I was discharged in time to celebrate my son’s birthday with family who had co
 
 **August 15 – The Diagnosis**  
 
-I was refreshing the portal every few hours for ten days, but never got the pathology report. Then I got the call. The Dr. begcan describing Classical Hodgkin’s Lymphoma and how they were very thorough in the pathology. It is rare and difficult to diagnose.
+I was refreshing the portal every few hours for ten days, but never got the pathology report. Then I got the call. The Dr. began describing Classical Hodgkin’s Lymphoma and how they were very thorough in the pathology. It is rare and difficult to diagnose.
 
 The pathology report showed up in the portal. I read the report carefully. Within an hour, I was inundated with calls from oncologists and nurses to schedule tests for treatment. One doctor told me, “You got a *good* cancer that we can cure. You're in good hands.” It left me with mixed emotions.
 
