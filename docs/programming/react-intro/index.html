@@ -73,7 +73,7 @@
         </a>
       </div>
       <div class="block">
-        <!-- <a href="javascript:history.go(-1)" class="back"> <- Go Back</a> -->
+        <a href="javascript:history.go(-1)" style="display: none;" class="back"> <- Go Back</a>
         <h1 id="Let-39-s-make-a-React-App">Let&#39;s make a React App.</h1>
 
 <p>A common pattern in modern web development is the Single Page Application, or (SPA). This concept is where a single index.html file is sent to a browser that contains the code to run your application. It may request other resources like css files and javascript chunks depending on the size of your application and the framework and libraries you use. For this tutorial we will use create-react-app to spin up your first app. We will also put the app behind version control.</p>
@@ -220,12 +220,12 @@ git push --set-upstream origin main</code></pre>
 
     <script>
       // hide back button on home page
-      //   window.onload = function () {
-      //   if (window.location.pathname === "/") {
-      //   window.document.getElementsByClassName("back")[0].style.display =
-      //   "none";
-      //}
-      //};
+        window.onload = function () {
+        if (window.location.pathname !== "/") {
+        window.document.getElementsByClassName("back")[0].style.display =
+        "inline";
+        }
+      };
 
       document.addEventListener("DOMContentLoaded", (event) => {
         document.querySelectorAll("code").forEach((el) => {

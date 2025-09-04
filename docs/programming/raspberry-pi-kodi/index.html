@@ -73,7 +73,7 @@
         </a>
       </div>
       <div class="block">
-        <!-- <a href="javascript:history.go(-1)" class="back"> <- Go Back</a> -->
+        <a href="javascript:history.go(-1)" style="display: none;" class="back"> <- Go Back</a>
         <h1 id="Raspberry-Pi-Media-Server-with-Kodi-and-ExFAT-External-Drive">Raspberry Pi Media Server with Kodi and ExFAT External Drive</h1>
 
 <blockquote><p>Written January 7th, 2023</p>
@@ -243,12 +243,12 @@ network={
 
     <script>
       // hide back button on home page
-      //   window.onload = function () {
-      //   if (window.location.pathname === "/") {
-      //   window.document.getElementsByClassName("back")[0].style.display =
-      //   "none";
-      //}
-      //};
+        window.onload = function () {
+        if (window.location.pathname !== "/") {
+        window.document.getElementsByClassName("back")[0].style.display =
+        "inline";
+        }
+      };
 
       document.addEventListener("DOMContentLoaded", (event) => {
         document.querySelectorAll("code").forEach((el) => {

@@ -73,7 +73,7 @@
         </a>
       </div>
       <div class="block">
-        <!-- <a href="javascript:history.go(-1)" class="back"> <- Go Back</a> -->
+        <a href="javascript:history.go(-1)" style="display: none;" class="back"> <- Go Back</a>
         <p><a href='finding-out-8-30-2025/'>Summer 2025 - The Summer I Got Cancer</a></p>
 <p><a href='first-infusion-of-chemo-9-4-2025/'>September 4th, 2025 - My First Chemotheropy Infusion</a></p>
 
@@ -97,12 +97,12 @@
 
     <script>
       // hide back button on home page
-      //   window.onload = function () {
-      //   if (window.location.pathname === "/") {
-      //   window.document.getElementsByClassName("back")[0].style.display =
-      //   "none";
-      //}
-      //};
+        window.onload = function () {
+        if (window.location.pathname !== "/") {
+        window.document.getElementsByClassName("back")[0].style.display =
+        "inline";
+        }
+      };
 
       document.addEventListener("DOMContentLoaded", (event) => {
         document.querySelectorAll("code").forEach((el) => {
