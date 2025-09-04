@@ -11,7 +11,7 @@ and feels a little burny going in. Staying hydrated has definitely been
 key as well as taking my anti-nausea pills as soon as I feel nasuea coming on. 
 My vision feels a little slow and slightly blurry.
 
-Last night I managed to get a walk in with my brother yesterday and talk with a few friends on the phone (hi, Autumn).
+Last night I managed to get a walk in with my brother and talk with a few friends on the phone (hi, Autumn).
 This morning I even wrote some code for an iOS widget.
 Honestly, this isn't as bad as I thought it would be so far. I know the
 effects build up with each treatment, but now that I've gone through the
