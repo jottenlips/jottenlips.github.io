@@ -73,7 +73,7 @@
         </a>
       </div>
       <div class="block">
-        <a href="javascript:history.go(-1)" style="display: none;" class="back"> <- Go Back</a>
+        <a style="display: none;" class="back" id="backLink" href="#"> <- Go Back</a>
         <p><a href='finding-out-8-30-2025/'>Summer 2025 - The Summer I Got Cancer</a></p>
 <p><a href='first-infusion-of-chemo-9-4-2025/'>September 4th, 2025 - My First Chemotheropy Infusion</a></p>
 
@@ -101,6 +101,14 @@
         if (window.location.pathname !== "/") {
         window.document.getElementsByClassName("back")[0].style.display =
         "inline";
+
+        const backLink = document.getElementById("backLink");
+        const path = window.location.pathname;
+
+        // Remove the last segment after the final "/"
+        const parentPath = path.substring(0, path.lastIndexOf("/")) || "/";
+        
+        backLink.href = parentPath;
         }
       };
 

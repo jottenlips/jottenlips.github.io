@@ -73,7 +73,7 @@
         </a>
       </div>
       <div class="block">
-        <a href="javascript:history.go(-1)" style="display: none;" class="back"> <- Go Back</a>
+        <a style="display: none;" class="back" id="backLink" href="#"> <- Go Back</a>
         <p><a href='https://www.mountainproject.com/user/201166134/john-ottenlips-franke'>Mountain Project</a></p>
 <p><a href='firsttime/'>First time lead climbing outdoors</a></p>
 <p><a href='southeast/'>Favorite Spots in the Southeast</a></p>
@@ -105,6 +105,14 @@
         if (window.location.pathname !== "/") {
         window.document.getElementsByClassName("back")[0].style.display =
         "inline";
+
+        const backLink = document.getElementById("backLink");
+        const path = window.location.pathname;
+
+        // Remove the last segment after the final "/"
+        const parentPath = path.substring(0, path.lastIndexOf("/")) || "/";
+        
+        backLink.href = parentPath;
         }
       };
 

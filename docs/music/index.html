@@ -73,7 +73,7 @@
         </a>
       </div>
       <div class="block">
-        <a href="javascript:history.go(-1)" style="display: none;" class="back"> <- Go Back</a>
+        <a style="display: none;" class="back" id="backLink" href="#"> <- Go Back</a>
         <h1 id="Music">🎸 Music</h1>
 
 <p><a href='https://open.spotify.com/artist/5N9x2S8mZSVuJVd1MOc1bc'>Gardens 🌱</a>
@@ -117,6 +117,14 @@
         if (window.location.pathname !== "/") {
         window.document.getElementsByClassName("back")[0].style.display =
         "inline";
+
+        const backLink = document.getElementById("backLink");
+        const path = window.location.pathname;
+
+        // Remove the last segment after the final "/"
+        const parentPath = path.substring(0, path.lastIndexOf("/")) || "/";
+        
+        backLink.href = parentPath;
         }
       };
 
