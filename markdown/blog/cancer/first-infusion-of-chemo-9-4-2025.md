@@ -16,7 +16,7 @@ This morning I even wrote some code for an iOS widget.
 Honestly, this isn't as bad as I thought it would be so far. I know the
 effects build up with each treatment, but now that I've gone through the
 first one, my anxiety has gone way down. Some of the cancer
-symptoms have eased up, like the severe itching and the sweatiness.
+symptoms have eased up, like the severe itching and the sweatiness. Thank you my fellow "LympHomies" for sharing your experiences. It has really helped me deal with the side effects so far. Hopefully the rest of the week goes as easy as today.
 
 ### The Infusion Experience
 
