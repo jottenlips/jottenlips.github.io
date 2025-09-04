@@ -1,3 +1,5 @@
+![extrasmall](https://github.com/jottenlips/jottenlips.github.io/blob/main/finding-out-8-30-2025-img/heresy2.jpg?raw=true)
+
 [Mountain Project](https://www.mountainproject.com/user/201166134/john-ottenlips-franke)
 
 [First time lead climbing outdoors](firsttime/)
