@@ -73,7 +73,7 @@
         </a>
       </div>
       <div class="block">
-        <!-- <a href="javascript:history.go(-1)" class="back"> <- Go Back</a> -->
+        <a href="javascript:history.go(-1)" style="display: none;" class="back"> <- Go Back</a>
         <h1 id="Ascend-with-Automation-Vestaboard-and-GitHub-Actions-Inspired-Consistency-in-My-Rock-Climbing-Training">Ascend with Automation: Vestaboard and GitHub Actions Inspired Consistency in My Rock Climbing Training</h1>
 
 <p>Hey, I&#39;m John Franke, a member of the platform team at Vestaboard. I&#39;m excited to share my journey of preparing for the fall rock climbing season and how Vestaboard, along with GitHub Actions, played a crucial role in my successful off-wall training routine.</p>
@@ -206,12 +206,12 @@ jobs:
 
     <script>
       // hide back button on home page
-      //   window.onload = function () {
-      //   if (window.location.pathname === "/") {
-      //   window.document.getElementsByClassName("back")[0].style.display =
-      //   "none";
-      //}
-      //};
+        window.onload = function () {
+        if (window.location.pathname !== "/") {
+        window.document.getElementsByClassName("back")[0].style.display =
+        "inline";
+        }
+      };
 
       document.addEventListener("DOMContentLoaded", (event) => {
         document.querySelectorAll("code").forEach((el) => {
