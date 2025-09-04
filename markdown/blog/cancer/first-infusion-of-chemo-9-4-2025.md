@@ -17,6 +17,8 @@ effects build up with each treatment, but now that I've gone through the
 first one, my anxiety has gone way down. Some of the cancer
 symptoms have eased up, like the severe itching and the sweatiness. Thank you my fellow "LympHomies" for sharing your experiences. It has really helped me deal with the side effects so far. Hopefully the rest of the week goes as easy as today.
 
+![extrasmall](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsVnLgMS3iRb85NHevJQXhJx6u6MkBSodoXQ&s/)
+
 ### The Infusion Experience
 
 -   First chemo (ABVD) on September 3rd.
