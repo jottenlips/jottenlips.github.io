@@ -5,14 +5,14 @@
 ## **September 4 – the Day After**  
 
 Yesterday was crazy. I have never been more zonked in my life.
-I had the weirdest chemo dreams. One where I fealt like I was sleeping on a boat and couldn't move. The other I fealt like I was shot.
+I had the weirdest chemo dreams after falling asleep to Lord of the Rings. One where I fealt like I was sleeping on a boat and couldn't move. The other I fealt like I was shot.
 The infusions went well overall. The only uncomfortable part was the last bag, Dacarbazine. It takes an hour
 and feels a little burny going in. Staying hydrated has definitely been
 key as well as taking my anti-nausea pills as soon as I feel nasuea coming on. 
 My vision feels a little slow and slightly blurry.
 
-Yesterday I managed to get a walks in with my brother and this morning I even wrote some code for an iOS widget.
-Last night I talked with a few friends on the phone (hi, Autumn).
+Last night I managed to get a walk in with my brother yesterday and talk with a few friends on the phone (hi, Autumn).
+This morning I even wrote some code for an iOS widget.
 Honestly, this isn't as bad as I thought it would be so far. I know the
 effects build up with each treatment, but now that I've gone through the
 first one, my anxiety has gone way down. Some of the cancer
@@ -33,7 +33,7 @@ symptoms have eased up, like the severe itching and the sweatiness.
 During treatment, I learned a couple of strange but kind of cool facts
 about the drugs:
 
-- Adriamycin comes from Italian soil near a castle.
-- The "B" drug (Bleomycin) comes from a flower in Madagascar.
+- Adriamycin comes from Italian soil bacteria discovered near a castle over looking the Adriatic Sea.
+- The "B" drug (Bleomycin) comes from a flower in Madagascar. My MIL took my son to the botanical garden in St. Louis during my treatment and they found this fact on a plaque in the greenhouse!
 
 ---
