@@ -2,9 +2,7 @@
 
 ---
 
-## September
-
-**September 4 – the Day After**  
+## **September 4 – the Day After**  
 
 Yesterday was crazy. I have never been more zonked in my life.
 I had the weirdest chemo dreams. One where I fealt like I was sleeping on a boat and couldn't move. The other I fealt like I was shot.
