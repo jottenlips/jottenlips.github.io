@@ -1,3 +1,5 @@
+[![small]()
+
 [1. Intro to Node.js, local development, and JavaScript functions](functions/)
 
 [2. Intro to React](react-intro/)
