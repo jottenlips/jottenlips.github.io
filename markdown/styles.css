@@ -117,6 +117,19 @@ pre {
         margin-bottom: 10px;
         flex-direction: column;
     }
+    .footer {
+        max-width: 800px;
+        min-width: 300px;
+        width: 90%;
+        padding: 10px;
+        border-radius: 6px;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+        flex-direction: column;
+    }
     .coverimage {
         background: transparent;
         /* RANDOM PHOTO */
