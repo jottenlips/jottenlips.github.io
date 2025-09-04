@@ -1,14 +1,14 @@
-# My First Chemotheropy Infusion
+# My First Chemotherapy Infusion
 
 ---
 
 ## **September 4 – the Day After**
 
 Yesterday was crazy. I have never been more zonked in my life.
-I had the weirdest chemo dreams after falling asleep to Lord of the Rings. In the the first one I felt like I was sleeping on a boat and couldn't move. In the the other one, I felt like I was shot.
+I had the weirdest chemo dreams after falling asleep to Lord of the Rings. In the first one I felt like I was sleeping on a boat and couldn't move. In the other one, I felt like I was shot.
 The infusions went well overall. The only uncomfortable part was the last bag, Dacarbazine. It takes an hour
 and feels a little burny going in. Thank you Adrienne for keeping my mind off of things and entertaining me with chemo trivia. Staying hydrated has definitely been
-key as well as taking my anti-nausea pills as soon as I feel nasuea coming on.
+key, along with taking my anti-nausea pills as soon as I feel it coming on.
 My vision feels a little slow and slightly blurry.
 
 Last night I managed to get a walk in with my brother and talk with a few friends on the phone (hi, Autumn).
