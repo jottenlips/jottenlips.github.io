@@ -12,8 +12,7 @@ key as well as taking my anti-nausea pills as soon as I feel nasuea coming on.
 My vision feels a little slow and slightly blurry.
 
 Last night I managed to get a walk in with my brother and talk with a few friends on the phone (hi, Autumn).
-This morning I even wrote some code for an iOS widget.
-Honestly, this isn't as bad as I thought it would be so far. I know the
+This morning I even wrote some code for an iOS widget. The
 effects build up with each treatment, but now that I've gone through the
 first one, my anxiety has gone way down. Some of the cancer
 symptoms have eased up, like the severe itching and the sweatiness. Thank you my fellow "LympHomies" for sharing your experiences. It has really helped me deal with the side effects so far. Hopefully the rest of the week goes as easy as today.
