@@ -73,7 +73,7 @@
         </a>
       </div>
       <div class="block">
-        <a href="javascript:history.go(-1)" style="display: none;" class="back"> <- Go Back</a>
+        <a style="display: none;" class="back" id="backLink" href="#"> <- Go Back</a>
         <h1 id="One-bowl-dutch-oven-no-knead-bread-recipe">One bowl dutch oven no-knead bread recipe</h1>
 
 <p><img src='https://github.com/jottenlips/jottenlips.github.io/blob/aeed42fef1d5ffd10e69a8ea5b44de14bc0e0c85/IMG_0702.jpeg?raw=true' alt='small' /></p>
@@ -138,6 +138,14 @@ I like to use hemp seeds since they are small and nutritious.</p>
         if (window.location.pathname !== "/") {
         window.document.getElementsByClassName("back")[0].style.display =
         "inline";
+
+        const backLink = document.getElementById("backLink");
+        const path = window.location.pathname;
+
+        // Remove the last segment after the final "/"
+        const parentPath = path.substring(0, path.lastIndexOf("/")) || "/";
+        
+        backLink.href = parentPath;
         }
       };
 

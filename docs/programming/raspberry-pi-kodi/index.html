@@ -73,7 +73,7 @@
         </a>
       </div>
       <div class="block">
-        <a href="javascript:history.go(-1)" style="display: none;" class="back"> <- Go Back</a>
+        <a style="display: none;" class="back" id="backLink" href="#"> <- Go Back</a>
         <h1 id="Raspberry-Pi-Media-Server-with-Kodi-and-ExFAT-External-Drive">Raspberry Pi Media Server with Kodi and ExFAT External Drive</h1>
 
 <blockquote><p>Written January 7th, 2023</p>
@@ -247,6 +247,14 @@ network={
         if (window.location.pathname !== "/") {
         window.document.getElementsByClassName("back")[0].style.display =
         "inline";
+
+        const backLink = document.getElementById("backLink");
+        const path = window.location.pathname;
+
+        // Remove the last segment after the final "/"
+        const parentPath = path.substring(0, path.lastIndexOf("/")) || "/";
+        
+        backLink.href = parentPath;
         }
       };
 
