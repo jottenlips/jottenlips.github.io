@@ -220,19 +220,24 @@ I cannot recommend this book enough for anyone trying to understand the fretboar
 
     <script>
       // hide back button on home page
-        window.onload = function () {
-        if (window.location.pathname !== "/") {
-        window.document.getElementsByClassName("back")[0].style.display =
-        "inline";
-
+      window.onload = function () {
         const backLink = document.getElementById("backLink");
         const path = window.location.pathname;
 
-        // Remove the last segment after the final "/"
-        const parentPath = path.substring(0, path.lastIndexOf("/")) || "/";
-        
-        backLink.href = parentPath;
+        // Hide button if we're already at root
+        if (path === "/") return;
+
+        backLink.style.display = "inline";
+
+        // Remove the last segment
+        let parentPath = path.substring(0, path.lastIndexOf("/")) || "/";
+
+        // If parentPath is empty (like when path is "/blog"), force "/"
+        if (parentPath === "") {
+          parentPath = "/";
         }
+
+        backLink.href = parentPath;
       };
 
       document.addEventListener("DOMContentLoaded", (event) => {
