@@ -117,20 +117,20 @@ Microwave for 3 minutes.
       // hide back button on home page
       window.onload = function () {
         const backLink = document.getElementById("backLink");
-        const path = window.location.pathname;
+        let path = window.location.pathname;
 
-        // Hide button if we're already at root
+        // Hide button if we're at root
         if (path === "/") return;
 
         backLink.style.display = "inline";
 
+        // Remove trailing slash (except for root)
+        if (path.endsWith("/") && path !== "/") {
+          path = path.slice(0, -1);
+        }
+
         // Remove the last segment
         let parentPath = path.substring(0, path.lastIndexOf("/")) || "/";
-
-        // If parentPath is empty (like when path is "/blog"), force "/"
-        if (parentPath === "") {
-          parentPath = "/";
-        }
 
         backLink.href = parentPath;
       };
