@@ -57,7 +57,25 @@ For code syntax highlighting, I am using [highlight.js](https://highlightjs.org/
 
 [Update My Board](https://vb.plus/JOHNFRANKE)
 
-<iframe src="https://digital.vestaboard.com/599c0a40V4c65V42cdV9b44Veb5045c630f3" width="340" height="181" scrolling="no" style="border: none"></iframe>
+<style>
+  iframe.vb {
+    border: none;
+    width: 100%;
+    height: 424px;
+  }
+  @media (max-width: 600px) {
+    iframe.vb {
+      width: 340px;
+      height: 181px;
+    }
+  }
+</style>
+
+<iframe 
+  class="vb"
+  src="https://digital.vestaboard.com/599c0a40V4c65V42cdV9b44Veb5045c630f3" 
+  scrolling="no">
+</iframe>
 
 [Vestaboard Developer Blog](https://docs.vestaboard.com/blog)
 
