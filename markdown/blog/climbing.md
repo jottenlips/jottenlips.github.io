@@ -18,6 +18,7 @@
 I have been tracking all of my indoor climbing sessions with a Garmin to get the approximate feet and grade.
 The code to generate these charts can be found here: [Garmin Climbing Charts](https://github.com/jottenlips/garminclimb)
 
+### Ropes
 
 ```javascript
 Max Grade Per Session Indoor Climbing
@@ -131,9 +132,12 @@ Active Minutes Per Session
         └┬──────────┬──────────┬─────────┬──────────┬──────────┬──────────┬──────────┬──────────┬─────────┬──────────┬──────────┬▶
 2025-02-25 2025-02-27 2025-03-092025-03-16 2025-03-23 2025-04-22 2025-04-29 2025-05-20 2025-05-282025-07-09 2025-08-29 2025-09-10 
 
+```
 
+### Bouldering
 
-Bouldering===============================
+```javascript
+
 Max Grade Per Session Bouldering
 
         ▲                                                                                                                                                                                                                                                                                                                                                                         
@@ -209,6 +213,11 @@ Approx Boulder Feet By Month
 2025-02   2025-05  2025-08 
    2022025-042022025-07   
 
+```
+
+### Combined
+
+```javascript
 Total Feet By Month Combined
 
      ▲   █      █          
