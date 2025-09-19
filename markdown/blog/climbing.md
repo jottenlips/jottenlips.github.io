@@ -19,7 +19,7 @@ I have been tracking all of my indoor climbing sessions with a Garmin to get the
 The code to generate these charts can be found here: [Garmin Climbing Charts](https://github.com/jottenlips/garminclimb)
 
 
-```
+```javascript
 Max Grade Per Session Indoor Climbing
 
         ▲                                                                                                                         
