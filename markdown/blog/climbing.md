@@ -15,7 +15,7 @@
 
 ## Indoor Climbing Stats
 
-I have been tracking all of my indoor climbing sessions with a Garmin to get the approximate feet and grade.
+I have been tracking most of my indoor climbing sessions with a Garmin to get the approximate feet and grade.
 The code to generate these charts can be found here: [Garmin Climbing Charts](https://github.com/jottenlips/garminclimb)
 
 ### Ropes
