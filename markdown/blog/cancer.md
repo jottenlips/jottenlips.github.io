@@ -8,4 +8,4 @@
 
 [September 16th-18th, 2025: Second Chemotherapy Infusion - NEW GUITAR!?](second-infusion-of-chemo-9-18-2025/)
 
-[Ovtober 1st-15th, 2025: Halfway](halfway-10-1-2025/)
+[October 1st-15th, 2025: Halfway](halfway-10-1-2025/)
