@@ -5,8 +5,10 @@
 The PET scan came back clean, and I’m officially in complete remission!!!! 
 The trial sorted me into four more infusions of ABVD.
 
+> (BEFORE TREATMENT)
 ![extrasmall](https://github.com/jottenlips/jottenlips.github.io/blob/main/finding-out-8-30-2025-img/cancerpet.png?raw=true)
 
+> (HALFWAY THROUGH TREATMENT)
 ![extrasmall](https://github.com/jottenlips/jottenlips.github.io/blob/main/starting-the-second-half-of-treatment-11-5-2025-img/cleanpet.JPEG?raw=true)
 
 
