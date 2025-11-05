@@ -7,7 +7,7 @@ The trial sorted me into four more infusions of ABVD.
 
 ![extrasmall](https://github.com/jottenlips/jottenlips.github.io/blob/main/finding-out-8-30-2025-img/cancerpet.png?raw=true)
 
-![extrasmall](https://github.com/jottenlips/jottenlips.github.io/blob/main/starting-the-second-half-of-treatment-11-5-2025-img/cleanpet.JEPG?raw=true)
+![extrasmall](https://github.com/jottenlips/jottenlips.github.io/blob/main/starting-the-second-half-of-treatment-11-5-2025-img/cleanpet.JPEG?raw=true)
 
 
 Outside of the hospital, life’s been moving fast. I got thrown off some V4s and V5s at the climbing gym (Climb So Ill), bought a house, and fought a particularly stubborn Ikea dresser through an early 1900s stairway.
