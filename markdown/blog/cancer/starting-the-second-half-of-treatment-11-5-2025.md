@@ -26,7 +26,7 @@ Another infusion down. 🥴
 
 ## October 31
 
-My son’s **first Halloween!** 👻 I won’t forget it. The neighborhood went all out.
+My son’s **first Halloween!** 👻 I won’t forget it. The neighborhood went all out. A major highlight was my little brother and his fiance coming over with buffalo chicken dip.
 
 ## First Week of November
 
