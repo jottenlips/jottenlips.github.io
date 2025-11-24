@@ -1,6 +1,6 @@
 # Welcome!
 
-> Hey, I am John Franke, a programmer and musician living in Nashville Tennessee.
+> Hey, I am John Franke, a programmer and musician living in the midwest.
 > I made this site to post about coding, climbing, and music. I am also battling [Hodgkin's lymphoma](blog/cancer/). 
 > 
 > Thanks for reading,
