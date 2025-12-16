@@ -11,3 +11,5 @@
 [October 1st-15th, 2025: Halfway](halfway-10-1-2025/)
 
 [October 20th - November 5th 2025; Starting the Second Half of Treatment](starting-the-second-half-of-treatment-11-5-2025/)
+
+[Nov 6th - Dec 10th; Finishing Chemo](finishing-chemo-dec-16-2025/)
