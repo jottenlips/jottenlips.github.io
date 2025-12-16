@@ -1,4 +1,4 @@
-# Finish Chemo
+# Finishing Chemo
 
 The second half of treatment felt like it went by faster than the first, or maybe I just got better at distracting myself.
 
