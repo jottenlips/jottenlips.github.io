@@ -1,7 +1,7 @@
 # Welcome!
 
 > Hey, I am John Franke, a programmer and musician living in the midwest.
-> I made this site to post about coding, climbing, and music. I am also battling [Hodgkin's lymphoma](blog/cancer/). 
+> I made this site to post about coding, climbing, and music. I am also a [Hodgkin's lymphoma](blog/cancer/) survivor. 
 > 
 > Thanks for reading,
 
