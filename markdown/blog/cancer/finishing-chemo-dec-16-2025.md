@@ -8,7 +8,7 @@ I learned a few things along the way. Icing my hands and mouth helps *a lot* wit
 
 My friend Max came into town from NYC with his girlfriend Kate, and we went to the City Museum, got soup dumplings, and took my son to nature play. My brother Michael was in town and joined us for some things too.
 
-My family also went hiking at Castlewood. Being outside helped more than I can put into words. Parking is a total nightmare there if you get a late start!
+My family also went hiking at Castlewood. Parking is a total nightmare there if you get a late start!
 
 I managed to make it to the climbing gym a few times and attend a yoga clinic.
 
