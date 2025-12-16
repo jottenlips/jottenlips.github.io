@@ -1,37 +1,37 @@
-name: Run Agave
-on: 
-  push:
-    branches:
-      - main
-jobs:
-  agave:
-    runs-on: macOS-14
-    steps:
-      - name: checkout
-        uses: actions/checkout@v2
+# name: Run Agave
+# on: 
+#   push:
+#     branches:
+#       - main
+# jobs:
+#   agave:
+#     runs-on: macOS-14
+#     steps:
+#       - name: checkout
+#         uses: actions/checkout@v2
 
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16
+#       - uses: actions/setup-node@v3
+#         with:
+#           node-version: 16
 
-      - name: build site
-        run: |
-          # npm i --prefix /usr/local -g esy 
-          # npm install
-          # ./node_modules/.bin/Agave -p docs
-          npm install -g agave-generator
-          agave -p docs 
+#       - name: build site
+#         run: |
+#           # npm i --prefix /usr/local -g esy 
+#           # npm install
+#           # ./node_modules/.bin/Agave -p docs
+#           npm install -g agave-generator
+#           agave -p docs 
 
 
 
-      - name: git config
-        run: |
-          git config user.name "GitHub Bot"
-          git config user.email "jottenlips+ghbot@gmail.com"
+#       - name: git config
+#         run: |
+#           git config user.name "GitHub Bot"
+#           git config user.email "jottenlips+ghbot@gmail.com"
 
-      - name: commit
-        run: |
-          # Stage the file, commit and push
-          git add --all
-          git commit -m "deploy site"
-          git push origin main
+#       - name: commit
+#         run: |
+#           # Stage the file, commit and push
+#           git add --all
+#           git commit -m "deploy site"
+#           git push origin main
