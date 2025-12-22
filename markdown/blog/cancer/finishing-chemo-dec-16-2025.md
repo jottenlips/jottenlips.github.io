@@ -50,7 +50,7 @@ Thank you most of all to my doctors and nurses who figured out the situation and
 
 You all got me through this, and I am eternally grateful.
 
-Merry Christmas and Happy New Year. My next scan is January 7th. Let’s hope 2026 is full of more memories, laughs, music, bug-free code, travel, climbing, and incredible moments with friends and family.
+Merry Christmas and Happy New Year. My next scan is January 7th. Let’s hope 2026 is full of more memories, laughs, music, bug-free code, travel, climbing, and incredible moments with friends and family. Everyday is a gift.
 
 Love,  
 — John
