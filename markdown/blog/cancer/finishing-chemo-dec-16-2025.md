@@ -1,6 +1,6 @@
 # Finishing Chemo
 
-The second half of treatment felt like it went by faster than the first, or maybe I just got better at distracting myself.
+The second half of treatment felt like it went by faster than the first, or maybe I just got better at distracting myself and dissociating on treatment weeks.
 
 I learned a few things along the way. Icing my hands and mouth helps *a lot* with mouth sores and neuropathy. My main symptoms have been bad stomach aches, headaches, soreness, and fatigue. The best way I can describe it is: doing a fourteener, dehydrated, with IBS. Most days after treatment, I was lucky if I could do a small lap around the block without being too exhuasted. I had some amazing times on the good weeks, so I will focus on those in this post.
 
