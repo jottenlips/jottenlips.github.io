@@ -18,6 +18,8 @@ I have been tracking most of my indoor climbing sessions with a Garmin to get th
 The code to generate these charts can be found here: [Garmin Climbing Charts](https://github.com/jottenlips/garminclimb)
 
 ```javascript
+All Time Total Feet Climbed: 14809 ft
+
 Total Route Feet By Month
 
      ▲                      █
