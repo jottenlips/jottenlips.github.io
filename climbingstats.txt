@@ -1,4 +1,5 @@
 Parsing activities...
+https://connect.garmin.com/modern/activities?activityType=fitness_equipment&activitySubType=bouldering
 Max Grade Per Session Indoor Climbing
 
         ▲                                                                                                                                   
