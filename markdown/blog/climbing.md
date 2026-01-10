@@ -19,19 +19,12 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
 
 ```
 All Time Total Feet Climbed: 15285 ft
-
 All Time Total Number of Routes Climbed: 163
-
 All Time Total Number of Falls: 102
-
 All Time Average Max Grade: 511A
-
 All Time Max Grade: 512A
-
 All Time Total Number of Boulders Climbed: 1193
-
 All Time Average Max Boulder Grade: V5
-
 All Time Max Boulder Grade: V7
 
 Total Route Feet By Month
