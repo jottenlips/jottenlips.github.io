@@ -82,7 +82,7 @@ pre {
   background-color: #ebebeb;
   padding: 10px;
   margin-bottom: 15px;
-  overflow-y: scroll;
+  overflow-y: auto;
   border-radius: 6px;
 }
 
