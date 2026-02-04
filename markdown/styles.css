@@ -92,7 +92,7 @@ pre {
   width: 90%;
   background-color: #ebebeb;
   padding: 10px;
-  overflow-y: scroll;
+  overflow-y: auto;
   border-radius: 6px;
   align-items: center;
   justify-content: space-evenly;
@@ -107,7 +107,7 @@ pre {
   width: 90%;
   background-color: #ebebeb;
   padding: 10px;
-  overflow-y: scroll;
+  overflow-y: auto;
   border-radius: 6px;
   align-items: center;
   justify-content: space-evenly;
