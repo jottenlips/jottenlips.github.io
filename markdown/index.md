@@ -11,14 +11,17 @@
 
 Here are a few of my favorite charities.
 
-> Every February, I climb for charity. We hit the goal in 2022, 2023, 2024, and 2025. Let's do it again in 2026! This year I will be climbing for [MICA Project](https://www.mica-project.org/). You can donate to my fundraiser [here](https://ig.me/1SsLF2kgo4a4nXz) or directlty on their website. I will be donating a $1 for every boulder or route climbed in February. I will be updating my progress on my Instagram as well as the clinmbing section of my [blog](blog/climbing/).
+> Every February, I climb for charity. This year I will donate a $1 for every route or boulder sent to [MICA Project](https://www.mica-project.org/). You can donate to my fundraiser [here](https://ig.me/1SsLF2kgo4a4nXz) or directly on their website. I will be updating my progress on my Instagram as well as the clinmbing section of my [blog](blog/climbing/).
 
 > Past years:
+
 > [Catalyst Sports 3000ft 2025](https://p2p.onecause.com/challengeforaccess2025/john-franke)
 
 > [Catalyst Sports 3000ft 2024](https://www.mightycause.com/story/Qw3r4g)
 
 > [Paradox Sport Mile 2023](https://paradoxsports.salsalabs.org/paradoxmileclimbnashville2023/p/johnottenlipsfranke/index.html)
+
+> [Paradox Sport Mile 2022](https://www.paradoxsports.org/wp-content/uploads/2022/07/FY22-Annual-Report-FINAL.pdf)
 
 [Donate to Project Healthy Children](https://projecthealthychildren.org/)
 
