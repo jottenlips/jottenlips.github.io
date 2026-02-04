@@ -1,27 +1,28 @@
 # Welcome!
 
 > Hey, I am John Franke, a programmer and musician living in the midwest.
-> I made this site to post about coding, climbing, and music. I am also a [Hodgkin's lymphoma](blog/cancer/) survivor. 
-> 
+> I made this site to post about coding, climbing, and music. I am also a [Hodgkin's lymphoma](blog/cancer/) survivor.
+>
 > Thanks for reading,
 
 ---
 
-## Feeling generous? 
+## Feeling generous?
 
 Here are a few of my favorite charities.
 
-[Donate to Catalyst Sports 2025](https://p2p.onecause.com/challengeforaccess2025/john-franke)
+> Every February, I climb for charity. We hit the goal in 2022, 2023, 2024, and 2025. Let's do it again in 2026! This year I will be climbing for [MICA Project](https://www.mica-project.org/). You can donate to my fundraiser [here](https://ig.me/1SsLF2kgo4a4nXz) or directlty on their website. I will be donating a $1 for every boulder or route climbed in February. I will be updating my progress on my Instagram as well as the clinmbing section of my [blog](blog/climbing/).
 
 > Past years:
-> [Catalyst Sports 2024](https://www.mightycause.com/story/Qw3r4g)
-> [Paradox Sports 2023](https://paradoxsports.salsalabs.org/paradoxmileclimbnashville2023/p/johnottenlipsfranke/index.html)
+> [Catalyst Sports 3000ft 2025](https://p2p.onecause.com/challengeforaccess2025/john-franke)
 
-> Every February, I climb for charity. Paradox Sports and Catalyst Sports both offer accessible climbing opportunities for people with differing abilities, defying the perception that people with a ‘disability’ cannot lead a life of adventure. We hit the goal in 2022, 2023, and 2024. Let's do it again in 2025! [Progress 📈](https://docs.google.com/spreadsheets/d/1wzR7rOHaAEI6hJEl_Jkq6DBeE_NRLKLsFmJtyf-NRf8/edit?gid=0#gid=0)
+> [Catalyst Sports 3000ft 2024](https://www.mightycause.com/story/Qw3r4g)
+
+> [Paradox Sport Mile 2023](https://paradoxsports.salsalabs.org/paradoxmileclimbnashville2023/p/johnottenlipsfranke/index.html)
 
 [Donate to Project Healthy Children](https://projecthealthychildren.org/)
 
-> Project Healthy Children fortifies food, preventing malnourishment 
+> Project Healthy Children fortifies food, preventing malnourishment
 
 [Donate to Palestine Children's Relief Fund 🇵🇸](https://www.pcrf.net/)
 
@@ -81,4 +82,3 @@ For code syntax highlighting, I am using [highlight.js](https://highlightjs.org/
 Sponsor me on GitHub or buy some [music](https://ottobahn.bandcamp.com/)
 
 <iframe src="https://github.com/sponsors/jottenlips/card" title="Sponsor jottenlips" height="225" width="340" style="border: 0;"></iframe>
-
