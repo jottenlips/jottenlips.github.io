@@ -1,9 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Epilogue&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
-
 html {
   background: linear-gradient(-45deg, #ef7455, #e84c7e, #32a6d6, #23eeab);
-  height: 100%;
+  height: "100%";
 }
 
 body {
@@ -12,28 +11,18 @@ body {
   margin: 0;
 }
 
-/* ---------------- IMAGE STABILITY FIX ---------------- */
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-/* Reserve vertical space to prevent layout shift */
 img[alt*="small"] {
-  width: 500px;
-  aspect-ratio: 3 / 2;
+  height: 500px;
 }
 
 img[alt*="extrasmall"] {
-  width: 250px;
-  aspect-ratio: 3 / 2;
+  height: 250px;
 }
 
-/* ---------------- COVER IMAGE ---------------- */
-
 .coverimage {
+  /* background: url(https://github.com/jottenlips/jottenlips.github.io/blob/main/keyboard.jpg?raw=true); */
+  /* RANDOM PHOTO */
+  /* background: url(https://picsum.photos/2000/1500); */
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -42,10 +31,16 @@ img[alt*="extrasmall"] {
   height: 100%;
 }
 
-/* ---------------- TYPOGRAPHY ---------------- */
+h1 {
+  color: #000000;
+  line-height: 110%;
+}
 
-h1,
-h2,
+h2 {
+  color: #000000;
+  line-height: 110%;
+}
+
 h3 {
   color: #000000;
   line-height: 110%;
@@ -63,11 +58,12 @@ pre {
   background-color: #0e1116;
   width: 90%;
   border-radius: 6px;
-  padding: 10px;
-  overflow-x: auto;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  overflow-x: scroll;
 }
-
-/* ---------------- LAYOUT ---------------- */
 
 .container {
   padding-top: 50px;
@@ -86,7 +82,7 @@ pre {
   background-color: #ebebeb;
   padding: 10px;
   margin-bottom: 15px;
-  overflow-y: auto;
+  overflow-y: scroll;
   border-radius: 6px;
 }
 
@@ -96,7 +92,7 @@ pre {
   width: 90%;
   background-color: #ebebeb;
   padding: 10px;
-  overflow-y: auto;
+  overflow-y: scroll;
   border-radius: 6px;
   align-items: center;
   justify-content: space-evenly;
@@ -111,7 +107,7 @@ pre {
   width: 90%;
   background-color: #ebebeb;
   padding: 10px;
-  overflow-y: auto;
+  overflow-y: scroll;
   border-radius: 6px;
   align-items: center;
   justify-content: space-evenly;
@@ -120,17 +116,40 @@ pre {
   margin-bottom: 10px;
 }
 
-/* ---------------- MOBILE ---------------- */
-
 @media only screen and (max-width: 500px) {
-  .nav,
-  .footer {
+  .nav {
+    max-width: 800px;
+    min-width: 300px;
+    width: 90%;
+    background-color: #ebebeb;
+    padding: 10px;
+    overflow-y: scroll;
+    border-radius: 6px;
     align-items: flex-start;
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
     flex-direction: column;
   }
-
+  .footer {
+    max-width: 800px;
+    min-width: 300px;
+    width: 90%;
+    background-color: #ebebeb;
+    padding: 10px;
+    border-radius: 6px;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    flex-direction: column;
+  }
   .coverimage {
     background: transparent;
+    /* RANDOM PHOTO */
+    /* background: url(https://picsum.photos/2000/1500); */
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -138,15 +157,19 @@ pre {
     max-width: 300%;
     height: 100%;
   }
-
   .container {
     padding-top: 20px;
     padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     min-height: 100vh;
   }
 }
 
-/* ---------------- LINKS ---------------- */
+.nav:hover {
+}
 
 a {
   text-decoration: none;
@@ -155,6 +178,8 @@ a {
 }
 
 a:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
   transform: scale(1.1);
   color: #5a0091;
 }
