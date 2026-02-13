@@ -16,9 +16,6 @@ jobs:
 
       - name: build site
         run: |
-          # npm i --prefix /usr/local -g esy 
-          # npm install
-          # ./node_modules/.bin/Agave -p docs
           npm install -g agave-generator
           agave -p docs 
 
