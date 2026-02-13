@@ -48,27 +48,21 @@
       </div>
       <div class="block">
         <a style="display: none;" class="back" id="backLink" href="#"> <- Go Back</a>
-        <h1 id="Ascend-with-Automation-Vestaboard-and-GitHub-Actions-Inspired-Consistency-in-My-Rock-Climbing-Training">Ascend with Automation: Vestaboard and GitHub Actions Inspired Consistency in My Rock Climbing Training</h1>
-
-<p>Hey, I&#39;m John Franke, a member of the platform team at Vestaboard. I&#39;m excited to share my journey of preparing for the fall rock climbing season and how Vestaboard, along with GitHub Actions, played a crucial role in my successful off-wall training routine.</p>
-<h2 id="The-Crux-of-Consistency">The Crux of Consistency</h2>
-
+        <h1 id="ascend-with-automation-vestaboard-and-github-actions-inspired-consistency-in-my-rock-climbing-training">Ascend with Automation: Vestaboard and GitHub Actions Inspired Consistency in My Rock Climbing Training</h1>
+<p>Hey, I'm John Franke, a member of the platform team at Vestaboard. I'm excited to share my journey of preparing for the fall rock climbing season and how Vestaboard, along with GitHub Actions, played a crucial role in my successful off-wall training routine.</p>
+<h2 id="the-crux-of-consistency">The Crux of Consistency</h2>
 <p>Last fall, I had some big rock climbing trips planned, including following my first multi-pitch on southern Utah sandstone near Zion National Park and leading classic Southeastern US routes like &quot;Tarantella (5.10a)&quot;, &quot;Christine (5.10a)&quot;, and &quot;Pet Sematary (5.11a)&quot; at the Wild and Scenic Obed. My goal was to climb the routes as cleanly as possible with minimal falls or breaks. I knew I needed to up my game with a consistent routine, having struggled on a few longer outdoor climbs earlier in Winter and Spring.</p>
-<p>My previous attempts at training were all over the place - random and mostly social gym sessions weren&#39;t cutting it. I realized I needed a more focused and structured approach to give the upcoming season my best effort. However, planning a routine and sticking to it can be very challenging.</p>
-<h3 id="Vestaboard-A-Visual-Reminder-for-Success">Vestaboard: A Visual Reminder for Success</h3>
-
-<p>Enter Vestaboard. With Vestaboard, I could experience an inspiring daily reminder for my full-body calistenic workout routine, also known as a WOD or workout of the day. And the best part? I could automate the schedule of these reminders and the exercise choice with a small TypeScript file and GitHub Actions, ensuring I stayed consistent and had a variety of climbing movements to practice. This project wasn&#39;t my only form of training, but it was helpful in keeping me on track off the wall.</p>
-<h4 id="Planning-the-WOD">Planning the WOD</h4>
-
+<p>My previous attempts at training were all over the place - random and mostly social gym sessions weren't cutting it. I realized I needed a more focused and structured approach to give the upcoming season my best effort. However, planning a routine and sticking to it can be very challenging.</p>
+<h3 id="vestaboard-a-visual-reminder-for-success">Vestaboard: A Visual Reminder for Success</h3>
+<p>Enter Vestaboard. With Vestaboard, I could experience an inspiring daily reminder for my full-body calistenic workout routine, also known as a WOD or workout of the day. And the best part? I could automate the schedule of these reminders and the exercise choice with a small TypeScript file and GitHub Actions, ensuring I stayed consistent and had a variety of climbing movements to practice. This project wasn't my only form of training, but it was helpful in keeping me on track off the wall.</p>
+<h4 id="planning-the-wod">Planning the WOD</h4>
 <p>A key factor was planning small sets and reps that were not too aggressive. A steady and measured approach has proved more effective than my prior sporadic and intense sessions. It is important to note that I am not a personal trainer, just a hobbyist climber with internet access, so please consult a trainer if you plan on making your own workout routine. I got most of my exercises from YouTube and climbing blogs. I experimented with many different movements of varying intensities and found a set of exercises I could stick with and build on.</p>
-<h2 id="Tying-together-Vestaboard-and-GitHub">Tying together Vestaboard and GitHub</h2>
-
-<p>If you follow our <a href='https://docs.vestaboard.com/docs/subscription-api/introduction'>Subscription API documentation</a>, you can make your subscription in our web application and get a subscription key, secret, and ID to display custom messages on your Vestaboard. GitHub Actions can store these secrets securely. In programming and climbing, it is import to practice safety to a high degree. Let&#39;s keep those secrets safe!</p>
-<p><img src='/img/githubsecretsui.png' alt='' /></p>
-<h3 id="Climb-On-GitHub-Actions-in-Action">Climb On: GitHub Actions in Action</h3>
-
+<h2 id="tying-together-vestaboard-and-github">Tying together Vestaboard and GitHub</h2>
+<p>If you follow our <a href="https://docs.vestaboard.com/docs/subscription-api/introduction">Subscription API documentation</a>, you can make your subscription in our web application and get a subscription key, secret, and ID to display custom messages on your Vestaboard. GitHub Actions can store these secrets securely. In programming and climbing, it is import to practice safety to a high degree. Let's keep those secrets safe!</p>
+<p><img src="/img/githubsecretsui.png" alt="" /></p>
+<h3 id="climb-on-github-actions-in-action">Climb On: GitHub Actions in Action</h3>
 <p>GitHub Actions and Vestaboard turned my climbing aspirations into a well-defined routine, giving me an easy to read and timely display for each workout and making the entire process efficient and effective. To create a GitHub Action that runs on a schedule, you need a YAML file in the workflows folder with your cron expression and the bash scripts you want to run. In the root of your project, you can add a file and folder structure like <code>.github/workflows/WODaboard.yaml</code>.</p>
-<pre class='yaml'><code class='yaml'>name: &quot;WODaboard&quot;
+<pre><code class="language-yaml">name: &quot;WODaboard&quot;
 on:
   schedule:
     # UTC zone
@@ -92,11 +86,11 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VB_SUB_ID: ${{ secrets.VB_SUB_ID }}
           VB_SUB_KEY: ${{ secrets.VB_SUB_KEY }}
-          VB_SUB_SECRET: ${{ secrets.VB_SUB_SECRET }}</code></pre>
-
+          VB_SUB_SECRET: ${{ secrets.VB_SUB_SECRET }}
+</code></pre>
 <p>Since I had some slightly more complicated logic than just posting a static message to my Vestaboard, I used a Typescript function I could run with <code>bun</code>. Bun lets us run TypeScript files without having to compile them to JavaScript first.</p>
 <p>Here is a simplified version of the code that sends plain text to my Vestaboard.</p>
-<pre class='typescript'><code class='typescript'>// index.ts
+<pre><code class="language-typescript">// index.ts
 // full code available on GitHub https://github.com/jottenlips/wodaboard
 const sendMessage = async (text: string) =&gt; {
   if (process.env.VB_SUB_KEY &amp;&amp; process.env.VB_SUB_SECRET) {
@@ -114,17 +108,21 @@ const sendMessage = async (text: string) =&gt; {
   }
 };
 
-sendMessage(&quot;Hello World!&quot;)</code></pre>
-
-<p>This function can let us post the content we want to Vestaboard via the Subscription we created earlier.
-&gt;- Be sure to use <code>process.env</code> so you don&#39;t accidently commit your secrets to source code.</p>
-<h3 id="Reaching-Beyond-Scheduled-GitHub-Action">Reaching Beyond Scheduled GitHub Action</h3>
-
+sendMessage(&quot;Hello World!&quot;)
+</code></pre>
+<p>This function can let us post the content we want to Vestaboard via the Subscription we created earlier.</p>
+<blockquote>
+<ul>
+<li>Be sure to use <code>process.env</code> so you don't accidently commit your secrets to source code.
+</li>
+</ul>
+</blockquote>
+<h3 id="reaching-beyond-scheduled-github-action">Reaching Beyond Scheduled GitHub Action</h3>
 <p>Notice the additional field <code>workflow_dispatch</code> under <code>on</code> in the Action example above. This configuration lets us run the Action from GitHub whenever we want via the <code>Actions</code> tab on your repository. <code>workflow_dispatch</code> can be very helpful when developing an Action to run on command, like displaying the workout immediately.</p>
-<p><img src='/img/githubworkflowdispatchui.png' alt='' /></p>
-<p>GitHub Actions isn&#39;t just about workout reminders for me. I also found another valuable use – deployment notifications. Setting up Vestaboard to alert me when a new build deploys enhances my awareness of the development process. Integrating with Vestaboard is valuable on any GitHub project where you have automated deployments and want to know when they have succeeded without checking the Action status. To accomplish this, we use the <code>push</code> field so that when a change happens to the <code>main</code> branch, the Action will run.</p>
+<p><img src="/img/githubworkflowdispatchui.png" alt="" /></p>
+<p>GitHub Actions isn't just about workout reminders for me. I also found another valuable use – deployment notifications. Setting up Vestaboard to alert me when a new build deploys enhances my awareness of the development process. Integrating with Vestaboard is valuable on any GitHub project where you have automated deployments and want to know when they have succeeded without checking the Action status. To accomplish this, we use the <code>push</code> field so that when a change happens to the <code>main</code> branch, the Action will run.</p>
 <p>For this GitHub Action, I used <code>curl</code> instead of the TypeScript code since I have very static content to publish to Vestaboard.</p>
-<pre class='yaml'><code class='yaml'>// .github/workflows/notify-deployment.yaml
+<pre><code class="language-yaml">// .github/workflows/notify-deployment.yaml
 name: &quot;notify-deployment&quot;
 on:
   push:
@@ -140,25 +138,22 @@ jobs:
         with:
           bun-version: latest
       - run: |
-          curl -X POST -H &quot;x-vestaboard-api-key: $VB_SUB_KEY&quot; -H &quot;x-vestaboard-api-secret: $VB_SUB_SECRET&quot; -H &quot;Content-Type: application/json&quot; -d &#39;{&quot;text&quot;: &quot;{64} New Wodaboard Deployment! {64}&quot;}&#39;  https://subscriptions.vestaboard.com/subscriptions/$VB_SUB_ID/message  
+          curl -X POST -H &quot;x-vestaboard-api-key: $VB_SUB_KEY&quot; -H &quot;x-vestaboard-api-secret: $VB_SUB_SECRET&quot; -H &quot;Content-Type: application/json&quot; -d '{&quot;text&quot;: &quot;{64} New Wodaboard Deployment! {64}&quot;}'  https://subscriptions.vestaboard.com/subscriptions/$VB_SUB_ID/message  
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VB_SUB_ID: ${{ secrets.VB_SUB_ID }}
           VB_SUB_KEY: ${{ secrets.VB_SUB_KEY }}
-          VB_SUB_SECRET: ${{ secrets.VB_SUB_SECRET }}</code></pre>
-
-<h2 id="Conclusion">Conclusion</h2>
-
+          VB_SUB_SECRET: ${{ secrets.VB_SUB_SECRET }}
+</code></pre>
+<h2 id="conclusion">Conclusion</h2>
 <p>Thanks to Vestaboard and GitHub Actions, I met my climbing goals. I was able to lead-climb all three of the Obed routes with minimal falls or breaks. I even flashed one of the climbs with no falls or resting on the rope. I also made it up the Utah multi-pitch smoothly. Repelling down the 5 vertical pitches was a lot scarier than going back up 😅. The combination of visual reminders, automation, and structured workouts propelled me to climb a full grade harder than the previous year. I even completed a few v6 boulders in the gym this year.</p>
 <p>I hope you consider integrating the Vestaboard API into your upcoming projects, whether for staying on track with your goals or creating something delightful and inspiring.</p>
-<h3 id="Code-Example">Code Example</h3>
-
-<p><a href='https://github.com/jottenlips/wodaboard'>Wodaboard Source Code</a></p>
-<p><img src='https://github.com/jottenlips/wodaboard/raw/main/IMG_5189.jpg' alt='WOD' /></p>
-<h2 id="">🧗‍♂️</h2>
-
-<p><img src='https://mountainproject.com/assets/photos/climb/125253956_medium_1699029918.jpg?cache=1699029923' alt='Utah' /></p>
-<p><img src='https://mountainproject.com/assets/photos/climb/125347910_medium_1700256013.jpg?cache=1700504184' alt='Obed' /></p>
+<h3 id="code-example">Code Example</h3>
+<p><a href="https://github.com/jottenlips/wodaboard">Wodaboard Source Code</a></p>
+<p><img src="https://github.com/jottenlips/wodaboard/raw/main/IMG_5189.jpg" alt="WOD" /></p>
+<h2 id="section">🧗‍♂️</h2>
+<p><img src="https://mountainproject.com/assets/photos/climb/125253956_medium_1699029918.jpg?cache=1699029923" alt="Utah" /></p>
+<p><img src="https://mountainproject.com/assets/photos/climb/125347910_medium_1700256013.jpg?cache=1700504184" alt="Obed" /></p>
 
       </div>
       <div class="footer">

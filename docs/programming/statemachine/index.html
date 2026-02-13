@@ -48,11 +48,10 @@
       </div>
       <div class="block">
         <a style="display: none;" class="back" id="backLink" href="#"> <- Go Back</a>
-        <h1 id="So-you-need-a-TypeScript-State-Machine">So you need a TypeScript State Machine?</h1>
-
+        <h1 id="so-you-need-a-typescript-state-machine">So you need a TypeScript State Machine?</h1>
 <p>Here is a simple, less than 50 line, state machine example in TypeScript for a switch.</p>
 <p>This is inspired by Kent C Dodds. However, I have made a few simplifications as well as added types.</p>
-<pre class='typescript'><code class='typescript'>// the types for our state
+<pre><code class="language-typescript">// the types for our state
 interface IState {
     // You can add more states
     on: boolean
@@ -64,7 +63,7 @@ interface IStateMachine {
         // add more actions to modify state
         toggle: () =&gt; void
     }
-    dispatch: (action: keyof IStateMachine[&#39;actions&#39;]) =&gt; IState
+    dispatch: (action: keyof IStateMachine['actions']) =&gt; IState
 }
 
 // the types for our state machine definition
@@ -82,7 +81,7 @@ const createMachine = (initialState: IState): IStateMachine =&gt; {
             },
         },
         // dispatch an action
-        dispatch(action: keyof IStateMachine[&#39;actions&#39;]) {
+        dispatch(action: keyof IStateMachine['actions']) {
             machine.actions[action]()
             return machine.state
         },
@@ -96,8 +95,10 @@ const initialState = {
 
 const stateMachine = createMachine(initialState)
 console.log(stateMachine.state) // off
-stateMachine.dispatch(&#39;toggle&#39;)
-console.log(stateMachine.state) // on</code></pre>
+stateMachine.dispatch('toggle')
+console.log(stateMachine.state) // on
+</code></pre>
+
       </div>
       <div class="footer">
         <!-- socials -->

@@ -48,39 +48,44 @@
       </div>
       <div class="block">
         <a style="display: none;" class="back" id="backLink" href="#"> <- Go Back</a>
-        <h1 id="Setup-a-Node-JS-environment-and-write-your-first-function"><ol><li>Setup a Node.JS environment and write your first function</li></ol></h1>
-
+        <h1 id="setup-a-node.js-environment-and-write-your-first-function">1. Setup a Node.JS environment and write your first function</h1>
 <p>These posts are designed to familiarize yourself with modern web development tools as well as teach you JavaScript. I will be using MacOS for these tutorials. Here is a list of tools for getting started.</p>
-<blockquote><ul><li><p>The terminal app</p>
-</li><li><p>homebrew</p>
-</li><li><p>NVM, node, and NPM</p>
-</li><li><p>Your favorite text or code editor, sublime text or vscode for me</p>
-</li></ul></blockquote>
-
-<p>Install <a href='https://brew.sh'>homebrew</a> This is a package manager for MacOS.</p>
+<blockquote>
+<ul>
+<li>The terminal app
+</li>
+<li>homebrew
+</li>
+<li>NVM, node, and NPM
+</li>
+<li>Your favorite text or code editor, sublime text or vscode for me
+</li>
+</ul>
+</blockquote>
+<p>Install <a href="https://brew.sh">homebrew</a> This is a package manager for MacOS.</p>
 <p>open the terminal app and type.</p>
-<pre class='bash'><code class='bash'># current homebrew install command, may take a minute
+<pre><code class="language-bash"># current homebrew install command, may take a minute
 /bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;
 # installs node version manager, it may give you additional steps to follow.
 brew install nvm 
 nvm install --lts # installs latest node and npm
 # which node will tell you if node is in the correct path
 # it should include nvm in the output
-which node</code></pre>
-
+which node
+</code></pre>
 <p>Install a text editor.</p>
-<p><a href='https://code.visualstudio.com/Download'>vscode</a> (I use this at work usually)</p>
-<pre class='bash'><code class='bash'># makes a folder called programming, you can name this whatever you&#39;d like.
+<p><a href="https://code.visualstudio.com/Download">vscode</a> (I use this at work usually)</p>
+<pre><code class="language-bash"># makes a folder called programming, you can name this whatever you'd like.
 mkdir programming
 # changes directory so that you will be in your programming directory.
 cd programming
 # create a file named add.js.
-touch add.js</code></pre>
-
+touch add.js
+</code></pre>
 <p>There is one feature in programming that is powerful enough to do almost anything you would want, especially in JavaScript. This feature is called a function.</p>
 <p>Functions are just how you remember them in math class, ie input =&gt; output</p>
-<p>Let&#39;s write our first function.</p>
-<pre class='javascript'><code class='javascript'>// Functions can be as easy as add.
+<p>Let's write our first function.</p>
+<pre><code class="language-javascript">// Functions can be as easy as add.
 const add = (x, y) =&gt; x + y;
 // which is shorthand for
 const add = (x, y) =&gt; {
@@ -98,34 +103,34 @@ const sum = add(1, 2);
 // this function will print our result
 console.log(sum) // 3
 // you can also export functions so other files can see them
-export add;</code></pre>
-
+export add;
+</code></pre>
 <p>Think of a topic that interests you. I like music theory so I am going to write a simple function that tells me the fifth of any note I put in. Here is the code!</p>
-<pre class='bash'><code class='bash'># create the file using your terminal, or text editor
-touch musicTheory.js</code></pre>
-
+<pre><code class="language-bash"># create the file using your terminal, or text editor
+touch musicTheory.js
+</code></pre>
 <p>Open the file in vscode or an editor of your choice.</p>
-<pre class='javascript'><code class='javascript'># musicTheory.js
+<pre><code class="language-javascript"># musicTheory.js
 const getFifth = (note) =&gt; {
     // make the input note lowercase
     const lowerCaseNote = note.toLowerCase()
     // make a JS object of every input mapped to every output
     // plug your key in to get the value for the key
     const fifth = {
-        c: &#39;g&#39;,
-        g: &#39;d&#39;,
-        d: &#39;a&#39;,
-        a: &#39;e&#39;,
-        e: &#39;b&#39;,
-        b: &#39;f#&#39;,
-        &#39;f#&#39;: &#39;c#&#39;,
-        gb: &#39;db&#39;,
-        &#39;c#&#39;: &#39;ab&#39;,
-        db: &#39;ab&#39;,
-        ab: &#39;eb&#39;,
-        eb: &#39;bb&#39;,
-        bb: &#39;f&#39;,
-        f: &#39;c&#39;
+        c: 'g',
+        g: 'd',
+        d: 'a',
+        a: 'e',
+        e: 'b',
+        b: 'f#',
+        'f#': 'c#',
+        gb: 'db',
+        'c#': 'ab',
+        db: 'ab',
+        ab: 'eb',
+        eb: 'bb',
+        bb: 'f',
+        f: 'c'
     }[lowerCaseNote]
     // format your output
     // to look like a note
@@ -140,13 +145,13 @@ const getFifth = (note) =&gt; {
 }
 
 // how to use your function
-const fifthOfGb = getFifth(&#39;gb&#39;)
+const fifthOfGb = getFifth('gb')
 // print to console
-console.log(`The fifth of Gb is ${fifthOfGb}`)</code></pre>
-
+console.log(`The fifth of Gb is ${fifthOfGb}`)
+</code></pre>
 <p>Run node in your terminal to run the program.</p>
-<pre class='bash'><code class='bash'>node musicTheory.js # or whatever file name you chose</code></pre>
-
+<pre><code class="language-bash">node musicTheory.js # or whatever file name you chose
+</code></pre>
 <p>✨ Congratulations! you have written your first function. Tomorrow we will cover making your first Web App.</p>
 
       </div>
