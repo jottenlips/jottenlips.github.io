@@ -48,33 +48,36 @@
       </div>
       <div class="block">
         <a style="display: none;" class="back" id="backLink" href="#"> <- Go Back</a>
-        <h1 id="Let-39-s-make-a-React-App">Let&#39;s make a React App.</h1>
-
+        <h1 id="lets-make-a-react-app.">Let's make a React App.</h1>
 <p>A common pattern in modern web development is the Single Page Application, or (SPA). This concept is where a single index.html file is sent to a browser that contains the code to run your application. It may request other resources like css files and javascript chunks depending on the size of your application and the framework and libraries you use. For this tutorial we will use create-react-app to spin up your first app. We will also put the app behind version control.</p>
 <p>🛠 Tools you will be adding to your repertoire:</p>
-<blockquote><ul><li><p>Git</p>
-</li><li><p>React</p>
-</li></ul></blockquote>
-
-<h2 id="Install-Git-it-comes-with-xcode-select-on-macos">Install Git, it comes with xcode-select on macos</h2>
-
-<pre class='bash'><code class='bash'>xcode-select --install</code></pre>
-
-<h2 id="Create-a-react-app-named-my-app">Create a react app named my-app</h2>
-
-<pre class='bash'><code class='bash'>npx create-react-app my-app
-cd my-app</code></pre>
-
+<blockquote>
+<ul>
+<li>Git
+</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li>React
+</li>
+</ul>
+</blockquote>
+<h2 id="install-git-it-comes-with-xcode-select-on-macos">Install Git, it comes with xcode-select on macos</h2>
+<pre><code class="language-bash">xcode-select --install
+</code></pre>
+<h2 id="create-a-react-app-named-my-app">Create a react app named my-app</h2>
+<pre><code class="language-bash">npx create-react-app my-app
+cd my-app
+</code></pre>
 <h2 id="install-dependencies">install dependencies</h2>
-
-<pre class='bash'><code class='bash'>npm i</code></pre>
-
+<pre><code class="language-bash">npm i
+</code></pre>
 <h2 id="run-your-app">run your app</h2>
-
-<pre class='bash'><code class='bash'>npm start</code></pre>
-
-<p>Now that you have your first app running, let&#39;s make a simple app using react hooks. Hooks are functions that let you &quot;hook into&quot; a components state or life-cycle. In this case, we can replace the functional component create react app gives us with our own. Ours will have a hook for the count and a button to increment the count.</p>
-<pre class='javascript'><code class='javascript'>import React from &quot;react&quot;;
+<pre><code class="language-bash">npm start
+</code></pre>
+<p>Now that you have your first app running, let's make a simple app using react hooks. Hooks are functions that let you &quot;hook into&quot; a components state or life-cycle. In this case, we can replace the functional component create react app gives us with our own. Ours will have a hook for the count and a button to increment the count.</p>
+<pre><code class="language-javascript">import React from &quot;react&quot;;
 import &quot;./App.css&quot;;
 const { useState } = React;
 // We can use an arrow function here, personal preference.
@@ -91,9 +94,9 @@ const App = () =&gt; {
   );
 };
 
-export default App;</code></pre>
-
-<pre class='javascript'><code class='javascript'>// Here is an example of a react app using hooks that tells you the fifth of any note.
+export default App;
+</code></pre>
+<pre><code class="language-javascript">// Here is an example of a react app using hooks that tells you the fifth of any note.
 
 // App.jsx
 import React from &quot;react&quot;;
@@ -109,9 +112,9 @@ const App = () =&gt; {
     &lt;/div&gt;
   );
 };
-export default App;</code></pre>
-
-<pre class='javascript'><code class='javascript'>// getFifth.js
+export default App;
+</code></pre>
+<pre><code class="language-javascript">// getFifth.js
 export const getFifth = (note) =&gt; {
   console.log(note);
   if (!note) {
@@ -139,18 +142,18 @@ export const getFifth = (note) =&gt; {
   }
   const formattedNote = `${fifth.charAt(0).toUpperCase()}${fifth.slice(1)}`;
   return formattedNote;
-};</code></pre>
-
+};
+</code></pre>
 <p>Try to make an app for making a list of groceries, chores, mood-board, or something simple.</p>
 <p>Hint: You can use useState with other data types like arrays and objects.</p>
-<pre class='javascript'><code class='javascript'>const [groceries, setGroceries] = useState([])</code></pre>
-
+<pre><code class="language-javascript">const [groceries, setGroceries] = useState([])
+</code></pre>
 <p>You can also &quot;spread&quot; old items with a new item to make a new array with all of the items. ... is the spread operator.</p>
-<pre class='javascript'><code class='javascript'>setGroceries([...groceries, newGroceryItem])</code></pre>
-
+<pre><code class="language-javascript">setGroceries([...groceries, newGroceryItem])
+</code></pre>
 <p>For more info on React, Check out the docs</p>
-<p>Once you are happy with your app. Let&#39;s make sure your code is under version control for future updates and collaboration with other developers using Git. First sign-up or login to Github, https: //github.com/. Make a new repository for my-app.</p>
-<pre class='bash'><code class='bash'>## cd to your project
+<p>Once you are happy with your app. Let's make sure your code is under version control for future updates and collaboration with other developers using Git. First sign-up or login to Github, https: //github.com/. Make a new repository for my-app.</p>
+<pre><code class="language-bash">## cd to your project
 git init # initialize a git repo in your project
 git switch -c main
 
@@ -170,8 +173,8 @@ git add --all
 git commit -m&quot;initial commit&quot;
 
 # push your changes to Github
-git push --set-upstream origin main</code></pre>
-
+git push --set-upstream origin main
+</code></pre>
 <p>Congrats! You developed your first front-end project and put it under source control!</p>
 
       </div>
