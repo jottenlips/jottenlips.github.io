@@ -5,7 +5,7 @@ on:
       - main
 jobs:
   agave:
-    runs-on: macOS-14
+    runs-on: ubuntu-latest
     steps:
       - name: checkout
         uses: actions/checkout@v2
