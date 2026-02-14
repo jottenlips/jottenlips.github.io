@@ -11,7 +11,7 @@
 
 Here are a few of my favorite charities.
 
-> Every February, I climb for charity. This year I will donate a $1 for every route or boulder sent to [MICA Project](https://www.mica-project.org/). You can donate to my fundraiser [here](https://ig.me/1SsLF2kgo4a4nXz) or directly on their website. I will be updating my progress on my Instagram as well as the clinmbing section of my [blog](blog/climbing/).
+> Every February, I climb for charity. This year I will donate $1 for every route or boulder sent to [MICA Project](https://www.mica-project.org/). You can donate to my fundraiser [here](https://ig.me/1SsLF2kgo4a4nXz) or directly on their website. I will be updating my progress on my Instagram as well as the clinmbing section of my [blog](blog/climbing/).
 
 > Past years:
 
