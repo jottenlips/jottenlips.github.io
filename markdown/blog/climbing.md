@@ -1,6 +1,6 @@
 ![extrasmall](https://github.com/jottenlips/jottenlips.github.io/blob/main/finding-out-8-30-2025-img/heresy2.jpg?raw=true)
 
-Every February, I climb for charity. This year I will donate a $1 for every route or boulder sent to [MICA Project](https://www.mica-project.org/). You can donate to my fundraiser [here](https://ig.me/1SsLF2kgo4a4nXz) or directly on their website.
+Every February, I climb for charity. This year I will donate $1 for every route or boulder sent to [MICA Project](https://www.mica-project.org/). You can donate to my fundraiser [here](https://ig.me/1SsLF2kgo4a4nXz) or directly on their website.
 
 [Mountain Project](https://www.mountainproject.com/user/201166134/john-ottenlips-franke)
 
