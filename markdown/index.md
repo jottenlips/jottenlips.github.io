@@ -1,3 +1,7 @@
+@title John Ottenlips Franke | Blog | Music | Programming | Climbing
+@description Hey, I am John Franke, a programmer and musician living in the midwest.
+@image https://github.com/jottenlips/jottenlips.github.io/blob/main/keyboard.jpg?raw=true
+
 # Welcome!
 
 > Hey, I am John Franke, a programmer and musician living in the midwest.
