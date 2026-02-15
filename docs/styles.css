@@ -1,14 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Epilogue&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap");
+
 html {
-  background: linear-gradient(-45deg, #ef7455, #e84c7e, #32a6d6, #23eeab);
-  height: "100%";
+  background-color: #000033;
+  background-image:
+    radial-gradient(white 1px, transparent 1px),
+    radial-gradient(white 1px, transparent 1px);
+  background-size: 50px 50px;
+  background-position: 0 0, 25px 25px;
+  height: 100%;
 }
 
 body {
-  font-family: "Epilogue", sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
   line-height: 26px;
   margin: 0;
+  color: #000000;
 }
 
 img[alt*="small"] {
@@ -20,9 +27,6 @@ img[alt*="extrasmall"] {
 }
 
 .coverimage {
-  /* background: url(https://github.com/jottenlips/jottenlips.github.io/blob/main/keyboard.jpg?raw=true); */
-  /* RANDOM PHOTO */
-  /* background: url(https://picsum.photos/2000/1500); */
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -32,36 +36,43 @@ img[alt*="extrasmall"] {
 }
 
 h1 {
-  color: #000000;
+  color: #ff00ff;
   line-height: 110%;
+  font-family: "VT323", "Comic Neue", monospace;
+  text-shadow: 2px 2px #00ffff, -1px -1px #ffff00;
+  font-size: 2.2em;
 }
 
 h2 {
-  color: #000000;
+  color: #ff6600;
   line-height: 110%;
+  font-family: "VT323", "Comic Neue", monospace;
+  text-shadow: 1px 1px #00ff00;
+  font-size: 1.8em;
 }
 
 h3 {
-  color: #000000;
+  color: #0000ff;
   line-height: 110%;
+  font-family: "VT323", "Comic Neue", monospace;
+  font-size: 1.5em;
 }
 
 code {
-  border-radius: 3px;
+  border-radius: 0;
   background-color: #0e1116;
-  color: #ffffff;
+  color: #00ff00;
   line-height: 200%;
   word-wrap: break-word;
+  font-family: "VT323", "Courier New", monospace;
+  font-size: 1.1em;
 }
 
 pre {
-  background-color: #0e1116;
+  background-color: #0a0a2e;
   width: 90%;
-  border-radius: 6px;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
+  border: 3px inset #444488;
+  padding: 10px;
   overflow-x: scroll;
 }
 
@@ -79,77 +90,108 @@ pre {
   max-width: 800px;
   min-width: 270px;
   width: 90%;
-  background-color: #ebebeb;
-  padding: 10px;
+  background-color: #ffffcc;
+  padding: 15px;
   margin-bottom: 15px;
   overflow-y: auto;
-  border-radius: 6px;
+  border: 3px outset #cccc99;
+  box-shadow: 4px 4px 0px #000066;
 }
 
 .nav {
   max-width: 800px;
   min-width: 300px;
   width: 90%;
-  background-color: #ebebeb;
+  background: linear-gradient(to right, #ff00ff, #00ffff, #ffff00, #ff00ff);
   padding: 10px;
   overflow-y: auto;
-  border-radius: 6px;
+  border: 3px outset #cc99ff;
   align-items: center;
   justify-content: space-evenly;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 10px;
+  box-shadow: 3px 3px 0px #000066;
+}
+
+.nav a {
+  color: #000000;
+  font-weight: 700;
+  font-family: "VT323", monospace;
+  font-size: 1.3em;
+  text-shadow: 1px 1px #ffffff;
+  padding: 2px 6px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 2px outset #dddddd;
+}
+
+.nav a:hover {
+  background-color: #ffff00;
+  color: #ff0000;
+  border-style: inset;
 }
 
 .footer {
   max-width: 800px;
   min-width: 300px;
   width: 90%;
-  background-color: #ebebeb;
+  background-color: #330066;
+  color: #00ffff;
   padding: 10px;
   overflow-y: auto;
-  border-radius: 6px;
+  border: 3px outset #6633cc;
   align-items: center;
   justify-content: space-evenly;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 10px;
+  box-shadow: 3px 3px 0px #000033;
+}
+
+.footer a {
+  color: #ffff00;
+}
+
+.footer a:hover {
+  color: #ff00ff;
+}
+
+.footer p {
+  color: #ccccff;
+  text-align: center;
+  width: 100%;
 }
 
 @media only screen and (max-width: 500px) {
   .nav {
     max-width: 800px;
-    min-width: 300px;
+    min-width: 270px;
     width: 90%;
-    background-color: #ebebeb;
     padding: 10px;
     overflow-y: scroll;
-    border-radius: 6px;
     align-items: flex-start;
     justify-content: space-evenly;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 10px;
     flex-direction: column;
+    gap: 6px;
   }
   .footer {
     max-width: 800px;
-    min-width: 300px;
+    min-width: 270px;
     width: 90%;
-    background-color: #ebebeb;
     padding: 10px;
-    border-radius: 6px;
     align-items: flex-start;
     justify-content: space-evenly;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 10px;
     flex-direction: column;
+    gap: 4px;
   }
   .coverimage {
     background: transparent;
-    /* RANDOM PHOTO */
-    /* background: url(https://picsum.photos/2000/1500); */
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -166,6 +208,12 @@ pre {
     align-items: center;
     min-height: 100vh;
   }
+  h1 {
+    font-size: 1.6em;
+  }
+  h2 {
+    font-size: 1.3em;
+  }
 }
 
 .nav:hover {
@@ -173,30 +221,53 @@ pre {
 
 a {
   text-decoration: none;
-  color: #5261ff;
+  color: #0000ff;
   align-items: center;
+  font-weight: bold;
+}
+
+a:visited {
+  color: #800080;
 }
 
 a:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
-  color: #5a0091;
+  color: #ff0000;
+  text-decoration: underline wavy;
 }
 
 .back {
   text-decoration: underline;
+  color: #0000ff;
+}
+
+blockquote {
+  border-left: 4px solid #ff00ff;
+  background-color: #ffeeFF;
+  padding: 8px 12px;
+  margin-left: 0;
+}
+
+hr {
+  border: none;
+  border-top: 3px dashed #ff00ff;
+  margin: 20px 0;
 }
 
 #sitemap-search {
-  border: 2px solid #2d5016;
-  border-radius: 6px;
+  border: 3px inset #9999cc;
   outline: none;
+  font-family: "VT323", monospace;
+  font-size: 1.1em;
+  padding: 4px;
+  background-color: #ffffff;
 }
 
 #sitemap-search:focus {
-  border-color: #4a8525;
-  box-shadow: 0 0 0 3px rgba(74, 133, 37, 0.2);
+  border-color: #ff00ff;
+  box-shadow: 0 0 0 3px rgba(255, 0, 255, 0.3);
 }
 
 #sitemap-results a {
@@ -208,5 +279,10 @@ a:hover {
 }
 #sitemap-results li {
   padding: 8px 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px dashed #ff00ff;
+}
+
+::selection {
+  background: #ff00ff;
+  color: #ffff00;
 }
