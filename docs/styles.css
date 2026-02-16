@@ -20,7 +20,7 @@ img[alt*="extrasmall"] {
 }
 
 .coverimage {
-  /* background: url(https://github.com/jottenlips/jottenlips.github.io/blob/main/keyboard.jpg?raw=true); */
+  background: url(https://github.com/jottenlips/jottenlips.github.io/blob/main/keyboard.jpg?raw=true);
   /* RANDOM PHOTO */
   /* background: url(https://picsum.photos/2000/1500); */
   background-repeat: no-repeat;
