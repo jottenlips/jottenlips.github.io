@@ -4,7 +4,15 @@
 
 Every February, I climb for charity. This year I will donate $1 for every route or boulder sent to [MICA Project](https://www.mica-project.org/). You can donate to my fundraiser [here](https://ig.me/1SsLF2kgo4a4nXz) or directly on their website.
 
-[Mountain Project](https://www.mountainproject.com/user/201166134/john-ottenlips-franke)
+> Past years:
+
+> [Catalyst Sports 3000ft 2025](https://p2p.onecause.com/challengeforaccess2025/john-franke)
+
+> [Catalyst Sports 3000ft 2024](https://www.mightycause.com/story/Qw3r4g)
+
+> [Paradox Sport Mile 2023](https://paradoxsports.salsalabs.org/paradoxmileclimbnashville2023/p/johnottenlipsfranke/index.html)
+
+> [Paradox Sport Mile 2022](https://www.paradoxsports.org/wp-content/uploads/2022/07/FY22-Annual-Report-FINAL.pdf)
 
 [First time lead climbing outdoors](firsttime/)
 
@@ -20,16 +28,6 @@ Every February, I climb for charity. This year I will donate $1 for every route 
 
 I have been tracking most of my indoor climbing sessions with a Garmin to get the approximate feet and grade. Sometimes the altimeter is off.
 The code to generate these charts can be found here: [Garmin Climbing Charts](https://github.com/jottenlips/garminclimb)
-
-> Past years:
-
-> [Catalyst Sports 3000ft 2025](https://p2p.onecause.com/challengeforaccess2025/john-franke)
-
-> [Catalyst Sports 3000ft 2024](https://www.mightycause.com/story/Qw3r4g)
-
-> [Paradox Sport Mile 2023](https://paradoxsports.salsalabs.org/paradoxmileclimbnashville2023/p/johnottenlipsfranke/index.html)
-
-> [Paradox Sport Mile 2022](https://www.paradoxsports.org/wp-content/uploads/2022/07/FY22-Annual-Report-FINAL.pdf)
 
 ```
 All Time Total Feet Climbed: 16922 ft
