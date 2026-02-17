@@ -24,17 +24,26 @@
   </head>
 
   <body>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/cancer/">Cancer</a>
+    <a href="/climbing/">Climbing</a>
+    <a href="/music/">Music</a>
+    <a href="/programming/">Programming</a>
+    <a href="/recipes/">Recipes</a>
+    <a href="/sitemap/">Sitemap</a>
+  </nav>
     <div class="coverimage"></div>
     <div class="container">
-      <div class="nav">
+      <!-- <div class="nav">
         <a class="link" href="/">Home 🏡</a>
         <a class="link" href="/programming">Programming 💻</a>
         <a class="link" href="/music">Music 🎸</a>
         <a class="link" href="/climbing">Climbing 🧗</a>
-      </div>
+      </div> -->
       <div class="block">
-        <a style="display: none;" class="back" id="backLink" href="#"> <- Go Back</a>
-        <h1 id="my-first-chemotherapy-infusion">My First Chemotherapy Infusion</h1>
+        <a href="/cancer/" style="display:inline-block;margin-bottom:1em;text-decoration:none;color:currentColor;opacity:0.7;" aria-label="Go back"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg></a>
+<h1 id="my-first-chemotherapy-infusion">My First Chemotherapy Infusion</h1>
 <hr />
 <h2 id="september-4-the-day-after"><strong>September 4 – the Day After</strong></h2>
 <p>Yesterday was crazy. I have never been more zonked in my life.
@@ -143,27 +152,6 @@ symptoms have eased up, like the severe itching and the sweatiness. Thank you my
        </div>
 
     <script>
-      // hide back button on home page
-      window.onload = function () {
-        const backLink = document.getElementById("backLink");
-        let path = window.location.pathname;
-
-        // Hide button if we're at root
-        if (path === "/") return;
-
-        backLink.style.display = "inline";
-
-        // Remove trailing slash (except for root)
-        if (path.endsWith("/") && path !== "/") {
-          path = path.slice(0, -1);
-        }
-
-        // Remove the last segment
-        let parentPath = path.substring(0, path.lastIndexOf("/")) || "/";
-
-        backLink.href = parentPath;
-      };
-
       document.addEventListener("DOMContentLoaded", (event) => {
         document.querySelectorAll("pre code").forEach((el) => {
           hljs.highlightElement(el);
@@ -172,12 +160,12 @@ symptoms have eased up, like the severe itching and the sweatiness. Thank you my
     </script>
 
     <script type="module">
-      import { fairyDustCursor } from "https://unpkg.com/cursor-effects@latest/dist/esm.js";
+      // import { fairyDustCursor } from "https://unpkg.com/cursor-effects@latest/dist/esm.js";
 
-      new fairyDustCursor({
-        colors: ["#ef7455", "#e84c7e", "#32a6d6", "#23eeab"],
-        fairySymbol: "★",
-      });
+      // new fairyDustCursor({
+      //   colors: ["#ef7455", "#e84c7e", "#32a6d6", "#23eeab"],
+      //   fairySymbol: "★",
+      // });
     </script>
   </body>
 </html>

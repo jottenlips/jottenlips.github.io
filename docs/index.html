@@ -24,16 +24,23 @@
   </head>
 
   <body>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/blog/">Blog</a>
+    <a href="/climbing/">Climbing</a>
+    <a href="/coding/">Coding</a>
+    <a href="/music/">Music</a>
+    <a href="/sitemap/">Sitemap</a>
+  </nav>
     <div class="coverimage"></div>
     <div class="container">
-      <div class="nav">
+      <!-- <div class="nav">
         <a class="link" href="/">Home 🏡</a>
         <a class="link" href="/programming">Programming 💻</a>
         <a class="link" href="/music">Music 🎸</a>
         <a class="link" href="/climbing">Climbing 🧗</a>
-      </div>
+      </div> -->
       <div class="block">
-        <a style="display: none;" class="back" id="backLink" href="#"> <- Go Back</a>
         <h1 id="welcome">Welcome!</h1>
 <blockquote>
 <p>Hey, I am John Franke, a programmer and musician living in the midwest.
@@ -44,22 +51,7 @@ I made this site to post about coding, climbing, and music. I am also a <a href=
 <h2 id="feeling-generous">Feeling generous?</h2>
 <p>Here are a few of my favorite charities.</p>
 <blockquote>
-<p>Every February, I climb for charity. This year I will donate $1 for every route or boulder sent to <a href="https://www.mica-project.org/">MICA Project</a>. You can donate to my fundraiser <a href="https://ig.me/1SsLF2kgo4a4nXz">here</a> or directly on their website. I will be updating my progress on my Instagram as well as the clinmbing section of my <a href="blog/climbing/">blog</a>.</p>
-</blockquote>
-<blockquote>
-<p>Past years:</p>
-</blockquote>
-<blockquote>
-<p><a href="https://p2p.onecause.com/challengeforaccess2025/john-franke">Catalyst Sports 3000ft 2025</a></p>
-</blockquote>
-<blockquote>
-<p><a href="https://www.mightycause.com/story/Qw3r4g">Catalyst Sports 3000ft 2024</a></p>
-</blockquote>
-<blockquote>
-<p><a href="https://paradoxsports.salsalabs.org/paradoxmileclimbnashville2023/p/johnottenlipsfranke/index.html">Paradox Sport Mile 2023</a></p>
-</blockquote>
-<blockquote>
-<p><a href="https://www.paradoxsports.org/wp-content/uploads/2022/07/FY22-Annual-Report-FINAL.pdf">Paradox Sport Mile 2022</a></p>
+<p>Every February, I climb for charity. This year I will donate $1 for every route or boulder sent to <a href="https://www.mica-project.org/">MICA Project</a>. You can donate to my fundraiser <a href="https://ig.me/1SsLF2kgo4a4nXz">here</a> or directly on their website.</p>
 </blockquote>
 <p><a href="https://projecthealthychildren.org/">Donate to Project Healthy Children</a></p>
 <blockquote>
@@ -70,18 +62,7 @@ I made this site to post about coding, climbing, and music. I am also a <a href=
 <p>Around 50% of Gaza's population is children and they are facing the wrath of an indiscriminate bombing campaign.</p>
 </blockquote>
 <hr />
-<p>This blog was generated via <a href="https://github.com/jottenlips/agave">agave</a>, a static site generator I wrote with ReasonML that turns markdown files (.md) into custom styled html and css.</p>
-<pre><code class="language-bash">npm i -g agave-generator
-# for theming your own site
-mkdir markdown
-cd markdown
-echo '&lt;html&gt;&lt;body&gt;&lt;!-- MARKDOWN --&gt;&lt;/body&gt;&lt;/html&gt;' &gt;&gt; base.html
-touch index.md &amp;&amp; touch styles.css
-cd ..
-agave -p docs
-</code></pre>
-<p>And push to your GitHub io page, or upload to any other static site hosting service.</p>
-<p>For code syntax highlighting, I am using <a href="https://highlightjs.org/">highlight.js</a> in my base.html file.</p>
+<p>This blog was created with <a href="https://github.com/jottenlips/agave">agave</a>, a static site generator I wrote with ReasonML that turns markdown files (.md) into custom styled html and css. Learn more at <a href="agavessg.com">agavessg.com</a>.</p>
 <hr />
 <h1 id="vestaboard"><a href="https://www.vestaboard.com/">Vestaboard</a></h1>
 <p><a href="https://vb.plus/JOHNFRANKE">Update My Board</a></p>
@@ -108,16 +89,6 @@ agave -p docs
 <h2 id="like-what-i-do">Like what I do?</h2>
 <p>Sponsor me on GitHub or buy some <a href="https://ottobahn.bandcamp.com/">music</a></p>
 <iframe src="https://github.com/sponsors/jottenlips/card" title="Sponsor jottenlips" height="225" width="340" style="border: 0;"></iframe>
-
-<nav class="subfolder-nav" style="margin-top:2em;padding-top:1em;border-top:1px solid currentColor;opacity:0.8;">
-  <ul style="list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:0.25em;">
-        <li style="display:inline-block;margin:0.25em 0.5em;"><a href="/music/">music</a></li>
-        <li style="display:inline-block;margin:0.25em 0.5em;"><a href="/cancer/">cancer</a></li>
-        <li style="display:inline-block;margin:0.25em 0.5em;"><a href="/recipes/">recipes</a></li>
-        <li style="display:inline-block;margin:0.25em 0.5em;"><a href="/programming/">programming</a></li>
-        <li style="display:inline-block;margin:0.25em 0.5em;"><a href="/climbing/">climbing</a></li>
-  </ul>
-</nav>
 
       </div>
       <div class="footer">
@@ -174,7 +145,7 @@ agave -p docs
          
         <p>
           &copy; 2025 John Ottenlips Franke | Built with HTML, CSS, and a bit of
-          JavaScript. Vim is my editor of choice! <a href="/sitemap">Sitemap Search</a>
+          JavaScript. Vim is my editor of choice!
         </p>
         <!-- https://raw.githubusercontent.com/jottenlips/jottenlips.github.io/refs/heads/main/vim_editor.gif -->
         <a href="https://www.vim.org/">
@@ -187,27 +158,6 @@ agave -p docs
        </div>
 
     <script>
-      // hide back button on home page
-      window.onload = function () {
-        const backLink = document.getElementById("backLink");
-        let path = window.location.pathname;
-
-        // Hide button if we're at root
-        if (path === "/") return;
-
-        backLink.style.display = "inline";
-
-        // Remove trailing slash (except for root)
-        if (path.endsWith("/") && path !== "/") {
-          path = path.slice(0, -1);
-        }
-
-        // Remove the last segment
-        let parentPath = path.substring(0, path.lastIndexOf("/")) || "/";
-
-        backLink.href = parentPath;
-      };
-
       document.addEventListener("DOMContentLoaded", (event) => {
         document.querySelectorAll("pre code").forEach((el) => {
           hljs.highlightElement(el);
@@ -216,12 +166,12 @@ agave -p docs
     </script>
 
     <script type="module">
-      import { fairyDustCursor } from "https://unpkg.com/cursor-effects@latest/dist/esm.js";
+      // import { fairyDustCursor } from "https://unpkg.com/cursor-effects@latest/dist/esm.js";
 
-      new fairyDustCursor({
-        colors: ["#ef7455", "#e84c7e", "#32a6d6", "#23eeab"],
-        fairySymbol: "★",
-      });
+      // new fairyDustCursor({
+      //   colors: ["#ef7455", "#e84c7e", "#32a6d6", "#23eeab"],
+      //   fairySymbol: "★",
+      // });
     </script>
   </body>
 </html>

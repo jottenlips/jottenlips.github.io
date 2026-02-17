@@ -24,19 +24,25 @@
   </head>
 
   <body>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/blog/">Blog</a>
+    <a href="/climbing/">Climbing</a>
+    <a href="/coding/">Coding</a>
+    <a href="/music/">Music</a>
+    <a href="/sitemap/">Sitemap</a>
+  </nav>
     <div class="coverimage"></div>
     <div class="container">
-      <div class="nav">
+      <!-- <div class="nav">
         <a class="link" href="/">Home 🏡</a>
         <a class="link" href="/programming">Programming 💻</a>
-        <!-- <a class="link" href="/blog">Blog</a> -->
         <a class="link" href="/music">Music 🎸</a>
-        <a class="link" href="/blog">Blog 📝</a>
-        <a class="link" href="/blog/climbing">Climbing 🧗</a>
-      </div>
+        <a class="link" href="/climbing">Climbing 🧗</a>
+      </div> -->
       <div class="block">
-        <a style="display: none;" class="back" id="backLink" href="#"> <- Go Back</a>
-        <h1 id="side-effects-first-infusion">Side Effects (First Infusion)</h1>
+        <a href="/blog/cancer/" style="display:inline-block;margin-bottom:1em;text-decoration:none;color:currentColor;opacity:0.7;" aria-label="Go back"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg></a>
+<h1 id="side-effects-first-infusion">Side Effects (First Infusion)</h1>
 <h2 id="september-5">September 5</h2>
 <p>This day hit hard.</p>
 <ul>
@@ -127,7 +133,7 @@
          
         <p>
           &copy; 2025 John Ottenlips Franke | Built with HTML, CSS, and a bit of
-          JavaScript. Vim is my editor of choice! <a href="/sitemap">Sitemap Search</a>
+          JavaScript. Vim is my editor of choice!
         </p>
         <!-- https://raw.githubusercontent.com/jottenlips/jottenlips.github.io/refs/heads/main/vim_editor.gif -->
         <a href="https://www.vim.org/">
@@ -140,27 +146,6 @@
        </div>
 
     <script>
-      // hide back button on home page
-      window.onload = function () {
-        const backLink = document.getElementById("backLink");
-        let path = window.location.pathname;
-
-        // Hide button if we're at root
-        if (path === "/") return;
-
-        backLink.style.display = "inline";
-
-        // Remove trailing slash (except for root)
-        if (path.endsWith("/") && path !== "/") {
-          path = path.slice(0, -1);
-        }
-
-        // Remove the last segment
-        let parentPath = path.substring(0, path.lastIndexOf("/")) || "/";
-
-        backLink.href = parentPath;
-      };
-
       document.addEventListener("DOMContentLoaded", (event) => {
         document.querySelectorAll("pre code").forEach((el) => {
           hljs.highlightElement(el);
@@ -169,12 +154,12 @@
     </script>
 
     <script type="module">
-      import { fairyDustCursor } from "https://unpkg.com/cursor-effects@latest/dist/esm.js";
+      // import { fairyDustCursor } from "https://unpkg.com/cursor-effects@latest/dist/esm.js";
 
-      new fairyDustCursor({
-        colors: ["#ef7455", "#e84c7e", "#32a6d6", "#23eeab"],
-        fairySymbol: "★",
-      });
+      // new fairyDustCursor({
+      //   colors: ["#ef7455", "#e84c7e", "#32a6d6", "#23eeab"],
+      //   fairySymbol: "★",
+      // });
     </script>
   </body>
 </html>
