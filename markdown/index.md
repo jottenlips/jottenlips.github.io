@@ -27,7 +27,7 @@ Here are a few of my favorite charities.
 
 ---
 
-This blog was created with [agave](https://github.com/jottenlips/agave), a static site generator I wrote with ReasonML that turns markdown files (.md) into custom styled html and css. Learn more at [agavessg.com](agavessg.com).
+This blog was created with [agave](https://github.com/jottenlips/agave), a static site generator I wrote with ReasonML that turns markdown files (.md) into custom styled html and css. Learn more at [agavessg.com](https://agavessg.com).
 
 ---
 
