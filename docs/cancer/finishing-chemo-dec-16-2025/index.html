@@ -22,17 +22,26 @@
   </head>
 
   <body>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/cancer/">Cancer</a>
+    <a href="/climbing/">Climbing</a>
+    <a href="/music/">Music</a>
+    <a href="/programming/">Programming</a>
+    <a href="/recipes/">Recipes</a>
+    <a href="/sitemap/">Sitemap</a>
+  </nav>
     <div class="coverimage"></div>
     <div class="container">
-      <div class="nav">
+      <!-- <div class="nav">
         <a class="link" href="/">Home 🏡</a>
         <a class="link" href="/programming">Programming 💻</a>
         <a class="link" href="/music">Music 🎸</a>
         <a class="link" href="/climbing">Climbing 🧗</a>
-      </div>
+      </div> -->
       <div class="block">
-        <a style="display: none;" class="back" id="backLink" href="#"> <- Go Back</a>
-        <h1 id="finishing-chemo">Finishing Chemo</h1>
+        <a href="/cancer/" style="display:inline-block;margin-bottom:1em;text-decoration:none;color:currentColor;opacity:0.7;" aria-label="Go back"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg></a>
+<h1 id="finishing-chemo">Finishing Chemo</h1>
 <p>The second half of treatment felt like it went by faster than the first, or maybe I just got better at distracting myself and dissociating on treatment weeks.</p>
 <p>I learned a few things along the way. Icing my hands and mouth during treatment helps <em>a lot</em> with mouth sores and neuropathy. My main symptoms have been bad stomach aches, headaches, soreness, and fatigue. The best way I can describe it is: doing a fourteener, dehydrated, with IBS. Most of the following days after a treatment, I was lucky if I could do a small lap around the block without being too exhuasted. I had some amazing times on the good weeks, so I will focus on those in this post.</p>
 <h2 id="november-6th---december-3">November 6th - December 3</h2>
@@ -130,27 +139,6 @@
        </div>
 
     <script>
-      // hide back button on home page
-      window.onload = function () {
-        const backLink = document.getElementById("backLink");
-        let path = window.location.pathname;
-
-        // Hide button if we're at root
-        if (path === "/") return;
-
-        backLink.style.display = "inline";
-
-        // Remove trailing slash (except for root)
-        if (path.endsWith("/") && path !== "/") {
-          path = path.slice(0, -1);
-        }
-
-        // Remove the last segment
-        let parentPath = path.substring(0, path.lastIndexOf("/")) || "/";
-
-        backLink.href = parentPath;
-      };
-
       document.addEventListener("DOMContentLoaded", (event) => {
         document.querySelectorAll("pre code").forEach((el) => {
           hljs.highlightElement(el);
@@ -159,12 +147,12 @@
     </script>
 
     <script type="module">
-      import { fairyDustCursor } from "https://unpkg.com/cursor-effects@latest/dist/esm.js";
+      // import { fairyDustCursor } from "https://unpkg.com/cursor-effects@latest/dist/esm.js";
 
-      new fairyDustCursor({
-        colors: ["#ef7455", "#e84c7e", "#32a6d6", "#23eeab"],
-        fairySymbol: "★",
-      });
+      // new fairyDustCursor({
+      //   colors: ["#ef7455", "#e84c7e", "#32a6d6", "#23eeab"],
+      //   fairySymbol: "★",
+      // });
     </script>
   </body>
 </html>
