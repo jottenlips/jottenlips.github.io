@@ -1,0 +1,41 @@
+name: Update Climbing Stats
+on:
+  schedule:
+    - cron: '0 6 * * *' # Daily at 6am UTC
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: install garminclimb
+        run: npm install -g garminclimb
+
+      - name: download garmin data
+        run: garminclimb download -u "${{ secrets.GARMIN_USERNAME }}" -p "${{ secrets.GARMIN_PASSWORD }}"
+
+      - name: generate chart
+        run: garminclimb chartjs > climbingstats.txt
+
+      - name: update climbing.md
+        run: |
+          # Keep lines 1-31 (header/intro) and replace everything from line 32 onward with new chart
+          head -n 31 markdown/climbing.md > markdown/climbing.md.tmp
+          cat climbingstats.txt >> markdown/climbing.md.tmp
+          mv markdown/climbing.md.tmp markdown/climbing.md
+
+      - name: commit if changed
+        run: |
+          git config user.name "GitHub Bot"
+          git config user.email "jottenlips+ghbot@gmail.com"
+          git diff --quiet && echo "No changes" && exit 0
+          git add climbingstats.txt markdown/climbing.md
+          git commit -m "automated stats"
+          git push origin main
