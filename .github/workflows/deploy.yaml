@@ -1,8 +1,9 @@
 name: Run Agave
-on: 
+on:
   push:
     branches:
       - main
+  workflow_dispatch:
 jobs:
   agave:
     runs-on: ubuntu-latest

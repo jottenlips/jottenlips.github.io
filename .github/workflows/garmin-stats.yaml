@@ -39,3 +39,9 @@ jobs:
           git add climbingstats.txt markdown/climbing.md
           git commit -m "automated stats"
           git push origin main
+
+      - name: trigger Run Agave
+        if: success()
+        run: gh workflow run deploy.yaml
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
