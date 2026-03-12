@@ -28,4 +28,4 @@
 
 [Playing Changes](playing-changes)
 
-[Free Ear Training App](ear-trainer)
+[Free Ear Training App](https://jottenlips.github.io/ear-trainer)
