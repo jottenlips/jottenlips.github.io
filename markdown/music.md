@@ -27,3 +27,5 @@
 # 🎵 Music Theory
 
 [Playing Changes](playing-changes)
+
+[Free Ear Training App](ear-trainer)
