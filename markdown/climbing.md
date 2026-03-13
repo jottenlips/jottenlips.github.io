@@ -70,8 +70,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -127,7 +127,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -201,15 +202,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2026-03-06 03:14:18",
     "qualifyingDive": false,
     "activityUUID": "0de39bd3-3516-429d-992b-22330d344c46",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 22006119396,
@@ -221,8 +222,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -277,7 +278,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -348,15 +350,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2026-02-27 18:36:29",
     "qualifyingDive": false,
     "activityUUID": "f4db4378-2fc0-45a0-9f08-5cdde2631674",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 22006105314,
@@ -368,8 +370,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -425,7 +427,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -496,15 +499,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2026-02-27 18:33:54",
     "qualifyingDive": false,
     "activityUUID": "097109f3-4874-45df-970a-15cef2d9c670",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 21995515461,
@@ -516,8 +519,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -573,7 +576,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -644,15 +648,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2026-02-26 18:31:54",
     "qualifyingDive": false,
     "activityUUID": "4e96eeec-f646-4f42-bb6e-d8148a24472b",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 21965134610,
@@ -664,8 +668,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -721,7 +725,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -792,15 +797,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2026-02-24 02:47:12",
     "qualifyingDive": false,
     "activityUUID": "770b89b2-639e-4a15-bc05-d4918d1017d9",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 21953845991,
@@ -812,8 +817,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -869,7 +874,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -940,15 +946,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2026-02-22 23:25:54",
     "qualifyingDive": false,
     "activityUUID": "106fe58c-e792-43b2-ae37-c00db1de155f",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 21923886217,
@@ -960,8 +966,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -1016,7 +1022,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -1087,15 +1094,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2026-02-20 03:57:45",
     "qualifyingDive": false,
     "activityUUID": "b05b668f-cab7-429e-936c-4cfa3d17dcce",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 21923846329,
@@ -1107,8 +1114,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -1164,7 +1171,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -1235,15 +1243,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2026-02-20 03:42:41",
     "qualifyingDive": false,
     "activityUUID": "dc937843-8656-4b69-9f54-f60a11a253df",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 21861055865,
@@ -1255,8 +1263,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -1312,7 +1320,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -1383,15 +1392,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2026-02-14 03:06:09",
     "qualifyingDive": false,
     "activityUUID": "318afdf1-405b-4f4d-9a15-9f1d9cbfd84b",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 21778899378,
@@ -1403,8 +1412,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -1460,7 +1469,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -1531,15 +1541,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2026-02-06 03:27:24",
     "qualifyingDive": false,
     "activityUUID": "76e2afe2-2757-4ca2-a6a1-4bd1aa4df437",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 21757681039,
@@ -1551,8 +1561,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -1608,7 +1618,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -1678,15 +1689,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2026-02-04 02:42:35",
     "qualifyingDive": false,
     "activityUUID": "9a819e7b-4210-4d8b-93c2-8ce021c19054",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 21707115817,
@@ -1698,8 +1709,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -1755,7 +1766,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -1823,15 +1835,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2026-01-30 01:04:19",
     "qualifyingDive": false,
     "activityUUID": "d31dcd25-540a-4dbd-980c-6a9bf06a6cc0",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 21635909306,
@@ -1843,8 +1855,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -1900,7 +1912,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -1970,15 +1983,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2026-01-23 03:40:22",
     "qualifyingDive": false,
     "activityUUID": "a576b21f-5535-4e97-9c82-06e9cb89e5d0",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 21561509384,
@@ -1990,8 +2003,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -2047,7 +2060,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -2117,15 +2131,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2026-01-16 02:53:58",
     "qualifyingDive": false,
     "activityUUID": "34fd8a23-48f9-4018-bb52-b5b1dc9761fc",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 21488225821,
@@ -2137,8 +2151,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -2194,7 +2208,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -2264,15 +2279,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2026-01-09 03:01:17",
     "qualifyingDive": false,
     "activityUUID": "e3ad0fef-d92f-4400-9702-8bfebb881f15",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 21434847294,
@@ -2284,8 +2299,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -2341,7 +2356,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -2411,15 +2427,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2026-01-03 22:38:43",
     "qualifyingDive": false,
     "activityUUID": "e122b008-57e5-4609-b521-946961fa73a2",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 21318076826,
@@ -2431,8 +2447,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -2488,7 +2504,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -2558,15 +2575,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2025-12-21 20:17:55",
     "qualifyingDive": false,
     "activityUUID": "d1283b6d-5328-442c-b604-f5c163aa434c",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 21018837271,
@@ -2578,8 +2595,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -2635,7 +2652,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -2705,15 +2723,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2025-11-17 23:17:13",
     "qualifyingDive": false,
     "activityUUID": "6a3ec22c-995d-4a0b-88f7-76315c35909e",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 20630914160,
@@ -2725,8 +2743,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -2782,7 +2800,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -2852,15 +2871,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2025-10-08 20:48:39",
     "qualifyingDive": false,
     "activityUUID": "7ff9b767-f1c3-4837-bb99-c7b69bba1a59",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 20529939556,
@@ -2872,8 +2891,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -2929,7 +2948,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -2999,15 +3019,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2025-09-28 18:32:04",
     "qualifyingDive": false,
     "activityUUID": "492975cf-6bec-44c6-83d6-cf8108b5da93",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 20490616950,
@@ -3019,8 +3039,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -3076,7 +3096,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -3146,15 +3167,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2025-09-24 20:51:33",
     "qualifyingDive": false,
     "activityUUID": "d5d25104-0857-4f1e-925c-ac115936d968",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 20346972532,
@@ -3166,8 +3187,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -3223,7 +3244,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -3293,15 +3315,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2025-09-10 22:36:59",
     "qualifyingDive": false,
     "activityUUID": "6f61604b-d0e6-4026-adec-695ec019b1dc",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 20218970406,
@@ -3313,8 +3335,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -3370,7 +3392,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -3440,15 +3463,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2025-08-29 21:00:54",
     "qualifyingDive": false,
     "activityUUID": "1d1d0811-4bbf-4390-ac5d-30377984fd3b",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 19685452068,
@@ -3460,8 +3483,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -3517,7 +3540,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -3587,15 +3611,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2025-07-10 01:39:59",
     "qualifyingDive": false,
     "activityUUID": "90a43b74-9f8d-482a-b140-e99cff336edb",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 19265232754,
@@ -3607,8 +3631,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -3664,7 +3688,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -3734,15 +3759,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2025-05-29 01:59:10",
     "qualifyingDive": false,
     "activityUUID": "0cdbabbe-f902-4c5b-ae39-8c1efd951f94",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 19188016157,
@@ -3754,8 +3779,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -3811,7 +3836,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -3881,15 +3907,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2025-05-21 02:13:57",
     "qualifyingDive": false,
     "activityUUID": "13f8a899-4492-4f46-bf14-743bbb668225",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 18976902536,
@@ -3901,8 +3927,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -3958,7 +3984,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -4028,15 +4055,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2025-04-30 01:08:59",
     "qualifyingDive": false,
     "activityUUID": "8cb30b5a-d90e-453e-8162-753c27cccbfc",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 18907722211,
@@ -4048,8 +4075,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -4105,7 +4132,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -4175,15 +4203,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2025-04-23 02:01:41",
     "qualifyingDive": false,
     "activityUUID": "d3d6cfbe-0876-4924-8ef4-ce66d24d8ad0",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 18617668140,
@@ -4195,8 +4223,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -4252,7 +4280,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -4322,15 +4351,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2025-03-23 19:16:52",
     "qualifyingDive": false,
     "activityUUID": "32f6118d-2214-4b36-b198-d0919a5b3228",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 18551612282,
@@ -4342,8 +4371,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -4399,7 +4428,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -4469,15 +4499,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2025-03-16 19:30:20",
     "qualifyingDive": false,
     "activityUUID": "d5103541-d374-4e0f-b7e8-3cfa65a2f6a9",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 18486879510,
@@ -4490,8 +4520,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -4547,7 +4577,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -4617,15 +4648,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2025-03-09 18:18:06",
     "qualifyingDive": false,
     "activityUUID": "7302a64c-f150-49f0-821d-f5a9848338f8",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 18396599630,
@@ -4638,8 +4669,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -4695,7 +4726,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 3,
@@ -4765,15 +4797,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2025-02-28 02:52:48",
     "qualifyingDive": false,
     "activityUUID": "a64985b3-2bf0-492a-baf7-1780bf84971d",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 18378670755,
@@ -4785,8 +4817,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -4842,7 +4874,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -4912,15 +4945,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2025-02-26 03:31:20",
     "qualifyingDive": false,
     "activityUUID": "7990ef1a-a4ea-48c2-94da-6170bc1e4ce2",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 18296883341,
@@ -4933,8 +4966,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -4990,7 +5023,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 3,
@@ -5060,15 +5094,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2025-02-16 22:50:53",
     "qualifyingDive": false,
     "activityUUID": "75c48b5f-e123-4106-a21d-2ace8ee0ad8c",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 18263113752,
@@ -5081,8 +5115,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -5138,7 +5172,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 3,
@@ -5208,15 +5243,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2025-02-13 02:24:06",
     "qualifyingDive": false,
     "activityUUID": "75786b3b-bc50-402c-a528-d9f00a6b4f68",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 18234474266,
@@ -5228,8 +5263,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -5285,7 +5320,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -5355,15 +5391,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2025-02-09 18:38:02",
     "qualifyingDive": false,
     "activityUUID": "fee7ac5c-bf60-4f92-84b6-b0fbe11ad4d9",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 18210348986,
@@ -5375,8 +5411,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -5432,7 +5468,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -5502,15 +5539,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2025-02-07 03:09:23",
     "qualifyingDive": false,
     "activityUUID": "f292359b-0684-4798-b152-f97821b6f823",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 18151895234,
@@ -5522,8 +5559,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -5579,7 +5616,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -5649,15 +5687,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2025-01-31 16:31:03",
     "qualifyingDive": false,
     "activityUUID": "e12b853d-4454-4232-b0e0-c4e57de10a47",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 17957770860,
@@ -5670,8 +5708,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -5727,7 +5765,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 3,
@@ -5797,15 +5836,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2025-01-09 16:32:27",
     "qualifyingDive": false,
     "activityUUID": "4b6d46b6-1f59-455f-b324-339cc67529d3",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 17893167506,
@@ -5818,8 +5857,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -5875,7 +5914,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 3,
@@ -5945,15 +5985,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2025-01-01 23:43:21",
     "qualifyingDive": false,
     "activityUUID": "260b8b85-3084-411d-b477-8bd07a636e3a",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 17791269933,
@@ -5966,8 +6006,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -6023,7 +6063,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 3,
@@ -6093,15 +6134,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2024-12-19 01:16:37",
     "qualifyingDive": false,
     "activityUUID": "88a08bc4-ea98-48e0-8213-e5fa419a22ec",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 17748516989,
@@ -6113,8 +6154,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -6170,7 +6211,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 3,
@@ -6240,18 +6282,155 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2024-12-13 02:04:16",
     "qualifyingDive": false,
     "activityUUID": "69b26daf-56fa-4a03-aa72-f6fd0ad43e10",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   }
 ];
 var BOULDER_DATA = [
+  {
+    "activityId": 22155455029,
+    "activityName": "Bouldering",
+    "startTimeLocal": "2026-03-12 19:32:31",
+    "startTimeGMT": "2026-03-13 00:32:31",
+    "activityType": {
+      "typeId": 174,
+      "typeKey": "bouldering",
+      "parentTypeId": 29,
+      "isHidden": false,
+      "trimmable": false,
+      "restricted": false
+    },
+    "eventType": {
+      "typeId": 9,
+      "typeKey": "uncategorized",
+      "sortOrder": 10
+    },
+    "duration": 4725.14794921875,
+    "elapsedDuration": 4726.126953125,
+    "movingDuration": 0,
+    "hasPolyline": false,
+    "hasImages": false,
+    "ownerId": 125473122,
+    "ownerDisplayName": "41a91fcb-dd10-46e4-b8e7-debbc6affcc7",
+    "ownerFullName": "John",
+    "ownerProfileImageUrlSmall": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/e71212cf-9ec6-4a9f-8643-106b91b17c1d-prth.png",
+    "ownerProfileImageUrlMedium": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/e71212cf-9ec6-4a9f-8643-106b91b17c1d-prfr.png",
+    "ownerProfileImageUrlLarge": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/e71212cf-9ec6-4a9f-8643-106b91b17c1d-prof.png",
+    "calories": 755,
+    "bmrCalories": 124,
+    "averageHR": 139,
+    "maxHR": 177,
+    "steps": 528,
+    "userRoles": [
+      "SCOPE_ATP_READ",
+      "SCOPE_COMMUNITY_COURSE_ADMIN_READ",
+      "SCOPE_COMMUNITY_COURSE_WRITE",
+      "SCOPE_DI_API_READ",
+      "SCOPE_CONNECT_WEB_TEMPLATE_RENDER",
+      "SCOPE_ACTIVITY_DETECTION_READ",
+      "SCOPE_DI_API_WRITE",
+      "SCOPE_OMT_SUBSCRIPTION_ADMIN_READ",
+      "SCOPE_DI_OAUTH_2_MANAGED_STATUS_ADMIN_WRITE",
+      "SCOPE_CONNECT_READ",
+      "SCOPE_GARMIN_PROFILE_READ",
+      "SCOPE_GOLF_API_READ",
+      "SCOPE_DI_OAUTH_2_DEVICE_REVOCATION_WRITE",
+      "SCOPE_DI_OAUTH_2_CREATE_DI_USER",
+      "SCOPE_DIVE_API_WRITE",
+      "SCOPE_DIVE_API_READ",
+      "SCOPE_DI_OAUTH_2_CLIENT_READ",
+      "SCOPE_CONNECT_WRITE",
+      "SCOPE_CONNECT_MCT_DAILY_LOG_READ",
+      "SCOPE_CONNECT_API_CREATE_UPDATE_USER",
+      "SCOPE_MESSAGE_GENERATION_READ",
+      "SCOPE_GARMIN_PROFILE_WRITE",
+      "SCOPE_DI_OAUTH_2_CLIENT_REVOCATION_ADMIN",
+      "SCOPE_CONNECT_NON_SOCIAL_SHARED_READ",
+      "SCOPE_DI_OAUTH_2_PRERELEASE_PERMISSIONS_ADMIN_WRITE",
+      "SCOPE_DI_OAUTH_2_TOKEN_ADMIN",
+      "SCOPE_ATP_WRITE",
+      "ROLE_CONNECTUSER",
+      "ROLE_FITNESS_USER",
+      "ROLE_WELLNESS_USER",
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
+    ],
+    "privacy": {
+      "typeId": 2,
+      "typeKey": "private"
+    },
+    "userPro": false,
+    "hasVideo": false,
+    "timeZoneId": 152,
+    "beginTimestamp": 1773361951000,
+    "sportTypeId": 31,
+    "aerobicTrainingEffect": 3.0999999046325684,
+    "anaerobicTrainingEffect": 3.299999952316284,
+    "deviceId": 3480545930,
+    "summarizedDiveInfo": {
+      "summarizedDiveGases": []
+    },
+    "manufacturer": "GARMIN",
+    "lapCount": 1,
+    "waterEstimated": 1132,
+    "trainingEffectLabel": "SPEED",
+    "activityTrainingLoad": 180.17796325683594,
+    "minActivityLapDuration": 4725.14794921875,
+    "aerobicTrainingEffectMessage": "IMPROVING_AEROBIC_FITNESS_2",
+    "anaerobicTrainingEffectMessage": "IMPROVING_ANAEROBIC_CAPACITY_AND_SPEED_12",
+    "splitSummaries": [
+      {
+        "noOfSplits": 25,
+        "maxGradeValue": {
+          "sortOrder": 5,
+          "valueKey": "V4",
+          "scale": "VERMIN"
+        },
+        "duration": 834.9149780273438,
+        "splitType": "CLIMB_ACTIVE",
+        "numClimbSends": 0,
+        "numFalls": 0
+      },
+      {
+        "noOfSplits": 27,
+        "totalAscent": 0,
+        "duration": 3889.6708984375,
+        "splitType": "CLIMB_REST",
+        "numClimbSends": 0,
+        "maxElevationGain": 0,
+        "averageElevationGain": 0,
+        "numFalls": 0
+      }
+    ],
+    "hasSplits": true,
+    "moderateIntensityMinutes": 32,
+    "vigorousIntensityMinutes": 11,
+    "hasHeatMap": false,
+    "hrTimeInZone_1": 95.241,
+    "hrTimeInZone_2": 1848.007,
+    "hrTimeInZone_3": 1929.236,
+    "hrTimeInZone_4": 804.78,
+    "hrTimeInZone_5": 48,
+    "endTimeGMT": "2026-03-13 01:51:17",
+    "qualifyingDive": false,
+    "activityUUID": "e5255906-db27-4b08-9292-cf9249c71bbe",
+    "parent": false,
+    "decoDive": false,
+    "elevationCorrected": false,
+    "atpActivity": false,
+    "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
+    "purposeful": false,
+    "manualActivity": false
+  },
   {
     "activityId": 22096482605,
     "activityName": "Bouldering",
@@ -6262,8 +6441,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -6317,7 +6496,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -6375,15 +6555,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2026-03-07 20:46:40",
     "qualifyingDive": false,
     "activityUUID": "59a9195b-aa29-4ce3-905c-405f7055d944",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 21995849495,
@@ -6395,8 +6575,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -6450,7 +6630,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -6508,15 +6689,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2026-02-26 19:00:55",
     "qualifyingDive": false,
     "activityUUID": "5bdc0874-c374-4da1-b5f2-65136af0cb63",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 21995743512,
@@ -6528,8 +6709,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -6583,7 +6764,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -6644,15 +6826,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2026-02-26 18:52:00",
     "qualifyingDive": false,
     "activityUUID": "ca4c786c-85ce-40f1-b2ec-2fcbaa7e8310",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 21808758481,
@@ -6664,8 +6846,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -6719,7 +6901,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -6777,15 +6960,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2026-02-08 23:43:24",
     "qualifyingDive": false,
     "activityUUID": "0eb1a212-11b9-4671-9875-a341821666b0",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 21757730731,
@@ -6797,8 +6980,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -6852,7 +7035,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -6910,15 +7094,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2026-02-04 02:57:00",
     "qualifyingDive": false,
     "activityUUID": "8086f9fe-03d4-4b53-b700-c9d478913853",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 21707116437,
@@ -6930,8 +7114,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -6985,7 +7169,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -7046,15 +7231,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2026-01-30 01:42:21",
     "qualifyingDive": false,
     "activityUUID": "baecf8be-8170-478d-a6a4-33aaea43528b",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 21601704185,
@@ -7066,8 +7251,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -7121,7 +7306,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -7179,15 +7365,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2026-01-19 20:19:19",
     "qualifyingDive": false,
     "activityUUID": "f7fee16e-f19c-485a-8f03-7d071281ab19",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 21561195566,
@@ -7199,8 +7385,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -7254,7 +7440,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -7312,15 +7499,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2026-01-16 01:33:02",
     "qualifyingDive": false,
     "activityUUID": "29dd5618-bb7e-47c1-9e86-466cd1be5a3d",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 21505730971,
@@ -7332,8 +7519,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -7387,7 +7574,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -7445,15 +7633,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2026-01-10 20:08:21",
     "qualifyingDive": false,
     "activityUUID": "8def66b7-7dd3-4349-9d1c-5047943217ce",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 21318109789,
@@ -7465,8 +7653,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -7520,7 +7708,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -7578,15 +7767,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-12-21 20:24:53",
     "qualifyingDive": false,
     "activityUUID": "e410d9a0-f891-4944-bc68-f439a0169138",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 21286450569,
@@ -7598,8 +7787,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -7653,7 +7842,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -7711,15 +7901,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-12-18 03:26:15",
     "qualifyingDive": false,
     "activityUUID": "6dc58f7b-834b-473a-b731-4a97544c270c",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 21196720006,
@@ -7731,8 +7921,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -7786,7 +7976,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -7844,15 +8035,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-12-07 20:35:14",
     "qualifyingDive": false,
     "activityUUID": "5d53753a-b23f-40d7-b369-be1d563aa975",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 21172441954,
@@ -7864,8 +8055,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -7919,7 +8110,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -7980,15 +8172,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-12-05 02:14:15",
     "qualifyingDive": false,
     "activityUUID": "07c42b83-6dde-473d-8ab5-b88d826edd10",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 21090262389,
@@ -8000,8 +8192,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -8055,7 +8247,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -8113,15 +8306,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-11-25 19:49:12",
     "qualifyingDive": false,
     "activityUUID": "ff0a1602-3210-4cbc-bbda-135dc9358dcd",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 21045093992,
@@ -8133,8 +8326,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -8188,7 +8381,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -8246,15 +8440,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-11-20 18:38:30",
     "qualifyingDive": false,
     "activityUUID": "cb8d0785-6244-4a77-a376-af6691e5818e",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 20922662723,
@@ -8266,8 +8460,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -8321,7 +8515,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -8379,15 +8574,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-11-07 21:11:22",
     "qualifyingDive": false,
     "activityUUID": "206812b8-d71a-4482-b8f1-6fb572c0f149",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 20671320272,
@@ -8399,8 +8594,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -8454,7 +8649,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -8515,15 +8711,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-10-12 22:55:48",
     "qualifyingDive": false,
     "activityUUID": "fdc2598b-4624-4a59-bfc2-98bee07653f6",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 20630582766,
@@ -8535,8 +8731,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -8590,7 +8786,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -8648,15 +8845,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-10-08 19:55:49",
     "qualifyingDive": false,
     "activityUUID": "26344001-3ebe-466e-a1b1-1df395afece9",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 20530046663,
@@ -8668,8 +8865,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -8723,7 +8920,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -8781,15 +8979,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-09-28 18:48:25",
     "qualifyingDive": false,
     "activityUUID": "843332e7-3e58-43aa-b890-9b1001c3555c",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 20490590620,
@@ -8801,8 +8999,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -8856,7 +9054,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -8917,15 +9116,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-09-24 20:46:31",
     "qualifyingDive": false,
     "activityUUID": "74db59a5-c38b-4cf0-88d1-0fa402539fa8",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 20218966547,
@@ -8937,8 +9136,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -8992,7 +9191,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -9050,15 +9250,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-08-29 19:24:27",
     "qualifyingDive": false,
     "activityUUID": "1610a46d-8eb8-40ae-a1ec-bdd71bcef896",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 20156045505,
@@ -9070,8 +9270,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -9125,7 +9325,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -9183,15 +9384,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-08-23 21:53:21",
     "qualifyingDive": false,
     "activityUUID": "bd885872-4de6-46af-b2d4-6c66c84723c2",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 20113819811,
@@ -9203,8 +9404,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -9258,7 +9459,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -9316,15 +9518,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-08-19 21:03:18",
     "qualifyingDive": false,
     "activityUUID": "70356acb-1301-4ade-8b82-9cfd64e209c9",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 19901474637,
@@ -9336,8 +9538,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -9391,7 +9593,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -9449,15 +9652,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-07-31 01:31:50",
     "qualifyingDive": false,
     "activityUUID": "452ef492-7b1b-4d7d-9228-9905ace5abca",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 19826550642,
@@ -9469,8 +9672,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -9524,7 +9727,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -9582,15 +9786,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-07-23 17:52:19",
     "qualifyingDive": false,
     "activityUUID": "c56b00a4-21ad-46c3-8c60-16780364514b",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 19703982689,
@@ -9602,8 +9806,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -9657,7 +9861,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -9715,15 +9920,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-07-11 17:59:03",
     "qualifyingDive": false,
     "activityUUID": "0b5d2799-6baf-4756-abb6-c4df7a79d5e0",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 19605428980,
@@ -9735,8 +9940,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -9790,7 +9995,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -9848,15 +10054,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-07-02 01:45:46",
     "qualifyingDive": false,
     "activityUUID": "0da23946-d62f-4901-be7e-570de3ef5448",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 19571938868,
@@ -9868,8 +10074,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -9923,7 +10129,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -9975,15 +10182,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-06-28 15:10:07",
     "qualifyingDive": false,
     "activityUUID": "5511ee37-2f92-4c1e-8406-bd045f0746a1",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 19553323471,
@@ -9995,8 +10202,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -10050,7 +10257,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -10108,15 +10316,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-06-26 17:51:52",
     "qualifyingDive": false,
     "activityUUID": "b83fabef-6270-40cb-baad-ccaef3ef5871",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 19533164905,
@@ -10128,8 +10336,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -10183,7 +10391,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -10241,15 +10450,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-06-24 17:50:14",
     "qualifyingDive": false,
     "activityUUID": "5b0226a8-5791-48b4-8866-30d0c4f83a0f",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 19514802121,
@@ -10261,8 +10470,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -10316,7 +10525,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -10374,15 +10584,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-06-22 19:18:15",
     "qualifyingDive": false,
     "activityUUID": "7a590ae2-eb8e-4a6e-b546-f5c8451e8f99",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 19434523700,
@@ -10394,8 +10604,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -10449,7 +10659,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -10507,15 +10718,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-06-14 22:36:20",
     "qualifyingDive": false,
     "activityUUID": "59e54ea0-2cd0-4b1e-9a6f-a5e64fa509ca",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 19402976313,
@@ -10527,8 +10738,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -10582,7 +10793,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -10640,15 +10852,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-06-11 17:57:01",
     "qualifyingDive": false,
     "activityUUID": "26bd3a0a-8c2f-4366-bff3-43ffac25e5a1",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 19336099567,
@@ -10660,8 +10872,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -10715,7 +10927,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -10773,15 +10986,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-06-05 00:58:48",
     "qualifyingDive": false,
     "activityUUID": "451c251d-8a90-49c6-89df-83d081d28042",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 19281991427,
@@ -10793,8 +11006,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -10848,7 +11061,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -10906,15 +11120,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-05-30 17:33:39",
     "qualifyingDive": false,
     "activityUUID": "e2b72fca-6435-40f9-b2cd-e73e6d86ca6a",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 19265127814,
@@ -10926,8 +11140,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -10981,7 +11195,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -11039,15 +11254,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-05-29 01:29:43",
     "qualifyingDive": false,
     "activityUUID": "76eee04f-7e4b-499d-8fcd-a214587404d3",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 19234851676,
@@ -11059,8 +11274,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -11114,7 +11329,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -11172,15 +11388,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-05-25 21:29:26",
     "qualifyingDive": false,
     "activityUUID": "ee80ec19-8d5a-487a-bf8c-6195dc4c8543",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 19216029407,
@@ -11192,8 +11408,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -11247,7 +11463,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -11305,15 +11522,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-05-24 01:41:13",
     "qualifyingDive": false,
     "activityUUID": "12f2f442-c4a5-4d43-a209-dbc09397df6d",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 19204528577,
@@ -11325,8 +11542,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -11380,7 +11597,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -11438,15 +11656,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-05-22 18:04:32",
     "qualifyingDive": false,
     "activityUUID": "cdda83cc-8703-4dad-8e75-806a977532fb",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 19166456399,
@@ -11458,8 +11676,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -11513,7 +11731,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -11571,15 +11790,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-05-18 21:24:17",
     "qualifyingDive": false,
     "activityUUID": "fe68a75d-f6fa-4e29-989f-ab8961b14384",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 19117811810,
@@ -11591,8 +11810,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -11646,7 +11865,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -11704,15 +11924,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-05-14 01:51:11",
     "qualifyingDive": false,
     "activityUUID": "a2a84c72-614b-40ad-bc5d-706133746f3c",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 19057598067,
@@ -11724,8 +11944,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -11779,7 +11999,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -11837,15 +12058,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-05-08 02:02:45",
     "qualifyingDive": false,
     "activityUUID": "d1d0e2b2-a5d9-40f9-a182-32cbe2de0c6c",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 19004934406,
@@ -11857,8 +12078,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -11912,7 +12133,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -11970,15 +12192,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-05-02 17:34:44",
     "qualifyingDive": false,
     "activityUUID": "a8007b67-6f81-4aa3-b4c4-a4ab9da17226",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 18995171135,
@@ -11990,8 +12212,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -12045,7 +12267,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -12103,15 +12326,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-05-01 17:32:18",
     "qualifyingDive": false,
     "activityUUID": "671a5c3b-e8ad-4616-9ce5-44679cbea77a",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 18942629970,
@@ -12123,8 +12346,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -12178,7 +12401,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -12236,15 +12460,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-04-26 16:15:08",
     "qualifyingDive": false,
     "activityUUID": "d2126ccf-05bf-473d-b372-40a1bd30a1b2",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 18856652954,
@@ -12256,8 +12480,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -12311,7 +12535,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -12369,15 +12594,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-04-17 17:50:35",
     "qualifyingDive": false,
     "activityUUID": "352e8a93-a897-4d3b-8cf8-2765cfe38639",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 18840555804,
@@ -12389,8 +12614,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -12444,7 +12669,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -12502,15 +12728,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-04-16 01:36:10",
     "qualifyingDive": false,
     "activityUUID": "a35151f8-9114-4f59-8f22-4beb4a69a3fd",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 18773194113,
@@ -12522,8 +12748,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -12577,7 +12803,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -12635,15 +12862,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-04-09 01:16:07",
     "qualifyingDive": false,
     "activityUUID": "58a02dd8-2897-40ab-a5ec-294f56bfc0e4",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 18752689884,
@@ -12655,8 +12882,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -12710,7 +12937,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -12771,15 +12999,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-04-06 21:31:34",
     "qualifyingDive": false,
     "activityUUID": "6a4b2709-b50b-4712-aacf-702c60231425",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 18638541695,
@@ -12791,8 +13019,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -12846,7 +13074,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -12907,15 +13136,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-03-26 01:25:47",
     "qualifyingDive": false,
     "activityUUID": "4330015f-3994-4c86-be38-5b775facbb3e",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 18617940065,
@@ -12927,8 +13156,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -12982,7 +13211,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -13040,15 +13270,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-03-23 20:04:24",
     "qualifyingDive": false,
     "activityUUID": "b06e0bdc-365e-49b2-816c-bfd55dc5b381",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 18591285826,
@@ -13060,8 +13290,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -13115,7 +13345,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -13176,15 +13407,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-03-21 01:50:51",
     "qualifyingDive": false,
     "activityUUID": "557b97b7-f21a-4eac-9fe4-f2aad9c231c1",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 18571857303,
@@ -13197,8 +13428,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -13252,7 +13483,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -13310,15 +13542,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-03-19 01:15:34",
     "qualifyingDive": false,
     "activityUUID": "b2ddae65-36e2-4793-a289-456d08ee004c",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 18514261550,
@@ -13330,8 +13562,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -13385,7 +13617,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -13443,15 +13676,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-03-12 17:48:43",
     "qualifyingDive": false,
     "activityUUID": "7b4170f6-7ba5-4d74-a779-40db09c4787c",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 18451351118,
@@ -13463,8 +13696,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -13518,7 +13751,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -13579,15 +13813,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-03-06 02:49:03",
     "qualifyingDive": false,
     "activityUUID": "788d62a1-3539-4e4d-a266-e1a20d742998",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 18421305382,
@@ -13599,8 +13833,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -13654,7 +13888,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 3,
@@ -13715,15 +13950,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-03-02 18:28:57",
     "qualifyingDive": false,
     "activityUUID": "bb7847a6-cb51-4a70-9181-3448f18beb25",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 18358950480,
@@ -13736,8 +13971,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -13791,7 +14026,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 3,
@@ -13855,15 +14091,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-02-23 21:28:13",
     "qualifyingDive": false,
     "activityUUID": "66abc675-9747-43c8-b5b7-7409354188bb",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 18312802703,
@@ -13875,8 +14111,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -13930,7 +14166,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -13991,15 +14228,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-02-18 18:45:21",
     "qualifyingDive": false,
     "activityUUID": "5e361c05-daf1-4323-964d-d575411656c2",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 18277267060,
@@ -14011,8 +14248,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -14066,7 +14303,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 3,
@@ -14129,15 +14367,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-02-14 18:50:57",
     "qualifyingDive": false,
     "activityUUID": "13e93001-37eb-4a0e-b5a9-1c920e30208b",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 18171297017,
@@ -14149,8 +14387,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -14204,7 +14442,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -14265,15 +14504,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-02-02 17:57:45",
     "qualifyingDive": false,
     "activityUUID": "e45a3e73-afa4-4529-b503-5f613839bee8",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 18138035118,
@@ -14285,8 +14524,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -14340,7 +14579,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -14401,15 +14641,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-01-30 01:08:15",
     "qualifyingDive": false,
     "activityUUID": "b6412cbe-c001-4dd8-9f15-43b13c97ed23",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 18073493821,
@@ -14421,8 +14661,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -14476,7 +14716,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -14537,15 +14778,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-01-22 17:24:59",
     "qualifyingDive": false,
     "activityUUID": "968b759f-df7c-4d5c-b934-51965a6bf35a",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 18048197904,
@@ -14557,8 +14798,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -14612,7 +14853,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -14670,15 +14912,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-01-19 18:12:10",
     "qualifyingDive": false,
     "activityUUID": "33f63b1a-5ee6-4ece-a708-8a88b6d30a05",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 17985647288,
@@ -14690,8 +14932,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -14745,7 +14987,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -14803,15 +15046,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-01-12 18:44:20",
     "qualifyingDive": false,
     "activityUUID": "6b92b42b-d429-4b7c-abdc-ab4a7c8e039d",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 17952943323,
@@ -14823,8 +15066,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -14878,7 +15121,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -14939,15 +15183,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-01-09 01:31:28",
     "qualifyingDive": false,
     "activityUUID": "e89fbf9d-97e1-45c0-be1e-ef3167fd4e34",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 17916159744,
@@ -14959,8 +15203,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -15014,7 +15258,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -15072,15 +15317,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-01-04 17:43:57",
     "qualifyingDive": false,
     "activityUUID": "90384557-e174-4e56-846b-c3e4e6b51168",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 17860279760,
@@ -15092,8 +15337,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -15147,7 +15392,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 3,
@@ -15208,15 +15454,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2024-12-28 21:33:35",
     "qualifyingDive": false,
     "activityUUID": "4b5cfbe9-235a-4706-a1b1-f97a69063336",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 17802741010,
@@ -15229,8 +15475,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -15284,7 +15530,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -15345,15 +15592,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2024-12-20 18:35:27",
     "qualifyingDive": false,
     "activityUUID": "42d452d7-3c52-4f82-80bf-2a8438b790b0",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 17759988824,
@@ -15365,8 +15612,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -15420,7 +15667,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 3,
@@ -15471,15 +15719,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2024-12-14 17:35:16",
     "qualifyingDive": false,
     "activityUUID": "61d5b859-1277-45d2-b044-4137a6cb3c9d",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 17718745164,
@@ -15491,8 +15739,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -15546,7 +15794,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 3,
@@ -15597,15 +15846,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2024-12-08 23:24:22",
     "qualifyingDive": false,
     "activityUUID": "85b0f2a9-c645-43a0-a520-e41b6853b62e",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 17697751650,
@@ -15617,8 +15866,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -15672,7 +15921,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -15723,15 +15973,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2024-12-05 23:39:51",
     "qualifyingDive": false,
     "activityUUID": "2010da2a-20e9-4841-ba52-e2b7fa69bedc",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 17586868235,
@@ -15743,8 +15993,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -15798,7 +16048,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -15844,15 +16095,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2024-11-21 02:17:57",
     "qualifyingDive": false,
     "activityUUID": "1d525cb3-b579-46ac-9ead-8f467e85d00d",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 17553447070,
@@ -15864,8 +16115,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -15919,7 +16170,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -15965,15 +16217,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2024-11-16 17:32:10",
     "qualifyingDive": false,
     "activityUUID": "eed5d3f6-a2bf-4e07-be7a-9b3d18bd893f",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 17484872831,
@@ -15985,8 +16237,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -16040,7 +16292,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -16093,15 +16346,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2024-11-08 02:15:55",
     "qualifyingDive": false,
     "activityUUID": "c93a86c8-6ac6-4eee-beb0-2347b1fe4540",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 17411471135,
@@ -16114,8 +16367,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -16169,7 +16422,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -16215,15 +16469,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2024-10-30 00:43:06",
     "qualifyingDive": false,
     "activityUUID": "8705f79b-4a8c-4c9f-a081-d7ab69cc6ad0",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 17384735868,
@@ -16235,8 +16489,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -16289,7 +16543,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -16335,15 +16590,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2024-10-26 21:15:49",
     "qualifyingDive": false,
     "activityUUID": "4601de37-bf63-4210-a430-5c03aa5c815a",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 17384693235,
@@ -16355,8 +16610,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -16410,7 +16665,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -16456,15 +16712,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2024-10-26 21:05:01",
     "qualifyingDive": false,
     "activityUUID": "b0e554fe-db66-4ba3-8719-68609fff21f0",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 17384667386,
@@ -16476,8 +16732,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -16530,7 +16786,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -16576,15 +16833,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2024-10-26 20:58:16",
     "qualifyingDive": false,
     "activityUUID": "83b2df48-0993-44ba-899f-762822b2fe72",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 17384667217,
@@ -16596,8 +16853,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -16650,7 +16907,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -16696,15 +16954,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2024-10-26 20:55:58",
     "qualifyingDive": false,
     "activityUUID": "b3789dfa-5cd0-45a5-9e77-96c92748f02b",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   },
   {
     "activityId": 17384667098,
@@ -16716,8 +16974,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "restricted": false,
-      "trimmable": false
+      "trimmable": false,
+      "restricted": false
     },
     "eventType": {
       "typeId": 9,
@@ -16771,7 +17029,8 @@ var BOULDER_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -16817,15 +17076,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2024-10-26 20:54:00",
     "qualifyingDive": false,
     "activityUUID": "239bb31a-f201-4d11-8825-368df913b32c",
-    "autoCalcCalories": false,
-    "favorite": false,
+    "parent": false,
+    "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
     "pr": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "purposeful": false,
-    "manualActivity": false,
-    "parent": false,
-    "decoDive": false
+    "manualActivity": false
   }
 ];
 var STRENGTH_DATA = [
@@ -16896,7 +17155,8 @@ var STRENGTH_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -16976,15 +17236,15 @@ var STRENGTH_DATA = [
     "endTimeGMT": "2026-03-10 17:58:37",
     "qualifyingDive": false,
     "activityUUID": "88eb03b7-9a9f-49ac-9c82-698d7d95e432",
-    "decoDive": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
     "pr": false,
     "favorite": false,
     "purposeful": false,
+    "parent": false,
+    "decoDive": false,
     "manualActivity": false,
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "atpActivity": false,
     "exerciseSets": [
       {
         "category": "DEADLIFT",
@@ -17129,7 +17389,8 @@ var STRENGTH_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -17218,15 +17479,15 @@ var STRENGTH_DATA = [
     "endTimeGMT": "2026-02-02 18:40:56",
     "qualifyingDive": false,
     "activityUUID": "46635475-69b1-48fa-93a3-ebe7612bd6ea",
-    "decoDive": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
     "pr": false,
     "favorite": false,
     "purposeful": false,
+    "parent": false,
+    "decoDive": false,
     "manualActivity": false,
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "atpActivity": false,
     "exerciseSets": [
       {
         "category": "DEADLIFT",
@@ -17389,7 +17650,8 @@ var STRENGTH_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -17451,15 +17713,15 @@ var STRENGTH_DATA = [
     "endTimeGMT": "2026-01-27 20:18:09",
     "qualifyingDive": false,
     "activityUUID": "ab6e7901-5b0b-4751-b08c-fce3e040e982",
-    "decoDive": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
     "pr": false,
     "favorite": false,
     "purposeful": false,
+    "parent": false,
+    "decoDive": false,
     "manualActivity": false,
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "atpActivity": false,
     "exerciseSets": [
       {
         "category": "CURL",
@@ -17568,7 +17830,8 @@ var STRENGTH_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -17657,15 +17920,15 @@ var STRENGTH_DATA = [
     "endTimeGMT": "2026-01-27 20:10:22",
     "qualifyingDive": false,
     "activityUUID": "078c0cd6-c35b-43cc-b169-e4f9591c58f2",
-    "decoDive": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
     "pr": false,
     "favorite": false,
     "purposeful": false,
+    "parent": false,
+    "decoDive": false,
     "manualActivity": false,
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "atpActivity": false,
     "exerciseSets": [
       {
         "category": "DEADLIFT",
@@ -17828,7 +18091,8 @@ var STRENGTH_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -17917,15 +18181,15 @@ var STRENGTH_DATA = [
     "endTimeGMT": "2026-01-20 18:54:05",
     "qualifyingDive": false,
     "activityUUID": "9480df16-b7e4-4e69-ae82-9bc7400e2868",
-    "decoDive": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
     "pr": false,
     "favorite": false,
     "purposeful": false,
+    "parent": false,
+    "decoDive": false,
     "manualActivity": false,
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "atpActivity": false,
     "exerciseSets": [
       {
         "category": "DEADLIFT",
@@ -18088,7 +18352,8 @@ var STRENGTH_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -18157,15 +18422,15 @@ var STRENGTH_DATA = [
     "endTimeGMT": "2025-07-04 15:05:07",
     "qualifyingDive": false,
     "activityUUID": "048fac20-5c32-4814-9a2d-5fbb4f8ce441",
-    "decoDive": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
     "pr": false,
     "favorite": false,
     "purposeful": false,
+    "parent": false,
+    "decoDive": false,
     "manualActivity": false,
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "atpActivity": false,
     "exerciseSets": [
       {
         "category": "PUSH_UP",
@@ -18292,7 +18557,8 @@ var STRENGTH_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -18360,15 +18626,15 @@ var STRENGTH_DATA = [
     "endTimeGMT": "2025-07-04 14:54:30",
     "qualifyingDive": false,
     "activityUUID": "daba1b75-c56f-47cb-8cf2-8519f035a590",
-    "decoDive": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
     "pr": false,
     "favorite": false,
     "purposeful": false,
+    "parent": false,
+    "decoDive": false,
     "manualActivity": false,
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "atpActivity": false,
     "exerciseSets": [
       {
         "category": "CURL",
@@ -18491,7 +18757,8 @@ var STRENGTH_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -18548,15 +18815,15 @@ var STRENGTH_DATA = [
     "endTimeGMT": "2025-06-25 17:49:21",
     "qualifyingDive": false,
     "activityUUID": "910c959f-5358-4ab9-be58-1c10527abea4",
-    "decoDive": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
     "pr": false,
     "favorite": false,
     "purposeful": false,
+    "parent": false,
+    "decoDive": false,
     "manualActivity": false,
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "atpActivity": false,
     "exerciseSets": [],
     "fullSummarizedExerciseSets": []
   },
@@ -18627,7 +18894,8 @@ var STRENGTH_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -18716,15 +18984,15 @@ var STRENGTH_DATA = [
     "endTimeGMT": "2025-06-16 16:54:45",
     "qualifyingDive": false,
     "activityUUID": "02597a52-38c0-49af-99f9-989c7a5a9726",
-    "decoDive": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
     "pr": false,
     "favorite": false,
     "purposeful": false,
+    "parent": false,
+    "decoDive": false,
     "manualActivity": false,
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "atpActivity": false,
     "exerciseSets": [
       {
         "category": "DEADLIFT",
@@ -18887,7 +19155,8 @@ var STRENGTH_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -18955,15 +19224,15 @@ var STRENGTH_DATA = [
     "endTimeGMT": "2025-06-13 18:07:55",
     "qualifyingDive": false,
     "activityUUID": "9e11783b-d1ea-4e55-a8c3-6271600b76ba",
-    "decoDive": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
     "pr": false,
     "favorite": false,
     "purposeful": false,
+    "parent": false,
+    "decoDive": false,
     "manualActivity": false,
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "atpActivity": false,
     "exerciseSets": [
       {
         "category": "PUSH_UP",
@@ -19088,7 +19357,8 @@ var STRENGTH_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -19148,15 +19418,15 @@ var STRENGTH_DATA = [
     "endTimeGMT": "2025-06-12 14:29:56",
     "qualifyingDive": false,
     "activityUUID": "53e95123-ac9b-4805-8442-182eb417fa8d",
-    "decoDive": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
     "pr": false,
     "favorite": false,
     "purposeful": false,
+    "parent": false,
+    "decoDive": false,
     "manualActivity": false,
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "atpActivity": false,
     "exerciseSets": [
       {
         "category": "CURL",
@@ -19265,7 +19535,8 @@ var STRENGTH_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -19354,15 +19625,15 @@ var STRENGTH_DATA = [
     "endTimeGMT": "2025-06-09 17:06:50",
     "qualifyingDive": false,
     "activityUUID": "c4fc0cb6-9fe7-49ce-95f4-62918265d73b",
-    "decoDive": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
     "pr": false,
     "favorite": false,
     "purposeful": false,
+    "parent": false,
+    "decoDive": false,
     "manualActivity": false,
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "atpActivity": false,
     "exerciseSets": [
       {
         "category": "DEADLIFT",
@@ -19525,7 +19796,8 @@ var STRENGTH_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -19614,15 +19886,15 @@ var STRENGTH_DATA = [
     "endTimeGMT": "2025-06-02 17:02:40",
     "qualifyingDive": false,
     "activityUUID": "593fb97f-bee3-41c0-8be0-ece02ad3fb57",
-    "decoDive": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
     "pr": true,
     "favorite": false,
     "purposeful": false,
+    "parent": false,
+    "decoDive": false,
     "manualActivity": false,
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "atpActivity": false,
     "exerciseSets": [
       {
         "category": "DEADLIFT",
@@ -19791,7 +20063,8 @@ var CYCLING_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -19836,15 +20109,15 @@ var CYCLING_DATA = [
     "endTimeGMT": "2026-02-13 18:38:45",
     "qualifyingDive": false,
     "activityUUID": "d510b267-52e9-4b9e-a37d-71b133b4eaa4",
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "decoDive": false,
+    "pr": false,
     "favorite": false,
     "purposeful": false,
-    "pr": false,
+    "parent": false,
+    "decoDive": false,
     "manualActivity": false,
-    "parent": false
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 21724426786,
@@ -19917,7 +20190,8 @@ var CYCLING_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -19961,15 +20235,15 @@ var CYCLING_DATA = [
     "endTimeGMT": "2026-01-31 21:05:26",
     "qualifyingDive": false,
     "activityUUID": "f32e34d0-8a91-4e7a-8708-a987563054fa",
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "decoDive": false,
+    "pr": false,
     "favorite": false,
     "purposeful": false,
-    "pr": false,
+    "parent": false,
+    "decoDive": false,
     "manualActivity": false,
-    "parent": false
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 21558059813,
@@ -20042,7 +20316,8 @@ var CYCLING_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -20084,15 +20359,15 @@ var CYCLING_DATA = [
     "endTimeGMT": "2026-01-15 18:33:59",
     "qualifyingDive": false,
     "activityUUID": "d917162e-78f7-4548-99b8-e1766165829d",
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "decoDive": false,
+    "pr": false,
     "favorite": false,
     "purposeful": false,
-    "pr": false,
+    "parent": false,
+    "decoDive": false,
     "manualActivity": false,
-    "parent": false
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 21494526143,
@@ -20165,7 +20440,8 @@ var CYCLING_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -20207,15 +20483,15 @@ var CYCLING_DATA = [
     "endTimeGMT": "2026-01-09 18:41:39",
     "qualifyingDive": false,
     "activityUUID": "36f3a943-bc3c-4014-b9d6-1e90c60a9f72",
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "decoDive": false,
+    "pr": false,
     "favorite": false,
     "purposeful": false,
-    "pr": false,
+    "parent": false,
+    "decoDive": false,
     "manualActivity": false,
-    "parent": false
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 21494471299,
@@ -20288,7 +20564,8 @@ var CYCLING_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -20330,15 +20607,15 @@ var CYCLING_DATA = [
     "endTimeGMT": "2026-01-09 18:35:00",
     "qualifyingDive": false,
     "activityUUID": "2ebcb589-9ec4-4f03-b71a-ab61f24c5f34",
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "decoDive": false,
+    "pr": false,
     "favorite": false,
     "purposeful": false,
-    "pr": false,
+    "parent": false,
+    "decoDive": false,
     "manualActivity": false,
-    "parent": false
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 21444551566,
@@ -20411,7 +20688,8 @@ var CYCLING_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -20453,15 +20731,15 @@ var CYCLING_DATA = [
     "endTimeGMT": "2026-01-04 20:13:52",
     "qualifyingDive": false,
     "activityUUID": "4b09d0e9-eba8-4132-90cb-f00cec2d2542",
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "decoDive": false,
+    "pr": false,
     "favorite": false,
     "purposeful": false,
-    "pr": false,
+    "parent": false,
+    "decoDive": false,
     "manualActivity": false,
-    "parent": false
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 21433929335,
@@ -20534,7 +20812,8 @@ var CYCLING_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -20578,15 +20857,15 @@ var CYCLING_DATA = [
     "endTimeGMT": "2026-01-03 19:58:48",
     "qualifyingDive": false,
     "activityUUID": "41f37cd3-d6a7-4a77-826f-4bf70eb6c1c1",
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "decoDive": false,
+    "pr": false,
     "favorite": false,
     "purposeful": false,
-    "pr": false,
+    "parent": false,
+    "decoDive": false,
     "manualActivity": false,
-    "parent": false
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 21350007621,
@@ -20659,7 +20938,8 @@ var CYCLING_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -20703,15 +20983,15 @@ var CYCLING_DATA = [
     "endTimeGMT": "2025-12-25 20:33:05",
     "qualifyingDive": false,
     "activityUUID": "09920c8f-3312-4fa0-8d16-b336f18cc22d",
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "decoDive": false,
+    "pr": false,
     "favorite": false,
     "purposeful": false,
-    "pr": false,
+    "parent": false,
+    "decoDive": false,
     "manualActivity": false,
-    "parent": false
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 21334868354,
@@ -20784,7 +21064,8 @@ var CYCLING_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -20828,15 +21109,15 @@ var CYCLING_DATA = [
     "endTimeGMT": "2025-12-23 20:22:15",
     "qualifyingDive": false,
     "activityUUID": "9b1f9982-2b44-434d-a50a-d52d78c73128",
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "decoDive": false,
+    "pr": false,
     "favorite": false,
     "purposeful": false,
-    "pr": false,
+    "parent": false,
+    "decoDive": false,
     "manualActivity": false,
-    "parent": false
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 21309052003,
@@ -20909,7 +21190,8 @@ var CYCLING_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -20953,15 +21235,15 @@ var CYCLING_DATA = [
     "endTimeGMT": "2025-12-20 19:30:40",
     "qualifyingDive": false,
     "activityUUID": "4a6dd104-4503-4d6b-a4ae-5055e6298b31",
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "decoDive": false,
+    "pr": false,
     "favorite": false,
     "purposeful": false,
-    "pr": false,
+    "parent": false,
+    "decoDive": false,
     "manualActivity": false,
-    "parent": false
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 20906789297,
@@ -21034,7 +21316,8 @@ var CYCLING_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -21078,15 +21361,15 @@ var CYCLING_DATA = [
     "endTimeGMT": "2025-11-05 19:42:15",
     "qualifyingDive": false,
     "activityUUID": "1903e745-8d88-4707-ade6-926f314977a8",
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "decoDive": false,
+    "pr": false,
     "favorite": false,
     "purposeful": false,
-    "pr": false,
+    "parent": false,
+    "decoDive": false,
     "manualActivity": false,
-    "parent": false
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 19571948344,
@@ -21159,7 +21442,8 @@ var CYCLING_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -21201,15 +21485,15 @@ var CYCLING_DATA = [
     "endTimeGMT": "2025-06-28 16:12:12",
     "qualifyingDive": false,
     "activityUUID": "51017d41-4c73-498d-9f15-c5e2c9995c35",
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "decoDive": false,
+    "pr": false,
     "favorite": false,
     "purposeful": false,
-    "pr": false,
+    "parent": false,
+    "decoDive": false,
     "manualActivity": false,
-    "parent": false
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 19214560666,
@@ -21282,7 +21566,8 @@ var CYCLING_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -21326,15 +21611,15 @@ var CYCLING_DATA = [
     "endTimeGMT": "2025-05-23 20:19:58",
     "qualifyingDive": false,
     "activityUUID": "6045fbac-f097-4936-924e-035bf45c80c4",
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "decoDive": false,
+    "pr": false,
     "favorite": false,
     "purposeful": false,
-    "pr": false,
+    "parent": false,
+    "decoDive": false,
     "manualActivity": false,
-    "parent": false
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 19156199684,
@@ -21407,7 +21692,8 @@ var CYCLING_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -21451,15 +21737,15 @@ var CYCLING_DATA = [
     "endTimeGMT": "2025-05-17 22:26:41",
     "qualifyingDive": false,
     "activityUUID": "f77f689e-f64b-489d-8ea3-f4979117ab68",
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "decoDive": false,
+    "pr": false,
     "favorite": false,
     "purposeful": false,
-    "pr": false,
+    "parent": false,
+    "decoDive": false,
     "manualActivity": false,
-    "parent": false
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 18886233751,
@@ -21532,7 +21818,8 @@ var CYCLING_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -21576,15 +21863,15 @@ var CYCLING_DATA = [
     "endTimeGMT": "2025-04-20 20:48:02",
     "qualifyingDive": false,
     "activityUUID": "ae0b0289-4c2e-49f6-845c-05935a66ffbe",
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "decoDive": false,
+    "pr": false,
     "favorite": false,
     "purposeful": false,
-    "pr": false,
+    "parent": false,
+    "decoDive": false,
     "manualActivity": false,
-    "parent": false
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 18654621962,
@@ -21657,7 +21944,8 @@ var CYCLING_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -21701,15 +21989,15 @@ var CYCLING_DATA = [
     "endTimeGMT": "2025-03-27 17:55:28",
     "qualifyingDive": false,
     "activityUUID": "9b33ca53-6dc1-4262-a254-70925eac07a6",
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "decoDive": false,
+    "pr": false,
     "favorite": false,
     "purposeful": false,
-    "pr": false,
+    "parent": false,
+    "decoDive": false,
     "manualActivity": false,
-    "parent": false
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 18561365966,
@@ -21782,7 +22070,8 @@ var CYCLING_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -21826,15 +22115,15 @@ var CYCLING_DATA = [
     "endTimeGMT": "2025-03-17 23:08:56",
     "qualifyingDive": false,
     "activityUUID": "b557e359-ab1d-43d6-82fb-c5dff0ef4623",
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "decoDive": false,
+    "pr": false,
     "favorite": false,
     "purposeful": false,
-    "pr": false,
+    "parent": false,
+    "decoDive": false,
     "manualActivity": false,
-    "parent": false
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 18497290488,
@@ -21907,7 +22196,8 @@ var CYCLING_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -21951,15 +22241,15 @@ var CYCLING_DATA = [
     "endTimeGMT": "2025-03-10 22:20:08",
     "qualifyingDive": false,
     "activityUUID": "5f9146cb-c932-49a7-bc7b-5539fe859197",
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "decoDive": false,
+    "pr": false,
     "favorite": false,
     "purposeful": false,
-    "pr": false,
+    "parent": false,
+    "decoDive": false,
     "manualActivity": false,
-    "parent": false
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 18386808152,
@@ -22032,7 +22322,8 @@ var CYCLING_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -22076,15 +22367,15 @@ var CYCLING_DATA = [
     "endTimeGMT": "2025-02-26 23:13:25",
     "qualifyingDive": false,
     "activityUUID": "cc85474f-00e3-4d9d-9a43-5c72b204cf86",
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "decoDive": false,
+    "pr": false,
     "favorite": false,
     "purposeful": false,
-    "pr": false,
+    "parent": false,
+    "decoDive": false,
     "manualActivity": false,
-    "parent": false
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 18242179127,
@@ -22157,7 +22448,8 @@ var CYCLING_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -22201,15 +22493,15 @@ var CYCLING_DATA = [
     "endTimeGMT": "2025-02-10 18:30:29",
     "qualifyingDive": false,
     "activityUUID": "a522c2b4-aeca-4525-8f46-805973942b90",
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "decoDive": false,
+    "pr": false,
     "favorite": false,
     "purposeful": false,
-    "pr": false,
+    "parent": false,
+    "decoDive": false,
     "manualActivity": false,
-    "parent": false
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 18179939290,
@@ -22282,7 +22574,8 @@ var CYCLING_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -22326,15 +22619,15 @@ var CYCLING_DATA = [
     "endTimeGMT": "2025-02-03 19:03:29",
     "qualifyingDive": false,
     "activityUUID": "35b0d3b2-4a52-4a26-b229-94d5b466c788",
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "decoDive": false,
+    "pr": false,
     "favorite": false,
     "purposeful": false,
-    "pr": false,
+    "parent": false,
+    "decoDive": false,
     "manualActivity": false,
-    "parent": false
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 18171604365,
@@ -22407,7 +22700,8 @@ var CYCLING_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -22451,15 +22745,15 @@ var CYCLING_DATA = [
     "endTimeGMT": "2025-02-02 18:41:10",
     "qualifyingDive": false,
     "activityUUID": "2edc1ef4-34f2-4b9b-a56f-9662c1ae0a30",
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "decoDive": false,
+    "pr": false,
     "favorite": false,
     "purposeful": false,
-    "pr": false,
+    "parent": false,
+    "decoDive": false,
     "manualActivity": false,
-    "parent": false
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 18170778124,
@@ -22532,7 +22826,8 @@ var CYCLING_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -22576,15 +22871,15 @@ var CYCLING_DATA = [
     "endTimeGMT": "2025-02-02 16:57:15",
     "qualifyingDive": false,
     "activityUUID": "8ba3990e-b7ea-4915-926f-431725f34bfa",
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "decoDive": false,
+    "pr": false,
     "favorite": false,
     "purposeful": false,
-    "pr": false,
+    "parent": false,
+    "decoDive": false,
     "manualActivity": false,
-    "parent": false
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 18153837395,
@@ -22657,7 +22952,8 @@ var CYCLING_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -22701,15 +22997,15 @@ var CYCLING_DATA = [
     "endTimeGMT": "2025-01-31 21:17:15",
     "qualifyingDive": false,
     "activityUUID": "e95d882a-9b76-4c08-bf46-a2d3512df31e",
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "decoDive": false,
+    "pr": false,
     "favorite": false,
     "purposeful": false,
-    "pr": false,
+    "parent": false,
+    "decoDive": false,
     "manualActivity": false,
-    "parent": false
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 18005233398,
@@ -22782,7 +23078,8 @@ var CYCLING_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -22826,15 +23123,15 @@ var CYCLING_DATA = [
     "endTimeGMT": "2025-01-14 23:10:21",
     "qualifyingDive": false,
     "activityUUID": "7244c4ad-27dc-4f88-a5fe-95f9ea8415dd",
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "decoDive": false,
+    "pr": false,
     "favorite": false,
     "purposeful": false,
-    "pr": false,
+    "parent": false,
+    "decoDive": false,
     "manualActivity": false,
-    "parent": false
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 17563073694,
@@ -22907,7 +23204,8 @@ var CYCLING_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 3,
@@ -22946,15 +23244,15 @@ var CYCLING_DATA = [
     "endTimeGMT": "2024-11-17 22:31:17",
     "qualifyingDive": false,
     "activityUUID": "37a253d6-31c8-4d42-9825-27f27bc8f6a9",
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "decoDive": false,
+    "pr": false,
     "favorite": false,
     "purposeful": false,
-    "pr": false,
+    "parent": false,
+    "decoDive": false,
     "manualActivity": false,
-    "parent": false
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 17442479288,
@@ -23028,7 +23326,8 @@ var CYCLING_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 3,
@@ -23067,15 +23366,15 @@ var CYCLING_DATA = [
     "endTimeGMT": "2024-11-02 21:31:56",
     "qualifyingDive": false,
     "activityUUID": "0d8abb23-5e6c-4ff1-9846-5a3ea35fc9de",
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "decoDive": false,
+    "pr": true,
     "favorite": false,
     "purposeful": false,
-    "pr": true,
+    "parent": false,
+    "decoDive": false,
     "manualActivity": false,
-    "parent": false
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 17376715235,
@@ -23148,7 +23447,8 @@ var CYCLING_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 3,
@@ -23187,15 +23487,15 @@ var CYCLING_DATA = [
     "endTimeGMT": "2024-10-25 22:16:36",
     "qualifyingDive": false,
     "activityUUID": "ee8fddaa-3885-4bc7-a5e0-73ef8e22aab1",
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "decoDive": false,
+    "pr": false,
     "favorite": false,
     "purposeful": false,
-    "pr": false,
+    "parent": false,
+    "decoDive": false,
     "manualActivity": false,
-    "parent": false
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 17253921009,
@@ -23268,7 +23568,8 @@ var CYCLING_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 3,
@@ -23307,15 +23608,15 @@ var CYCLING_DATA = [
     "endTimeGMT": "2024-10-10 22:12:22",
     "qualifyingDive": false,
     "activityUUID": "04756d18-8607-46e1-bd4a-4d1c332e2400",
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "decoDive": false,
+    "pr": false,
     "favorite": false,
     "purposeful": false,
-    "pr": false,
+    "parent": false,
+    "decoDive": false,
     "manualActivity": false,
-    "parent": false
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 17179861252,
@@ -23388,7 +23689,8 @@ var CYCLING_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 3,
@@ -23427,15 +23729,15 @@ var CYCLING_DATA = [
     "endTimeGMT": "2024-10-01 22:32:37",
     "qualifyingDive": false,
     "activityUUID": "8de91dc8-be92-4466-9c5f-268c752545e2",
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "decoDive": false,
+    "pr": false,
     "favorite": false,
     "purposeful": false,
-    "pr": false,
+    "parent": false,
+    "decoDive": false,
     "manualActivity": false,
-    "parent": false
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 16984784423,
@@ -23508,7 +23810,8 @@ var CYCLING_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -23547,15 +23850,15 @@ var CYCLING_DATA = [
     "endTimeGMT": "2024-09-08 20:29:18",
     "qualifyingDive": false,
     "activityUUID": "0aca75e5-09c5-40a6-9880-3f601d166f88",
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "decoDive": false,
+    "pr": false,
     "favorite": false,
     "purposeful": false,
-    "pr": false,
+    "parent": false,
+    "decoDive": false,
     "manualActivity": false,
-    "parent": false
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 16973632326,
@@ -23628,7 +23931,8 @@ var CYCLING_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -23667,15 +23971,15 @@ var CYCLING_DATA = [
     "endTimeGMT": "2024-09-07 16:07:51",
     "qualifyingDive": false,
     "activityUUID": "fc4cadc6-32c6-4790-84c2-a6d8cf1c26a0",
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "decoDive": false,
+    "pr": false,
     "favorite": false,
     "purposeful": false,
-    "pr": false,
+    "parent": false,
+    "decoDive": false,
     "manualActivity": false,
-    "parent": false
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 16973263826,
@@ -23748,7 +24052,8 @@ var CYCLING_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -23787,18 +24092,174 @@ var CYCLING_DATA = [
     "endTimeGMT": "2024-09-07 15:32:08",
     "qualifyingDive": false,
     "activityUUID": "67e38cac-3216-4518-a022-65f61617e265",
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "decoDive": false,
+    "pr": false,
     "favorite": false,
     "purposeful": false,
-    "pr": false,
+    "parent": false,
+    "decoDive": false,
     "manualActivity": false,
-    "parent": false
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "atpActivity": false
   }
 ];
 var RUNNING_DATA = [
+  {
+    "activityId": 22151724490,
+    "activityName": "Richmond Heights Running",
+    "startTimeLocal": "2026-03-12 12:41:49",
+    "startTimeGMT": "2026-03-12 17:41:49",
+    "activityType": {
+      "typeId": 1,
+      "typeKey": "running",
+      "parentTypeId": 17,
+      "isHidden": false,
+      "restricted": false,
+      "trimmable": true
+    },
+    "eventType": {
+      "typeId": 9,
+      "typeKey": "uncategorized",
+      "sortOrder": 10
+    },
+    "distance": 1239.68994140625,
+    "duration": 425.2860107421875,
+    "elapsedDuration": 425.2860107421875,
+    "movingDuration": 416,
+    "elevationGain": 16,
+    "elevationLoss": 13,
+    "averageSpeed": 2.9149999618530273,
+    "maxSpeed": 3.742000102996826,
+    "startLatitude": 38.63252489827573,
+    "startLongitude": -90.32672247849405,
+    "hasPolyline": true,
+    "hasImages": false,
+    "ownerId": 125473122,
+    "ownerDisplayName": "41a91fcb-dd10-46e4-b8e7-debbc6affcc7",
+    "ownerFullName": "John",
+    "ownerProfileImageUrlSmall": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/e71212cf-9ec6-4a9f-8643-106b91b17c1d-prth.png",
+    "ownerProfileImageUrlMedium": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/e71212cf-9ec6-4a9f-8643-106b91b17c1d-prfr.png",
+    "ownerProfileImageUrlLarge": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/e71212cf-9ec6-4a9f-8643-106b91b17c1d-prof.png",
+    "calories": 84,
+    "bmrCalories": 11,
+    "averageHR": 128,
+    "maxHR": 149,
+    "averageRunningCadenceInStepsPerMinute": 166.875,
+    "maxRunningCadenceInStepsPerMinute": 188,
+    "steps": 1186,
+    "userRoles": [
+      "SCOPE_ATP_READ",
+      "SCOPE_COMMUNITY_COURSE_ADMIN_READ",
+      "SCOPE_COMMUNITY_COURSE_WRITE",
+      "SCOPE_DI_API_READ",
+      "SCOPE_CONNECT_WEB_TEMPLATE_RENDER",
+      "SCOPE_ACTIVITY_DETECTION_READ",
+      "SCOPE_DI_API_WRITE",
+      "SCOPE_OMT_SUBSCRIPTION_ADMIN_READ",
+      "SCOPE_DI_OAUTH_2_MANAGED_STATUS_ADMIN_WRITE",
+      "SCOPE_CONNECT_READ",
+      "SCOPE_GARMIN_PROFILE_READ",
+      "SCOPE_GOLF_API_READ",
+      "SCOPE_DI_OAUTH_2_DEVICE_REVOCATION_WRITE",
+      "SCOPE_DI_OAUTH_2_CREATE_DI_USER",
+      "SCOPE_DIVE_API_WRITE",
+      "SCOPE_DIVE_API_READ",
+      "SCOPE_DI_OAUTH_2_CLIENT_READ",
+      "SCOPE_CONNECT_WRITE",
+      "SCOPE_CONNECT_MCT_DAILY_LOG_READ",
+      "SCOPE_CONNECT_API_CREATE_UPDATE_USER",
+      "SCOPE_MESSAGE_GENERATION_READ",
+      "SCOPE_GARMIN_PROFILE_WRITE",
+      "SCOPE_DI_OAUTH_2_CLIENT_REVOCATION_ADMIN",
+      "SCOPE_CONNECT_NON_SOCIAL_SHARED_READ",
+      "SCOPE_DI_OAUTH_2_PRERELEASE_PERMISSIONS_ADMIN_WRITE",
+      "SCOPE_DI_OAUTH_2_TOKEN_ADMIN",
+      "SCOPE_ATP_WRITE",
+      "ROLE_CONNECTUSER",
+      "ROLE_FITNESS_USER",
+      "ROLE_WELLNESS_USER",
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
+    ],
+    "privacy": {
+      "typeId": 2,
+      "typeKey": "private"
+    },
+    "userPro": false,
+    "hasVideo": false,
+    "timeZoneId": 152,
+    "beginTimestamp": 1773337309000,
+    "sportTypeId": 1,
+    "avgPower": 366,
+    "maxPower": 562,
+    "aerobicTrainingEffect": 1.899999976158142,
+    "anaerobicTrainingEffect": 0.699999988079071,
+    "normPower": 394,
+    "avgStrideLength": 104.80740104988946,
+    "deviceId": 3480545930,
+    "minElevation": 155.39999389648438,
+    "maxElevation": 168.8000030517578,
+    "avgElevation": 161.37317652085247,
+    "maxDoubleCadence": 188,
+    "summarizedDiveInfo": {
+      "summarizedDiveGases": []
+    },
+    "maxVerticalSpeed": 0.600006103515625,
+    "manufacturer": "GARMIN",
+    "locationName": "Richmond Heights",
+    "lapCount": 1,
+    "endLatitude": 38.6323453579098,
+    "endLongitude": -90.32647848129272,
+    "waterEstimated": 117,
+    "trainingEffectLabel": "RECOVERY",
+    "activityTrainingLoad": 29.86761474609375,
+    "minActivityLapDuration": 425.2860107421875,
+    "aerobicTrainingEffectMessage": "MINOR_AEROBIC_BENEFIT_0",
+    "anaerobicTrainingEffectMessage": "NO_ANAEROBIC_BENEFIT_0",
+    "splitSummaries": [
+      {
+        "noOfSplits": 1,
+        "totalAscent": 16,
+        "duration": 425.1080017089844,
+        "splitType": "RWD_RUN",
+        "numClimbSends": 0,
+        "maxElevationGain": 16,
+        "averageElevationGain": 16,
+        "maxDistance": 1239,
+        "distance": 1239.68994140625,
+        "averageSpeed": 2.9159998893737793,
+        "maxSpeed": 3.742000102996826,
+        "numFalls": 0,
+        "elevationLoss": 13
+      }
+    ],
+    "hasSplits": true,
+    "avgGradeAdjustedSpeed": 2.765000104904175,
+    "hasHeatMap": false,
+    "fastestSplit_1000": 331.80999755859375,
+    "hrTimeInZone_1": 11.001,
+    "hrTimeInZone_2": 214.999,
+    "hrTimeInZone_3": 168.472,
+    "hrTimeInZone_4": 0,
+    "hrTimeInZone_5": 0,
+    "powerTimeInZone_1": 136.28,
+    "powerTimeInZone_2": 99.002,
+    "powerTimeInZone_3": 45.445,
+    "powerTimeInZone_4": 65.023,
+    "powerTimeInZone_5": 35,
+    "endTimeGMT": "2026-03-12 17:48:54",
+    "qualifyingDive": false,
+    "activityUUID": "cd83bef0-18db-439f-ba5c-a9347d354bb5",
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "atpActivity": false,
+    "purposeful": false,
+    "manualActivity": false,
+    "favorite": false,
+    "decoDive": false,
+    "pr": false,
+    "parent": false
+  },
   {
     "activityId": 22129360362,
     "activityName": "Richmond Heights Running",
@@ -23873,7 +24334,8 @@ var RUNNING_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -23978,12 +24440,12 @@ var RUNNING_DATA = [
     "autoCalcCalories": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "parent": false,
-    "decoDive": false,
     "purposeful": false,
-    "favorite": false,
     "manualActivity": false,
-    "pr": false
+    "favorite": false,
+    "decoDive": false,
+    "pr": false,
+    "parent": false
   },
   {
     "activityId": 22108242313,
@@ -24059,7 +24521,8 @@ var RUNNING_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -24152,12 +24615,12 @@ var RUNNING_DATA = [
     "autoCalcCalories": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "parent": false,
-    "decoDive": false,
     "purposeful": false,
-    "favorite": false,
     "manualActivity": false,
-    "pr": false
+    "favorite": false,
+    "decoDive": false,
+    "pr": false,
+    "parent": false
   },
   {
     "activityId": 18588659159,
@@ -24233,7 +24696,8 @@ var RUNNING_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -24325,12 +24789,12 @@ var RUNNING_DATA = [
     "autoCalcCalories": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "parent": false,
-    "decoDive": false,
     "purposeful": false,
-    "favorite": false,
     "manualActivity": false,
-    "pr": false
+    "favorite": false,
+    "decoDive": false,
+    "pr": false,
+    "parent": false
   },
   {
     "activityId": 18523248018,
@@ -24406,7 +24870,8 @@ var RUNNING_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -24483,12 +24948,12 @@ var RUNNING_DATA = [
     "autoCalcCalories": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "parent": false,
-    "decoDive": false,
     "purposeful": false,
-    "favorite": false,
     "manualActivity": false,
-    "pr": false
+    "favorite": false,
+    "decoDive": false,
+    "pr": false,
+    "parent": false
   },
   {
     "activityId": 18458048547,
@@ -24564,7 +25029,8 @@ var RUNNING_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -24656,12 +25122,12 @@ var RUNNING_DATA = [
     "autoCalcCalories": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "parent": false,
-    "decoDive": false,
     "purposeful": false,
-    "favorite": false,
     "manualActivity": false,
-    "pr": false
+    "favorite": false,
+    "decoDive": false,
+    "pr": false,
+    "parent": false
   },
   {
     "activityId": 18067166191,
@@ -24737,7 +25203,8 @@ var RUNNING_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -24829,12 +25296,12 @@ var RUNNING_DATA = [
     "autoCalcCalories": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "parent": false,
-    "decoDive": false,
     "purposeful": false,
-    "favorite": false,
     "manualActivity": false,
-    "pr": false
+    "favorite": false,
+    "decoDive": false,
+    "pr": false,
+    "parent": false
   },
   {
     "activityId": 17642565526,
@@ -24911,7 +25378,8 @@ var RUNNING_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 3,
@@ -25010,12 +25478,12 @@ var RUNNING_DATA = [
     "autoCalcCalories": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "parent": false,
-    "decoDive": false,
     "purposeful": false,
-    "favorite": false,
     "manualActivity": false,
-    "pr": true
+    "favorite": false,
+    "decoDive": false,
+    "pr": true,
+    "parent": false
   },
   {
     "activityId": 17591786763,
@@ -25091,7 +25559,8 @@ var RUNNING_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -25173,12 +25642,12 @@ var RUNNING_DATA = [
     "autoCalcCalories": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "parent": false,
-    "decoDive": false,
     "purposeful": false,
-    "favorite": false,
     "manualActivity": false,
-    "pr": false
+    "favorite": false,
+    "decoDive": false,
+    "pr": false,
+    "parent": false
   },
   {
     "activityId": 17571270958,
@@ -25254,7 +25723,8 @@ var RUNNING_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -25351,12 +25821,12 @@ var RUNNING_DATA = [
     "autoCalcCalories": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "parent": false,
-    "decoDive": false,
     "purposeful": false,
-    "favorite": false,
     "manualActivity": false,
-    "pr": false
+    "favorite": false,
+    "decoDive": false,
+    "pr": false,
+    "parent": false
   },
   {
     "activityId": 17489952898,
@@ -25432,7 +25902,8 @@ var RUNNING_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -25514,12 +25985,12 @@ var RUNNING_DATA = [
     "autoCalcCalories": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "parent": false,
-    "decoDive": false,
     "purposeful": false,
-    "favorite": false,
     "manualActivity": false,
-    "pr": false
+    "favorite": false,
+    "decoDive": false,
+    "pr": false,
+    "parent": false
   },
   {
     "activityId": 17458153063,
@@ -25595,7 +26066,8 @@ var RUNNING_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -25677,12 +26149,12 @@ var RUNNING_DATA = [
     "autoCalcCalories": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "parent": false,
-    "decoDive": false,
     "purposeful": false,
-    "favorite": false,
     "manualActivity": false,
-    "pr": false
+    "favorite": false,
+    "decoDive": false,
+    "pr": false,
+    "parent": false
   },
   {
     "activityId": 17417254452,
@@ -25758,7 +26230,8 @@ var RUNNING_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -25840,12 +26313,12 @@ var RUNNING_DATA = [
     "autoCalcCalories": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "parent": false,
-    "decoDive": false,
     "purposeful": false,
-    "favorite": false,
     "manualActivity": false,
-    "pr": false
+    "favorite": false,
+    "decoDive": false,
+    "pr": false,
+    "parent": false
   },
   {
     "activityId": 17277558971,
@@ -25921,7 +26394,8 @@ var RUNNING_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 3,
@@ -26019,12 +26493,12 @@ var RUNNING_DATA = [
     "autoCalcCalories": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "parent": false,
-    "decoDive": false,
     "purposeful": false,
-    "favorite": false,
     "manualActivity": false,
-    "pr": false
+    "favorite": false,
+    "decoDive": false,
+    "pr": false,
+    "parent": false
   },
   {
     "activityId": 17194602834,
@@ -26100,7 +26574,8 @@ var RUNNING_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -26182,12 +26657,12 @@ var RUNNING_DATA = [
     "autoCalcCalories": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "parent": false,
-    "decoDive": false,
     "purposeful": false,
-    "favorite": false,
     "manualActivity": false,
-    "pr": false
+    "favorite": false,
+    "decoDive": false,
+    "pr": false,
+    "parent": false
   },
   {
     "activityId": 17194595687,
@@ -26263,7 +26738,8 @@ var RUNNING_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -26325,12 +26801,12 @@ var RUNNING_DATA = [
     "autoCalcCalories": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "parent": false,
-    "decoDive": false,
     "purposeful": false,
-    "favorite": false,
     "manualActivity": false,
-    "pr": false
+    "favorite": false,
+    "decoDive": false,
+    "pr": false,
+    "parent": false
   },
   {
     "activityId": 17078184456,
@@ -26406,7 +26882,8 @@ var RUNNING_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -26488,12 +26965,12 @@ var RUNNING_DATA = [
     "autoCalcCalories": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "parent": false,
-    "decoDive": false,
     "purposeful": false,
-    "favorite": false,
     "manualActivity": false,
-    "pr": false
+    "favorite": false,
+    "decoDive": false,
+    "pr": false,
+    "parent": false
   },
   {
     "activityId": 17053218637,
@@ -26569,7 +27046,8 @@ var RUNNING_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -26649,12 +27127,12 @@ var RUNNING_DATA = [
     "autoCalcCalories": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "parent": false,
-    "decoDive": false,
     "purposeful": false,
-    "favorite": false,
     "manualActivity": false,
-    "pr": false
+    "favorite": false,
+    "decoDive": false,
+    "pr": false,
+    "parent": false
   },
   {
     "activityId": 16966971254,
@@ -26730,7 +27208,8 @@ var RUNNING_DATA = [
       "ROLE_CONNECTUSER",
       "ROLE_FITNESS_USER",
       "ROLE_WELLNESS_USER",
-      "ROLE_OUTDOOR_USER"
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
     ],
     "privacy": {
       "typeId": 2,
@@ -26810,12 +27289,12 @@ var RUNNING_DATA = [
     "autoCalcCalories": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "parent": false,
-    "decoDive": false,
     "purposeful": false,
-    "favorite": false,
     "manualActivity": false,
-    "pr": false
+    "favorite": false,
+    "decoDive": false,
+    "pr": false,
+    "parent": false
   }
 ];
 </script>
