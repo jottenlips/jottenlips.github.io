@@ -158,7 +158,7 @@ extensions: [b9, #9, #11, b13]
 ```
 
 These resolve to minor chords. The altered extensions reflect the harmonic minor scale of
-the target key. The natural 11 is NOT used here, it sits a half step above the major 3rd
+the target key. The natural 11 is not used here, it sits a half step above the major 3rd
 of the dominant chord and clashes. The #11 creates the right kind of chromatic tension
 that wants to resolve. The b9 is the telltale of the altered sound, creating a diminished
 quality against the root.
@@ -207,13 +207,11 @@ Some tunes to listen for these sounds:
 
 - Steal rhythms from bebop songs like Donna Lee or Joy Spring
 
-- You are always a half step away from a "correct" note
+- You are always a half step away from a "correct" note - Victor Wooten
 
-- if you don't know the notes to play for a measure, hit the chord stylistically with a cool rhythm
+- keep it simple, focus on thirds, fifths, and sevenths. These are your "guide" tones.
 
-- keep it simple, focus on thirds, fifths, and sevenths
-
-- practice to a metronome at slower speeds
+- practice to a metronome at slower speeds. I am really talking to myself here.
 
 ---
 
