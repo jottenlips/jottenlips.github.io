@@ -93,62 +93,103 @@ of the new key. For example, G7 leads to CMaj. Dominant seven chords have a grav
 pulls you to the new key. What helps the changes sound smooth is playing the compatible
 extensions on these dominant chords.
 
-What the chart below means by III7 is if the third chord in a key is a dominant seventh chord instead
+What the chart below means by III7 (V7/vi) is if the third chord in a key is a dominant seventh chord instead
 of what the listener is expecting (min7) play the notes in the dominant 7 triad with the extensions provided.
 
 In C, instead of getting Emin7 (third chord of C Maj)
-they get an E7. The notes you would want to play over E7 in this case are:
+they get an E7. E7 is the V7/vi, it resolves to Am. The notes you would want to play over E7 in this case are:
 
 ```
-(E, G#, B, D) with extensions of (F [b9], G [#9], A, [11], Bb [b13])
+(E, G#, B, D) with extensions of (F [b9], C [#9], D# [#11], C [b13])
 ```
 
-and E7 will most likely resolve to AMaj, our new key center.
+and E7 will most likely resolve to Amin, our new key center.
 
 Try jamming over these changes by arpeggiating the notes of each chord and sprinkling the E7 extensions over E7 for more color.
 
 ```
-Dmin7 | G7 | CMaj7 | Bmin | E7 | AMaj7
+Dmin7 | G7 | CMaj7 | Bmin7b5 | E7 | Amin7
 ```
 
-You have successfully gone from CMaj to Amaj! 🎉
+You have successfully modulated using a ii-V-i! 🎉
 
 Try making other chord progressions with different scale degrees as the secondary dominant.
-The pattern above is called a ii-V-I and is very common in jazz. To make more interesting lines
+The pattern above is called a ii-V-i and is very common in jazz. To make more interesting lines
 try mixing arpeggios with scale runs or chromatic passing tones, and don't forget to use your
-Secondary Dominant extensions.
+secondary dominant extensions.
 
-Secondary Dominant Chart:
-
-```
-III7 VI7 VII7
-sound: "Altered"
-extenions: [b9, #9, 11, b13]
-```
+#### Extension Intervals (semitones above chord root)
 
 ```
-bII7 bIII7 bVI7 bVII7
+| b9 | 9 | #9 | 11 | #11 | b13 | 13 |
+|  1 | 2 |  3 |  5 |  6  |  8  |  9  |
+```
+
+#### Secondary Dominant Chart (in the key of C)
+
+```
+II7 (V7/V), D7 → G
+I7  (V7/IV), C7 → F
+sound: "Mixolydian" or "Lydian Dominant"
+extensions: [9, 11, 13] or [9, #11, 13]
+```
+
+Both work. Mixolydian is bluesy and uncomplicated, I usually think of Jerry Garcia playing Fire on The Mountain for this one.
+Lydian Dominant is brighter and more sophisticated, think Steely Dan. The natural 11 works in a
+mixolydian context because the chord functions more as a modal sound than a hard V-I resolution.
+The #11 avoids the clash with the major 3rd for a more lifted quality.
+
+```
+bII7 (SubV7/I), Db7 → C
 sound: "Lydian Dominant"
-extension [9, #11, 13]
+extensions: [9, #11, 13]
+```
+
+This is the tritone substitution sound. Db7 and G7 share the same tritone (F and B),
+so Db7 can substitute for G7 resolving to C. The #11 of Db7 is G, the root of the V7
+it replaces. Db lydian dominant and G altered share the same parent scale (Ab melodic minor).
+
+```
+III7 (V7/vi), E7 → Am
+VI7  (V7/ii), A7 → Dm
+VII7 (V7/iii), B7 → Em
+sound: "Altered"
+extensions: [b9, #9, #11, b13]
+```
+
+These resolve to minor chords. The altered extensions reflect the harmonic minor scale of
+the target key. The natural 11 is NOT used here, it sits a half step above the major 3rd
+of the dominant chord and clashes. The #11 creates the right kind of chromatic tension
+that wants to resolve. The b9 is the telltale of the altered sound, creating a diminished
+quality against the root.
+
+```
+IV7 (V7/bVII), F7 → Bb
+sound: "Mixolydian"
+extensions: [9, 11, 13]
 ```
 
 ```
-II7 IV7
-sound: "Mixolydian" / "Lydian Dominant" - I usualy think of Jerry Garcia playing Fire on The Mountain for this one.
-extension [9, 11/#11, 13]
-```
-
-```
-bV7
-sound: "Whole Tone"
-extensions: [9, #11, b13]
-```
-
-```
-V7 (not the secondary dominant, really depends on the tune)
+V7 (not a secondary dominant, depends on the tune)
 sound: "Rainbow"
 extensions: [b9, 9, #9, 11, #11, b13, 13]
 ```
+
+The goal isn't to memorize which extensions go where, it's to hear the color:
+
+- Mixolydian sounds like home turned dominant. It's the blues. No surprise notes.
+- Lydian Dominant sounds like it's floating above the key. Bright but not inside.
+- Altered sounds like maximum tension. Dark, chromatic, pulling hard toward resolution.
+
+Some tunes to listen for these sounds:
+
+- Fire on the Mountain (Grateful Dead), mixolydian dominant vamp
+- Autumn Leaves, E7 → Am, textbook altered secondary dominant (V7/vi)
+- Girl From Ipanema, Db7 in the bridge, lydian dominant tritone sub
+- Blue Bossa, A7(b9) → Dm, altered secondary dominant (V7/ii)
+- Stella by Starlight, loaded with altered dominants resolving to minor chords
+
+[Ear Trainer - Playing Changes](https://jottenlips.github.io/ear-trainer/#/playing-changes), practice hearing these sounds with further examples and listening exercises.
 
 ---
 
