@@ -29,3 +29,5 @@
 [Playing Changes](playing-changes)
 
 [Free Ear Training App](https://jottenlips.github.io/ear-trainer)
+
+> - practice intervals, chords, secondary dominants, and more in your browser
