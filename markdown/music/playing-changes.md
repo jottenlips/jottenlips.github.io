@@ -128,40 +128,79 @@ secondary dominant extensions.
 #### Secondary Dominant Chart (in the key of C)
 
 ```
-II7 (V7/V), D7 → G
-I7  (V7/IV), C7 → F
-sound: "Mixolydian" or "Lydian Dominant"
-extensions: [9, 11, 13] or [9, #11, 13]
+II7  (V7/V),    D7  → G   , "Mixolydian" or "Lydian Dominant", [9, 11, 13] or [9, #11, 13]
+I7   (V7/IV),   C7  → F   , "Mixolydian" or "Lydian Dominant", [9, 11, 13] or [9, #11, 13]
+VI7  (V7/ii),   A7  → Dm  , "Altered",                         [b9, #9, #11, b13]
+III7 (V7/vi),   E7  → Am  , "Altered",                         [b9, #9, #11, b13]
+VII7 (V7/iii),  B7  → Em  , "Altered",                         [b9, #9, #11, b13]
+bII7 (SubV7/I), Db7 → C   , "Lydian Dominant",                 [9, #11, 13]
+IV7  (V7/bVII), F7  → Bb  , "Mixolydian",                      [9, 11, 13]
+bV7  (SubV7/IV), Gb7 → F   , "Whole Tone",                      [9, #11, b13]
+bIII7 (SubV7/ii),  Eb7 → Dm , "Lydian Dominant",               [9, #11, 13]
+bVI7  (SubV7/V),   Ab7 → G  , "Lydian Dominant",               [9, #11, 13]
+bVII7 (SubV7/vi),  Bb7 → Am , "Lydian Dominant",               [9, #11, 13]
 ```
 
-Both work. Mixolydian is bluesy and uncomplicated, I usually think of Jerry Garcia playing Fire on The Mountain for this one.
-Lydian Dominant is brighter and more sophisticated, think Steely Dan. The natural 11 works in a
-mixolydian context because the chord functions more as a modal sound than a hard V-I resolution.
-The #11 avoids the clash with the major 3rd for a more lifted quality.
+#### Mixolydian or Lydian Dominant, V7/V (D7 → G) and V7/IV (C7 → F)
 
-```
-bII7 (SubV7/I), Db7 → C
-sound: "Lydian Dominant"
-extensions: [9, #11, 13]
-```
+These two secondary dominants live in a dual world. Both Mixolydian and Lydian Dominant work, they just give different colors.
 
-This is the tritone substitution sound. Db7 and G7 share the same tritone (F and B),
-so Db7 can substitute for G7 resolving to C. The #11 of Db7 is G, the root of the V7
-it replaces. Db lydian dominant and G altered share the same parent scale (Ab melodic minor).
+Mixolydian (9, 11, 13) is bluesy and uncomplicated, I usually think of Jerry Garcia playing Fire on The Mountain for this one.
+The extensions are all diatonic, they sit inside the parent major scale without alteration. On most dominant chords
+the natural 11 (a half step above the 3rd) is an avoid note, but in a mixolydian context the chord functions more
+as a modal sound than a hard V-I resolution.
 
-```
-III7 (V7/vi), E7 → Am
-VI7  (V7/ii), A7 → Dm
-VII7 (V7/iii), B7 → Em
-sound: "Altered"
-extensions: [b9, #9, #11, b13]
-```
+Lydian Dominant (9, #11, 13) is brighter and more sophisticated, think Steely Dan. The lydian dominant scale
+(4th mode of melodic minor) raises the 11th to avoid the clash with the major 3rd while keeping the 9 and 13 natural.
+
+D7 → G can sound like a bluesy mixolydian vamp (Dead, Allman Brothers) or a sophisticated lydian dominant approach
+(more Steely Dan). Context and genre determine which fits better.
+
+#### Tritone Substitutions, Lydian Dominant
+
+All tritone subs share the same lydian dominant color (9, #11, 13). The #11 is the telltale, it signals
+"I'm a sub, not a regular dominant." Each tritone sub replaces an existing secondary dominant, resolving
+down by half step instead of down by fifth.
+
+bII7 (SubV7/I), Db7 → C. This is the definitive tritone sub. Db7 and G7 share the same tritone (F and B),
+so Db7 can substitute for G7 resolving to C. The #11 of Db7 is G, the root of the V7 it replaces.
+Db lydian dominant and G altered share the same parent scale (Ab melodic minor).
+
+bIII7 (SubV7/ii), Eb7 → Dm. The tritone sub of A7 (V7/ii). Where A7 altered pulls to Dm with dark tension,
+Eb7 lydian dominant slides down a half step to the same target with a bright, lifted color.
+
+bVI7 (SubV7/V), Ab7 → G. The tritone sub of D7 (V7/V). Instead of D7 dropping a fifth to G,
+Ab7 slides down a half step. This is common in jazz reharmonization, replace II7 → V with bVI7 → V
+for a more chromatic bass line.
+
+bVII7 (SubV7/vi), Bb7 → Am. The tritone sub of E7 (V7/vi). The backdoor ii-V (Fm7 → Bb7 → Am or Cmaj7) uses this chord.
+
+#### Altered, V7/ii (A7 → Dm), V7/vi (E7 → Am), V7/iii (B7 → Em)
 
 These resolve to minor chords. The altered extensions reflect the harmonic minor scale of
-the target key. The natural 11 is not used here, it sits a half step above the major 3rd
+the target key. Take V7/ii = A7 → Dm, thinking in D harmonic minor, A altered gives us
+Bb (b9), C (#9), Eb (#11), F (b13). All of these notes exist in D melodic or harmonic minor.
+
+The natural 11 is not used here, it sits a half step above the major 3rd
 of the dominant chord and clashes. The #11 creates the right kind of chromatic tension
 that wants to resolve. The b9 is the telltale of the altered sound, creating a diminished
 quality against the root.
+
+#### Whole Tone, SubV7/IV (bV7), Gb7 → F
+
+This one is unique. Gb7 is the tritone sub of C7 (V7/IV), resolving down a half step to F.
+Like all tritone subs it shares its tritone (Bb/E) with the dominant it replaces, but where
+C7 → F can sound mixolydian or lydian dominant, the whole tone color on Gb7 gives the approach
+a completely different character.
+
+The whole tone scale has no half steps, every note is equidistant, so there's no strong
+pull in any direction. The whole tone scale (Gb, Ab, Bb, C, D, E) naturally produces a dom7 chord with
+extensions 9, #11, b13. There's no perfect 5th, it's replaced by #5/b13 (D), giving the chord an augmented quality.
+The #11 (C) is the tonic of the parent key.
+
+Altered would give b9 and #9 which imply a minor-key resolution. Lydian dominant would give natural 13,
+but the whole tone scale produces b13. The combination of natural 9 + #11 + b13 is uniquely whole tone,
+it doesn't come from any mode of melodic or harmonic minor.
 
 ```
 IV7 (V7/bVII), F7 → Bb
@@ -175,19 +214,28 @@ sound: "Rainbow"
 extensions: [b9, 9, #9, 11, #11, b13, 13]
 ```
 
+#### Hearing the color
+
 The goal isn't to memorize which extensions go where, it's to hear the color:
 
 - Mixolydian sounds like home turned dominant. It's the blues. No surprise notes.
-- Lydian Dominant sounds like it's floating above the key. Bright but not inside.
+- Lydian Dominant sounds like it's floating above the key. Bright but not inside. The tritone sub sound.
 - Altered sounds like maximum tension. Dark, chromatic, pulling hard toward resolution.
+- Whole Tone sounds shimmery and symmetrical. Directionless, floating with no strong pull.
 
 Some tunes to listen for these sounds:
 
 - Fire on the Mountain (Grateful Dead), mixolydian dominant vamp
+- Blues turnarounds, I7 → IV7 → V7, all mixolydian dominant sounds
+- Steely Dan, frequently uses II7 with #11 for that polished, lifted sound
 - Autumn Leaves, E7 → Am, textbook altered secondary dominant (V7/vi)
 - Girl From Ipanema, Db7 in the bridge, lydian dominant tritone sub
+- Lady Bird (Tadd Dameron), tritone subs with lydian dominant extensions
 - Blue Bossa, A7(b9) → Dm, altered secondary dominant (V7/ii)
 - Stella by Starlight, loaded with altered dominants resolving to minor chords
+- Monk's Dream (Thelonious Monk), whole tone runs over dominant chords
+- Any minor ii-V-i: Bm7b5 → E7alt → Am, the E7 carries all the altered extensions
+- Any backdoor ii-V: Fm7 → Bb7 → Cmaj7, where Bb7 (bVII7) has a lydian dominant quality
 
 [Ear Trainer - Playing Changes](https://jottenlips.github.io/ear-trainer/#/playing-changes), practice hearing these sounds with further examples and listening exercises.
 
