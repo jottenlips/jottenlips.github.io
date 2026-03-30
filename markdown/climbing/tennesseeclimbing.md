@@ -1,4 +1,4 @@
-# Favorite Climbing Crags in Tennessee
+# My Favorite Tennessee Crags
 
 I was lucky enough to spend some time climbing in East TN. Here is a list of my favorite spots:
 
