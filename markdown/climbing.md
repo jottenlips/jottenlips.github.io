@@ -4,19 +4,20 @@
 
 Every February, I climb for charity. This year I will donate $1 for every route or boulder sent to [MICA Project](https://www.mica-project.org/). You can donate to my fundraiser [here](https://ig.me/1SsLF2kgo4a4nXz) or directly on their website.
 
-> Past years:
+### Past Charity Events
 
-> [Catalyst Sports 3000ft 2025](https://p2p.onecause.com/challengeforaccess2025/john-franke)
+- [Catalyst Sports 3000ft 2025](https://p2p.onecause.com/challengeforaccess2025/john-franke)
+- [Catalyst Sports 3000ft 2024](https://www.mightycause.com/story/Qw3r4g)
+- [Paradox Sport Mile 2023](https://paradoxsports.salsalabs.org/paradoxmileclimbnashville2023/p/johnottenlipsfranke/index.html)
+- [Paradox Sport Mile 2022](https://www.paradoxsports.org/wp-content/uploads/2022/07/FY22-Annual-Report-FINAL.pdf)
 
-> [Catalyst Sports 3000ft 2024](https://www.mightycause.com/story/Qw3r4g)
+---
 
-> [Paradox Sport Mile 2023](https://paradoxsports.salsalabs.org/paradoxmileclimbnashville2023/p/johnottenlipsfranke/index.html)
-
-> [Paradox Sport Mile 2022](https://www.paradoxsports.org/wp-content/uploads/2022/07/FY22-Annual-Report-FINAL.pdf)
+## Blog Posts
 
 [First time lead climbing outdoors](firsttime/)
 
-[Favorite Spots in the Southeast](southeast/)
+[My Favorite Tennessee Crags](tennesseeclimbing/)
 
 [Arizona 2023](arizona-2023/)
 
