@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github-dark.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/typescript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/bash.min.js"></script>
+  
+    <meta property="og:title" content="The Fundamental Basis of Harmony" />
+    <meta name="twitter:title" content="The Fundamental Basis of Harmony" />
+    <meta name="description" content="Rhythm and pitch are the same thing at different speeds." />
+    <meta property="og:description" content="Rhythm and pitch are the same thing at different speeds." />
+    <meta name="twitter:description" content="Rhythm and pitch are the same thing at different speeds." />
+    <meta name="twitter:card" content="summary" />
+  </head>
+
+  <body>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/cancer/">Cancer</a>
+    <a href="/climbing/">Climbing</a>
+    <a href="/coding/">Coding</a>
+    <a href="/music/">Music</a>
+  </nav>
+    <div class="coverimage"></div>
+    <div class="container">
+      <!-- <div class="nav">
+        <a class="link" href="/">Home 🏡</a>
+        <a class="link" href="/programming">Programming 💻</a>
+        <a class="link" href="/music">Music 🎸</a>
+        <a class="link" href="/climbing">Climbing 🧗</a>
+      </div> -->
+      <div class="block">
+        <a href="/music/" style="display:inline-block;margin-bottom:1em;text-decoration:none;color:currentColor;opacity:0.7;" aria-label="Go back"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg></a>
+<h1 id="the-fundamental-basis-of-harmony">The Fundamental Basis of Harmony</h1>
+<p>Rhythm and pitch are the same thing at different speeds.</p>
+<p>A beat is a repeating pulse. Speed that pulse up enough and it stops sounding like a rhythm and starts sounding like a pitch. A kick drum hitting once per second is a beat. That same kick hitting 440 times per second is the note A.</p>
+<h2 id="rhythm-becomes-pitch">Rhythm becomes pitch</h2>
+<p>Take two pulses playing at the same time. If one pulse plays 4 times while the other plays 5 times, you have a 5:4 polyrhythm. Now speed that up until both pulses are in the audible frequency range. That 5:4 ratio is a major third.</p>
+<p>This is not a metaphor. The frequency ratio of a major third is literally 5:4. The same mathematical relationship that makes a 5:4 polyrhythm feel a certain way is what makes a major third sound a certain way.</p>
+<h2 id="polyrhythms-as-intervals">Polyrhythms as intervals</h2>
+<p>Every polyrhythm maps to an interval:</p>
+<pre><code>1:1   polyrhythm = unison
+16:15 polyrhythm = minor second
+9:8   polyrhythm = major second
+6:5   polyrhythm = minor third
+5:4   polyrhythm = major third
+4:3   polyrhythm = perfect fourth
+7:5   polyrhythm = tritone
+3:2   polyrhythm = perfect fifth
+8:5   polyrhythm = minor sixth
+5:3   polyrhythm = major sixth
+9:5   polyrhythm = minor seventh
+15:8  polyrhythm = major seventh
+2:1   polyrhythm = octave
+</code></pre>
+<p>Try it yourself. Use the slider to speed up a 5:4 polyrhythm from a countable beat into an audible pitch:</p>
+<div style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0; background: #fafafa;">
+<div style="text-align: center; margin-bottom: 15px;">
+<label style="font-size: 16px; color: #333;">Speed: <span id="speed-display">2</span> Hz</label><br/>
+<input type="range" id="speed-slider" min="1" max="600" value="2" style="width: 80%; margin: 10px 0;">
+<div style="display: flex; justify-content: space-between; width: 80%; margin: 0 auto; color: #888; font-size: 12px;">
+<span>rhythm</span><span>pitch</span>
+</div>
+</div>
+<div style="text-align: center; margin-bottom: 10px;">
+<label style="color: #333;">Ratio: </label>
+<select id="ratio-select" style="font-size: 14px; padding: 4px; background: #fff; color: #333; border: 1px solid #ccc;">
+<option value="16,15">16:15 (minor second)</option>
+<option value="9,8">9:8 (major second)</option>
+<option value="6,5">6:5 (minor third)</option>
+<option value="5,4" selected>5:4 (major third)</option>
+<option value="4,3">4:3 (perfect fourth)</option>
+<option value="7,5">7:5 (tritone)</option>
+<option value="3,2">3:2 (perfect fifth)</option>
+<option value="8,5">8:5 (minor sixth)</option>
+<option value="5,3">5:3 (major sixth)</option>
+<option value="9,5">9:5 (minor seventh)</option>
+<option value="15,8">15:8 (major seventh)</option>
+<option value="2,1">2:1 (octave)</option>
+</select>
+</div>
+<div style="text-align: center;">
+<button id="play-btn" style="font-size: 16px; padding: 8px 24px; cursor: pointer; background: #fff; color: #333; border: 1px solid #ccc; border-radius: 4px;">Play</button>
+</div>
+</div>
+<script>
+(function() {
+  var ctx = null;
+  var playing = false;
+  var timer1 = null, timer2 = null;
+  var osc1 = null, osc2 = null, gain = null;
+  var slider = document.getElementById('speed-slider');
+  var display = document.getElementById('speed-display');
+  var ratioSelect = document.getElementById('ratio-select');
+  var btn = document.getElementById('play-btn');
+  var CROSSOVER = 30;
+
+  function getRatio() {
+    return ratioSelect.value.split(',').map(Number);
+  }
+
+  function click(time, freq) {
+    var o = ctx.createOscillator();
+    var g = ctx.createGain();
+    o.frequency.value = freq > 10 ? freq * 8 : 800;
+    o.connect(g);
+    g.connect(gain);
+    g.gain.setValueAtTime(0.3, time);
+    g.gain.exponentialRampToValueAtTime(0.001, time + 0.05);
+    o.start(time);
+    o.stop(time + 0.05);
+  }
+
+  function scheduleClicks(baseFreq, ratio) {
+    var freq1 = baseFreq;
+    var freq2 = baseFreq * ratio[0] / ratio[1];
+    var interval1 = 1 / freq1;
+    var interval2 = 1 / freq2;
+
+    function loop1() {
+      click(ctx.currentTime, 800);
+      timer1 = setTimeout(loop1, interval1 * 1000);
+    }
+    function loop2() {
+      click(ctx.currentTime, 1200);
+      timer2 = setTimeout(loop2, interval2 * 1000);
+    }
+    loop1();
+    loop2();
+  }
+
+  function startOscillators(baseFreq, ratio) {
+    osc1 = ctx.createOscillator();
+    osc2 = ctx.createOscillator();
+    osc1.type = 'sine';
+    osc2.type = 'sine';
+    osc1.frequency.value = baseFreq;
+    osc2.frequency.value = baseFreq * ratio[0] / ratio[1];
+    osc1.connect(gain);
+    osc2.connect(gain);
+    osc1.start();
+    osc2.start();
+  }
+
+  function stopSound() {
+    if (timer1) clearTimeout(timer1);
+    if (timer2) clearTimeout(timer2);
+    timer1 = null; timer2 = null;
+    if (osc1) { try { osc1.stop(); } catch(e) {} }
+    if (osc2) { try { osc2.stop(); } catch(e) {} }
+    osc1 = null; osc2 = null;
+  }
+
+  function updateSound() {
+    var base = parseFloat(slider.value);
+    var ratio = getRatio();
+    stopSound();
+    if (base < CROSSOVER) {
+      scheduleClicks(base, ratio);
+    } else {
+      startOscillators(base, ratio);
+    }
+  }
+
+  function start() {
+    ctx = new (window.AudioContext || window.webkitAudioContext)();
+    gain = ctx.createGain();
+    gain.gain.value = 0.15;
+    gain.connect(ctx.destination);
+    playing = true;
+    btn.textContent = 'Stop';
+    updateSound();
+  }
+
+  function stop() {
+    stopSound();
+    if (ctx) ctx.close();
+    ctx = null;
+    playing = false;
+    btn.textContent = 'Play';
+  }
+
+  btn.addEventListener('click', function() {
+    if (playing) stop(); else start();
+  });
+
+  slider.addEventListener('input', function() {
+    var val = parseFloat(slider.value);
+    display.textContent = val;
+    if (playing) updateSound();
+  });
+
+  ratioSelect.addEventListener('change', function() {
+    if (playing) updateSound();
+  });
+})();
+</script>
+<p>The simpler the ratio, the more consonant the interval sounds. 2:1 (octave) sounds almost like the same note. 3:2 (fifth) sounds open and stable. As the numbers get bigger, the intervals get more complex and more dissonant.</p>
+<h2 id="the-harmonic-series">The harmonic series</h2>
+<p>These ratios are not arbitrary. They come from the harmonic series, the natural overtones that any vibrating object produces.</p>
+<p>When you pluck a string tuned to C, you don't just hear C. You hear:</p>
+<pre><code>1st harmonic: C   (fundamental)
+2nd harmonic: C   (octave)
+3rd harmonic: G   (fifth)
+4th harmonic: C   (two octaves)
+5th harmonic: E   (major third)
+6th harmonic: G   (fifth)
+7th harmonic: Bb  (minor seventh, slightly flat)
+</code></pre>
+<p>A major chord (C, E, G) is just the first few harmonics of a single note. The chord is already hiding inside the note itself.</p>
+<h2 id="the-fractal-nature-of-it">The fractal nature of it</h2>
+<p>This is where it gets interesting. The harmonic series is self-similar at every level.</p>
+<p>A vibrating string produces overtones. Those overtones have the same ratio relationships to each other as the fundamental has to its overtones. The pattern repeats at every scale.</p>
+<p>Rhythm, melody, harmony, and timbre are all the same phenomenon at different time scales:</p>
+<pre><code>~1-10 Hz:       rhythm (beats you can count)
+~20-20,000 Hz:  pitch (notes you can hear)
+~20,000+ Hz:    timbre (the color of a sound)
+</code></pre>
+<p>A 3:2 polyrhythm, a perfect fifth, and certain timbral qualities are all expressions of the same 3:2 ratio at different speeds. Slow it down and you can tap it. Speed it up and you can sing it. Speed it up more and it becomes the character of the sound itself.</p>
+<h2 id="why-simple-ratios-sound-good">Why simple ratios sound good</h2>
+<p>When two frequencies share a simple ratio, their waveforms line up frequently. A 2:1 ratio (octave) lines up every other cycle. A 3:2 ratio (fifth) lines up every 2-3 cycles. Your ear perceives this alignment as consonance.</p>
+<p>When the ratio gets complex, like 45:32 (a tritone in just intonation), the waveforms rarely line up. Your ear perceives this as dissonance, tension that wants to resolve.</p>
+<p>This is why functional harmony works the way it does. The tonic feels like home because the I chord is built from the simplest ratios in the harmonic series. The dominant creates tension because it introduces more complex ratios that want to collapse back into simpler ones.</p>
+<h2 id="equal-temperament-and-the-compromise">Equal temperament and the compromise</h2>
+<p>There's a catch. Modern Western music uses equal temperament, which divides the octave into 12 equal half steps. This means every interval except the octave is slightly out of tune compared to the pure ratios above.</p>
+<p>A pure major third (5:4) is 386 cents. An equal temperament major third is 400 cents. Close, but not exact. We traded pure intervals for the ability to play in any key without retuning.</p>
+<p>This is why a piano and a barbershop quartet sound different singing the same chord. The quartet can tune to pure ratios. The piano is locked into equal temperament. Both work, but they feel different.</p>
+<h2 id="tuning-systems">Tuning systems</h2>
+<p>Equal temperament is not the only option. Different tuning systems emphasize different things:</p>
+<pre><code>Just intonation:     pure ratios, sounds best in one key
+Pythagorean tuning:  built on stacked 3:2 fifths
+Mean-tone:           pure major thirds, narrower fifths
+Equal temperament:   compromise, works in all keys
+</code></pre>
+<p>Each system is choosing which ratios to keep pure and which to bend. There is no perfect tuning, just tradeoffs.</p>
+<h2 id="connecting-it-back">Connecting it back</h2>
+<p>The next time you hear a major chord, remember that those three notes are not an arbitrary human invention. They are the first few harmonics that any vibrating object naturally produces. Music theory is a description of physics that we figured out by ear long before we had the math to explain it.</p>
+<h2 id="further-watching">Further watching</h2>
+<p><a href="https://www.youtube.com/watch?v=J98jwtm5U4E">&quot;Melody is like the same thing as rhythm man&quot; - an exploration of musical fractals by Adam Neely</a></p>
+
+      </div>
+      <br/>
+      <div class="footer">
+        <!-- socials -->
+         Socials:
+         <a href="https://mastodon.world/@zerocool">
+          <img
+            src="https://raw.githubusercontent.com/jottenlips/jottenlips.github.io/refs/heads/main/mastodon.png"
+            style="width: 16px; height: 16px"
+            alt="mastodon"
+          />
+          Mastodon
+         </a>
+        <a class="link" href="https://github.com/jottenlips">
+          <img
+            style="width: 16px; height: 16px"
+            src="https://img.icons8.com/ios-filled/50/000000/git.png"
+            alt="github"
+          />
+          Github
+        </a>
+        <a class="link" href="https://ottobahn.bandcamp.com/">
+          <img
+            style="width: 16px; height: 16px"
+            src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Bandcamp-button-circle-green.svg"
+            alt="bandcamp"
+          />
+          Bandcamp
+        </a>
+        
+        <a
+          class="link"
+          href="https://www.mountainproject.com/user/201166134/john-ottenlips-franke"
+        >
+          <img
+            style="width: 16px; height: 16px"
+            src="https://images.ctfassets.net/7x51vl0shezi/bPsKzYsWACGBTHstqFgpp/d143cbc129b57cbed94e59aee1996793/best-overall-climbing-app-mountain-project-mobile-app-logo.png"
+            alt="mountainproject"
+          />
+          Mountain Project
+        </a>
+
+        <a
+          class="link"
+          href="https://www.goodreads.com/user/show/101087185-john-ottenlips"
+        >
+        <img
+            style="width: 16px; height: 16px"
+            src="https://cdn-icons-png.flaticon.com/512/4494/4494707.png"
+            alt="goodreads"
+          />
+          Goodreads
+        </a>
+         
+        <p>
+          &copy; 2025 John Ottenlips Franke | Built with HTML, CSS, and a bit of
+          JavaScript. This blog was created with a static site generator I wrote in ReasonML that turns markdown files (.md) into custom styled html and css. Learn more at <a href="https://agavessg.com">agavessg.com</a>.
+        </p>
+        <!-- https://raw.githubusercontent.com/jottenlips/jottenlips.github.io/refs/heads/main/vim_editor.gif -->
+        <a href="https://www.vim.org/">
+          <img
+            style="width: 100px"
+            src="https://raw.githubusercontent.com/jottenlips/jottenlips.github.io/refs/heads/main/vim_editor.gif"
+            alt="vim editor"
+          />
+          </a>
+       </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", (event) => {
+        document.querySelectorAll("pre code").forEach((el) => {
+          hljs.highlightElement(el);
+        });
+      });
+    </script>
+
+    <script type="module">
+      // import { fairyDustCursor } from "https://unpkg.com/cursor-effects@latest/dist/esm.js";
+
+      // new fairyDustCursor({
+      //   colors: ["#ef7455", "#e84c7e", "#32a6d6", "#23eeab"],
+      //   fairySymbol: "★",
+      // });
+    </script>
+    <footer>
+    <a href="/sitemap/">Sitemap</a>
+  </footer>
+</body>
+</html>

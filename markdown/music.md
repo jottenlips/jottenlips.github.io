@@ -26,6 +26,10 @@
 
 # 🎵 Music Theory
 
+[The Fundamental Basis of Harmony](fundamentals-of-harmony)
+
+[Functional Harmony](functional-harmony)
+
 [Playing Changes](playing-changes)
 
 [Free Ear Training App](https://jottenlips.github.io/ear-trainer)
