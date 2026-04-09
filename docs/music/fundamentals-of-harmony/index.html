@@ -22,15 +22,15 @@
   </head>
 
   <body>
-  <nav>
+    <div class="coverimage"></div>
+    <div class="container">
+      <nav>
     <a href="/">Home</a>
     <a href="/cancer/">Cancer</a>
     <a href="/climbing/">Climbing</a>
     <a href="/coding/">Coding</a>
     <a href="/music/">Music</a>
   </nav>
-    <div class="coverimage"></div>
-    <div class="container">
       <!-- <div class="nav">
         <a class="link" href="/">Home 🏡</a>
         <a class="link" href="/programming">Programming 💻</a>
@@ -41,10 +41,9 @@
         <a href="/music/" style="display:inline-block;margin-bottom:1em;text-decoration:none;color:currentColor;opacity:0.7;" aria-label="Go back"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg></a>
 <h1 id="the-fundamental-basis-of-harmony">The Fundamental Basis of Harmony</h1>
 <p>Rhythm and pitch are the same thing at different speeds.</p>
-<p>A beat is a repeating pulse. Speed that pulse up enough and it stops sounding like a rhythm and starts sounding like a pitch. A kick drum hitting once per second is a beat. That same kick hitting 440 times per second is the note A.</p>
+<p>A kick drum hitting once per second is a beat. That same kick hitting 440 times per second is the note A. Speed up any repeating pulse enough and it becomes a pitch.</p>
 <h2 id="rhythm-becomes-pitch">Rhythm becomes pitch</h2>
-<p>Take two pulses playing at the same time. If one pulse plays 4 times while the other plays 5 times, you have a 5:4 polyrhythm. Now speed that up until both pulses are in the audible frequency range. That 5:4 ratio is a major third.</p>
-<p>This is not a metaphor. The frequency ratio of a major third is literally 5:4. The same mathematical relationship that makes a 5:4 polyrhythm feel a certain way is what makes a major third sound a certain way.</p>
+<p>If one pulse plays 4 times while another plays 5 times, that's a 5:4 polyrhythm. Speed it up into the audible range and you get a major third. The frequency ratio of a major third is 5:4. Same ratio, different speed.</p>
 <h2 id="polyrhythms-as-intervals">Polyrhythms as intervals</h2>
 <p>Every polyrhythm maps to an interval:</p>
 <pre><code>1:1   polyrhythm = unison
@@ -61,7 +60,7 @@
 15:8  polyrhythm = major seventh
 2:1   polyrhythm = octave
 </code></pre>
-<p>Try it yourself. Use the slider to speed up a 5:4 polyrhythm from a countable beat into an audible pitch:</p>
+<p>Try it yourself. Use the slider to speed up a polyrhythm from a countable beat into an audible pitch:</p>
 <div style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0; background: #fafafa;">
 <div style="text-align: center; margin-bottom: 15px;">
 <label style="font-size: 16px; color: #333;">Speed: <span id="speed-display">2</span> Hz</label><br/>
@@ -203,10 +202,10 @@
   });
 })();
 </script>
-<p>The simpler the ratio, the more consonant the interval sounds. 2:1 (octave) sounds almost like the same note. 3:2 (fifth) sounds open and stable. As the numbers get bigger, the intervals get more complex and more dissonant.</p>
+<p>Simpler ratios sound more consonant. 2:1 (octave) sounds almost like the same note. 3:2 (fifth) is open and stable. The more complex the ratio, the more dissonant it gets.</p>
 <h2 id="the-harmonic-series">The harmonic series</h2>
-<p>These ratios are not arbitrary. They come from the harmonic series, the natural overtones that any vibrating object produces.</p>
-<p>When you pluck a string tuned to C, you don't just hear C. You hear:</p>
+<p>These ratios come from physics, not music theory. Any vibrating object, a string, a column of air, a drumhead, even a bridge, produces <a href="https://en.wikipedia.org/wiki/Harmonic">overtones at integer multiples of its fundamental frequency</a>. This happens whether or not anyone is listening.</p>
+<p>Pluck a string tuned to C and you don't just hear C:</p>
 <pre><code>1st harmonic: C   (fundamental)
 2nd harmonic: C   (octave)
 3rd harmonic: G   (fifth)
@@ -215,34 +214,33 @@
 6th harmonic: G   (fifth)
 7th harmonic: Bb  (minor seventh, slightly flat)
 </code></pre>
-<p>A major chord (C, E, G) is just the first few harmonics of a single note. The chord is already hiding inside the note itself.</p>
-<h2 id="the-fractal-nature-of-it">The fractal nature of it</h2>
-<p>This is where it gets interesting. The harmonic series is self-similar at every level.</p>
-<p>A vibrating string produces overtones. Those overtones have the same ratio relationships to each other as the fundamental has to its overtones. The pattern repeats at every scale.</p>
-<p>Rhythm, melody, harmony, and timbre are all the same phenomenon at different time scales:</p>
+<p>A major chord (C, E, G) is just the first few harmonics of a single note. The chord is already inside the note.</p>
+<p>This is why power chords through a fuzz pedal sound so huge. A power chord is just a root and a fifth, no third. But when you run it through distortion, the clipping generates overtones, and the 5th harmonic is a major third. The fuzz adds it for you. Kurt Cobain would often add a third to his power chords, but the fuzz and blown-out amps complemented it by reinforcing that same harmonic. The distortion and the played note stack on top of each other, which is part of why Nirvana sounds so thick.</p>
+<h2 id="the-fractal-part">The fractal part</h2>
+<p>The harmonic series is self-similar. The overtones have the same ratio relationships to each other that the fundamental has to its overtones. Same pattern at every scale.</p>
+<p>Rhythm, pitch, and timbre are all the same thing at different speeds:</p>
 <pre><code>~1-10 Hz:       rhythm (beats you can count)
 ~20-20,000 Hz:  pitch (notes you can hear)
 ~20,000+ Hz:    timbre (the color of a sound)
 </code></pre>
-<p>A 3:2 polyrhythm, a perfect fifth, and certain timbral qualities are all expressions of the same 3:2 ratio at different speeds. Slow it down and you can tap it. Speed it up and you can sing it. Speed it up more and it becomes the character of the sound itself.</p>
+<p>A 3:2 polyrhythm and a perfect fifth are the same ratio. Slow it down and you can tap it. Speed it up and you can sing it. Speed it up more and it becomes the character of the sound itself.</p>
 <h2 id="why-simple-ratios-sound-good">Why simple ratios sound good</h2>
-<p>When two frequencies share a simple ratio, their waveforms line up frequently. A 2:1 ratio (octave) lines up every other cycle. A 3:2 ratio (fifth) lines up every 2-3 cycles. Your ear perceives this alignment as consonance.</p>
-<p>When the ratio gets complex, like 45:32 (a tritone in just intonation), the waveforms rarely line up. Your ear perceives this as dissonance, tension that wants to resolve.</p>
-<p>This is why functional harmony works the way it does. The tonic feels like home because the I chord is built from the simplest ratios in the harmonic series. The dominant creates tension because it introduces more complex ratios that want to collapse back into simpler ones.</p>
-<h2 id="equal-temperament-and-the-compromise">Equal temperament and the compromise</h2>
-<p>There's a catch. Modern Western music uses equal temperament, which divides the octave into 12 equal half steps. This means every interval except the octave is slightly out of tune compared to the pure ratios above.</p>
-<p>A pure major third (5:4) is 386 cents. An equal temperament major third is 400 cents. Close, but not exact. We traded pure intervals for the ability to play in any key without retuning.</p>
-<p>This is why a piano and a barbershop quartet sound different singing the same chord. The quartet can tune to pure ratios. The piano is locked into equal temperament. Both work, but they feel different.</p>
+<p>Simple ratio, waveforms line up often. 2:1 lines up every other cycle. 3:2 every 2-3 cycles. That's consonance. Complex ratios like 45:32 (tritone) rarely line up. That's dissonance. Home and tension are baked into the physics.</p>
+<h2 id="equal-temperament">Equal temperament</h2>
+<p>Modern Western music divides the octave into 12 equal half steps, which means every interval except the octave is slightly out of tune compared to pure ratios. A pure major third (5:4) is 386 cents. Equal temperament gives you 400 cents. Close but not exact. The tradeoff is you can play in any key without retuning.</p>
+<p>A guitar and a piano playing the same chord will sound slightly different. Pianos are tuned to equal temperament, and guitars are too, but guitars have an extra problem: the frets are straight lines across strings with different thicknesses and tensions. Each string has a slightly different ratio of vibrating length to pitch, so fretting the same fret on different strings doesn't give you perfectly equal half steps. This is why guitars are never truly in tune. You can intonate them close, but it's always a compromise. Some luthiers use fanned or true temperament frets to get closer, but a standard guitar is always a little off. Vocalists don't have frets, so they can tune to pure ratios. This is why barbershop quartets sound so locked in. They're singing the actual harmonic series intervals, not the equal temperament approximations.</p>
 <h2 id="tuning-systems">Tuning systems</h2>
-<p>Equal temperament is not the only option. Different tuning systems emphasize different things:</p>
+<p>Equal temperament is one option:</p>
 <pre><code>Just intonation:     pure ratios, sounds best in one key
 Pythagorean tuning:  built on stacked 3:2 fifths
 Mean-tone:           pure major thirds, narrower fifths
 Equal temperament:   compromise, works in all keys
 </code></pre>
-<p>Each system is choosing which ratios to keep pure and which to bend. There is no perfect tuning, just tradeoffs.</p>
-<h2 id="connecting-it-back">Connecting it back</h2>
-<p>The next time you hear a major chord, remember that those three notes are not an arbitrary human invention. They are the first few harmonics that any vibrating object naturally produces. Music theory is a description of physics that we figured out by ear long before we had the math to explain it.</p>
+<p>No perfect tuning, just tradeoffs.</p>
+<h2 id="beyond-western-music">Beyond Western music</h2>
+<p>The harmonic series is physics. Every culture on earth is working with the same overtones. The octave (2:1) and fifth (3:2) show up almost everywhere. Pentatonic scales appear independently across cultures from China to West Africa to the Andes, probably because they're built from the simplest ratios.</p>
+<p>Where cultures diverge is what they do beyond that. <a href="https://en.wikipedia.org/wiki/Indian_classical_music">Indian classical music</a> uses <a href="https://en.wikipedia.org/wiki/Microtonality">microtones</a> (shrutis) that sit between Western half steps, closer to just intonation ratios.</p>
+<p>The physics is shared, but the choices about which ratios to use, which to ignore, and how to divide the octave are cultural. Western music landed on 12 equal half steps. That's one answer out of many.</p>
 <h2 id="further-watching">Further watching</h2>
 <p><a href="https://www.youtube.com/watch?v=J98jwtm5U4E">&quot;Melody is like the same thing as rhythm man&quot; - an exploration of musical fractals by Adam Neely</a></p>
 
