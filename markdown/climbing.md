@@ -29,36 +29,143 @@ Every February, I climb for charity. This year I will donate $1 for every route 
 
 I have been tracking most of my indoor climbing sessions with a Garmin to get the approximate feet and grade. Sometimes the altimeter is off.
 The code to generate these charts can be found here: [Garmin Climbing Charts](https://github.com/jottenlips/garminclimb)
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Garmin Stats</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      line-height: 1.6;
-      color: #333;
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 20px;
-      background: #fafaf8;
-    }
-    h1 { color: #2d5016; margin-bottom: 16px; }
-    h2 { color: #3a6b1e; margin: 24px 0 12px; }
-    a { color: #2d5016; }
-    hr { border: none; border-top: 2px solid #2d5016; margin: 24px 0; }
-    @media (max-width: 600px) {
-      body { padding: 12px; }
-      h1 { font-size: 1.4em; }
-      h2 { font-size: 1.15em; }
-    }
-  </style>
-</head>
-<body>
-<script>var INDOOR_DATA = [
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+  .gc-dashboard .gc-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 10px;
+    margin-bottom: 24px;
+  }
+  .gc-dashboard .gc-stat {
+    background: #e8f0e0;
+    border-radius: 8px;
+    padding: 10px 14px;
+  }
+  .gc-dashboard .gc-stat .label {
+    font-size: 0.7em;
+    color: #4a8525;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+  }
+  .gc-dashboard .gc-stat .value {
+    font-size: 1.3em;
+    color: #2d5016;
+    font-weight: bold;
+  }
+  .gc-dashboard .gc-chart {
+    background: #fff;
+    border: 1px solid #e0e0d8;
+    border-radius: 8px;
+    padding: 14px;
+    margin-bottom: 16px;
+  }
+  .gc-dashboard details { margin-bottom: 8px; }
+  .gc-dashboard details summary {
+    cursor: pointer;
+    list-style: none;
+    padding: 4px 0;
+  }
+  .gc-dashboard details summary::-webkit-details-marker { display: none; }
+  .gc-dashboard details summary::before {
+    content: '▶ ';
+    font-size: 0.7em;
+    color: #4a8525;
+    transition: transform 0.2s;
+    display: inline-block;
+  }
+  .gc-dashboard details[open] summary::before {
+    content: '▼ ';
+  }
+  .gc-dashboard details summary h2, .gc-dashboard details summary h1 { display: inline; }
+  @media (max-width: 600px) {
+    .gc-dashboard .gc-stats { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+    .gc-dashboard .gc-stat { padding: 8px 10px; }
+    .gc-dashboard .gc-stat .value { font-size: 1.1em; }
+    .gc-dashboard .gc-chart { padding: 8px; margin-bottom: 12px; }
+  }
+</style>
+
+<div class="gc-dashboard">
+  <div class="gc-stats" id="gc-stats-summary"></div>
+
+  <details open><summary><h2>Yearly Overview</h2></summary>
+  <div id="gc-yearly-charts"></div>
+  </details>
+
+  <details open><summary><h2>Monthly Trends</h2></summary>
+  <div id="gc-monthly-charts"></div>
+  </details>
+
+  <details open><summary><h2>Per-Session: Rope Climbing</h2></summary>
+  <div id="gc-session-rope-charts"></div>
+  </details>
+
+  <details open><summary><h2>Per-Session: Bouldering</h2></summary>
+  <div id="gc-session-boulder-charts"></div>
+  </details>
+
+  <h1>Strength Training</h1>
+  <div class="gc-stats" id="gc-strength-stats-summary"></div>
+
+  <details open><summary><h2>Yearly Overview: Strength</h2></summary>
+  <div id="gc-strength-yearly-charts"></div>
+  </details>
+
+  <details open><summary><h2>Monthly Trends: Strength</h2></summary>
+  <div id="gc-strength-monthly-charts"></div>
+  </details>
+
+  <details open><summary><h2>Per-Session: Bench Press</h2></summary>
+  <div id="gc-session-bench-charts"></div>
+  </details>
+
+  <details open><summary><h2>Per-Session: Back Squat</h2></summary>
+  <div id="gc-session-squat-charts"></div>
+  </details>
+
+  <details open><summary><h2>Per-Session: Weighted Pull-Up</h2></summary>
+  <div id="gc-session-pullup-charts"></div>
+  </details>
+
+  <details open><summary><h2>Per-Session: Romanian Deadlift</h2></summary>
+  <div id="gc-session-rdl-charts"></div>
+  </details>
+
+  <h1>Cycling</h1>
+  <div class="gc-stats" id="gc-cycling-stats-summary"></div>
+
+  <details open><summary><h2>Yearly Overview: Cycling</h2></summary>
+  <div id="gc-cycling-yearly-charts"></div>
+  </details>
+
+  <details open><summary><h2>Monthly Trends: Cycling</h2></summary>
+  <div id="gc-cycling-monthly-charts"></div>
+  </details>
+
+  <details open><summary><h2>Per-Session: Cycling</h2></summary>
+  <div id="gc-cycling-session-charts"></div>
+  </details>
+
+  <h1>Running</h1>
+  <div class="gc-stats" id="gc-running-stats-summary"></div>
+
+  <details open><summary><h2>Yearly Overview: Running</h2></summary>
+  <div id="gc-running-yearly-charts"></div>
+  </details>
+
+  <details open><summary><h2>Monthly Trends: Running</h2></summary>
+  <div id="gc-running-monthly-charts"></div>
+  </details>
+
+  <details open><summary><h2>Per-Session: Running</h2></summary>
+  <div id="gc-running-session-charts"></div>
+  </details>
+</div>
+
+<script>
+var INDOOR_DATA = [
   {
     "activityId": 22206183197,
     "activityName": "Indoor Climbing",
@@ -69,8 +176,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -195,15 +302,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2026-03-17 18:10:30",
     "qualifyingDive": false,
     "activityUUID": "0a9e4eb3-5ec9-494e-a060-9e6a0eef129f",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 22076994294,
@@ -216,8 +323,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -345,15 +452,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2026-03-06 03:14:18",
     "qualifyingDive": false,
     "activityUUID": "0de39bd3-3516-429d-992b-22330d344c46",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 22006119396,
@@ -365,8 +472,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -490,15 +597,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2026-02-27 18:36:29",
     "qualifyingDive": false,
     "activityUUID": "f4db4378-2fc0-45a0-9f08-5cdde2631674",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 22006105314,
@@ -510,8 +617,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -636,15 +743,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2026-02-27 18:33:54",
     "qualifyingDive": false,
     "activityUUID": "097109f3-4874-45df-970a-15cef2d9c670",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 21995515461,
@@ -656,8 +763,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -782,15 +889,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2026-02-26 18:31:54",
     "qualifyingDive": false,
     "activityUUID": "4e96eeec-f646-4f42-bb6e-d8148a24472b",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 21965134610,
@@ -802,8 +909,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -928,15 +1035,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2026-02-24 02:47:12",
     "qualifyingDive": false,
     "activityUUID": "770b89b2-639e-4a15-bc05-d4918d1017d9",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 21953845991,
@@ -948,8 +1055,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -1074,15 +1181,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2026-02-22 23:25:54",
     "qualifyingDive": false,
     "activityUUID": "106fe58c-e792-43b2-ae37-c00db1de155f",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 21923886217,
@@ -1094,8 +1201,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -1219,15 +1326,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2026-02-20 03:57:45",
     "qualifyingDive": false,
     "activityUUID": "b05b668f-cab7-429e-936c-4cfa3d17dcce",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 21923846329,
@@ -1239,8 +1346,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -1365,15 +1472,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2026-02-20 03:42:41",
     "qualifyingDive": false,
     "activityUUID": "dc937843-8656-4b69-9f54-f60a11a253df",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 21861055865,
@@ -1385,8 +1492,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -1511,15 +1618,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2026-02-14 03:06:09",
     "qualifyingDive": false,
     "activityUUID": "318afdf1-405b-4f4d-9a15-9f1d9cbfd84b",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 21778899378,
@@ -1531,8 +1638,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -1657,15 +1764,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2026-02-06 03:27:24",
     "qualifyingDive": false,
     "activityUUID": "76e2afe2-2757-4ca2-a6a1-4bd1aa4df437",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 21757681039,
@@ -1677,8 +1784,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -1802,15 +1909,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2026-02-04 02:42:35",
     "qualifyingDive": false,
     "activityUUID": "9a819e7b-4210-4d8b-93c2-8ce021c19054",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 21707115817,
@@ -1822,8 +1929,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -1945,15 +2052,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2026-01-30 01:04:19",
     "qualifyingDive": false,
     "activityUUID": "d31dcd25-540a-4dbd-980c-6a9bf06a6cc0",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 21635909306,
@@ -1965,8 +2072,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -2090,15 +2197,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2026-01-23 03:40:22",
     "qualifyingDive": false,
     "activityUUID": "a576b21f-5535-4e97-9c82-06e9cb89e5d0",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 21561509384,
@@ -2110,8 +2217,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -2235,15 +2342,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2026-01-16 02:53:58",
     "qualifyingDive": false,
     "activityUUID": "34fd8a23-48f9-4018-bb52-b5b1dc9761fc",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 21488225821,
@@ -2255,8 +2362,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -2380,15 +2487,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2026-01-09 03:01:17",
     "qualifyingDive": false,
     "activityUUID": "e3ad0fef-d92f-4400-9702-8bfebb881f15",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 21434847294,
@@ -2400,8 +2507,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -2525,15 +2632,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2026-01-03 22:38:43",
     "qualifyingDive": false,
     "activityUUID": "e122b008-57e5-4609-b521-946961fa73a2",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 21318076826,
@@ -2545,8 +2652,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -2670,15 +2777,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2025-12-21 20:17:55",
     "qualifyingDive": false,
     "activityUUID": "d1283b6d-5328-442c-b604-f5c163aa434c",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 21018837271,
@@ -2690,8 +2797,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -2815,15 +2922,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2025-11-17 23:17:13",
     "qualifyingDive": false,
     "activityUUID": "6a3ec22c-995d-4a0b-88f7-76315c35909e",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 20630914160,
@@ -2835,8 +2942,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -2960,15 +3067,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2025-10-08 20:48:39",
     "qualifyingDive": false,
     "activityUUID": "7ff9b767-f1c3-4837-bb99-c7b69bba1a59",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 20529939556,
@@ -2980,8 +3087,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -3105,15 +3212,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2025-09-28 18:32:04",
     "qualifyingDive": false,
     "activityUUID": "492975cf-6bec-44c6-83d6-cf8108b5da93",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 20490616950,
@@ -3125,8 +3232,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -3250,15 +3357,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2025-09-24 20:51:33",
     "qualifyingDive": false,
     "activityUUID": "d5d25104-0857-4f1e-925c-ac115936d968",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 20346972532,
@@ -3270,8 +3377,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -3395,15 +3502,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2025-09-10 22:36:59",
     "qualifyingDive": false,
     "activityUUID": "6f61604b-d0e6-4026-adec-695ec019b1dc",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 20218970406,
@@ -3415,8 +3522,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -3540,15 +3647,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2025-08-29 21:00:54",
     "qualifyingDive": false,
     "activityUUID": "1d1d0811-4bbf-4390-ac5d-30377984fd3b",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 19685452068,
@@ -3560,8 +3667,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -3685,15 +3792,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2025-07-10 01:39:59",
     "qualifyingDive": false,
     "activityUUID": "90a43b74-9f8d-482a-b140-e99cff336edb",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 19265232754,
@@ -3705,8 +3812,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -3830,15 +3937,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2025-05-29 01:59:10",
     "qualifyingDive": false,
     "activityUUID": "0cdbabbe-f902-4c5b-ae39-8c1efd951f94",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 19188016157,
@@ -3850,8 +3957,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -3975,15 +4082,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2025-05-21 02:13:57",
     "qualifyingDive": false,
     "activityUUID": "13f8a899-4492-4f46-bf14-743bbb668225",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 18976902536,
@@ -3995,8 +4102,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -4120,15 +4227,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2025-04-30 01:08:59",
     "qualifyingDive": false,
     "activityUUID": "8cb30b5a-d90e-453e-8162-753c27cccbfc",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 18907722211,
@@ -4140,8 +4247,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -4265,15 +4372,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2025-04-23 02:01:41",
     "qualifyingDive": false,
     "activityUUID": "d3d6cfbe-0876-4924-8ef4-ce66d24d8ad0",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 18617668140,
@@ -4285,8 +4392,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -4410,15 +4517,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2025-03-23 19:16:52",
     "qualifyingDive": false,
     "activityUUID": "32f6118d-2214-4b36-b198-d0919a5b3228",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 18551612282,
@@ -4430,8 +4537,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -4555,15 +4662,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2025-03-16 19:30:20",
     "qualifyingDive": false,
     "activityUUID": "d5103541-d374-4e0f-b7e8-3cfa65a2f6a9",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 18486879510,
@@ -4576,8 +4683,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -4701,15 +4808,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2025-03-09 18:18:06",
     "qualifyingDive": false,
     "activityUUID": "7302a64c-f150-49f0-821d-f5a9848338f8",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 18396599630,
@@ -4722,8 +4829,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -4847,15 +4954,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2025-02-28 02:52:48",
     "qualifyingDive": false,
     "activityUUID": "a64985b3-2bf0-492a-baf7-1780bf84971d",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 18378670755,
@@ -4867,8 +4974,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -4992,15 +5099,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2025-02-26 03:31:20",
     "qualifyingDive": false,
     "activityUUID": "7990ef1a-a4ea-48c2-94da-6170bc1e4ce2",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 18296883341,
@@ -5013,8 +5120,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -5138,15 +5245,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2025-02-16 22:50:53",
     "qualifyingDive": false,
     "activityUUID": "75c48b5f-e123-4106-a21d-2ace8ee0ad8c",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 18263113752,
@@ -5159,8 +5266,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -5284,15 +5391,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2025-02-13 02:24:06",
     "qualifyingDive": false,
     "activityUUID": "75786b3b-bc50-402c-a528-d9f00a6b4f68",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 18234474266,
@@ -5304,8 +5411,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -5429,15 +5536,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2025-02-09 18:38:02",
     "qualifyingDive": false,
     "activityUUID": "fee7ac5c-bf60-4f92-84b6-b0fbe11ad4d9",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 18210348986,
@@ -5449,8 +5556,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -5574,15 +5681,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2025-02-07 03:09:23",
     "qualifyingDive": false,
     "activityUUID": "f292359b-0684-4798-b152-f97821b6f823",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 18151895234,
@@ -5594,8 +5701,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -5719,15 +5826,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2025-01-31 16:31:03",
     "qualifyingDive": false,
     "activityUUID": "e12b853d-4454-4232-b0e0-c4e57de10a47",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 17957770860,
@@ -5740,8 +5847,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -5865,15 +5972,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2025-01-09 16:32:27",
     "qualifyingDive": false,
     "activityUUID": "4b6d46b6-1f59-455f-b324-339cc67529d3",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 17893167506,
@@ -5886,8 +5993,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -6011,15 +6118,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2025-01-01 23:43:21",
     "qualifyingDive": false,
     "activityUUID": "260b8b85-3084-411d-b477-8bd07a636e3a",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 17791269933,
@@ -6032,8 +6139,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -6157,15 +6264,15 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2024-12-19 01:16:37",
     "qualifyingDive": false,
     "activityUUID": "88a08bc4-ea98-48e0-8213-e5fa419a22ec",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 17748516989,
@@ -6177,8 +6284,8 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
       "typeKey": "indoor_climbing",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -6302,18 +6409,153 @@ The code to generate these charts can be found here: [Garmin Climbing Charts](ht
     "endTimeGMT": "2024-12-13 02:04:16",
     "qualifyingDive": false,
     "activityUUID": "69b26daf-56fa-4a03-aa72-f6fd0ad43e10",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   }
 ];
 var BOULDER_DATA = [
+  {
+    "activityId": 22447110640,
+    "activityName": "Bouldering",
+    "startTimeLocal": "2026-04-07 18:51:27",
+    "startTimeGMT": "2026-04-07 23:51:27",
+    "activityType": {
+      "typeId": 174,
+      "typeKey": "bouldering",
+      "parentTypeId": 29,
+      "isHidden": false,
+      "restricted": false,
+      "trimmable": false
+    },
+    "eventType": {
+      "typeId": 9,
+      "typeKey": "uncategorized",
+      "sortOrder": 10
+    },
+    "duration": 6729.02197265625,
+    "elapsedDuration": 6729.02197265625,
+    "movingDuration": 0,
+    "hasPolyline": false,
+    "hasImages": false,
+    "ownerId": 125473122,
+    "ownerDisplayName": "41a91fcb-dd10-46e4-b8e7-debbc6affcc7",
+    "ownerFullName": "John",
+    "ownerProfileImageUrlSmall": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/e71212cf-9ec6-4a9f-8643-106b91b17c1d-prth.png",
+    "ownerProfileImageUrlMedium": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/e71212cf-9ec6-4a9f-8643-106b91b17c1d-prfr.png",
+    "ownerProfileImageUrlLarge": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/e71212cf-9ec6-4a9f-8643-106b91b17c1d-prof.png",
+    "calories": 766,
+    "bmrCalories": 176,
+    "averageHR": 118,
+    "maxHR": 172,
+    "steps": 948,
+    "userRoles": [
+      "SCOPE_GOLF_API_READ",
+      "SCOPE_DI_OAUTH_2_DEVICE_REVOCATION_WRITE",
+      "SCOPE_DI_OAUTH_2_CREATE_DI_USER",
+      "SCOPE_ATP_READ",
+      "SCOPE_DIVE_API_WRITE",
+      "SCOPE_COMMUNITY_COURSE_ADMIN_READ",
+      "SCOPE_DIVE_API_READ",
+      "SCOPE_DT_ACTIVE_INTELLIGENCE_READ",
+      "SCOPE_DI_OAUTH_2_CLIENT_READ",
+      "SCOPE_CONNECT_WRITE",
+      "SCOPE_COMMUNITY_COURSE_WRITE",
+      "SCOPE_CONNECT_MCT_DAILY_LOG_READ",
+      "SCOPE_CONNECT_API_CREATE_UPDATE_USER",
+      "SCOPE_MESSAGE_GENERATION_READ",
+      "SCOPE_DI_OAUTH_2_CLIENT_REVOCATION_ADMIN",
+      "SCOPE_CONNECT_WEB_TEMPLATE_RENDER",
+      "SCOPE_ACTIVITY_DETECTION_READ",
+      "SCOPE_OMT_SUBSCRIPTION_ADMIN_READ",
+      "SCOPE_DI_OAUTH_2_MANAGED_STATUS_ADMIN_WRITE",
+      "SCOPE_CONNECT_NON_SOCIAL_SHARED_READ",
+      "SCOPE_CONNECT_READ",
+      "SCOPE_DI_OAUTH_2_PRERELEASE_PERMISSIONS_ADMIN_WRITE",
+      "SCOPE_DI_OAUTH_2_TOKEN_ADMIN",
+      "SCOPE_ATP_WRITE",
+      "ROLE_CONNECTUSER",
+      "ROLE_FITNESS_USER",
+      "ROLE_WELLNESS_USER",
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
+    ],
+    "privacy": {
+      "typeId": 2,
+      "typeKey": "private"
+    },
+    "userPro": false,
+    "hasVideo": false,
+    "timeZoneId": 152,
+    "beginTimestamp": 1775605887000,
+    "sportTypeId": 31,
+    "aerobicTrainingEffect": 2.299999952316284,
+    "anaerobicTrainingEffect": 3,
+    "deviceId": 3480545930,
+    "summarizedDiveInfo": {
+      "summarizedDiveGases": []
+    },
+    "manufacturer": "GARMIN",
+    "lapCount": 1,
+    "waterEstimated": 1382,
+    "trainingEffectLabel": "SPEED",
+    "activityTrainingLoad": 113.58439636230469,
+    "minActivityLapDuration": 6729.02197265625,
+    "aerobicTrainingEffectMessage": "MAINTAINING_AEROBIC_BASE_7",
+    "anaerobicTrainingEffectMessage": "IMPROVING_ANAEROBIC_CAPACITY_AND_SPEED_12",
+    "splitSummaries": [
+      {
+        "noOfSplits": 17,
+        "maxGradeValue": {
+          "sortOrder": 5,
+          "valueKey": "V4",
+          "scale": "VERMIN"
+        },
+        "duration": 820.8839721679688,
+        "splitType": "CLIMB_ACTIVE",
+        "numClimbSends": 0,
+        "numFalls": 0
+      },
+      {
+        "noOfSplits": 19,
+        "totalAscent": 0,
+        "duration": 5907.56298828125,
+        "splitType": "CLIMB_REST",
+        "numClimbSends": 0,
+        "maxElevationGain": 0,
+        "averageElevationGain": 0,
+        "numFalls": 0
+      }
+    ],
+    "hasSplits": true,
+    "hasIntensityIntervals": false,
+    "moderateIntensityMinutes": 7,
+    "vigorousIntensityMinutes": 0,
+    "hasHeatMap": false,
+    "hrTimeInZone_1": 2601.728,
+    "hrTimeInZone_2": 2621.284,
+    "hrTimeInZone_3": 989.218,
+    "hrTimeInZone_4": 181.004,
+    "hrTimeInZone_5": 0,
+    "endTimeGMT": "2026-04-08 01:43:36",
+    "qualifyingDive": false,
+    "activityUUID": "431658f0-abe3-400f-9a38-825e5518ae71",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
+    "decoDive": false,
+    "elevationCorrected": false,
+    "atpActivity": false,
+    "pr": false,
+    "parent": false
+  },
   {
     "activityId": 22367066982,
     "activityName": "Bouldering",
@@ -6324,8 +6566,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -6424,6 +6666,7 @@ var BOULDER_DATA = [
       }
     ],
     "hasSplits": true,
+    "hasIntensityIntervals": false,
     "moderateIntensityMinutes": 11,
     "vigorousIntensityMinutes": 2,
     "hasHeatMap": false,
@@ -6435,15 +6678,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2026-04-01 02:34:53",
     "qualifyingDive": false,
     "activityUUID": "459c1b92-76c6-44e7-a441-5f27181c6d84",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 22301108024,
@@ -6455,8 +6698,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -6555,6 +6798,7 @@ var BOULDER_DATA = [
       }
     ],
     "hasSplits": true,
+    "hasIntensityIntervals": false,
     "moderateIntensityMinutes": 16,
     "vigorousIntensityMinutes": 6,
     "hasHeatMap": false,
@@ -6566,15 +6810,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2026-03-26 00:47:57",
     "qualifyingDive": false,
     "activityUUID": "d2741808-0668-491a-9d18-5aa280178811",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 22233118258,
@@ -6586,8 +6830,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -6686,6 +6930,7 @@ var BOULDER_DATA = [
       }
     ],
     "hasSplits": true,
+    "hasIntensityIntervals": false,
     "moderateIntensityMinutes": 21,
     "vigorousIntensityMinutes": 4,
     "hasHeatMap": false,
@@ -6697,15 +6942,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2026-03-20 02:08:03",
     "qualifyingDive": false,
     "activityUUID": "950b2a59-825e-4b8c-8271-a19f4db9ca79",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 22206011561,
@@ -6717,8 +6962,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -6828,15 +7073,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2026-03-17 17:59:15",
     "qualifyingDive": false,
     "activityUUID": "5b335565-8f87-4193-ab0e-26d39dd58d39",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 22194669207,
@@ -6848,8 +7093,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -6959,15 +7204,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2026-03-16 18:12:36",
     "qualifyingDive": false,
     "activityUUID": "7ad3c578-9193-4204-af17-ac3957185a3b",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 22155455029,
@@ -6979,8 +7224,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -7093,15 +7338,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2026-03-13 01:51:17",
     "qualifyingDive": false,
     "activityUUID": "e5255906-db27-4b08-9292-cf9249c71bbe",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 22096482605,
@@ -7113,8 +7358,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -7224,15 +7469,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2026-03-07 20:46:40",
     "qualifyingDive": false,
     "activityUUID": "59a9195b-aa29-4ce3-905c-405f7055d944",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 21995849495,
@@ -7244,8 +7489,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -7355,15 +7600,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2026-02-26 19:00:55",
     "qualifyingDive": false,
     "activityUUID": "5bdc0874-c374-4da1-b5f2-65136af0cb63",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 21995743512,
@@ -7375,8 +7620,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -7489,15 +7734,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2026-02-26 18:52:00",
     "qualifyingDive": false,
     "activityUUID": "ca4c786c-85ce-40f1-b2ec-2fcbaa7e8310",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 21808758481,
@@ -7509,8 +7754,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -7620,15 +7865,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2026-02-08 23:43:24",
     "qualifyingDive": false,
     "activityUUID": "0eb1a212-11b9-4671-9875-a341821666b0",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 21757730731,
@@ -7640,8 +7885,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -7751,15 +7996,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2026-02-04 02:57:00",
     "qualifyingDive": false,
     "activityUUID": "8086f9fe-03d4-4b53-b700-c9d478913853",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 21707116437,
@@ -7771,8 +8016,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -7885,15 +8130,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2026-01-30 01:42:21",
     "qualifyingDive": false,
     "activityUUID": "baecf8be-8170-478d-a6a4-33aaea43528b",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 21601704185,
@@ -7905,8 +8150,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -8016,15 +8261,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2026-01-19 20:19:19",
     "qualifyingDive": false,
     "activityUUID": "f7fee16e-f19c-485a-8f03-7d071281ab19",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 21561195566,
@@ -8036,8 +8281,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -8147,15 +8392,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2026-01-16 01:33:02",
     "qualifyingDive": false,
     "activityUUID": "29dd5618-bb7e-47c1-9e86-466cd1be5a3d",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 21505730971,
@@ -8167,8 +8412,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -8278,15 +8523,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2026-01-10 20:08:21",
     "qualifyingDive": false,
     "activityUUID": "8def66b7-7dd3-4349-9d1c-5047943217ce",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 21318109789,
@@ -8298,8 +8543,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -8409,15 +8654,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-12-21 20:24:53",
     "qualifyingDive": false,
     "activityUUID": "e410d9a0-f891-4944-bc68-f439a0169138",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 21286450569,
@@ -8429,8 +8674,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -8540,15 +8785,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-12-18 03:26:15",
     "qualifyingDive": false,
     "activityUUID": "6dc58f7b-834b-473a-b731-4a97544c270c",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 21196720006,
@@ -8560,8 +8805,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -8671,15 +8916,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-12-07 20:35:14",
     "qualifyingDive": false,
     "activityUUID": "5d53753a-b23f-40d7-b369-be1d563aa975",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 21172441954,
@@ -8691,8 +8936,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -8805,15 +9050,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-12-05 02:14:15",
     "qualifyingDive": false,
     "activityUUID": "07c42b83-6dde-473d-8ab5-b88d826edd10",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 21090262389,
@@ -8825,8 +9070,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -8936,15 +9181,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-11-25 19:49:12",
     "qualifyingDive": false,
     "activityUUID": "ff0a1602-3210-4cbc-bbda-135dc9358dcd",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 21045093992,
@@ -8956,8 +9201,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -9067,15 +9312,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-11-20 18:38:30",
     "qualifyingDive": false,
     "activityUUID": "cb8d0785-6244-4a77-a376-af6691e5818e",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 20922662723,
@@ -9087,8 +9332,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -9198,15 +9443,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-11-07 21:11:22",
     "qualifyingDive": false,
     "activityUUID": "206812b8-d71a-4482-b8f1-6fb572c0f149",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 20671320272,
@@ -9218,8 +9463,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -9332,15 +9577,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-10-12 22:55:48",
     "qualifyingDive": false,
     "activityUUID": "fdc2598b-4624-4a59-bfc2-98bee07653f6",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 20630582766,
@@ -9352,8 +9597,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -9463,15 +9708,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-10-08 19:55:49",
     "qualifyingDive": false,
     "activityUUID": "26344001-3ebe-466e-a1b1-1df395afece9",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 20530046663,
@@ -9483,8 +9728,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -9594,15 +9839,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-09-28 18:48:25",
     "qualifyingDive": false,
     "activityUUID": "843332e7-3e58-43aa-b890-9b1001c3555c",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 20490590620,
@@ -9614,8 +9859,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -9728,15 +9973,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-09-24 20:46:31",
     "qualifyingDive": false,
     "activityUUID": "74db59a5-c38b-4cf0-88d1-0fa402539fa8",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 20218966547,
@@ -9748,8 +9993,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -9859,15 +10104,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-08-29 19:24:27",
     "qualifyingDive": false,
     "activityUUID": "1610a46d-8eb8-40ae-a1ec-bdd71bcef896",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 20156045505,
@@ -9879,8 +10124,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -9990,15 +10235,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-08-23 21:53:21",
     "qualifyingDive": false,
     "activityUUID": "bd885872-4de6-46af-b2d4-6c66c84723c2",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 20113819811,
@@ -10010,8 +10255,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -10121,15 +10366,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-08-19 21:03:18",
     "qualifyingDive": false,
     "activityUUID": "70356acb-1301-4ade-8b82-9cfd64e209c9",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 19901474637,
@@ -10141,8 +10386,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -10252,15 +10497,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-07-31 01:31:50",
     "qualifyingDive": false,
     "activityUUID": "452ef492-7b1b-4d7d-9228-9905ace5abca",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 19826550642,
@@ -10272,8 +10517,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -10383,15 +10628,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-07-23 17:52:19",
     "qualifyingDive": false,
     "activityUUID": "c56b00a4-21ad-46c3-8c60-16780364514b",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 19703982689,
@@ -10403,8 +10648,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -10514,15 +10759,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-07-11 17:59:03",
     "qualifyingDive": false,
     "activityUUID": "0b5d2799-6baf-4756-abb6-c4df7a79d5e0",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 19605428980,
@@ -10534,8 +10779,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -10645,15 +10890,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-07-02 01:45:46",
     "qualifyingDive": false,
     "activityUUID": "0da23946-d62f-4901-be7e-570de3ef5448",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 19571938868,
@@ -10665,8 +10910,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -10770,15 +11015,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-06-28 15:10:07",
     "qualifyingDive": false,
     "activityUUID": "5511ee37-2f92-4c1e-8406-bd045f0746a1",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 19553323471,
@@ -10790,8 +11035,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -10901,15 +11146,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-06-26 17:51:52",
     "qualifyingDive": false,
     "activityUUID": "b83fabef-6270-40cb-baad-ccaef3ef5871",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 19533164905,
@@ -10921,8 +11166,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -11032,15 +11277,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-06-24 17:50:14",
     "qualifyingDive": false,
     "activityUUID": "5b0226a8-5791-48b4-8866-30d0c4f83a0f",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 19514802121,
@@ -11052,8 +11297,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -11163,15 +11408,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-06-22 19:18:15",
     "qualifyingDive": false,
     "activityUUID": "7a590ae2-eb8e-4a6e-b546-f5c8451e8f99",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 19434523700,
@@ -11183,8 +11428,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -11294,15 +11539,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-06-14 22:36:20",
     "qualifyingDive": false,
     "activityUUID": "59e54ea0-2cd0-4b1e-9a6f-a5e64fa509ca",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 19402976313,
@@ -11314,8 +11559,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -11425,15 +11670,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-06-11 17:57:01",
     "qualifyingDive": false,
     "activityUUID": "26bd3a0a-8c2f-4366-bff3-43ffac25e5a1",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 19336099567,
@@ -11445,8 +11690,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -11556,15 +11801,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-06-05 00:58:48",
     "qualifyingDive": false,
     "activityUUID": "451c251d-8a90-49c6-89df-83d081d28042",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 19281991427,
@@ -11576,8 +11821,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -11687,15 +11932,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-05-30 17:33:39",
     "qualifyingDive": false,
     "activityUUID": "e2b72fca-6435-40f9-b2cd-e73e6d86ca6a",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 19265127814,
@@ -11707,8 +11952,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -11818,15 +12063,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-05-29 01:29:43",
     "qualifyingDive": false,
     "activityUUID": "76eee04f-7e4b-499d-8fcd-a214587404d3",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 19234851676,
@@ -11838,8 +12083,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -11949,15 +12194,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-05-25 21:29:26",
     "qualifyingDive": false,
     "activityUUID": "ee80ec19-8d5a-487a-bf8c-6195dc4c8543",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 19216029407,
@@ -11969,8 +12214,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -12080,15 +12325,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-05-24 01:41:13",
     "qualifyingDive": false,
     "activityUUID": "12f2f442-c4a5-4d43-a209-dbc09397df6d",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 19204528577,
@@ -12100,8 +12345,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -12211,15 +12456,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-05-22 18:04:32",
     "qualifyingDive": false,
     "activityUUID": "cdda83cc-8703-4dad-8e75-806a977532fb",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 19166456399,
@@ -12231,8 +12476,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -12342,15 +12587,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-05-18 21:24:17",
     "qualifyingDive": false,
     "activityUUID": "fe68a75d-f6fa-4e29-989f-ab8961b14384",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 19117811810,
@@ -12362,8 +12607,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -12473,15 +12718,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-05-14 01:51:11",
     "qualifyingDive": false,
     "activityUUID": "a2a84c72-614b-40ad-bc5d-706133746f3c",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 19057598067,
@@ -12493,8 +12738,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -12604,15 +12849,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-05-08 02:02:45",
     "qualifyingDive": false,
     "activityUUID": "d1d0e2b2-a5d9-40f9-a182-32cbe2de0c6c",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 19004934406,
@@ -12624,8 +12869,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -12735,15 +12980,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-05-02 17:34:44",
     "qualifyingDive": false,
     "activityUUID": "a8007b67-6f81-4aa3-b4c4-a4ab9da17226",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 18995171135,
@@ -12755,8 +13000,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -12866,15 +13111,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-05-01 17:32:18",
     "qualifyingDive": false,
     "activityUUID": "671a5c3b-e8ad-4616-9ce5-44679cbea77a",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 18942629970,
@@ -12886,8 +13131,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -12997,15 +13242,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-04-26 16:15:08",
     "qualifyingDive": false,
     "activityUUID": "d2126ccf-05bf-473d-b372-40a1bd30a1b2",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 18856652954,
@@ -13017,8 +13262,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -13128,15 +13373,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-04-17 17:50:35",
     "qualifyingDive": false,
     "activityUUID": "352e8a93-a897-4d3b-8cf8-2765cfe38639",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 18840555804,
@@ -13148,8 +13393,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -13259,15 +13504,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-04-16 01:36:10",
     "qualifyingDive": false,
     "activityUUID": "a35151f8-9114-4f59-8f22-4beb4a69a3fd",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 18773194113,
@@ -13279,8 +13524,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -13390,15 +13635,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-04-09 01:16:07",
     "qualifyingDive": false,
     "activityUUID": "58a02dd8-2897-40ab-a5ec-294f56bfc0e4",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 18752689884,
@@ -13410,8 +13655,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -13524,15 +13769,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-04-06 21:31:34",
     "qualifyingDive": false,
     "activityUUID": "6a4b2709-b50b-4712-aacf-702c60231425",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 18638541695,
@@ -13544,8 +13789,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -13658,15 +13903,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-03-26 01:25:47",
     "qualifyingDive": false,
     "activityUUID": "4330015f-3994-4c86-be38-5b775facbb3e",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 18617940065,
@@ -13678,8 +13923,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -13789,15 +14034,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-03-23 20:04:24",
     "qualifyingDive": false,
     "activityUUID": "b06e0bdc-365e-49b2-816c-bfd55dc5b381",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 18591285826,
@@ -13809,8 +14054,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -13923,15 +14168,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-03-21 01:50:51",
     "qualifyingDive": false,
     "activityUUID": "557b97b7-f21a-4eac-9fe4-f2aad9c231c1",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 18571857303,
@@ -13944,8 +14189,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -14055,15 +14300,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-03-19 01:15:34",
     "qualifyingDive": false,
     "activityUUID": "b2ddae65-36e2-4793-a289-456d08ee004c",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 18514261550,
@@ -14075,8 +14320,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -14186,15 +14431,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-03-12 17:48:43",
     "qualifyingDive": false,
     "activityUUID": "7b4170f6-7ba5-4d74-a779-40db09c4787c",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 18451351118,
@@ -14206,8 +14451,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -14320,15 +14565,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-03-06 02:49:03",
     "qualifyingDive": false,
     "activityUUID": "788d62a1-3539-4e4d-a266-e1a20d742998",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 18421305382,
@@ -14340,8 +14585,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -14454,15 +14699,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-03-02 18:28:57",
     "qualifyingDive": false,
     "activityUUID": "bb7847a6-cb51-4a70-9181-3448f18beb25",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 18358950480,
@@ -14475,8 +14720,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -14592,15 +14837,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-02-23 21:28:13",
     "qualifyingDive": false,
     "activityUUID": "66abc675-9747-43c8-b5b7-7409354188bb",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 18312802703,
@@ -14612,8 +14857,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -14726,15 +14971,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-02-18 18:45:21",
     "qualifyingDive": false,
     "activityUUID": "5e361c05-daf1-4323-964d-d575411656c2",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 18277267060,
@@ -14746,8 +14991,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -14862,15 +15107,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-02-14 18:50:57",
     "qualifyingDive": false,
     "activityUUID": "13e93001-37eb-4a0e-b5a9-1c920e30208b",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 18171297017,
@@ -14882,8 +15127,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -14996,15 +15241,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-02-02 17:57:45",
     "qualifyingDive": false,
     "activityUUID": "e45a3e73-afa4-4529-b503-5f613839bee8",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 18138035118,
@@ -15016,8 +15261,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -15130,15 +15375,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-01-30 01:08:15",
     "qualifyingDive": false,
     "activityUUID": "b6412cbe-c001-4dd8-9f15-43b13c97ed23",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 18073493821,
@@ -15150,8 +15395,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -15264,15 +15509,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-01-22 17:24:59",
     "qualifyingDive": false,
     "activityUUID": "968b759f-df7c-4d5c-b934-51965a6bf35a",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 18048197904,
@@ -15284,8 +15529,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -15395,15 +15640,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-01-19 18:12:10",
     "qualifyingDive": false,
     "activityUUID": "33f63b1a-5ee6-4ece-a708-8a88b6d30a05",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 17985647288,
@@ -15415,8 +15660,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -15526,15 +15771,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-01-12 18:44:20",
     "qualifyingDive": false,
     "activityUUID": "6b92b42b-d429-4b7c-abdc-ab4a7c8e039d",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 17952943323,
@@ -15546,8 +15791,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -15660,15 +15905,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-01-09 01:31:28",
     "qualifyingDive": false,
     "activityUUID": "e89fbf9d-97e1-45c0-be1e-ef3167fd4e34",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 17916159744,
@@ -15680,8 +15925,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -15791,15 +16036,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2025-01-04 17:43:57",
     "qualifyingDive": false,
     "activityUUID": "90384557-e174-4e56-846b-c3e4e6b51168",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 17860279760,
@@ -15811,8 +16056,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -15925,15 +16170,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2024-12-28 21:33:35",
     "qualifyingDive": false,
     "activityUUID": "4b5cfbe9-235a-4706-a1b1-f97a69063336",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 17802741010,
@@ -15946,8 +16191,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -16060,15 +16305,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2024-12-20 18:35:27",
     "qualifyingDive": false,
     "activityUUID": "42d452d7-3c52-4f82-80bf-2a8438b790b0",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 17759988824,
@@ -16080,8 +16325,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -16184,15 +16429,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2024-12-14 17:35:16",
     "qualifyingDive": false,
     "activityUUID": "61d5b859-1277-45d2-b044-4137a6cb3c9d",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 17718745164,
@@ -16204,8 +16449,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -16308,15 +16553,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2024-12-08 23:24:22",
     "qualifyingDive": false,
     "activityUUID": "85b0f2a9-c645-43a0-a520-e41b6853b62e",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 17697751650,
@@ -16328,8 +16573,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -16432,15 +16677,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2024-12-05 23:39:51",
     "qualifyingDive": false,
     "activityUUID": "2010da2a-20e9-4841-ba52-e2b7fa69bedc",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 17586868235,
@@ -16452,8 +16697,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -16551,15 +16796,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2024-11-21 02:17:57",
     "qualifyingDive": false,
     "activityUUID": "1d525cb3-b579-46ac-9ead-8f467e85d00d",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 17553447070,
@@ -16571,8 +16816,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -16670,15 +16915,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2024-11-16 17:32:10",
     "qualifyingDive": false,
     "activityUUID": "eed5d3f6-a2bf-4e07-be7a-9b3d18bd893f",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 17484872831,
@@ -16690,8 +16935,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -16796,15 +17041,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2024-11-08 02:15:55",
     "qualifyingDive": false,
     "activityUUID": "c93a86c8-6ac6-4eee-beb0-2347b1fe4540",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 17411471135,
@@ -16817,8 +17062,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -16916,15 +17161,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2024-10-30 00:43:06",
     "qualifyingDive": false,
     "activityUUID": "8705f79b-4a8c-4c9f-a081-d7ab69cc6ad0",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 17384735868,
@@ -16936,8 +17181,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -17034,15 +17279,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2024-10-26 21:15:49",
     "qualifyingDive": false,
     "activityUUID": "4601de37-bf63-4210-a430-5c03aa5c815a",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 17384693235,
@@ -17054,8 +17299,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -17153,15 +17398,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2024-10-26 21:05:01",
     "qualifyingDive": false,
     "activityUUID": "b0e554fe-db66-4ba3-8719-68609fff21f0",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 17384667386,
@@ -17173,8 +17418,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -17271,15 +17516,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2024-10-26 20:58:16",
     "qualifyingDive": false,
     "activityUUID": "83b2df48-0993-44ba-899f-762822b2fe72",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 17384667217,
@@ -17291,8 +17536,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -17389,15 +17634,15 @@ var BOULDER_DATA = [
     "endTimeGMT": "2024-10-26 20:55:58",
     "qualifyingDive": false,
     "activityUUID": "b3789dfa-5cd0-45a5-9e77-96c92748f02b",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   },
   {
     "activityId": 17384667098,
@@ -17409,8 +17654,8 @@ var BOULDER_DATA = [
       "typeKey": "bouldering",
       "parentTypeId": 29,
       "isHidden": false,
-      "trimmable": false,
-      "restricted": false
+      "restricted": false,
+      "trimmable": false
     },
     "eventType": {
       "typeId": 9,
@@ -17508,18 +17753,223 @@ var BOULDER_DATA = [
     "endTimeGMT": "2024-10-26 20:54:00",
     "qualifyingDive": false,
     "activityUUID": "239bb31a-f201-4d11-8825-368df913b32c",
+    "purposeful": false,
+    "manualActivity": false,
+    "autoCalcCalories": false,
+    "favorite": false,
     "decoDive": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "purposeful": false,
-    "manualActivity": false,
     "pr": false,
-    "parent": false,
-    "autoCalcCalories": false,
-    "favorite": false
+    "parent": false
   }
 ];
 var STRENGTH_DATA = [
+  {
+    "activityId": 22443039660,
+    "activityName": "Heights Tuesday",
+    "startTimeLocal": "2026-04-07 12:28:14",
+    "startTimeGMT": "2026-04-07 17:28:14",
+    "activityType": {
+      "typeId": 13,
+      "typeKey": "strength_training",
+      "parentTypeId": 29,
+      "isHidden": false,
+      "restricted": false,
+      "trimmable": false
+    },
+    "eventType": {
+      "typeId": 9,
+      "typeKey": "uncategorized",
+      "sortOrder": 10
+    },
+    "distance": 0,
+    "duration": 790.968017578125,
+    "elapsedDuration": 790.968017578125,
+    "movingDuration": 232.9669952392578,
+    "averageSpeed": 0,
+    "hasPolyline": false,
+    "hasImages": false,
+    "ownerId": 125473122,
+    "ownerDisplayName": "41a91fcb-dd10-46e4-b8e7-debbc6affcc7",
+    "ownerFullName": "John",
+    "ownerProfileImageUrlSmall": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/e71212cf-9ec6-4a9f-8643-106b91b17c1d-prth.png",
+    "ownerProfileImageUrlMedium": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/e71212cf-9ec6-4a9f-8643-106b91b17c1d-prfr.png",
+    "ownerProfileImageUrlLarge": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/e71212cf-9ec6-4a9f-8643-106b91b17c1d-prof.png",
+    "calories": 140,
+    "bmrCalories": 21,
+    "averageHR": 132,
+    "maxHR": 163,
+    "steps": 96,
+    "userRoles": [
+      "SCOPE_GOLF_API_READ",
+      "SCOPE_DI_OAUTH_2_DEVICE_REVOCATION_WRITE",
+      "SCOPE_DI_OAUTH_2_CREATE_DI_USER",
+      "SCOPE_ATP_READ",
+      "SCOPE_DIVE_API_WRITE",
+      "SCOPE_COMMUNITY_COURSE_ADMIN_READ",
+      "SCOPE_DIVE_API_READ",
+      "SCOPE_DT_ACTIVE_INTELLIGENCE_READ",
+      "SCOPE_DI_OAUTH_2_CLIENT_READ",
+      "SCOPE_CONNECT_WRITE",
+      "SCOPE_COMMUNITY_COURSE_WRITE",
+      "SCOPE_CONNECT_MCT_DAILY_LOG_READ",
+      "SCOPE_CONNECT_API_CREATE_UPDATE_USER",
+      "SCOPE_MESSAGE_GENERATION_READ",
+      "SCOPE_DI_OAUTH_2_CLIENT_REVOCATION_ADMIN",
+      "SCOPE_CONNECT_WEB_TEMPLATE_RENDER",
+      "SCOPE_ACTIVITY_DETECTION_READ",
+      "SCOPE_OMT_SUBSCRIPTION_ADMIN_READ",
+      "SCOPE_DI_OAUTH_2_MANAGED_STATUS_ADMIN_WRITE",
+      "SCOPE_CONNECT_NON_SOCIAL_SHARED_READ",
+      "SCOPE_CONNECT_READ",
+      "SCOPE_DI_OAUTH_2_PRERELEASE_PERMISSIONS_ADMIN_WRITE",
+      "SCOPE_DI_OAUTH_2_TOKEN_ADMIN",
+      "SCOPE_ATP_WRITE",
+      "ROLE_CONNECTUSER",
+      "ROLE_FITNESS_USER",
+      "ROLE_WELLNESS_USER",
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
+    ],
+    "privacy": {
+      "typeId": 2,
+      "typeKey": "private"
+    },
+    "userPro": false,
+    "hasVideo": false,
+    "timeZoneId": 152,
+    "beginTimestamp": 1775582894000,
+    "sportTypeId": 4,
+    "aerobicTrainingEffect": 2,
+    "anaerobicTrainingEffect": 2.299999952316284,
+    "workoutId": 1227720159,
+    "deviceId": 3480545930,
+    "summarizedExerciseSets": [
+      {
+        "category": "DEADLIFT",
+        "subCategory": "ROMANIAN_DEADLIFT",
+        "reps": 15,
+        "volume": 918750,
+        "duration": 66810.00137329102,
+        "sets": 3,
+        "maxWeight": 61250
+      },
+      {
+        "category": "BENCH_PRESS",
+        "subCategory": "BARBELL_BENCH_PRESS",
+        "reps": 18,
+        "volume": 1102500,
+        "duration": 78079.00047302246,
+        "sets": 3,
+        "maxWeight": 61250
+      },
+      {
+        "category": "SQUAT",
+        "subCategory": "BARBELL_BACK_SQUAT",
+        "reps": 15,
+        "volume": 1259055,
+        "duration": 88077.99911499023,
+        "sets": 3,
+        "maxWeight": 83937
+      }
+    ],
+    "summarizedDiveInfo": {
+      "summarizedDiveGases": []
+    },
+    "manufacturer": "GARMIN",
+    "lapCount": 1,
+    "waterEstimated": 139,
+    "totalSets": 9,
+    "activeSets": 9,
+    "totalReps": 48,
+    "trainingEffectLabel": "ANAEROBIC_CAPACITY",
+    "activityTrainingLoad": 62.08892822265625,
+    "minActivityLapDuration": 790.968017578125,
+    "aerobicTrainingEffectMessage": "MAINTAINING_AEROBIC_FITNESS_1",
+    "anaerobicTrainingEffectMessage": "MAINTAINING_ANAEROBIC_BASE_1",
+    "splitSummaries": [],
+    "hasSplits": false,
+    "hasIntensityIntervals": false,
+    "moderateIntensityMinutes": 5,
+    "vigorousIntensityMinutes": 1,
+    "hasHeatMap": false,
+    "hrTimeInZone_1": 121.044,
+    "hrTimeInZone_2": 351.953,
+    "hrTimeInZone_3": 210.142,
+    "hrTimeInZone_4": 100.251,
+    "hrTimeInZone_5": 0,
+    "endTimeGMT": "2026-04-07 17:41:24",
+    "qualifyingDive": false,
+    "activityUUID": "6307779a-0f63-47ed-8ad8-3ec36bec1713",
+    "decoDive": false,
+    "pr": false,
+    "favorite": false,
+    "purposeful": false,
+    "elevationCorrected": false,
+    "atpActivity": false,
+    "autoCalcCalories": false,
+    "manualActivity": false,
+    "parent": false,
+    "exerciseSets": [
+      {
+        "category": "DEADLIFT",
+        "subCategory": "ROMANIAN_DEADLIFT",
+        "reps": 15,
+        "volume": 918750,
+        "duration": 66810.00137329102,
+        "sets": 3,
+        "maxWeight": 61250
+      },
+      {
+        "category": "BENCH_PRESS",
+        "subCategory": "BARBELL_BENCH_PRESS",
+        "reps": 18,
+        "volume": 1102500,
+        "duration": 78079.00047302246,
+        "sets": 3,
+        "maxWeight": 61250
+      },
+      {
+        "category": "SQUAT",
+        "subCategory": "BARBELL_BACK_SQUAT",
+        "reps": 15,
+        "volume": 1259055,
+        "duration": 88077.99911499023,
+        "sets": 3,
+        "maxWeight": 83937
+      }
+    ],
+    "fullSummarizedExerciseSets": [
+      {
+        "category": "DEADLIFT",
+        "subCategory": "ROMANIAN_DEADLIFT",
+        "reps": 15,
+        "volume": 918750,
+        "duration": 66810.00137329102,
+        "sets": 3,
+        "maxWeight": 61250
+      },
+      {
+        "category": "BENCH_PRESS",
+        "subCategory": "BARBELL_BENCH_PRESS",
+        "reps": 18,
+        "volume": 1102500,
+        "duration": 78079.00047302246,
+        "sets": 3,
+        "maxWeight": 61250
+      },
+      {
+        "category": "SQUAT",
+        "subCategory": "BARBELL_BACK_SQUAT",
+        "reps": 15,
+        "volume": 1259055,
+        "duration": 88077.99911499023,
+        "sets": 3,
+        "maxWeight": 83937
+      }
+    ]
+  },
   {
     "activityId": 22129352948,
     "activityName": "Heights Tuesday",
@@ -17665,13 +18115,13 @@ var STRENGTH_DATA = [
     "endTimeGMT": "2026-03-10 17:58:37",
     "qualifyingDive": false,
     "activityUUID": "88eb03b7-9a9f-49ac-9c82-698d7d95e432",
-    "purposeful": false,
-    "autoCalcCalories": false,
-    "favorite": false,
     "decoDive": false,
+    "pr": false,
+    "favorite": false,
+    "purposeful": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "pr": false,
+    "autoCalcCalories": false,
     "manualActivity": false,
     "parent": false,
     "exerciseSets": [
@@ -17905,13 +18355,13 @@ var STRENGTH_DATA = [
     "endTimeGMT": "2026-02-02 18:40:56",
     "qualifyingDive": false,
     "activityUUID": "46635475-69b1-48fa-93a3-ebe7612bd6ea",
-    "purposeful": false,
-    "autoCalcCalories": false,
-    "favorite": false,
     "decoDive": false,
+    "pr": false,
+    "favorite": false,
+    "purposeful": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "pr": false,
+    "autoCalcCalories": false,
     "manualActivity": false,
     "parent": false,
     "exerciseSets": [
@@ -18136,13 +18586,13 @@ var STRENGTH_DATA = [
     "endTimeGMT": "2026-01-27 20:18:09",
     "qualifyingDive": false,
     "activityUUID": "ab6e7901-5b0b-4751-b08c-fce3e040e982",
-    "purposeful": false,
-    "autoCalcCalories": false,
-    "favorite": false,
     "decoDive": false,
+    "pr": false,
+    "favorite": false,
+    "purposeful": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "pr": false,
+    "autoCalcCalories": false,
     "manualActivity": false,
     "parent": false,
     "exerciseSets": [
@@ -18340,13 +18790,13 @@ var STRENGTH_DATA = [
     "endTimeGMT": "2026-01-27 20:10:22",
     "qualifyingDive": false,
     "activityUUID": "078c0cd6-c35b-43cc-b169-e4f9591c58f2",
-    "purposeful": false,
-    "autoCalcCalories": false,
-    "favorite": false,
     "decoDive": false,
+    "pr": false,
+    "favorite": false,
+    "purposeful": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "pr": false,
+    "autoCalcCalories": false,
     "manualActivity": false,
     "parent": false,
     "exerciseSets": [
@@ -18598,13 +19048,13 @@ var STRENGTH_DATA = [
     "endTimeGMT": "2026-01-20 18:54:05",
     "qualifyingDive": false,
     "activityUUID": "9480df16-b7e4-4e69-ae82-9bc7400e2868",
-    "purposeful": false,
-    "autoCalcCalories": false,
-    "favorite": false,
     "decoDive": false,
+    "pr": false,
+    "favorite": false,
+    "purposeful": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "pr": false,
+    "autoCalcCalories": false,
     "manualActivity": false,
     "parent": false,
     "exerciseSets": [
@@ -18836,13 +19286,13 @@ var STRENGTH_DATA = [
     "endTimeGMT": "2025-07-04 15:05:07",
     "qualifyingDive": false,
     "activityUUID": "048fac20-5c32-4814-9a2d-5fbb4f8ce441",
-    "purposeful": false,
-    "autoCalcCalories": false,
-    "favorite": false,
     "decoDive": false,
+    "pr": false,
+    "favorite": false,
+    "purposeful": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "pr": false,
+    "autoCalcCalories": false,
     "manualActivity": false,
     "parent": false,
     "exerciseSets": [
@@ -19037,13 +19487,13 @@ var STRENGTH_DATA = [
     "endTimeGMT": "2025-07-04 14:54:30",
     "qualifyingDive": false,
     "activityUUID": "daba1b75-c56f-47cb-8cf2-8519f035a590",
-    "purposeful": false,
-    "autoCalcCalories": false,
-    "favorite": false,
     "decoDive": false,
+    "pr": false,
+    "favorite": false,
+    "purposeful": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "pr": false,
+    "autoCalcCalories": false,
     "manualActivity": false,
     "parent": false,
     "exerciseSets": [
@@ -19223,13 +19673,13 @@ var STRENGTH_DATA = [
     "endTimeGMT": "2025-06-25 17:49:21",
     "qualifyingDive": false,
     "activityUUID": "910c959f-5358-4ab9-be58-1c10527abea4",
-    "purposeful": false,
-    "autoCalcCalories": false,
-    "favorite": false,
     "decoDive": false,
+    "pr": false,
+    "favorite": false,
+    "purposeful": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "pr": false,
+    "autoCalcCalories": false,
     "manualActivity": false,
     "parent": false,
     "exerciseSets": [],
@@ -19389,13 +19839,13 @@ var STRENGTH_DATA = [
     "endTimeGMT": "2025-06-16 16:54:45",
     "qualifyingDive": false,
     "activityUUID": "02597a52-38c0-49af-99f9-989c7a5a9726",
-    "purposeful": false,
-    "autoCalcCalories": false,
-    "favorite": false,
     "decoDive": false,
+    "pr": false,
+    "favorite": false,
+    "purposeful": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "pr": false,
+    "autoCalcCalories": false,
     "manualActivity": false,
     "parent": false,
     "exerciseSets": [
@@ -19626,13 +20076,13 @@ var STRENGTH_DATA = [
     "endTimeGMT": "2025-06-13 18:07:55",
     "qualifyingDive": false,
     "activityUUID": "9e11783b-d1ea-4e55-a8c3-6271600b76ba",
-    "purposeful": false,
-    "autoCalcCalories": false,
-    "favorite": false,
     "decoDive": false,
+    "pr": false,
+    "favorite": false,
+    "purposeful": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "pr": false,
+    "autoCalcCalories": false,
     "manualActivity": false,
     "parent": false,
     "exerciseSets": [
@@ -19817,13 +20267,13 @@ var STRENGTH_DATA = [
     "endTimeGMT": "2025-06-12 14:29:56",
     "qualifyingDive": false,
     "activityUUID": "53e95123-ac9b-4805-8442-182eb417fa8d",
-    "purposeful": false,
-    "autoCalcCalories": false,
-    "favorite": false,
     "decoDive": false,
+    "pr": false,
+    "favorite": false,
+    "purposeful": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "pr": false,
+    "autoCalcCalories": false,
     "manualActivity": false,
     "parent": false,
     "exerciseSets": [
@@ -20021,13 +20471,13 @@ var STRENGTH_DATA = [
     "endTimeGMT": "2025-06-09 17:06:50",
     "qualifyingDive": false,
     "activityUUID": "c4fc0cb6-9fe7-49ce-95f4-62918265d73b",
-    "purposeful": false,
-    "autoCalcCalories": false,
-    "favorite": false,
     "decoDive": false,
+    "pr": false,
+    "favorite": false,
+    "purposeful": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "pr": false,
+    "autoCalcCalories": false,
     "manualActivity": false,
     "parent": false,
     "exerciseSets": [
@@ -20279,13 +20729,13 @@ var STRENGTH_DATA = [
     "endTimeGMT": "2025-06-02 17:02:40",
     "qualifyingDive": false,
     "activityUUID": "593fb97f-bee3-41c0-8be0-ece02ad3fb57",
-    "purposeful": false,
-    "autoCalcCalories": false,
-    "favorite": false,
     "decoDive": false,
+    "pr": true,
+    "favorite": false,
+    "purposeful": false,
     "elevationCorrected": false,
     "atpActivity": false,
-    "pr": true,
+    "autoCalcCalories": false,
     "manualActivity": false,
     "parent": false,
     "exerciseSets": [
@@ -20385,6 +20835,623 @@ var STRENGTH_DATA = [
   }
 ];
 var CYCLING_DATA = [
+  {
+    "activityId": 22455854893,
+    "activityName": "Richmond Heights Road Cycling",
+    "startTimeLocal": "2026-04-08 11:56:48",
+    "startTimeGMT": "2026-04-08 16:56:48",
+    "activityType": {
+      "typeId": 10,
+      "typeKey": "road_biking",
+      "parentTypeId": 2,
+      "isHidden": false,
+      "restricted": false,
+      "trimmable": true
+    },
+    "eventType": {
+      "typeId": 9,
+      "typeKey": "uncategorized",
+      "sortOrder": 10
+    },
+    "distance": 1544.7900390625,
+    "duration": 305.70001220703125,
+    "elapsedDuration": 305.70001220703125,
+    "movingDuration": 296,
+    "elevationGain": 25,
+    "elevationLoss": 16,
+    "averageSpeed": 5.052999973297119,
+    "maxSpeed": 7.875000000000001,
+    "startLatitude": 38.625375386327505,
+    "startLongitude": -90.32050729729235,
+    "hasPolyline": true,
+    "hasImages": false,
+    "ownerId": 125473122,
+    "ownerDisplayName": "41a91fcb-dd10-46e4-b8e7-debbc6affcc7",
+    "ownerFullName": "John",
+    "ownerProfileImageUrlSmall": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/e71212cf-9ec6-4a9f-8643-106b91b17c1d-prth.png",
+    "ownerProfileImageUrlMedium": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/e71212cf-9ec6-4a9f-8643-106b91b17c1d-prfr.png",
+    "ownerProfileImageUrlLarge": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/e71212cf-9ec6-4a9f-8643-106b91b17c1d-prof.png",
+    "calories": 28,
+    "bmrCalories": 8,
+    "averageHR": 96,
+    "maxHR": 120,
+    "userRoles": [
+      "SCOPE_GOLF_API_READ",
+      "SCOPE_DI_OAUTH_2_DEVICE_REVOCATION_WRITE",
+      "SCOPE_DI_OAUTH_2_CREATE_DI_USER",
+      "SCOPE_ATP_READ",
+      "SCOPE_DIVE_API_WRITE",
+      "SCOPE_COMMUNITY_COURSE_ADMIN_READ",
+      "SCOPE_DIVE_API_READ",
+      "SCOPE_DT_ACTIVE_INTELLIGENCE_READ",
+      "SCOPE_DI_OAUTH_2_CLIENT_READ",
+      "SCOPE_CONNECT_WRITE",
+      "SCOPE_COMMUNITY_COURSE_WRITE",
+      "SCOPE_CONNECT_MCT_DAILY_LOG_READ",
+      "SCOPE_CONNECT_API_CREATE_UPDATE_USER",
+      "SCOPE_MESSAGE_GENERATION_READ",
+      "SCOPE_DI_OAUTH_2_CLIENT_REVOCATION_ADMIN",
+      "SCOPE_CONNECT_WEB_TEMPLATE_RENDER",
+      "SCOPE_ACTIVITY_DETECTION_READ",
+      "SCOPE_OMT_SUBSCRIPTION_ADMIN_READ",
+      "SCOPE_DI_OAUTH_2_MANAGED_STATUS_ADMIN_WRITE",
+      "SCOPE_CONNECT_NON_SOCIAL_SHARED_READ",
+      "SCOPE_CONNECT_READ",
+      "SCOPE_DI_OAUTH_2_PRERELEASE_PERMISSIONS_ADMIN_WRITE",
+      "SCOPE_DI_OAUTH_2_TOKEN_ADMIN",
+      "SCOPE_ATP_WRITE",
+      "ROLE_CONNECTUSER",
+      "ROLE_FITNESS_USER",
+      "ROLE_WELLNESS_USER",
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
+    ],
+    "privacy": {
+      "typeId": 2,
+      "typeKey": "private"
+    },
+    "userPro": false,
+    "hasVideo": false,
+    "timeZoneId": 152,
+    "beginTimestamp": 1775667408000,
+    "sportTypeId": 2,
+    "aerobicTrainingEffect": 0.10000000149011612,
+    "anaerobicTrainingEffect": 0,
+    "deviceId": 3480545930,
+    "minElevation": 146.1999969482422,
+    "maxElevation": 165.39999389648438,
+    "avgElevation": 154.20196683289575,
+    "summarizedDiveInfo": {
+      "summarizedDiveGases": []
+    },
+    "maxVerticalSpeed": 1.1999969482421875,
+    "manufacturer": "GARMIN",
+    "locationName": "Richmond Heights",
+    "lapCount": 1,
+    "endLatitude": 38.6327232979238,
+    "endLongitude": -90.32631050795317,
+    "waterEstimated": 50,
+    "trainingEffectLabel": "UNKNOWN",
+    "activityTrainingLoad": 1.982818603515625,
+    "minActivityLapDuration": 305.70001220703125,
+    "aerobicTrainingEffectMessage": "NO_AEROBIC_BENEFIT_18",
+    "anaerobicTrainingEffectMessage": "NO_ANAEROBIC_BENEFIT_0",
+    "splitSummaries": [],
+    "hasSplits": false,
+    "hasIntensityIntervals": false,
+    "hasHeatMap": false,
+    "hrTimeInZone_1": 81,
+    "hrTimeInZone_2": 38.001,
+    "hrTimeInZone_3": 0,
+    "hrTimeInZone_4": 0,
+    "hrTimeInZone_5": 0,
+    "endTimeGMT": "2026-04-08 17:01:53",
+    "qualifyingDive": false,
+    "activityUUID": "63e3b217-4979-4df0-9663-7cc9b8ea3fd9",
+    "autoCalcCalories": false,
+    "favorite": false,
+    "decoDive": false,
+    "purposeful": false,
+    "manualActivity": false,
+    "pr": false,
+    "parent": false,
+    "elevationCorrected": false,
+    "atpActivity": false
+  },
+  {
+    "activityId": 22454740036,
+    "activityName": "Richmond Heights Road Cycling",
+    "startTimeLocal": "2026-04-08 10:46:43",
+    "startTimeGMT": "2026-04-08 15:46:43",
+    "activityType": {
+      "typeId": 10,
+      "typeKey": "road_biking",
+      "parentTypeId": 2,
+      "isHidden": false,
+      "restricted": false,
+      "trimmable": true
+    },
+    "eventType": {
+      "typeId": 9,
+      "typeKey": "uncategorized",
+      "sortOrder": 10
+    },
+    "distance": 1452.3699951171875,
+    "duration": 350.6000061035156,
+    "elapsedDuration": 350.6000061035156,
+    "movingDuration": 264,
+    "elevationGain": 21,
+    "elevationLoss": 28,
+    "averageSpeed": 4.14300012588501,
+    "maxSpeed": 10.048999786376953,
+    "startLatitude": 38.632905688136816,
+    "startLongitude": -90.32632509246469,
+    "hasPolyline": true,
+    "hasImages": false,
+    "ownerId": 125473122,
+    "ownerDisplayName": "41a91fcb-dd10-46e4-b8e7-debbc6affcc7",
+    "ownerFullName": "John",
+    "ownerProfileImageUrlSmall": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/e71212cf-9ec6-4a9f-8643-106b91b17c1d-prth.png",
+    "ownerProfileImageUrlMedium": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/e71212cf-9ec6-4a9f-8643-106b91b17c1d-prfr.png",
+    "ownerProfileImageUrlLarge": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/e71212cf-9ec6-4a9f-8643-106b91b17c1d-prof.png",
+    "calories": 27,
+    "bmrCalories": 9,
+    "averageHR": 91,
+    "maxHR": 116,
+    "userRoles": [
+      "SCOPE_GOLF_API_READ",
+      "SCOPE_DI_OAUTH_2_DEVICE_REVOCATION_WRITE",
+      "SCOPE_DI_OAUTH_2_CREATE_DI_USER",
+      "SCOPE_ATP_READ",
+      "SCOPE_DIVE_API_WRITE",
+      "SCOPE_COMMUNITY_COURSE_ADMIN_READ",
+      "SCOPE_DIVE_API_READ",
+      "SCOPE_DT_ACTIVE_INTELLIGENCE_READ",
+      "SCOPE_DI_OAUTH_2_CLIENT_READ",
+      "SCOPE_CONNECT_WRITE",
+      "SCOPE_COMMUNITY_COURSE_WRITE",
+      "SCOPE_CONNECT_MCT_DAILY_LOG_READ",
+      "SCOPE_CONNECT_API_CREATE_UPDATE_USER",
+      "SCOPE_MESSAGE_GENERATION_READ",
+      "SCOPE_DI_OAUTH_2_CLIENT_REVOCATION_ADMIN",
+      "SCOPE_CONNECT_WEB_TEMPLATE_RENDER",
+      "SCOPE_ACTIVITY_DETECTION_READ",
+      "SCOPE_OMT_SUBSCRIPTION_ADMIN_READ",
+      "SCOPE_DI_OAUTH_2_MANAGED_STATUS_ADMIN_WRITE",
+      "SCOPE_CONNECT_NON_SOCIAL_SHARED_READ",
+      "SCOPE_CONNECT_READ",
+      "SCOPE_DI_OAUTH_2_PRERELEASE_PERMISSIONS_ADMIN_WRITE",
+      "SCOPE_DI_OAUTH_2_TOKEN_ADMIN",
+      "SCOPE_ATP_WRITE",
+      "ROLE_CONNECTUSER",
+      "ROLE_FITNESS_USER",
+      "ROLE_WELLNESS_USER",
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
+    ],
+    "privacy": {
+      "typeId": 2,
+      "typeKey": "private"
+    },
+    "userPro": false,
+    "hasVideo": false,
+    "timeZoneId": 152,
+    "beginTimestamp": 1775663203000,
+    "sportTypeId": 2,
+    "aerobicTrainingEffect": 0.10000000149011612,
+    "anaerobicTrainingEffect": 0,
+    "deviceId": 3480545930,
+    "minElevation": 154.8000030517578,
+    "maxElevation": 173.60000610351562,
+    "avgElevation": 161.91224926896925,
+    "summarizedDiveInfo": {
+      "summarizedDiveGases": []
+    },
+    "maxVerticalSpeed": 1.600006103515625,
+    "manufacturer": "GARMIN",
+    "locationName": "Richmond Heights",
+    "lapCount": 1,
+    "endLatitude": 38.62424525432289,
+    "endLongitude": -90.320495814085,
+    "waterEstimated": 41,
+    "trainingEffectLabel": "UNKNOWN",
+    "activityTrainingLoad": 1.4001922607421875,
+    "minActivityLapDuration": 350.6000061035156,
+    "aerobicTrainingEffectMessage": "NO_AEROBIC_BENEFIT_18",
+    "anaerobicTrainingEffectMessage": "NO_ANAEROBIC_BENEFIT_0",
+    "splitSummaries": [],
+    "hasSplits": false,
+    "hasIntensityIntervals": false,
+    "hasHeatMap": false,
+    "hrTimeInZone_1": 99,
+    "hrTimeInZone_2": 9,
+    "hrTimeInZone_3": 0,
+    "hrTimeInZone_4": 0,
+    "hrTimeInZone_5": 0,
+    "endTimeGMT": "2026-04-08 15:52:33",
+    "qualifyingDive": false,
+    "activityUUID": "381940b5-3031-425d-ac03-413294159d1e",
+    "autoCalcCalories": false,
+    "favorite": false,
+    "decoDive": false,
+    "purposeful": false,
+    "manualActivity": false,
+    "pr": false,
+    "parent": false,
+    "elevationCorrected": false,
+    "atpActivity": false
+  },
+  {
+    "activityId": 22443152012,
+    "activityName": "Richmond Heights Road Cycling",
+    "startTimeLocal": "2026-04-07 12:47:37",
+    "startTimeGMT": "2026-04-07 17:47:37",
+    "activityType": {
+      "typeId": 10,
+      "typeKey": "road_biking",
+      "parentTypeId": 2,
+      "isHidden": false,
+      "restricted": false,
+      "trimmable": true
+    },
+    "eventType": {
+      "typeId": 9,
+      "typeKey": "uncategorized",
+      "sortOrder": 10
+    },
+    "distance": 930.8200073242188,
+    "duration": 231.56700134277344,
+    "elapsedDuration": 231.56700134277344,
+    "movingDuration": 217,
+    "elevationGain": 22,
+    "elevationLoss": 12,
+    "averageSpeed": 4.019999980926514,
+    "maxSpeed": 6.633999824523926,
+    "startLatitude": 38.62853838130832,
+    "startLongitude": -90.33053523860872,
+    "hasPolyline": true,
+    "hasImages": false,
+    "ownerId": 125473122,
+    "ownerDisplayName": "41a91fcb-dd10-46e4-b8e7-debbc6affcc7",
+    "ownerFullName": "John",
+    "ownerProfileImageUrlSmall": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/e71212cf-9ec6-4a9f-8643-106b91b17c1d-prth.png",
+    "ownerProfileImageUrlMedium": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/e71212cf-9ec6-4a9f-8643-106b91b17c1d-prfr.png",
+    "ownerProfileImageUrlLarge": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/e71212cf-9ec6-4a9f-8643-106b91b17c1d-prof.png",
+    "calories": 33,
+    "bmrCalories": 6,
+    "averageHR": 116,
+    "maxHR": 123,
+    "userRoles": [
+      "SCOPE_GOLF_API_READ",
+      "SCOPE_DI_OAUTH_2_DEVICE_REVOCATION_WRITE",
+      "SCOPE_DI_OAUTH_2_CREATE_DI_USER",
+      "SCOPE_ATP_READ",
+      "SCOPE_DIVE_API_WRITE",
+      "SCOPE_COMMUNITY_COURSE_ADMIN_READ",
+      "SCOPE_DIVE_API_READ",
+      "SCOPE_DT_ACTIVE_INTELLIGENCE_READ",
+      "SCOPE_DI_OAUTH_2_CLIENT_READ",
+      "SCOPE_CONNECT_WRITE",
+      "SCOPE_COMMUNITY_COURSE_WRITE",
+      "SCOPE_CONNECT_MCT_DAILY_LOG_READ",
+      "SCOPE_CONNECT_API_CREATE_UPDATE_USER",
+      "SCOPE_MESSAGE_GENERATION_READ",
+      "SCOPE_DI_OAUTH_2_CLIENT_REVOCATION_ADMIN",
+      "SCOPE_CONNECT_WEB_TEMPLATE_RENDER",
+      "SCOPE_ACTIVITY_DETECTION_READ",
+      "SCOPE_OMT_SUBSCRIPTION_ADMIN_READ",
+      "SCOPE_DI_OAUTH_2_MANAGED_STATUS_ADMIN_WRITE",
+      "SCOPE_CONNECT_NON_SOCIAL_SHARED_READ",
+      "SCOPE_CONNECT_READ",
+      "SCOPE_DI_OAUTH_2_PRERELEASE_PERMISSIONS_ADMIN_WRITE",
+      "SCOPE_DI_OAUTH_2_TOKEN_ADMIN",
+      "SCOPE_ATP_WRITE",
+      "ROLE_CONNECTUSER",
+      "ROLE_FITNESS_USER",
+      "ROLE_WELLNESS_USER",
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
+    ],
+    "privacy": {
+      "typeId": 2,
+      "typeKey": "private"
+    },
+    "userPro": false,
+    "hasVideo": false,
+    "timeZoneId": 152,
+    "beginTimestamp": 1775584057000,
+    "sportTypeId": 2,
+    "aerobicTrainingEffect": 0.30000001192092896,
+    "anaerobicTrainingEffect": 0,
+    "deviceId": 3480545930,
+    "minElevation": 150.8000030517578,
+    "maxElevation": 169.8000030517578,
+    "avgElevation": 162.5601744548583,
+    "summarizedDiveInfo": {
+      "summarizedDiveGases": []
+    },
+    "maxVerticalSpeed": 0.6666666666666666,
+    "manufacturer": "GARMIN",
+    "locationName": "Richmond Heights",
+    "lapCount": 1,
+    "endLatitude": 38.632750287652016,
+    "endLongitude": -90.32643313519657,
+    "waterEstimated": 33,
+    "trainingEffectLabel": "UNKNOWN",
+    "activityTrainingLoad": 3.6027069091796875,
+    "minActivityLapDuration": 231.56700134277344,
+    "aerobicTrainingEffectMessage": "NO_AEROBIC_BENEFIT_18",
+    "anaerobicTrainingEffectMessage": "NO_ANAEROBIC_BENEFIT_0",
+    "splitSummaries": [],
+    "hasSplits": false,
+    "hasIntensityIntervals": false,
+    "hasHeatMap": false,
+    "hrTimeInZone_1": 70.567,
+    "hrTimeInZone_2": 161,
+    "hrTimeInZone_3": 0,
+    "hrTimeInZone_4": 0,
+    "hrTimeInZone_5": 0,
+    "endTimeGMT": "2026-04-07 17:51:28",
+    "qualifyingDive": false,
+    "activityUUID": "583277ad-0de4-44db-98ee-42e87049ab7c",
+    "autoCalcCalories": false,
+    "favorite": false,
+    "decoDive": false,
+    "purposeful": false,
+    "manualActivity": false,
+    "pr": false,
+    "parent": false,
+    "elevationCorrected": false,
+    "atpActivity": false
+  },
+  {
+    "activityId": 22442638396,
+    "activityName": "Richmond Heights Road Cycling",
+    "startTimeLocal": "2026-04-07 12:14:09",
+    "startTimeGMT": "2026-04-07 17:14:09",
+    "activityType": {
+      "typeId": 10,
+      "typeKey": "road_biking",
+      "parentTypeId": 2,
+      "isHidden": false,
+      "restricted": false,
+      "trimmable": true
+    },
+    "eventType": {
+      "typeId": 9,
+      "typeKey": "uncategorized",
+      "sortOrder": 10
+    },
+    "distance": 755.3599853515625,
+    "duration": 137.42300415039062,
+    "elapsedDuration": 137.42300415039062,
+    "movingDuration": 127,
+    "elevationGain": 5,
+    "elevationLoss": 12,
+    "averageSpeed": 5.497000217437744,
+    "maxSpeed": 8.602999687194824,
+    "startLatitude": 38.63299202173948,
+    "startLongitude": -90.326561126858,
+    "hasPolyline": true,
+    "hasImages": false,
+    "ownerId": 125473122,
+    "ownerDisplayName": "41a91fcb-dd10-46e4-b8e7-debbc6affcc7",
+    "ownerFullName": "John",
+    "ownerProfileImageUrlSmall": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/e71212cf-9ec6-4a9f-8643-106b91b17c1d-prth.png",
+    "ownerProfileImageUrlMedium": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/e71212cf-9ec6-4a9f-8643-106b91b17c1d-prfr.png",
+    "ownerProfileImageUrlLarge": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/e71212cf-9ec6-4a9f-8643-106b91b17c1d-prof.png",
+    "calories": 15,
+    "bmrCalories": 4,
+    "averageHR": 103,
+    "maxHR": 119,
+    "userRoles": [
+      "SCOPE_GOLF_API_READ",
+      "SCOPE_DI_OAUTH_2_DEVICE_REVOCATION_WRITE",
+      "SCOPE_DI_OAUTH_2_CREATE_DI_USER",
+      "SCOPE_ATP_READ",
+      "SCOPE_DIVE_API_WRITE",
+      "SCOPE_COMMUNITY_COURSE_ADMIN_READ",
+      "SCOPE_DIVE_API_READ",
+      "SCOPE_DT_ACTIVE_INTELLIGENCE_READ",
+      "SCOPE_DI_OAUTH_2_CLIENT_READ",
+      "SCOPE_CONNECT_WRITE",
+      "SCOPE_COMMUNITY_COURSE_WRITE",
+      "SCOPE_CONNECT_MCT_DAILY_LOG_READ",
+      "SCOPE_CONNECT_API_CREATE_UPDATE_USER",
+      "SCOPE_MESSAGE_GENERATION_READ",
+      "SCOPE_DI_OAUTH_2_CLIENT_REVOCATION_ADMIN",
+      "SCOPE_CONNECT_WEB_TEMPLATE_RENDER",
+      "SCOPE_ACTIVITY_DETECTION_READ",
+      "SCOPE_OMT_SUBSCRIPTION_ADMIN_READ",
+      "SCOPE_DI_OAUTH_2_MANAGED_STATUS_ADMIN_WRITE",
+      "SCOPE_CONNECT_NON_SOCIAL_SHARED_READ",
+      "SCOPE_CONNECT_READ",
+      "SCOPE_DI_OAUTH_2_PRERELEASE_PERMISSIONS_ADMIN_WRITE",
+      "SCOPE_DI_OAUTH_2_TOKEN_ADMIN",
+      "SCOPE_ATP_WRITE",
+      "ROLE_CONNECTUSER",
+      "ROLE_FITNESS_USER",
+      "ROLE_WELLNESS_USER",
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
+    ],
+    "privacy": {
+      "typeId": 2,
+      "typeKey": "private"
+    },
+    "userPro": false,
+    "hasVideo": false,
+    "timeZoneId": 152,
+    "beginTimestamp": 1775582049000,
+    "sportTypeId": 2,
+    "aerobicTrainingEffect": 0.10000000149011612,
+    "anaerobicTrainingEffect": 0,
+    "deviceId": 3480545930,
+    "minElevation": 154.39999389648438,
+    "maxElevation": 164,
+    "avgElevation": 160.68405803735706,
+    "summarizedDiveInfo": {
+      "summarizedDiveGases": []
+    },
+    "maxVerticalSpeed": 0.4000091552734375,
+    "manufacturer": "GARMIN",
+    "locationName": "Richmond Heights",
+    "lapCount": 1,
+    "endLatitude": 38.62871440127492,
+    "endLongitude": -90.33060799352825,
+    "waterEstimated": 17,
+    "trainingEffectLabel": "UNKNOWN",
+    "activityTrainingLoad": 1.326507568359375,
+    "minActivityLapDuration": 137.42300415039062,
+    "aerobicTrainingEffectMessage": "NO_AEROBIC_BENEFIT_18",
+    "anaerobicTrainingEffectMessage": "NO_ANAEROBIC_BENEFIT_0",
+    "splitSummaries": [],
+    "hasSplits": false,
+    "hasIntensityIntervals": false,
+    "hasHeatMap": false,
+    "hrTimeInZone_1": 60.283,
+    "hrTimeInZone_2": 25.138,
+    "hrTimeInZone_3": 0,
+    "hrTimeInZone_4": 0,
+    "hrTimeInZone_5": 0,
+    "endTimeGMT": "2026-04-07 17:16:26",
+    "qualifyingDive": false,
+    "activityUUID": "eec2bd33-81ad-4085-a30b-0a01833dbd69",
+    "autoCalcCalories": false,
+    "favorite": false,
+    "decoDive": false,
+    "purposeful": false,
+    "manualActivity": false,
+    "pr": false,
+    "parent": false,
+    "elevationCorrected": false,
+    "atpActivity": false
+  },
+  {
+    "activityId": 22430474817,
+    "activityName": "Richmond Heights Road Cycling",
+    "startTimeLocal": "2026-04-06 11:45:35",
+    "startTimeGMT": "2026-04-06 16:45:35",
+    "activityType": {
+      "typeId": 10,
+      "typeKey": "road_biking",
+      "parentTypeId": 2,
+      "isHidden": false,
+      "restricted": false,
+      "trimmable": true
+    },
+    "eventType": {
+      "typeId": 9,
+      "typeKey": "uncategorized",
+      "sortOrder": 10
+    },
+    "distance": 10587.740234375,
+    "duration": 2085.383056640625,
+    "elapsedDuration": 2085.383056640625,
+    "movingDuration": 1874,
+    "elevationGain": 126,
+    "elevationLoss": 123,
+    "averageSpeed": 5.077000141143799,
+    "maxSpeed": 10.534000396728516,
+    "startLatitude": 38.633066453039646,
+    "startLongitude": -90.32648786902428,
+    "hasPolyline": true,
+    "hasImages": false,
+    "ownerId": 125473122,
+    "ownerDisplayName": "41a91fcb-dd10-46e4-b8e7-debbc6affcc7",
+    "ownerFullName": "John",
+    "ownerProfileImageUrlSmall": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/e71212cf-9ec6-4a9f-8643-106b91b17c1d-prth.png",
+    "ownerProfileImageUrlMedium": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/e71212cf-9ec6-4a9f-8643-106b91b17c1d-prfr.png",
+    "ownerProfileImageUrlLarge": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/e71212cf-9ec6-4a9f-8643-106b91b17c1d-prof.png",
+    "calories": 386,
+    "bmrCalories": 55,
+    "averageHR": 138,
+    "maxHR": 178,
+    "userRoles": [
+      "SCOPE_GOLF_API_READ",
+      "SCOPE_DI_OAUTH_2_DEVICE_REVOCATION_WRITE",
+      "SCOPE_DI_OAUTH_2_CREATE_DI_USER",
+      "SCOPE_ATP_READ",
+      "SCOPE_DIVE_API_WRITE",
+      "SCOPE_COMMUNITY_COURSE_ADMIN_READ",
+      "SCOPE_DIVE_API_READ",
+      "SCOPE_DT_ACTIVE_INTELLIGENCE_READ",
+      "SCOPE_DI_OAUTH_2_CLIENT_READ",
+      "SCOPE_CONNECT_WRITE",
+      "SCOPE_COMMUNITY_COURSE_WRITE",
+      "SCOPE_CONNECT_MCT_DAILY_LOG_READ",
+      "SCOPE_CONNECT_API_CREATE_UPDATE_USER",
+      "SCOPE_MESSAGE_GENERATION_READ",
+      "SCOPE_DI_OAUTH_2_CLIENT_REVOCATION_ADMIN",
+      "SCOPE_CONNECT_WEB_TEMPLATE_RENDER",
+      "SCOPE_ACTIVITY_DETECTION_READ",
+      "SCOPE_OMT_SUBSCRIPTION_ADMIN_READ",
+      "SCOPE_DI_OAUTH_2_MANAGED_STATUS_ADMIN_WRITE",
+      "SCOPE_CONNECT_NON_SOCIAL_SHARED_READ",
+      "SCOPE_CONNECT_READ",
+      "SCOPE_DI_OAUTH_2_PRERELEASE_PERMISSIONS_ADMIN_WRITE",
+      "SCOPE_DI_OAUTH_2_TOKEN_ADMIN",
+      "SCOPE_ATP_WRITE",
+      "ROLE_CONNECTUSER",
+      "ROLE_FITNESS_USER",
+      "ROLE_WELLNESS_USER",
+      "ROLE_OUTDOOR_USER",
+      "ROLE_GARMIN_USER"
+    ],
+    "privacy": {
+      "typeId": 2,
+      "typeKey": "private"
+    },
+    "userPro": false,
+    "hasVideo": false,
+    "timeZoneId": 152,
+    "beginTimestamp": 1775493935000,
+    "sportTypeId": 2,
+    "aerobicTrainingEffect": 3.0999999046325684,
+    "anaerobicTrainingEffect": 2,
+    "deviceId": 3480545930,
+    "minElevation": 141.8000030517578,
+    "maxElevation": 179.8000030517578,
+    "avgElevation": 161.98187905418564,
+    "summarizedDiveInfo": {
+      "summarizedDiveGases": []
+    },
+    "maxVerticalSpeed": 2.399993896484375,
+    "manufacturer": "GARMIN",
+    "locationName": "Richmond Heights",
+    "lapCount": 2,
+    "endLatitude": 38.63270200788975,
+    "endLongitude": -90.32634319737554,
+    "waterEstimated": 375,
+    "trainingEffectLabel": "TEMPO",
+    "activityTrainingLoad": 101.80763244628906,
+    "minActivityLapDuration": 477.1809997558594,
+    "aerobicTrainingEffectMessage": "IMPROVING_AEROBIC_FITNESS_2",
+    "anaerobicTrainingEffectMessage": "MAINTAINING_ANAEROBIC_BASE_1",
+    "splitSummaries": [],
+    "hasSplits": false,
+    "hasIntensityIntervals": false,
+    "moderateIntensityMinutes": 13,
+    "vigorousIntensityMinutes": 8,
+    "hasHeatMap": false,
+    "hrTimeInZone_1": 334,
+    "hrTimeInZone_2": 448.003,
+    "hrTimeInZone_3": 700.828,
+    "hrTimeInZone_4": 519.152,
+    "hrTimeInZone_5": 63.006,
+    "endTimeGMT": "2026-04-06 17:20:20",
+    "qualifyingDive": false,
+    "activityUUID": "11bed9f7-c02e-48d8-b211-da6e788fd5df",
+    "autoCalcCalories": false,
+    "favorite": false,
+    "decoDive": false,
+    "purposeful": false,
+    "manualActivity": false,
+    "pr": false,
+    "parent": false,
+    "elevationCorrected": false,
+    "atpActivity": false
+  },
   {
     "activityId": 22353548359,
     "activityName": "Richmond Heights Road Cycling",
@@ -20488,6 +21555,7 @@ var CYCLING_DATA = [
     "anaerobicTrainingEffectMessage": "MAINTAINING_FAST_FORCE_PRODUCTION_6",
     "splitSummaries": [],
     "hasSplits": false,
+    "hasIntensityIntervals": false,
     "moderateIntensityMinutes": 6,
     "vigorousIntensityMinutes": 6,
     "hasHeatMap": false,
@@ -20500,14 +21568,14 @@ var CYCLING_DATA = [
     "qualifyingDive": false,
     "activityUUID": "752c1011-2793-4289-bc7d-f924dbd56aff",
     "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "purposeful": false,
-    "decoDive": false,
     "favorite": false,
+    "decoDive": false,
+    "purposeful": false,
+    "manualActivity": false,
     "pr": false,
     "parent": false,
-    "manualActivity": false
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 22342997448,
@@ -20614,6 +21682,7 @@ var CYCLING_DATA = [
     "anaerobicTrainingEffectMessage": "IMPROVING_ANAEROBIC_CAPACITY_AND_POWER_8",
     "splitSummaries": [],
     "hasSplits": false,
+    "hasIntensityIntervals": false,
     "moderateIntensityMinutes": 22,
     "vigorousIntensityMinutes": 61,
     "hasHeatMap": false,
@@ -20626,14 +21695,14 @@ var CYCLING_DATA = [
     "qualifyingDive": false,
     "activityUUID": "ef88c82a-82ba-4dfc-86b9-fe98bd800f2a",
     "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "purposeful": false,
-    "decoDive": false,
     "favorite": false,
+    "decoDive": false,
+    "purposeful": false,
+    "manualActivity": false,
     "pr": false,
     "parent": false,
-    "manualActivity": false
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 22319552061,
@@ -20740,6 +21809,7 @@ var CYCLING_DATA = [
     "anaerobicTrainingEffectMessage": "MINOR_ANAEROBIC_BENEFIT_15",
     "splitSummaries": [],
     "hasSplits": false,
+    "hasIntensityIntervals": false,
     "moderateIntensityMinutes": 15,
     "vigorousIntensityMinutes": 1,
     "hasHeatMap": false,
@@ -20752,14 +21822,14 @@ var CYCLING_DATA = [
     "qualifyingDive": false,
     "activityUUID": "8b06a3a8-5150-46d8-b251-3942ef2fdcdc",
     "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "purposeful": false,
-    "decoDive": false,
     "favorite": false,
+    "decoDive": false,
+    "purposeful": false,
+    "manualActivity": false,
     "pr": false,
     "parent": false,
-    "manualActivity": false
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 21858174681,
@@ -20876,14 +21946,14 @@ var CYCLING_DATA = [
     "qualifyingDive": false,
     "activityUUID": "d510b267-52e9-4b9e-a37d-71b133b4eaa4",
     "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "purposeful": false,
-    "decoDive": false,
     "favorite": false,
+    "decoDive": false,
+    "purposeful": false,
+    "manualActivity": false,
     "pr": false,
     "parent": false,
-    "manualActivity": false
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 21724426786,
@@ -20999,14 +22069,14 @@ var CYCLING_DATA = [
     "qualifyingDive": false,
     "activityUUID": "f32e34d0-8a91-4e7a-8708-a987563054fa",
     "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "purposeful": false,
-    "decoDive": false,
     "favorite": false,
+    "decoDive": false,
+    "purposeful": false,
+    "manualActivity": false,
     "pr": false,
     "parent": false,
-    "manualActivity": false
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 21558059813,
@@ -21120,14 +22190,14 @@ var CYCLING_DATA = [
     "qualifyingDive": false,
     "activityUUID": "d917162e-78f7-4548-99b8-e1766165829d",
     "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "purposeful": false,
-    "decoDive": false,
     "favorite": false,
+    "decoDive": false,
+    "purposeful": false,
+    "manualActivity": false,
     "pr": false,
     "parent": false,
-    "manualActivity": false
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 21494526143,
@@ -21241,14 +22311,14 @@ var CYCLING_DATA = [
     "qualifyingDive": false,
     "activityUUID": "36f3a943-bc3c-4014-b9d6-1e90c60a9f72",
     "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "purposeful": false,
-    "decoDive": false,
     "favorite": false,
+    "decoDive": false,
+    "purposeful": false,
+    "manualActivity": false,
     "pr": false,
     "parent": false,
-    "manualActivity": false
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 21494471299,
@@ -21362,14 +22432,14 @@ var CYCLING_DATA = [
     "qualifyingDive": false,
     "activityUUID": "2ebcb589-9ec4-4f03-b71a-ab61f24c5f34",
     "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "purposeful": false,
-    "decoDive": false,
     "favorite": false,
+    "decoDive": false,
+    "purposeful": false,
+    "manualActivity": false,
     "pr": false,
     "parent": false,
-    "manualActivity": false
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 21444551566,
@@ -21483,14 +22553,14 @@ var CYCLING_DATA = [
     "qualifyingDive": false,
     "activityUUID": "4b09d0e9-eba8-4132-90cb-f00cec2d2542",
     "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "purposeful": false,
-    "decoDive": false,
     "favorite": false,
+    "decoDive": false,
+    "purposeful": false,
+    "manualActivity": false,
     "pr": false,
     "parent": false,
-    "manualActivity": false
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 21433929335,
@@ -21606,14 +22676,14 @@ var CYCLING_DATA = [
     "qualifyingDive": false,
     "activityUUID": "41f37cd3-d6a7-4a77-826f-4bf70eb6c1c1",
     "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "purposeful": false,
-    "decoDive": false,
     "favorite": false,
+    "decoDive": false,
+    "purposeful": false,
+    "manualActivity": false,
     "pr": false,
     "parent": false,
-    "manualActivity": false
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 21350007621,
@@ -21729,14 +22799,14 @@ var CYCLING_DATA = [
     "qualifyingDive": false,
     "activityUUID": "09920c8f-3312-4fa0-8d16-b336f18cc22d",
     "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "purposeful": false,
-    "decoDive": false,
     "favorite": false,
+    "decoDive": false,
+    "purposeful": false,
+    "manualActivity": false,
     "pr": false,
     "parent": false,
-    "manualActivity": false
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 21334868354,
@@ -21852,14 +22922,14 @@ var CYCLING_DATA = [
     "qualifyingDive": false,
     "activityUUID": "9b1f9982-2b44-434d-a50a-d52d78c73128",
     "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "purposeful": false,
-    "decoDive": false,
     "favorite": false,
+    "decoDive": false,
+    "purposeful": false,
+    "manualActivity": false,
     "pr": false,
     "parent": false,
-    "manualActivity": false
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 21309052003,
@@ -21975,14 +23045,14 @@ var CYCLING_DATA = [
     "qualifyingDive": false,
     "activityUUID": "4a6dd104-4503-4d6b-a4ae-5055e6298b31",
     "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "purposeful": false,
-    "decoDive": false,
     "favorite": false,
+    "decoDive": false,
+    "purposeful": false,
+    "manualActivity": false,
     "pr": false,
     "parent": false,
-    "manualActivity": false
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 20906789297,
@@ -22098,14 +23168,14 @@ var CYCLING_DATA = [
     "qualifyingDive": false,
     "activityUUID": "1903e745-8d88-4707-ade6-926f314977a8",
     "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "purposeful": false,
-    "decoDive": false,
     "favorite": false,
+    "decoDive": false,
+    "purposeful": false,
+    "manualActivity": false,
     "pr": false,
     "parent": false,
-    "manualActivity": false
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 19571948344,
@@ -22219,14 +23289,14 @@ var CYCLING_DATA = [
     "qualifyingDive": false,
     "activityUUID": "51017d41-4c73-498d-9f15-c5e2c9995c35",
     "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "purposeful": false,
-    "decoDive": false,
     "favorite": false,
+    "decoDive": false,
+    "purposeful": false,
+    "manualActivity": false,
     "pr": false,
     "parent": false,
-    "manualActivity": false
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 19214560666,
@@ -22342,14 +23412,14 @@ var CYCLING_DATA = [
     "qualifyingDive": false,
     "activityUUID": "6045fbac-f097-4936-924e-035bf45c80c4",
     "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "purposeful": false,
-    "decoDive": false,
     "favorite": false,
+    "decoDive": false,
+    "purposeful": false,
+    "manualActivity": false,
     "pr": false,
     "parent": false,
-    "manualActivity": false
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 19156199684,
@@ -22465,14 +23535,14 @@ var CYCLING_DATA = [
     "qualifyingDive": false,
     "activityUUID": "f77f689e-f64b-489d-8ea3-f4979117ab68",
     "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "purposeful": false,
-    "decoDive": false,
     "favorite": false,
+    "decoDive": false,
+    "purposeful": false,
+    "manualActivity": false,
     "pr": false,
     "parent": false,
-    "manualActivity": false
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 18886233751,
@@ -22588,14 +23658,14 @@ var CYCLING_DATA = [
     "qualifyingDive": false,
     "activityUUID": "ae0b0289-4c2e-49f6-845c-05935a66ffbe",
     "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "purposeful": false,
-    "decoDive": false,
     "favorite": false,
+    "decoDive": false,
+    "purposeful": false,
+    "manualActivity": false,
     "pr": false,
     "parent": false,
-    "manualActivity": false
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 18654621962,
@@ -22711,14 +23781,14 @@ var CYCLING_DATA = [
     "qualifyingDive": false,
     "activityUUID": "9b33ca53-6dc1-4262-a254-70925eac07a6",
     "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "purposeful": false,
-    "decoDive": false,
     "favorite": false,
+    "decoDive": false,
+    "purposeful": false,
+    "manualActivity": false,
     "pr": false,
     "parent": false,
-    "manualActivity": false
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 18561365966,
@@ -22834,14 +23904,14 @@ var CYCLING_DATA = [
     "qualifyingDive": false,
     "activityUUID": "b557e359-ab1d-43d6-82fb-c5dff0ef4623",
     "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "purposeful": false,
-    "decoDive": false,
     "favorite": false,
+    "decoDive": false,
+    "purposeful": false,
+    "manualActivity": false,
     "pr": false,
     "parent": false,
-    "manualActivity": false
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 18497290488,
@@ -22957,14 +24027,14 @@ var CYCLING_DATA = [
     "qualifyingDive": false,
     "activityUUID": "5f9146cb-c932-49a7-bc7b-5539fe859197",
     "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "purposeful": false,
-    "decoDive": false,
     "favorite": false,
+    "decoDive": false,
+    "purposeful": false,
+    "manualActivity": false,
     "pr": false,
     "parent": false,
-    "manualActivity": false
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 18386808152,
@@ -23080,14 +24150,14 @@ var CYCLING_DATA = [
     "qualifyingDive": false,
     "activityUUID": "cc85474f-00e3-4d9d-9a43-5c72b204cf86",
     "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "purposeful": false,
-    "decoDive": false,
     "favorite": false,
+    "decoDive": false,
+    "purposeful": false,
+    "manualActivity": false,
     "pr": false,
     "parent": false,
-    "manualActivity": false
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 18242179127,
@@ -23203,14 +24273,14 @@ var CYCLING_DATA = [
     "qualifyingDive": false,
     "activityUUID": "a522c2b4-aeca-4525-8f46-805973942b90",
     "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "purposeful": false,
-    "decoDive": false,
     "favorite": false,
+    "decoDive": false,
+    "purposeful": false,
+    "manualActivity": false,
     "pr": false,
     "parent": false,
-    "manualActivity": false
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 18179939290,
@@ -23326,14 +24396,14 @@ var CYCLING_DATA = [
     "qualifyingDive": false,
     "activityUUID": "35b0d3b2-4a52-4a26-b229-94d5b466c788",
     "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "purposeful": false,
-    "decoDive": false,
     "favorite": false,
+    "decoDive": false,
+    "purposeful": false,
+    "manualActivity": false,
     "pr": false,
     "parent": false,
-    "manualActivity": false
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 18171604365,
@@ -23449,14 +24519,14 @@ var CYCLING_DATA = [
     "qualifyingDive": false,
     "activityUUID": "2edc1ef4-34f2-4b9b-a56f-9662c1ae0a30",
     "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "purposeful": false,
-    "decoDive": false,
     "favorite": false,
+    "decoDive": false,
+    "purposeful": false,
+    "manualActivity": false,
     "pr": false,
     "parent": false,
-    "manualActivity": false
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 18170778124,
@@ -23572,14 +24642,14 @@ var CYCLING_DATA = [
     "qualifyingDive": false,
     "activityUUID": "8ba3990e-b7ea-4915-926f-431725f34bfa",
     "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "purposeful": false,
-    "decoDive": false,
     "favorite": false,
+    "decoDive": false,
+    "purposeful": false,
+    "manualActivity": false,
     "pr": false,
     "parent": false,
-    "manualActivity": false
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 18153837395,
@@ -23695,14 +24765,14 @@ var CYCLING_DATA = [
     "qualifyingDive": false,
     "activityUUID": "e95d882a-9b76-4c08-bf46-a2d3512df31e",
     "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "purposeful": false,
-    "decoDive": false,
     "favorite": false,
+    "decoDive": false,
+    "purposeful": false,
+    "manualActivity": false,
     "pr": false,
     "parent": false,
-    "manualActivity": false
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 18005233398,
@@ -23818,14 +24888,14 @@ var CYCLING_DATA = [
     "qualifyingDive": false,
     "activityUUID": "7244c4ad-27dc-4f88-a5fe-95f9ea8415dd",
     "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "purposeful": false,
-    "decoDive": false,
     "favorite": false,
+    "decoDive": false,
+    "purposeful": false,
+    "manualActivity": false,
     "pr": false,
     "parent": false,
-    "manualActivity": false
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 17563073694,
@@ -23936,14 +25006,14 @@ var CYCLING_DATA = [
     "qualifyingDive": false,
     "activityUUID": "37a253d6-31c8-4d42-9825-27f27bc8f6a9",
     "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "purposeful": false,
-    "decoDive": false,
     "favorite": false,
+    "decoDive": false,
+    "purposeful": false,
+    "manualActivity": false,
     "pr": false,
     "parent": false,
-    "manualActivity": false
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 17442479288,
@@ -24055,14 +25125,14 @@ var CYCLING_DATA = [
     "qualifyingDive": false,
     "activityUUID": "0d8abb23-5e6c-4ff1-9846-5a3ea35fc9de",
     "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "purposeful": false,
-    "decoDive": false,
     "favorite": false,
+    "decoDive": false,
+    "purposeful": false,
+    "manualActivity": false,
     "pr": true,
     "parent": false,
-    "manualActivity": false
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 17376715235,
@@ -24173,14 +25243,14 @@ var CYCLING_DATA = [
     "qualifyingDive": false,
     "activityUUID": "ee8fddaa-3885-4bc7-a5e0-73ef8e22aab1",
     "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "purposeful": false,
-    "decoDive": false,
     "favorite": false,
+    "decoDive": false,
+    "purposeful": false,
+    "manualActivity": false,
     "pr": false,
     "parent": false,
-    "manualActivity": false
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 17253921009,
@@ -24291,14 +25361,14 @@ var CYCLING_DATA = [
     "qualifyingDive": false,
     "activityUUID": "04756d18-8607-46e1-bd4a-4d1c332e2400",
     "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "purposeful": false,
-    "decoDive": false,
     "favorite": false,
+    "decoDive": false,
+    "purposeful": false,
+    "manualActivity": false,
     "pr": false,
     "parent": false,
-    "manualActivity": false
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 17179861252,
@@ -24409,14 +25479,14 @@ var CYCLING_DATA = [
     "qualifyingDive": false,
     "activityUUID": "8de91dc8-be92-4466-9c5f-268c752545e2",
     "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "purposeful": false,
-    "decoDive": false,
     "favorite": false,
+    "decoDive": false,
+    "purposeful": false,
+    "manualActivity": false,
     "pr": false,
     "parent": false,
-    "manualActivity": false
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 16984784423,
@@ -24527,14 +25597,14 @@ var CYCLING_DATA = [
     "qualifyingDive": false,
     "activityUUID": "0aca75e5-09c5-40a6-9880-3f601d166f88",
     "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "purposeful": false,
-    "decoDive": false,
     "favorite": false,
+    "decoDive": false,
+    "purposeful": false,
+    "manualActivity": false,
     "pr": false,
     "parent": false,
-    "manualActivity": false
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 16973632326,
@@ -24645,14 +25715,14 @@ var CYCLING_DATA = [
     "qualifyingDive": false,
     "activityUUID": "fc4cadc6-32c6-4790-84c2-a6d8cf1c26a0",
     "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "purposeful": false,
-    "decoDive": false,
     "favorite": false,
+    "decoDive": false,
+    "purposeful": false,
+    "manualActivity": false,
     "pr": false,
     "parent": false,
-    "manualActivity": false
+    "elevationCorrected": false,
+    "atpActivity": false
   },
   {
     "activityId": 16973263826,
@@ -24763,14 +25833,14 @@ var CYCLING_DATA = [
     "qualifyingDive": false,
     "activityUUID": "67e38cac-3216-4518-a022-65f61617e265",
     "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "purposeful": false,
-    "decoDive": false,
     "favorite": false,
+    "decoDive": false,
+    "purposeful": false,
+    "manualActivity": false,
     "pr": false,
     "parent": false,
-    "manualActivity": false
+    "elevationCorrected": false,
+    "atpActivity": false
   }
 ];
 var RUNNING_DATA = [
@@ -24917,15 +25987,15 @@ var RUNNING_DATA = [
     "endTimeGMT": "2026-03-12 17:48:54",
     "qualifyingDive": false,
     "activityUUID": "cd83bef0-18db-439f-ba5c-a9347d354bb5",
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "favorite": false,
-    "pr": false,
+    "purposeful": false,
+    "manualActivity": false,
     "parent": false,
     "decoDive": false,
-    "purposeful": false,
-    "manualActivity": false
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "favorite": false,
+    "pr": false,
+    "atpActivity": false
   },
   {
     "activityId": 22129360362,
@@ -25101,15 +26171,15 @@ var RUNNING_DATA = [
     "endTimeGMT": "2026-03-10 18:06:14",
     "qualifyingDive": false,
     "activityUUID": "b35bb6e7-9ee1-4c8e-985d-e890b08aed96",
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "favorite": false,
-    "pr": false,
+    "purposeful": false,
+    "manualActivity": false,
     "parent": false,
     "decoDive": false,
-    "purposeful": false,
-    "manualActivity": false
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "favorite": false,
+    "pr": false,
+    "atpActivity": false
   },
   {
     "activityId": 22108242313,
@@ -25273,15 +26343,15 @@ var RUNNING_DATA = [
     "endTimeGMT": "2026-03-08 19:53:44",
     "qualifyingDive": false,
     "activityUUID": "3463fca3-4990-4bad-b19d-ac554f9ed849",
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "favorite": false,
-    "pr": false,
+    "purposeful": false,
+    "manualActivity": false,
     "parent": false,
     "decoDive": false,
-    "purposeful": false,
-    "manualActivity": false
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "favorite": false,
+    "pr": false,
+    "atpActivity": false
   },
   {
     "activityId": 18588659159,
@@ -25444,15 +26514,15 @@ var RUNNING_DATA = [
     "endTimeGMT": "2025-03-20 18:41:48",
     "qualifyingDive": false,
     "activityUUID": "a015c6c1-787e-46a2-9fa5-77d00422009e",
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "favorite": false,
-    "pr": false,
+    "purposeful": false,
+    "manualActivity": false,
     "parent": false,
     "decoDive": false,
-    "purposeful": false,
-    "manualActivity": false
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "favorite": false,
+    "pr": false,
+    "atpActivity": false
   },
   {
     "activityId": 18523248018,
@@ -25600,15 +26670,15 @@ var RUNNING_DATA = [
     "endTimeGMT": "2025-03-13 17:45:31",
     "qualifyingDive": false,
     "activityUUID": "ef5933e0-479a-4e59-9250-386e60b49eaa",
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "favorite": false,
-    "pr": false,
+    "purposeful": false,
+    "manualActivity": false,
     "parent": false,
     "decoDive": false,
-    "purposeful": false,
-    "manualActivity": false
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "favorite": false,
+    "pr": false,
+    "atpActivity": false
   },
   {
     "activityId": 18458048547,
@@ -25771,15 +26841,15 @@ var RUNNING_DATA = [
     "endTimeGMT": "2025-03-06 18:57:30",
     "qualifyingDive": false,
     "activityUUID": "11ac6bed-7947-4429-856f-c4f3dc7d50c8",
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "favorite": false,
-    "pr": false,
+    "purposeful": false,
+    "manualActivity": false,
     "parent": false,
     "decoDive": false,
-    "purposeful": false,
-    "manualActivity": false
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "favorite": false,
+    "pr": false,
+    "atpActivity": false
   },
   {
     "activityId": 18067166191,
@@ -25942,15 +27012,15 @@ var RUNNING_DATA = [
     "endTimeGMT": "2025-01-21 22:45:32",
     "qualifyingDive": false,
     "activityUUID": "9b904185-d67b-4314-bbf3-a830bc5e4dfc",
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "favorite": false,
-    "pr": false,
+    "purposeful": false,
+    "manualActivity": false,
     "parent": false,
     "decoDive": false,
-    "purposeful": false,
-    "manualActivity": false
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "favorite": false,
+    "pr": false,
+    "atpActivity": false
   },
   {
     "activityId": 17642565526,
@@ -26121,15 +27191,15 @@ var RUNNING_DATA = [
     "endTimeGMT": "2024-11-28 15:21:03",
     "qualifyingDive": false,
     "activityUUID": "0f8c5873-2ba4-4ba9-a94d-9312f1d54386",
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "favorite": false,
-    "pr": true,
+    "purposeful": false,
+    "manualActivity": false,
     "parent": false,
     "decoDive": false,
-    "purposeful": false,
-    "manualActivity": false
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "favorite": false,
+    "pr": true,
+    "atpActivity": false
   },
   {
     "activityId": 17591786763,
@@ -26282,15 +27352,15 @@ var RUNNING_DATA = [
     "endTimeGMT": "2024-11-21 18:19:41",
     "qualifyingDive": false,
     "activityUUID": "b6683907-1c8e-4eb5-b4ff-4e2af53aed46",
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "favorite": false,
-    "pr": false,
+    "purposeful": false,
+    "manualActivity": false,
     "parent": false,
     "decoDive": false,
-    "purposeful": false,
-    "manualActivity": false
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "favorite": false,
+    "pr": false,
+    "atpActivity": false
   },
   {
     "activityId": 17571270958,
@@ -26458,15 +27528,15 @@ var RUNNING_DATA = [
     "endTimeGMT": "2024-11-19 02:08:26",
     "qualifyingDive": false,
     "activityUUID": "28168b18-54c3-4880-8029-1078cde424dc",
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "favorite": false,
-    "pr": false,
+    "purposeful": false,
+    "manualActivity": false,
     "parent": false,
     "decoDive": false,
-    "purposeful": false,
-    "manualActivity": false
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "favorite": false,
+    "pr": false,
+    "atpActivity": false
   },
   {
     "activityId": 17489952898,
@@ -26619,15 +27689,15 @@ var RUNNING_DATA = [
     "endTimeGMT": "2024-11-08 18:13:31",
     "qualifyingDive": false,
     "activityUUID": "418823cb-512a-48ab-b6ed-bc07e14086c3",
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "favorite": false,
-    "pr": false,
+    "purposeful": false,
+    "manualActivity": false,
     "parent": false,
     "decoDive": false,
-    "purposeful": false,
-    "manualActivity": false
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "favorite": false,
+    "pr": false,
+    "atpActivity": false
   },
   {
     "activityId": 17458153063,
@@ -26780,15 +27850,15 @@ var RUNNING_DATA = [
     "endTimeGMT": "2024-11-04 19:02:59",
     "qualifyingDive": false,
     "activityUUID": "3e6d32e7-81ee-4df6-99b6-db175e23f273",
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "favorite": false,
-    "pr": false,
+    "purposeful": false,
+    "manualActivity": false,
     "parent": false,
     "decoDive": false,
-    "purposeful": false,
-    "manualActivity": false
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "favorite": false,
+    "pr": false,
+    "atpActivity": false
   },
   {
     "activityId": 17417254452,
@@ -26941,15 +28011,15 @@ var RUNNING_DATA = [
     "endTimeGMT": "2024-10-30 17:55:16",
     "qualifyingDive": false,
     "activityUUID": "6a3d70f2-247c-4b29-82c9-ff93594e46e9",
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "favorite": false,
-    "pr": false,
+    "purposeful": false,
+    "manualActivity": false,
     "parent": false,
     "decoDive": false,
-    "purposeful": false,
-    "manualActivity": false
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "favorite": false,
+    "pr": false,
+    "atpActivity": false
   },
   {
     "activityId": 17277558971,
@@ -27118,15 +28188,15 @@ var RUNNING_DATA = [
     "endTimeGMT": "2024-10-13 18:07:53",
     "qualifyingDive": false,
     "activityUUID": "5d768b6d-8a80-483b-a753-7831f341f47b",
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "favorite": false,
-    "pr": false,
+    "purposeful": false,
+    "manualActivity": false,
     "parent": false,
     "decoDive": false,
-    "purposeful": false,
-    "manualActivity": false
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "favorite": false,
+    "pr": false,
+    "atpActivity": false
   },
   {
     "activityId": 17194602834,
@@ -27279,15 +28349,15 @@ var RUNNING_DATA = [
     "endTimeGMT": "2024-10-03 17:33:11",
     "qualifyingDive": false,
     "activityUUID": "ae437e8b-03a7-46a2-ba4d-f713002cc589",
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "favorite": false,
-    "pr": false,
+    "purposeful": false,
+    "manualActivity": false,
     "parent": false,
     "decoDive": false,
-    "purposeful": false,
-    "manualActivity": false
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "favorite": false,
+    "pr": false,
+    "atpActivity": false
   },
   {
     "activityId": 17194595687,
@@ -27420,15 +28490,15 @@ var RUNNING_DATA = [
     "endTimeGMT": "2024-10-03 17:18:26",
     "qualifyingDive": false,
     "activityUUID": "b0214f85-5979-44c8-be63-8d6dff09b195",
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "favorite": false,
-    "pr": false,
+    "purposeful": false,
+    "manualActivity": false,
     "parent": false,
     "decoDive": false,
-    "purposeful": false,
-    "manualActivity": false
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "favorite": false,
+    "pr": false,
+    "atpActivity": false
   },
   {
     "activityId": 17078184456,
@@ -27581,15 +28651,15 @@ var RUNNING_DATA = [
     "endTimeGMT": "2024-09-19 17:46:12",
     "qualifyingDive": false,
     "activityUUID": "0c063a78-deb3-45aa-b68d-c0bc0cf47849",
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "favorite": false,
-    "pr": false,
+    "purposeful": false,
+    "manualActivity": false,
     "parent": false,
     "decoDive": false,
-    "purposeful": false,
-    "manualActivity": false
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "favorite": false,
+    "pr": false,
+    "atpActivity": false
   },
   {
     "activityId": 17053218637,
@@ -27740,15 +28810,15 @@ var RUNNING_DATA = [
     "endTimeGMT": "2024-09-16 23:54:51",
     "qualifyingDive": false,
     "activityUUID": "04db8b0b-bbb4-48ee-ab70-3577ac893603",
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "favorite": false,
-    "pr": false,
+    "purposeful": false,
+    "manualActivity": false,
     "parent": false,
     "decoDive": false,
-    "purposeful": false,
-    "manualActivity": false
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "favorite": false,
+    "pr": false,
+    "atpActivity": false
   },
   {
     "activityId": 16966971254,
@@ -27899,154 +28969,17 @@ var RUNNING_DATA = [
     "endTimeGMT": "2024-09-06 23:15:48",
     "qualifyingDive": false,
     "activityUUID": "ea9f54e5-6ebf-464a-bcbb-b87e56f84367",
-    "autoCalcCalories": false,
-    "elevationCorrected": false,
-    "atpActivity": false,
-    "favorite": false,
-    "pr": false,
+    "purposeful": false,
+    "manualActivity": false,
     "parent": false,
     "decoDive": false,
-    "purposeful": false,
-    "manualActivity": false
+    "autoCalcCalories": false,
+    "elevationCorrected": false,
+    "favorite": false,
+    "pr": false,
+    "atpActivity": false
   }
 ];
-</script>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<style>
-  .gc-dashboard .gc-stats {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-    gap: 10px;
-    margin-bottom: 24px;
-  }
-  .gc-dashboard .gc-stat {
-    background: #e8f0e0;
-    border-radius: 8px;
-    padding: 10px 14px;
-  }
-  .gc-dashboard .gc-stat .label {
-    font-size: 0.7em;
-    color: #4a8525;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 0.03em;
-  }
-  .gc-dashboard .gc-stat .value {
-    font-size: 1.3em;
-    color: #2d5016;
-    font-weight: bold;
-  }
-  .gc-dashboard .gc-chart {
-    background: #fff;
-    border: 1px solid #e0e0d8;
-    border-radius: 8px;
-    padding: 14px;
-    margin-bottom: 16px;
-  }
-  .gc-dashboard details { margin-bottom: 8px; }
-  .gc-dashboard details summary {
-    cursor: pointer;
-    list-style: none;
-    padding: 4px 0;
-  }
-  .gc-dashboard details summary::-webkit-details-marker { display: none; }
-  .gc-dashboard details summary::before {
-    content: '▶ ';
-    font-size: 0.7em;
-    color: #4a8525;
-    transition: transform 0.2s;
-    display: inline-block;
-  }
-  .gc-dashboard details[open] summary::before {
-    content: '▼ ';
-  }
-  .gc-dashboard details summary h2, .gc-dashboard details summary h1 { display: inline; }
-  @media (max-width: 600px) {
-    .gc-dashboard .gc-stats { grid-template-columns: repeat(2, 1fr); gap: 8px; }
-    .gc-dashboard .gc-stat { padding: 8px 10px; }
-    .gc-dashboard .gc-stat .value { font-size: 1.1em; }
-    .gc-dashboard .gc-chart { padding: 8px; margin-bottom: 12px; }
-  }
-</style>
-
-<div class="gc-dashboard">
-  <div class="gc-stats" id="gc-stats-summary"></div>
-
-  <details open><summary><h2>Yearly Overview</h2></summary>
-  <div id="gc-yearly-charts"></div>
-  </details>
-
-  <details open><summary><h2>Monthly Trends</h2></summary>
-  <div id="gc-monthly-charts"></div>
-  </details>
-
-  <details open><summary><h2>Per-Session: Rope Climbing</h2></summary>
-  <div id="gc-session-rope-charts"></div>
-  </details>
-
-  <details open><summary><h2>Per-Session: Bouldering</h2></summary>
-  <div id="gc-session-boulder-charts"></div>
-  </details>
-
-  <h1>Strength Training</h1>
-  <div class="gc-stats" id="gc-strength-stats-summary"></div>
-
-  <details open><summary><h2>Yearly Overview: Strength</h2></summary>
-  <div id="gc-strength-yearly-charts"></div>
-  </details>
-
-  <details open><summary><h2>Monthly Trends: Strength</h2></summary>
-  <div id="gc-strength-monthly-charts"></div>
-  </details>
-
-  <details open><summary><h2>Per-Session: Bench Press</h2></summary>
-  <div id="gc-session-bench-charts"></div>
-  </details>
-
-  <details open><summary><h2>Per-Session: Back Squat</h2></summary>
-  <div id="gc-session-squat-charts"></div>
-  </details>
-
-  <details open><summary><h2>Per-Session: Weighted Pull-Up</h2></summary>
-  <div id="gc-session-pullup-charts"></div>
-  </details>
-
-  <details open><summary><h2>Per-Session: Romanian Deadlift</h2></summary>
-  <div id="gc-session-rdl-charts"></div>
-  </details>
-
-  <h1>Cycling</h1>
-  <div class="gc-stats" id="gc-cycling-stats-summary"></div>
-
-  <details open><summary><h2>Yearly Overview: Cycling</h2></summary>
-  <div id="gc-cycling-yearly-charts"></div>
-  </details>
-
-  <details open><summary><h2>Monthly Trends: Cycling</h2></summary>
-  <div id="gc-cycling-monthly-charts"></div>
-  </details>
-
-  <details open><summary><h2>Per-Session: Cycling</h2></summary>
-  <div id="gc-cycling-session-charts"></div>
-  </details>
-
-  <h1>Running</h1>
-  <div class="gc-stats" id="gc-running-stats-summary"></div>
-
-  <details open><summary><h2>Yearly Overview: Running</h2></summary>
-  <div id="gc-running-yearly-charts"></div>
-  </details>
-
-  <details open><summary><h2>Monthly Trends: Running</h2></summary>
-  <div id="gc-running-monthly-charts"></div>
-  </details>
-
-  <details open><summary><h2>Per-Session: Running</h2></summary>
-  <div id="gc-running-session-charts"></div>
-  </details>
-</div>
-
-<script>
 (function() {
 var COLORS = {
   green1: '#2d5016', green2: '#3a6b1e', green3: '#4a8525',
@@ -28387,5 +29320,3 @@ if (typeof RUNNING_DATA !== 'undefined' && RUNNING_DATA && RUNNING_DATA.length >
 })();
 </script>
 
-</body>
-</html>
