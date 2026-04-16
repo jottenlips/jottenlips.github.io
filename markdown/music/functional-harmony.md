@@ -4,7 +4,7 @@ I picked up most of this functional harmony stuff through jamming with friends i
 
 I learned the "real rules" of Western harmony much later when I went to music school briefly to get a minor. At that point I started to understand these fundamental relationships and how they were rooted in Western music history, like different cadences and how they developed over time from Gregorian chants to Bach and then to the blues and jazz. These music rules can be extremely helpful and interesting, but at the end of the day, always go with your ear and what it's telling you to play. I hope this is more informative and easier to digest than a textbook. Cheers!
 
-_Note: this post is written in the context of Western music theory. Other musical traditions have their own harmonic systems that don't necessarily follow these rules._ Only a sith speaks in absolutes.
+_Note: this post is written in the context of Western music theory. Other musical traditions have their own harmonic systems that don't necessarily follow these rules._ Only a Sith speaks in absolutes.
 
 ## Every major key is really just 3 chords
 
@@ -165,7 +165,7 @@ G minor blues: G  Bb  C  Db  D  F
 
 Or just stay on C minor blues over everything. The b3, b5, and b7 act as tensions that resolve to chord tones. The Eb bends up into E (the major third of C), the Gb slides into G (the fifth).
 
-Mixing major pentatonic with the blues scale gives you both the major third (E) and the minor third (Eb). Altering which one you use is a common cliche in blues and rock soloing.
+Mixing major pentatonic with the blues scale gives you both the major third (E) and the minor third (Eb). Alternating between them is a common cliche in blues and rock soloing.
 
 ## Bluegrass
 
@@ -218,7 +218,7 @@ Tonic → Dominant → Tonic → Subdominant
 
 Play these chords and I am sure you will hear a familiar song.
 
-Another common pop progression
+Another common pop progression:
 
 ```
 I-vi-IV-V
@@ -228,17 +228,17 @@ I-vi-IV-V
 C | Am | F | G
 ```
 
-## Rhtyhm Changes I-vi-ii-V
+## Rhythm Changes I-vi-ii-V
 
-This is all over Jazz tunes and creates a strong resolution from the V to I.
-It also navigates in fifths providing a greater feeling of resolution to each chord.
+This is all over jazz tunes and creates a strong resolution from the V to I.
+It also navigates in fifths, providing a greater feeling of resolution to each chord.
 
 ```
 C | Am | Dm | G
 ```
 
 ```
-Tonic → Tonic → Subdominant -> Dominant
+Tonic → Tonic → Subdominant → Dominant
 ```
 
 ## Circle of fifths movement
@@ -256,7 +256,7 @@ In functional terms:
 Dominant → Tonic → Subdominant → Dominant → Tonic
 ```
 
-Each chord's root is a fifth above the next. The ii→V→I part is the backbone of jazz. Extending it backwards through vi and iii gives you a longer runway. "Autumn Leaves" follows this movement.
+Each chord's root is a fifth above the next. The ii→V→I part is the backbone of jazz. Extending it backwards through vi and iii gives you a longer runway.
 
 ## Deceptive cadence
 
