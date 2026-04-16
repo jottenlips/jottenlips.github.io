@@ -147,3 +147,5 @@ This summer has had a lot of ups and downs. I’m grateful I got to see so many 
 > Love you all,
 
 > John
+
+[Next post](https://jottenlips.github.io/cancer/first-infusion-of-chemo-9-4-2025/)

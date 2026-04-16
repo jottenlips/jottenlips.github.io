@@ -28,3 +28,5 @@ The morning started with some relief.
 ---
 
 Not excited for my next round of treatment. Hoping today and tomorrow I continue to rebound. My brother and his wife are coming into town before my next round. I am hoping for a good week with them.
+
+[Next post](https://jottenlips.github.io/cancer/second-infusion-of-chemo-9-18-2025/)

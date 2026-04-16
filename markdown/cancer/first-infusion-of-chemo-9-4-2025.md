@@ -35,3 +35,5 @@ symptoms have eased up, like the severe itching and the sweatiness. Thank you my
 - The "B" drug (Bleomycin) comes from a flower in Madagascar. My MIL took my son to the botanical garden in St. Louis during my treatment and they found this fact on a plaque in the greenhouse!
 
 ---
+
+[Next post](https://jottenlips.github.io/cancer/side-effects-9-6-2025/)
