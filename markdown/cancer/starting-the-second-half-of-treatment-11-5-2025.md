@@ -43,3 +43,5 @@ My father-in-law gave me a **vintage Cannondale mountain bike**, which I’m pla
 Only three more infusions to go! I’m definitely feeling the cumulative effects now, but the doctor seems confident that the neuropathy will improve after treatment. ABVD has less neuropathy than the immunotherapy track, so that’s reassuring.
 
 My guitar playing has slipped a bit because of the hand pain, but I’m staying hopeful and focused on recovery. Cannot wait to be done on December 10th. It is going to be a great Christmas.
+
+[Next post](https://jottenlips.github.io/cancer/finishing-chemo-dec-16-2025/)

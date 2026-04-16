@@ -25,3 +25,5 @@ The worst part yesterday was when they missed my vein on the first attempt hooki
 Even so, I managed to write and deploy some code today and fix an iOS Safari bug on one of our sites. Mostly though, I’ve been sleeping, reading, scrolling the internet, and drinking a lot of Gatorade and Fairlife protein shakes.
 
 ![extrasmall](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc2Hx8-cQtkUaokchP4JLrQQMcpFRu6zd7Hw&s)
+
+[Next post](https://jottenlips.github.io/cancer/halfway-10-1-2025/)
