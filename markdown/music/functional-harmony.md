@@ -32,7 +32,7 @@ Wants to go home. In the key of C:
 
 - **G** (V), can be made even stronger with altered extensions like #9 or b9
 - **Bm7b5** (vii), shares B and D with G7. G and Bm7b5 are functionally interchangeable. Bm7b5 is essentially a G9 without the root.
-- **Em** (iii), shares B and G with G. I would call it a soft dominant.
+- **Em** (iii), shares B and G with G. I would call it a soft dominant. It can be useful for playing Em pentatonic licks over a G turnaround in C.
 
 ## Why this works
 
@@ -148,7 +148,7 @@ The blues scale is a minor pentatonic with an added b5. C minor blues:
 C minor blues: C  Eb  F  Gb  G  Bb
 ```
 
-This works over a C major chord even though it has a minor third (Eb) and a flat seventh (Bb). That clash between the minor third in the scale and the major third in the chord is the blues sound. B.B. King played minor pentatonic and blues scale over major and dominant chords his whole career.
+This works over a C major chord even though it has a minor third (Eb) and a flat seventh (Bb). That clash between the minor third in the scale and the major third in the chord is the blues sound.
 
 You can shift the blues scale the same way:
 
@@ -165,7 +165,7 @@ G minor blues: G  Bb  C  Db  D  F
 
 Or just stay on C minor blues over everything. The b3, b5, and b7 act as tensions that resolve to chord tones. The Eb bends up into E (the major third of C), the Gb slides into G (the fifth).
 
-Mixing major pentatonic with the blues scale gives you both the major third (E) and the minor third (Eb). Choosing when to use each one is a big part of blues and rock soloing.
+Mixing major pentatonic with the blues scale gives you both the major third (E) and the minor third (Eb). Altering which one you use is a common cliche in blues and rock soloing.
 
 ## Bluegrass
 
@@ -178,7 +178,7 @@ G major pentatonic: G  A  B  D  E
 G mixolydian:       G  A  B  C  D  E  F
 ```
 
-That F natural (the b7) shows up everywhere. Fiddle tunes, banjo rolls, flatpicking runs. It gives the music that mixolydian flavor without going full blues. The b7 is usually a passing tone or a quick hammer-on, not a note you sit on the way you would in blues.
+That F natural (the b7) shows up everywhere. Fiddle tunes, banjo rolls, flatpicking runs. It gives the music that mixolydian flavor without going full blues. The b7 is usually a passing tone or a quick hammer-on, not a note you sit on the way you would in blues. I like it especially on beats 3 and 4 for adding a bit of tension before getting to your next chord.
 
 Shifting pentatonics works the same way:
 
@@ -188,11 +188,11 @@ G pent  | C pent  | D pent  | G pent
 tonic   | subdom  | dom     | tonic
 ```
 
-Chromatic approach notes are a big part of the bluegrass sound too. Hammering on from a half step below into a chord tone (like F# into G, or C# into D) does the same job as a blues bend but picked. You hear this in every Tony Rice or Doc Watson solo.
+Chromatic approach notes are a big part of the bluegrass sound too. Hammering on from a half step below into a chord tone (like F# into G, or C# into D) does the same job as a blues bend but picked.
 
 Blues leans into the minor pentatonic and bends up into major chord tones. Bluegrass stays on the major pentatonic side and uses the b7 and chromatic approaches as seasoning. Both are working with the same I-IV-V functional harmony underneath.
 
-## Plagal cadence
+## Plagal cadence (turnaround)
 
 IV→I, subdominant straight to tonic. No dominant. This is the "amen" cadence you hear at the end of hymns and all over gospel music.
 
@@ -201,19 +201,6 @@ In C:
 ```
 F → C
 ```
-
-You hear it at the end of "Let It Be" by the Beatles.
-
-### Walking down from F to C
-
-A common way to play the plagal cadence is to walk the bass down from F to C. In "Let It Be," the piano walks F→E→D→C in the bass while the chords move F→C.
-
-```
-Bass: F  E  D  C
-Chord: F  C/E  Dm  C
-```
-
-C/E is just a C chord with E in the bass. The Dm is a passing chord, another subdominant filling the space. The whole line is subdominant melting into tonic one step at a time.
 
 ## The I-V-vi-IV progression
 
@@ -229,7 +216,30 @@ In functional terms:
 Tonic → Dominant → Tonic → Subdominant
 ```
 
-Am is a tonic substitute, so when G resolves to Am the dominant is still going home, just to the other home. "No Woman, No Cry," "Let It Be," "With or Without You," "Someone Like You" all use this progression or a rotation of it.
+Play these chords and I am sure you will hear a familiar song.
+
+Another common pop progression
+
+```
+I-vi-IV-V
+```
+
+```
+C | Am | F | G
+```
+
+## Rhtyhm Changes I-vi-ii-V
+
+This is all over Jazz tunes and creates a strong resolution from the V to I.
+It also navigates in fifths providing a greater feeling of resolution to each chord.
+
+```
+C | Am | Dm | G
+```
+
+```
+Tonic → Tonic → Subdominant -> Dominant
+```
 
 ## Circle of fifths movement
 
@@ -246,7 +256,7 @@ In functional terms:
 Dominant → Tonic → Subdominant → Dominant → Tonic
 ```
 
-Each chord's root is a fifth above the next. The ii→V→I part is the backbone of jazz. Extending it backwards through vi and iii gives you a longer runway. "Autumn Leaves" follows this exact movement.
+Each chord's root is a fifth above the next. The ii→V→I part is the backbone of jazz. Extending it backwards through vi and iii gives you a longer runway. "Autumn Leaves" follows this movement.
 
 ## Deceptive cadence
 
@@ -257,6 +267,42 @@ G → Am   (instead of G → C)
 ```
 
 This works because Am is a tonic substitute. The dominant resolves, but lands on the "other" tonic. Am shares two notes with C (C and E), so it sounds surprising but not wrong. It's a way to extend a phrase or delay the final resolution.
+
+## Borrowed chords
+
+Borrowed chords come from the parallel minor key. If you're in C major, you can borrow chords from C minor.
+
+C major:
+
+```
+C  Dm  Em  F  G  Am  Bdim
+```
+
+C minor:
+
+```
+Cm  Ddim  Eb  Fm  Gm  Ab  Bb
+```
+
+The most common borrowed chords in C major:
+
+- **Bb** (bVII), a major chord one whole step below C. "Fire on the Mountain" by the Grateful Dead is a great example.
+- **Ab** (bVI), often paired with bVII. "All Along the Watchtower" uses a I→bVII→bVI→bVII movement.
+- **Fm** (iv), the minor version of IV. Swapping F for Fm adds a darker subdominant color. "Waste" by Phish does this: D→GMaj→Gm→D, the IV goes major then minor before resolving back to I.
+- **Eb** (bIII), a major chord built on the minor third.
+
+These borrowed chords mostly serve a subdominant function. They come from the parallel minor, which shares the same root note.
+
+Borrowing works in minor keys too. "House of the Rising Sun" by the Animals is in A minor:
+
+```
+Am   C        D           F
+There is a house in New Orleans
+Am        C      E     E
+They call the "Rising Sun"
+```
+
+The D major (IV) is borrowed. In A natural minor, the iv chord is Dm. The D major brings in F# from A Dorian. The E major (V) is also not in A natural minor, where you'd get Em (v). The E major comes from A harmonic minor, raising G to G# to create a leading tone that pulls back to Am. Using a major V chord in a minor key is so common that most people don't think of it as borrowing, but it is.
 
 ## Advanced
 
@@ -303,8 +349,6 @@ The D# wants to resolve up to E, which lands you on C (C E G) or Am (A C E). G+ 
 G+ → C
 G+ → Am
 ```
-
-You hear this in Beatles tunes ("Oh! Darling" uses it) and in gospel music.
 
 Like diminished chords, augmented triads are symmetric (built in major thirds). G+, B+, and D#+ are all the same chord. C+ (C E G#) can resolve to F, functioning as a dominant of the subdominant:
 
@@ -364,40 +408,6 @@ This scale contains two augmented triads a half step apart (C+ and E+). "Giant S
 
 The practical benefit of these symmetric shapes is getting a more unique color on the dominant sound. Because the intervals repeat evenly, the shapes are easy to memorize on guitar or other highly symmetrical instruments. One diminished shape works in four keys, one augmented shape works in three. Learn a few shapes and you have access to a lot of dominant tension without much extra memorization.
 
-### Borrowed chords
+## Conclusion
 
-Borrowed chords come from the parallel minor key. If you're in C major, you can borrow chords from C minor.
-
-C major:
-
-```
-C  Dm  Em  F  G  Am  Bdim
-```
-
-C minor:
-
-```
-Cm  Ddim  Eb  Fm  Gm  Ab  Bb
-```
-
-The most common borrowed chords in C major:
-
-- **Bb** (bVII), a major chord one whole step below C. "Fire on the Mountain" by the Grateful Dead is a great example.
-- **Ab** (bVI), often paired with bVII. "All Along the Watchtower" uses a I→bVII→bVI→bVII movement.
-- **Fm** (iv), the minor version of IV. Swapping F for Fm adds a darker subdominant color. "Waste" by Phish does this: D→GMaj→Gm→D, the IV goes major then minor before resolving back to I.
-- **Eb** (bIII), a major chord built on the minor third.
-
-These borrowed chords mostly serve a subdominant function. They come from the parallel minor, which shares the same root note.
-
-Borrowing works in minor keys too. "House of the Rising Sun" by the Animals is in A minor:
-
-```
-Am   C        D           F
-There is a house in New Orleans
-Am        C      E     E
-They call the "Rising Sun"
-```
-
-The D major (IV) is borrowed. In A natural minor, the iv chord is Dm. The D major brings in F# from A Dorian. The E major (V) is also not in A natural minor, where you'd get Em (v). The E major comes from A harmonic minor, raising G to G# to create a leading tone that pulls back to Am. Using a major V chord in a minor key is so common that most people don't think of it as borrowing, but it is.
-
-This is the foundation everything else builds on. In the next post, we'll discuss **secondary dominants**, dominant chords that resolve to keys outside of your home key, letting you travel even further from home.
+This is the foundation western harmony builds on. In the next post, we'll discuss **secondary dominants**, dominant chords that resolve to keys outside of your home key, letting you travel even further from home.
