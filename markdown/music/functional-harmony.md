@@ -411,3 +411,5 @@ The practical benefit of these symmetric shapes is getting a more unique color o
 ## Conclusion
 
 This is the foundation western harmony builds on. In the next post, we'll discuss **secondary dominants**, dominant chords that resolve to keys outside of your home key, letting you travel even further from home.
+
+[Playing Changes](https://jottenlips.github.io/music/playing-changes/)
