@@ -5,7 +5,7 @@ I was lucky enough to spend some time climbing in East TN. Here is a list of my 
 
 # The Obed
 
-The first time I came to the Obed, we were there to camp, fish, and hike. I wasn't into outdoor climbing then. I remember hiking down a craggy trail from the boulder field to Lilly Bluff. I couldn't believe how high some of those cliffs were, and I had no idea that in a couple years I would be lowering off the top of them on routes like Whipper Snapper, Tarantalam, Heresy, and of course the mega classic: Rocking Chair. I also had no idea just how expansive the climbing area was. We stopped by Lilly Pad for a bite to eat and I picked up the Obed climbing guide by Kelly Brown. I later discovered the foreword was written by my former coworker Jason's dad Rob Turan. 
+The first time I came to the Obed, we were there to camp, fish, and hike. I wasn't into outdoor climbing then. I remember hiking down a craggy trail from the boulder field to Lilly Bluff. I couldn't believe how high some of those cliffs were, and I had no idea that in a couple years I would be lowering off the top of them on routes like Whipper Snapper, Tarantella, Heresy, and of course the mega classic: Rocking Chair. I also had no idea just how expansive the climbing area was. We stopped by Lilly Pad for a bite to eat and I picked up the Obed climbing guide by Kelly Brown. I later discovered the foreword was written by my former coworker Jason's dad Rob Turan. 
 I was also lucky enough to climb on some of Rob's routes in my time at the Obed. The steep overhanging climbing, the beautiful river valley below, and the wonderful friends I have made at the Obed make this my favorite crag in Tennessee by a long shot. 
  
 ## Lilly Bluff and the boulderfield
@@ -14,9 +14,9 @@ This wall challenged me in a number of different ways. The face climbing is surp
 
 I followed on Whipper Snapper. Top rope has always freaked me out more than leading. This route is stunningly beautiful and I loved every minute of it even as I hung under the final roof with a bloody finger. Sorry if there was a little blood on your rope Nate when I cleaned the anchor. 
 
-Rocking Chair is just pure fun. I think it is a great route for any first time leader or top roper. It is probably the only easier route, other than Tarantalla, in the area. 
+Rocking Chair is just pure fun. I think it is a great route for any first time leader or top roper. It is probably the only easier route, other than Tarantella, in the area. 
 
-Tarantalla is long and exposed as you get to the arete for a no hands rest. I give it a 4/5. I would give it a 5, but that ledge had too much bird shit on it for my liking. The climbing feels epic and very secure. The first move out of the overhang is a bit tricky and you have to backclean the first draw to avoid rope drag. It is all jugs getting out of this though!
+Tarantella is long and exposed as you get to the arete for a no hands rest. I give it a 4/5. I would give it a 5, but that ledge had too much bird shit on it for my liking. The climbing feels epic and very secure. The first move out of the overhang is a bit tricky and you have to backclean the first draw to avoid rope drag. It is all jugs getting out of this though!
 
 ## The South Clear
 
@@ -45,6 +45,6 @@ What is more fun than bouldering at a golf club surrounded by a beautiful forest
 
 # King's Bluff
 
-I have mixed feelings about King's Bluff. It is where I learned to climb outdoors, but it is also pretty difficult and the rock quality isn't that great. There are some decent climbs for sure in the 5.7-5.9 range. My main gripes are that the feet feel insecure and the pockets are sometimes hard to find. There are quite a few secret holds 🔎. That being said, I have also had a lot of fun times climbing at King's. I learned how to rappel here and learned some good self rescuing techniques. Thank you, Max. Also onetime I climbed a route a few routes over from some baby owls and it was adorable. No owls were disturbed, the route with their nest was closed. Another good idea is to always read the latest MTN Poject comments on a route.
+I have mixed feelings about King's Bluff. It is where I learned to climb outdoors, but it is also pretty difficult and the rock quality isn't that great. There are some decent climbs for sure in the 5.7-5.9 range. My main gripes are that the feet feel insecure and the pockets are sometimes hard to find. There are quite a few secret holds 🔎. That being said, I have also had a lot of fun times climbing at King's. I learned how to rappel here and learned some good self rescuing techniques. Thank you, Max. Also onetime I climbed a route a few routes over from some baby owls and it was adorable. No owls were disturbed, the route with their nest was closed. Another good idea is to always read the latest MTN Project comments on a route.
 
 I hope you enjoyed this little overview of Tennessee climbing and I hope this post inspires you to get outside into nature and explore your current state and everything it has to offer.  
