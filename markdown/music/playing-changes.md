@@ -39,6 +39,59 @@ All of the chords you find in this chart are in the key of C.
 A good tune to practice playing your modes over is "So What" by Miles Davis.
 This is also an excellent tune to introduce you to changes because it has a half-step key change.
 
+Here's the C major scale (Ionian) in open position. Start it on D for Dorian, on E for Phrygian, and so on. Same notes, different home base.
+
+```
+C Major Scale, open position
+
+e|--0--1-----3--|
+B|--0--1-----3--|
+G|--0-----2-----|
+D|--0-----2--3--|
+A|--0-----2--3--|
+E|--0--1-----3--|
+```
+
+Up the neck, here are three modes side by side as fretboard shapes, all rooted on C so you can hear how they differ. R is the root, dots are scale tones.
+
+```
+C Ionian (8th position, 3 notes per string)
+
+      8   9  10  11  12  13
+   e  .   .   o   .   o   o
+   B  .   .   o   .   o   R
+   G  .   o   o   .   o   .
+   D  .   o   R   .   o   .
+   A  o   .   o   .   o   .
+   E  R   .   o   .   o   .
+```
+
+```
+C Dorian (b3, b7)
+
+      8   9  10  11  12  13
+   e  .   .   o   o   .   o
+   B  .   .   o   o   .   R
+   G  o   .   o   .   o   .
+   D  o   .   R   .   o   .
+   A  o   .   o   .   o   .
+   E  R   .   o   o   .   .
+```
+
+```
+C Mixolydian (b7)
+
+      8   9  10  11  12  13
+   e  .   .   o   .   o   o
+   B  .   .   o   o   .   R
+   G  .   o   o   .   o   .
+   D  o   .   R   .   o   .
+   A  o   .   o   .   o   .
+   E  R   .   o   .   o   .
+```
+
+Mixolydian is just Ionian with the 7th lowered (B becomes Bb, visible on the D and B strings). Dorian flattens both the 3rd and 7th. Same idea works for Phrygian (b2 b3 b6 b7), Lydian (#4), Aeolian (b3 b6 b7), and Locrian (b2 b3 b5 b6 b7). Move the dots, keep R on C.
+
 ---
 
 ### Inversions
@@ -48,6 +101,21 @@ This is also an excellent tune to introduce you to changes because it has a half
 - add the seventh and repeat through all the strings.
 
 You will be playing chord melodies in no time 😎
+
+Here are the three C major triad inversions on the top three strings. Same three notes (C, E, G), different note on top.
+
+```
+C major triad, top three strings
+
+ root pos      1st inv       2nd inv
+ (G on top)   (C on top)    (E on top)
+
+e|---3---|   e|---8---|   e|--12---|
+B|---5---|   B|---8---|   B|--13---|
+G|---5---|   G|---9---|   G|--12---|
+```
+
+Now slide the same shape down a string set, or swap a note to get min, aug, dim. Add the 7th on the next string down for CMaj7, Cmin7, etc.
 
 ---
 
@@ -213,6 +281,64 @@ V7 (not a secondary dominant, depends on the tune)
 sound: "Rainbow"
 extensions: [b9, 9, #9, 11, #11, b13, 13]
 ```
+
+#### Fretboard shapes for the dominant sounds
+
+Same dot notation as the modes section. Each scale is rooted on C so you can compare them directly. R is the root, dots are scale tones (chord tones plus extensions). The chord tones (R, 3, 5, b7) stay roughly fixed, the extensions move around to give each sound its color.
+
+```
+C7 Mixolydian (chord tones C E G Bb, extensions 9, 11, 13)
+
+      8   9  10  11  12  13
+   e  .   .   o   .   o   o
+   B  .   .   o   o   .   R
+   G  .   o   o   .   o   .
+   D  o   .   R   .   o   .
+   A  o   .   o   .   o   .
+   E  R   .   o   .   o   .
+```
+
+```
+C7 Lydian Dominant (chord tones C E G Bb, extensions 9, #11, 13)
+
+      8   9  10  11  12  13  14
+   e  .   .   o   .   o   .   o
+   B  .   .   o   o   .   R   .
+   G  .   o   .   o   o   .   .
+   D  o   .   R   .   o   .   .
+   A  .   o   o   .   o   .   .
+   E  R   .   o   .   o   .   .
+```
+
+The only difference from Mixolydian is the 11 raised to #11 (F to F#). You can see it shift on the A and G strings.
+
+```
+C7 Altered (chord tones C E Bb (no 5), extensions b9, #9, #11, b13)
+
+      7   8   9  10  11  12  13
+   e  .   .   o   .   o   o   .
+   B  .   .   o   .   o   .   R
+   G  .   o   o   .   o   .   .
+   D  .   o   .   R   o   .   .
+   A  o   .   o   .   o   .   .
+   E  .   R   o   .   o   .   .
+```
+
+Every non-chord tone is altered. There's no natural 9, 11, or 13 in the scale, just the b9, #9, #11, b13.
+
+```
+C7 Whole Tone (chord tones C E Bb (no 5), extensions 9, #11, b13)
+
+      8   9  10  11  12  13  14
+   e  R   .   o   .   o   .   o
+   B  .   o   .   o   .   R   .
+   G  .   o   .   o   .   o   .
+   D  o   .   R   .   o   .   o
+   A  .   o   .   o   .   o   .
+   E  R   .   o   .   o   .   o
+```
+
+Every note is a whole step apart. No half steps anywhere, no perfect 5, just C D E F# G# A# repeating in symmetry.
 
 #### Hearing the color
 
