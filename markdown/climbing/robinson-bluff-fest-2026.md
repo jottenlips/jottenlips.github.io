@@ -6,7 +6,7 @@ I tried to get to Robinson Bluff around 9 am, but Tiff Rd was flooded and impass
 
 ![extrasmall](https://github.com/jottenlips/jottenlips.github.io/blob/main/robinson-bluff-fest-2026-img/washed-out-road.JPG?raw=true)
 
-We finally made it. I started hiking in with one of the Illinois climbers. The trail was pretty washed out and one of the trail stairs was broken. On the way in we ran into a photographer for Terrain Magazine. It was cool learning about how he got into photography and climbing. He helped us get around some of the muddier terrain on the approach. We eventually found the other Illinois climbers and headed to The Den. We proceeded to climb and send some of the hardest V0s I have ever climbed. Several V0- and V0-- jokes were made about how sandbagged they were.
+We made it. I started hiking in with one of the Illinois climbers. The trail was pretty washed out and one of the trail stairs was broken. On the way in we ran into a photographer for [Terrain Magazine](https://terrain-mag.com/). It was cool learning about how he got into photography and climbing. He helped us get around some of the muddier terrain on the approach. We eventually found the other Illinois climbers and headed to The Den. We proceeded to climb and send some of the hardest V0s I have ever climbed. Several V0- and V0-- jokes were made about how sandbagged a couple were.
 
 ![extrasmall](https://github.com/jottenlips/jottenlips.github.io/blob/main/robinson-bluff-fest-2026-img/calcite-crystals.JPG?raw=true)
 
@@ -24,4 +24,4 @@ I finished the day trying to top rope the Super Crack. I made it up through the 
 
 ![extrasmall](https://github.com/jottenlips/jottenlips.github.io/blob/main/robinson-bluff-fest-2026-img/view-from-top.JPG?raw=true)
 
-The drive back was much easier than getting there. I made some new friends and it was a solid day out. I will probably be back to Robinson Bluff soon. The festival was great.
+The drive back was much easier than getting there. I made some new friends and it was a solid day out. I will probably be back to Robinson Bluff soon. The festival was great. Thank you to the [Eastern Missouri Climbing Association](https://www.emclimbers.com/) for hosting. You can donate on their site to support local climbing access.
