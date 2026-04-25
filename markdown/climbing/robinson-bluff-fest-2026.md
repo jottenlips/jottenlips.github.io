@@ -14,7 +14,7 @@ With all the flooding and mud on the way in, the boulders were a little wet and 
 
 ![small](https://github.com/jottenlips/jottenlips.github.io/blob/main/robinson-bluff-fest-2026-img/calcite-crystals.JPG?raw=true)
 
-Eventually my friends James and Stephany caught up with me. We played around on the boulders a bit more, then headed to Whiskey Wall. I showed them some basics for outdoor climbing since they were new to the great outdoors. We had a great time.
+Eventually my friends James and Stephany caught up with me. We played around on the boulders a bit more, then headed to Whiskey Wall. I showed them some basics for outdoor climbing since they were new to the great outdoors. We had a wonderful time.
 
 Jackson caught up with us and we headed to Prison Wall. I got a few good leads in and even led a 5.10a outside without falling for the first time since finishing treatment.
 
