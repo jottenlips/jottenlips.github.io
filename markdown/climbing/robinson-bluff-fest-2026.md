@@ -4,15 +4,17 @@ April 18th, 2026
 
 ![small](https://github.com/jottenlips/jottenlips.github.io/blob/main/robinson-bluff-fest-2026-img/IMG_9283.JPG?raw=true)
 
-I tried to get to Robinson Bluff around 9 am, but Tiff Rd was flooded and impassable. Instead I followed some Illinois climbers, but we got lost. At one point we were across Big River looking right at the bluff. Eventually we had to go further south to Bonne Terre, MO to get around the flooding.
+I tried to get to Robinson Bluff around 9 am, but Tiff Rd was flooded and impassable. Instead I followed some Illinois climbers, but we got lost. At one point we were across Big River looking right at the bluff and a disgruntled farmer came out to greet us. 🤦 Eventually we had to go further south to Bonne Terre, MO to get around the flooding.
 
 ![small](https://github.com/jottenlips/jottenlips.github.io/blob/main/robinson-bluff-fest-2026-img/washed-out-road.JPG?raw=true)
 
-We made it. I started hiking in with one of the Illinois climbers. The trail was pretty washed out and one of the trail stairs was broken. On the way in we ran into a photographer for [Terrain Magazine](https://terrain-mag.com/). It was cool learning about how he got into photography and climbing. He helped us get around some of the muddier terrain on the approach. We eventually found the other Illinois climbers and headed to The Den. We proceeded to climb and send some of the hardest V0s I have ever climbed. Several V0- and V0-- jokes were made about how sandbagged a couple were.
+We made it. I started hiking in with one of the Illinois climbers. The trail was pretty washed out and one of the trail stairs was broken with decking screws littered everywhere. On the way in we ran into a photographer for [Terrain Magazine](https://terrain-mag.com/). It was cool learning about how he got into photography and climbing. He helped us get around some of the muddier terrain on the approach. We eventually found the other Illinois climbers and headed to The Den. We proceeded to climb and send some of the hardest V0s I have ever climbed. I broke a foothold on one of the V0s. Several V0- and V0-- jokes were made about how sandbagged a couple were.
+
+With all the flooding and mud on the way in, the boulders were a little wet and things were looking bleak.
 
 ![small](https://github.com/jottenlips/jottenlips.github.io/blob/main/robinson-bluff-fest-2026-img/calcite-crystals.JPG?raw=true)
 
-Eventually my friends James and Stephany caught up with me. We played around on the boulders a bit more, then headed to Whiskey Wall. I showed them some basics for outdoor climbing since they were mostly gym climbers up until that day. We had a great time.
+Eventually my friends James and Stephany caught up with me. We played around on the boulders a bit more, then headed to Whiskey Wall. I showed them some basics for outdoor climbing since they were new to the great outdoors. We had a great time.
 
 Jackson caught up with us and we headed to Prison Wall. I got a few good leads in and even led a 5.10a outside without falling for the first time since finishing treatment.
 
