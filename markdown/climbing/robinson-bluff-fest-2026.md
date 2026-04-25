@@ -28,4 +28,4 @@ I finished the day trying to top rope the Super Crack. I made it up through the 
 
 ![small](https://github.com/jottenlips/jottenlips.github.io/blob/main/robinson-bluff-fest-2026-img/view-from-top.JPG?raw=true)
 
-The drive back was much easier than getting there. I made some new friends and it was a solid day out. I will probably be back to Robinson Bluff soon. The festival was great. Thank you to the [Eastern Missouri Climbing Association](https://www.emclimbers.com/) for hosting. You can donate on their site to support local climbing access.
+The drive back was much easier than getting there. I made some new friends and it was a solid day out. I will probably be back to Robinson Bluff soon. The festival was sick. Thank you to the [Eastern Missouri Climbing Association](https://www.emclimbers.com/) for hosting. You can donate on their site to support local climbing access.
