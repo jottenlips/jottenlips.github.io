@@ -22,6 +22,10 @@ Jackson caught up with us and we headed to Prison Wall. I got a few good leads i
 
 Jackson let us know there was another area that featured a "Super Crack," so we checked it out after everyone got their laps in on Prison Wall. I put up a nice 5.9+ called S+M. This one was tough! Eventually got through the crux and then a bunch of others followed on it, including the legendary [Jim Thurmond](https://willjackson.com/mountaineering-and-climbing-jim-thurmond/). Jim told us all kinds of stories about how they found this crag and about the routes they put up. He also opened the first gym in Missouri. Jim told me the nest I saw at the top of S+M with a calcite ceiling was a flying squirrel nest and sometimes you can see them jump out. It was great meeting him and getting to climb with him. Thanks for the intro Jackson!
 
+![small](https://github.com/jottenlips/jottenlips.github.io/blob/main/robinson-bluff-fest-2026-img/belaying-jim.JPG?raw=true)
+
+![small](https://github.com/jottenlips/jottenlips.github.io/blob/main/robinson-bluff-fest-2026-img/climbing-robinson-bluff.jpg?raw=true)
+
 ![small](https://github.com/jottenlips/jottenlips.github.io/blob/main/robinson-bluff-fest-2026-img/super-crack.JPG?raw=true)
 
 I finished the day trying to top rope the Super Crack. I made it up through the crack and onto the ledge just fine but couldn't figure out the bulge at the end. Eventually I gave up and just pulled myself over to clean the route since I had to head back home.
