@@ -1,6 +1,6 @@
-# Let's make a React App.
+# 3. Let's make a React App.
 
-A common pattern in modern web development is the Single Page Application, or (SPA). This concept is where a single index.html file is sent to a browser that contains the code to run your application. It may request other resources like css files and javascript chunks depending on the size of your application and the framework and libraries you use. For this tutorial we will use create-react-app to spin up your first app. We will also put the app behind version control.
+A common pattern in modern web development is the Single Page Application, or (SPA). This concept is where a single index.html file is sent to a browser that contains the code to run your application. It may request other resources like css files and javascript chunks depending on the size of your application and the framework and libraries you use. For this tutorial we will use Vite to spin up your first app. We will also put the app behind version control.
 
 🛠 Tools you will be adding to your repertoire:
 
@@ -8,16 +8,26 @@ A common pattern in modern web development is the Single Page Application, or (S
 
 > - React
 
-## Install Git, it comes with xcode-select on macos
+> - Vite
+
+## Install Git
+
+### macOS
 
 ```bash
 xcode-select --install
 ```
 
+### Linux (Debian/Ubuntu)
+
+```bash
+sudo apt install git
+```
+
 ## Create a react app named my-app
 
 ```bash
-npx create-react-app my-app
+npm create vite@latest my-app -- --template react
 cd my-app
 ```
 
@@ -30,7 +40,7 @@ npm i
 ## run your app
 
 ```bash
-npm start
+npm run dev
 ```
 
 Now that you have your first app running, let's make a simple app using react hooks. Hooks are functions that let you "hook into" a components state or life-cycle. In this case, we can replace the functional component create react app gives us with our own. Ours will have a hook for the count and a button to increment the count.
