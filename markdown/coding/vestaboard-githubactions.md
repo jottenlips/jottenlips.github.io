@@ -1,6 +1,6 @@
 # Ascend with Automation: Vestaboard and GitHub Actions Inspired Consistency in My Rock Climbing Training
 
-Hey, I'm John Franke, a member of the platform team at Vestaboard. I'm excited to share my journey of preparing for the fall rock climbing season and how Vestaboard, along with GitHub Actions, played a crucial role in my successful off-wall training routine.
+Hey, I'm John, a member of the platform team at Vestaboard. I'm excited to share my journey of preparing for the fall rock climbing season and how Vestaboard, along with GitHub Actions, played a crucial role in my successful off-wall training routine.
 
 ## The Crux of Consistency
 

@@ -1,25 +1,29 @@
-# 1. Setup a Node.JS environment and write your first function
+# 2. Setup a Node.JS environment and write your first function
 
-These posts are designed to familiarize yourself with modern web development tools as well as teach you JavaScript. I will be using MacOS for these tutorials. Here is a list of tools for getting started.
+These posts are designed to familiarize yourself with modern web development tools as well as teach you JavaScript. Here is a list of tools for getting started.
 
 > - The terminal app
-> - homebrew
+> - A package manager (homebrew on macOS, apt/dnf on Linux)
 > - NVM, node, and NPM
 > - Your favorite text or code editor, sublime text or vscode for me
 
-Install [homebrew](https://brew.sh) This is a package manager for MacOS.
+### macOS
 
-
-open the terminal app and type.
+Install [homebrew](https://brew.sh), a package manager for macOS.
 
 ```bash
-# current homebrew install command, may take a minute
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-# installs node version manager, it may give you additional steps to follow.
-brew install nvm 
-nvm install --lts # installs latest node and npm
-# which node will tell you if node is in the correct path
-# it should include nvm in the output
+brew install nvm
+nvm install --lts
+which node
+```
+
+### Linux (Debian/Ubuntu)
+
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+source ~/.bashrc
+nvm install --lts
 which node
 ```
 
