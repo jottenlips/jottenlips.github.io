@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github-dark.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/typescript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/bash.min.js"></script>
+  
+    <meta property="og:title" content="We Don't Need More Data Centers" />
+    <meta name="twitter:title" content="We Don't Need More Data Centers" />
+    <meta name="description" content="We keep hearing about the insatiable demand for compute. New data centers are going up everywhere, burning through land, water, and electricity at a pace that should make anyone uncomfortable. But before we pave over another field with server racks, maybe we should ask ourselves: are we actually using the compute we already have?" />
+    <meta property="og:description" content="We keep hearing about the insatiable demand for compute. New data centers are going up everywhere, burning through land, water, and electricity at a pace that should make anyone uncomfortable. But before we pave over another field with server racks, maybe we should ask ourselves: are we actually using the compute we already have?" />
+    <meta name="twitter:description" content="We keep hearing about the insatiable demand for compute. New data centers are going up everywhere, burning through land, water, and electricity at a pace that should make anyone uncomfortable. But before we pave over another field with server racks, maybe we should ask ourselves: are we actually using the compute we already have?" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/jottenlips/jottenlips.github.io/refs/heads/main/oldmanyellsatcloud.png" />
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/jottenlips/jottenlips.github.io/refs/heads/main/oldmanyellsatcloud.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+  </head>
+
+  <body>
+    <div class="coverimage"></div>
+    <div class="container">
+      <nav>
+    <a href="/">Home</a>
+    <a href="/cancer/">Cancer</a>
+    <a href="/climbing/">Climbing</a>
+    <a href="/coding/">Coding</a>
+    <a href="/music/">Music</a>
+  </nav>
+      <!-- <div class="nav">
+        <a class="link" href="/">Home 🏡</a>
+        <a class="link" href="/programming">Programming 💻</a>
+        <a class="link" href="/music">Music 🎸</a>
+        <a class="link" href="/climbing">Climbing 🧗</a>
+      </div> -->
+      <div class="block">
+        <a href="/coding/" style="display:inline-block;margin-bottom:1em;text-decoration:none;color:currentColor;opacity:0.7;" aria-label="Go back"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg></a>
+<h1 id="we-dont-need-more-data-centers">We Don't Need More Data Centers</h1>
+<p><img src="https://raw.githubusercontent.com/jottenlips/jottenlips.github.io/refs/heads/main/oldmanyellsatcloud.png" alt="oldmanyellsatcloud" /></p>
+<p>We keep hearing about the insatiable demand for compute. New data centers are going up everywhere, burning through land, water, and electricity at a pace that should make anyone uncomfortable. But before we pave over another field with server racks, maybe we should ask ourselves: are we actually using the compute we already have?</p>
+<p>The answer, for a lot of software, is no. Not even close. The average server utilization rate in data centers <a href="https://fortune.com/2025/08/11/data-centers-are-eating-the-economy-and-were-not-even-using-them/">hovers between 12-18%</a>, with an estimated 10 million servers sitting completely idle. An idle server still draws about 60% of its peak power while doing absolutely nothing. US data centers operated at over <a href="https://www.goldmansachs.com/insights/articles/us-data-center-power-demand-projected-to-double-by-2027">50 gigawatts of capacity at the end of 2025</a>, and the plan is to double that by 2027. Headroom for traffic spikes and failover is important, but 12-18% utilization is not headroom. That's a parking garage that's 85% empty. Maybe we should use what we already have first.</p>
+<h2 id="the-software-got-lazy">The Software Got Lazy</h2>
+<p>Somewhere along the way we decided that developer time was infinitely more expensive than compute. And that's true in some contexts. But it became an excuse to stop caring entirely. We ship Electron apps that idle at 500MB of RAM to display a chat window. We run entire Kubernetes clusters to serve what could be a static site. We provision machines that sit at 10% CPU utilization because autoscaling is &quot;too complex&quot; to get right.</p>
+<p>The average web page is now over 2MB. In the 90s we put a man on the moon's worth of computing power into a Game Boy and got Tetris to run on it. Chris Sawyer wrote nearly all of RollerCoaster Tycoon by himself in assembly language. One person, the lowest level language there is, and he made one of the best-selling PC games of its era. Now we need a gigabyte of JavaScript and a 16-core build machine to render a to-do list.</p>
+<p>We have gotten soft as engineers. This is not a hardware problem. This is a software problem.</p>
+<h2 id="there-are-too-many-robots">There Are Too Many Robots</h2>
+<p>According to <a href="https://thebestvpn.com/statistics/what-percent-of-internet-traffic-is-bots/">Imperva's 2024 Bad Bot Report</a>, internet traffic breaks down roughly like this:</p>
+<ul>
+<li>Human traffic: ~42%
+</li>
+<li>Good bots: ~13% (search engine indexers, AI model training scrapers)
+</li>
+<li>Bad bots: ~44% (automated scripts that commit ad fraud, perform credential stuffing, or scrape content)
+</li>
+</ul>
+<p>Less than half of all internet traffic is actual humans. Bad bots alone outnumber human traffic, flooding databases and networks with harmful content.</p>
+<p>So many internet communities are now rendered useless due to the amount of AI slop and bot accounts. That person you are arguing with in the comments is probably the mecha-hitler bot 6000 with the sole purpose of being an edge lord to raise engagement and clicks. We used to live by a simple rule online: do not feed the trolls. This is even more relevant now that the trolls are not even human. I will not be adding a comment section to my blog.</p>
+<h2 id="what-we-could-do-instead">What We Could Do Instead</h2>
+<h3 id="ban-the-bots">Ban the Bots</h3>
+<p>First, add a robots.txt file to your site. Unfortunately only the good bots obey these. Tech companies need to become much more aggressive when it comes to banning bots. Low-value accounts need to be filtered out and blocked. We have had too many promises from big tech CEOs about banning bots. There are many proven strategies to lessen bot traffic and they should be adopted.</p>
+<p>Reduce bot traffic by deploying a layered, edge-based security strategy. Start by implementing robust web application firewalls (WAFs) and rate limiting to block excessive, flood-like requests from single IPs. Combine this with device fingerprinting and behavioral analysis to instantly identify and filter out automated traffic without disrupting real users. Just because we can't eliminate bots doesn't mean we shouldn't try.</p>
+<h3 id="write-less-wasteful-software">Write Less Wasteful Software</h3>
+<p>Languages like Rust, Go, OCaml, Kotlin, Elixir, Swift, and Zig exist. They produce binaries that are tiny, fast, and memory efficient. You don't have to rewrite everything, but for hot paths, background workers, and infrastructure tooling, the gains are real and immediate. They are also much easier to write than C, but still retain many of the efficiency benefits of a lower level language compared to languages like Python or JavaScript. The argument that developer velocity requires slow languages is weaker than ever. Modern tooling, cross-platform libraries, package managers, and AI-assisted development have made writing in faster languages more accessible than at any point in history.</p>
+<p>SQLite can handle way more than people give it credit for. A single Hetzner box can serve millions of requests a day if the software running on it isn't fighting itself. <a href="https://benhoyt.com/writings/count-words/">Ben Hoyt's research on counting words</a> is a great example of how language choice and implementation details dramatically affect performance for the same task.</p>
+<p>Erlang and the BEAM VM can handle <a href="https://www.erlang-factory.com/upload/presentations/558/efsf2012-whatsapp-scaling.pdf">up to 2 million websocket connections on a single 24 CPU machine</a>.</p>
+<h3 id="cache-everything-compute-once">Cache Everything, Compute Once</h3>
+<p>Most requests to most web apps are serving the same content over and over. Put a CDN in front of it. Use HTTP caching headers properly. Pre-render what you can. The greenest request is the one that never hits your server.</p>
+<h3 id="your-infrastructure-is-too-large">Your Infrastructure Is Too Large</h3>
+<p>If your staging environment is a carbon copy of production, you're burning money and energy for no reason. If your dev environment spins up 15 Docker containers to serve a landing page, something has gone sideways. Audit what's running and ask whether it needs to be. Pick the correct size machines for your production code. Do not pick a big machine just in case your app becomes popular. When it becomes popular, that is a good problem to have. Scale up then.</p>
+<p>Do you have a read replica you are running analytics on? Switch it to an event-driven analytics system instead of doing massive SQL queries every night. Know what you want to measure when you make a feature. Know your access patterns and optimize your database reads and writes for them.</p>
+<p>Use the correct database for the task. Can your data be a simple in-memory cache or do you need to write it to long-term storage? How long does your data need to stick around? Will anyone be looking for this data?</p>
+<p>I have come across too many buckets of logs that no one will look at or have forgotten about. One time I even found 7TB of unnecessary logs in cloud storage that were half a decade old. Delete the bucket, set a TTL on data that doesn't need to last forever, pick the correct database size.</p>
+<h2 id="the-ai-excuse">The AI Excuse</h2>
+<p>A lot of the new data center demand is driven by AI training and inference. Training a large model takes enormous compute, that's real. But inference can be <a href="https://huggingface.co/docs/optimum/en/concept_guides/quantization">optimized dramatically</a>. Quantization, distillation, speculative decoding, and running smaller models for simpler tasks can cut inference costs by 10x or more. Not every query needs a 400B parameter model. Sometimes a well-tuned 7B model or even a regex will do the job.</p>
+<p>Even with heavy AI usage, there's a ton of waste we can cut just by being smarter about how we use models. Context management is a big one. If you're stuffing your entire codebase into every prompt, you're burning tokens and compute for no reason. Give the model what it needs and nothing more. Summarize, chunk, and cache context so you're not reprocessing the same information over and over.</p>
+<p><a href="https://modelcontextprotocol.io/">MCP (Model Context Protocol)</a> is another lever. Instead of asking a model to hallucinate an answer about your database schema or API docs, give it a tool that can look it up directly. The model makes a targeted call, gets the real answer, and moves on. Less back and forth, fewer retries, fewer wasted tokens on wrong answers. It's the difference between asking someone to guess what's in your fridge vs. letting them open the door and look. The second one uses way less energy for everyone involved.</p>
+<p>And then there's the demand side. A huge chunk of AI compute right now is going toward stuff nobody asked for. I was recently at a kid's birthday party and a dad spent the whole time asking Gemini to generate pictures of his kid as a character in Red Dead Redemption, then as Iron Man, then in Jurassic Park. Over and over. Nobody was looking at these pictures. Nobody wanted them. It's the digital equivalent of leaving the water tap running. Multiply that guy by a few hundred million users and you start to understand where all this &quot;insatiable demand for compute&quot; is actually coming from. It's not solving hard problems. It's generating throwaway slop at industrial scale.</p>
+<h2 id="tokenmaxxing">Tokenmaxxing</h2>
+<p>Large tech companies are now using AI token consumption as a performance metric. If you haven't used enough tokens this quarter, you're not being &quot;AI-forward&quot; enough. I first heard about this when interviewing someone with prior experience at Salesforce. It is called <a href="https://en.wikipedia.org/wiki/Token_maxxing">tokenmaxxing</a>.</p>
+<p>Nvidia CEO Jensen Huang said on the <a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/jensen-huang-says-nvidia-engineers-should-use-ai-tokens-worth-half-their-annual-salary-every-year-to-be-fully-productive-compares-not-using-ai-to-using-paper-and-pencil-for-designing-chips">All-In Podcast at GTC 2026</a> that he would be &quot;deeply alarmed&quot; if an engineer making $500,000 did not consume at least $250,000 worth of AI tokens annually. He compared not using AI to designing computer chips with pencil and paper. Of course the CEO of the company selling the GPUs wants you to burn more tokens. Measuring productivity by token consumption is essentially the same as measuring it by lines of code. We can write the same program with 2x the lines of code. That doesn't make it better.</p>
+<p>The fact that there is even a <a href="https://www.reddit.com/r/EngineeringManagers/comments/1tvqzky/tokenmaxxing_is_a_problem_with_no_clear_solution/">discussion about how to burn enough tokens to meet an AI quota</a> tells you everything you need to know. Engineers are being incentivized to waste compute. Not to solve problems more effectively, not to ship better software, but to hit an arbitrary usage number so their manager can report AI adoption metrics up the chain. This is the enterprise version of the guy at the birthday party generating pictures of his kid as Iron Man. Pointless consumption dressed up as progress.</p>
+<p>Token usage is an inherently bad metric for measuring performance. It rewards verbosity and busywork over results. It creates artificial demand for compute that wouldn't otherwise exist. And it feeds directly into the narrative that we need more data centers, when what we actually need is for people to stop burning tokens for no reason.</p>
+<p>Even with responsible use of AI we have enough compute. Let's stop wasting compute via nonsense quotas.</p>
+<p>The combination of right-sized models, good context management, and tool use through MCP means we can do a lot more meaningful AI work with a lot less compute than the &quot;just build more data centers&quot; crowd would have you believe.</p>
+<p>We're also starting to see models that can generate efficient code. The irony of using AI to write code that reduces the need for data centers is not lost on me. But if AI tools help us write tighter software, that's a net win. I recently had Claude help me tune some workloads and figure out an effective caching strategy to cut our Kubernetes server count in half as well as spin down a database replica.</p>
+<h2 id="too-many-ads">Too Many Ads</h2>
+<p>Most platforms die when every other post becomes an ad, then to keep engagement up, they let bots in. The internet was better and more fun when it was you and your friends.</p>
+<h2 id="what-are-your-users-doing">What are your users doing?</h2>
+<p>Does your feature get used? If not, delete it and put your energy into something more useful. Less code is almost always better.</p>
+<h2 id="have-you-heard-of-leaf-computing">Have You Heard of Leaf Computing?</h2>
+<p>I won't go into all the details here, but <a href="https://leafcomputing.net/">leaf computing</a> is a great fit for most IoT applications. IoT devices are a lot more capable than we let them be. Jeremiah Lee brings up some excellent points.</p>
+<h2 id="what-you-can-do-today">What You Can Do Today</h2>
+<ul>
+<li>Figure out your access patterns. What data can be cached? What data can expire?
+</li>
+<li>Profile your app. Find the hot spots. Fix them before you scale horizontally.
+</li>
+<li>Question every dependency. Do you really need that 50MB npm package to format a date?
+</li>
+<li>Use SQLite or Postgres on a single machine before reaching for a distributed database.
+</li>
+<li>Set up caching properly. Learn what <code>Cache-Control</code>, <code>ETag</code>, and <code>304 Not Modified</code> actually do.
+</li>
+<li>If you are using dynamic languages like Python and JS, make sure you avoid doing the heavy lifting with them. Use C-backed libraries like NumPy for number crunching instead of pure Python loops. Your code will be cleaner and faster.
+</li>
+<li>Write a benchmark before you optimize, and after. Share the results. Make efficiency visible.
+</li>
+<li>Treat HTTP requests like a limited resource. No one likes waiting for data to load anyway.
+</li>
+</ul>
+<h2 id="we-have-enough-computers">We Have Enough Computers</h2>
+<p>The computing power available today is staggering. We just have to stop wasting it. Every time someone optimizes a hot loop, caches a response, or chooses a lighter tool for the job, that's one fewer rack that needs to exist somewhere.</p>
+<p>There are legitimate reasons to want more compute. Scientific research, climate modeling, genomics, drug discovery. These are real workloads that benefit humanity. We should be prioritizing compute for these applications with incentives and grants, not letting social media apps and AI slop generators consume the lion's share of capacity. The problem isn't that compute demand exists. The problem is that we're not allocating it toward anything that matters.</p>
+<p>The human brain runs on about <a href="https://www.nist.gov/blogs/taking-measure/brain-inspired-computing-can-help-us-create-faster-more-energy-efficient">20 watts and performs at roughly exaflop scale</a>. The El Capitan supercomputer finally rivals that raw speed at 1.8 exaFLOPS, but it draws 30 megawatts to do it. That's a million-to-one difference in energy efficiency. Stop offloading every task to a data center to avoid critical thinking. Build software like mass compute is a privilege, not a given.</p>
+<p><img src="https://raw.githubusercontent.com/jottenlips/jottenlips.github.io/refs/heads/main/mentat.jpg" alt="mentat" /></p>
+<h2 id="agi-is-not-coming">AGI Is Not Coming</h2>
+<p>A lot of the data center buildout is justified by the promise of AGI. The idea is that if we just throw enough compute at these models, they'll eventually become generally intelligent. This is not how the technology works. Large language models are very good at pattern matching over text. They predict the next token. Scaling them up produces diminishing returns, not emergent reasoning. Going from GPT-3 to GPT-4 was a big jump. The jumps since then have been smaller. Each generation costs orders of magnitude more compute for incremental improvements.</p>
+<p>The models don't understand what they're doing. They can't verify their own output. They hallucinate confidently. They cannot always tell you with real confidence if something is 100% correct. The best they can go off is heuristics, which can be shockingly good. That's not a limitation that gets solved with more parameters or more training data. It's a fundamental property of how the architecture works.</p>
+<p>AI is a useful tool with real productivity gains for specific tasks. Code generation, summarization, search, translation. But the gains are diminishing. The first 80% of the work goes fast. The last 20% still requires a person who actually understands the problem. You still need someone intelligent to review the code and the decisions. Automating the easy parts is valuable. Pretending you can automate the hard parts is how you end up building a trillion dollars worth of data centers to chase something that isn't going to arrive.</p>
+<p>Even if someone did build AGI, fundamental results in computer science like the <a href="https://en.wikipedia.org/wiki/Halting_problem">halting problem</a> guarantee there are things it still can't do. Turing proved in 1936 that no algorithm can determine whether an arbitrary program will halt or run forever (<a href="https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf">On Computable Numbers, with an Application to the Entscheidungsproblem</a>). That's a hard ceiling on computation itself, not a limitation of current hardware or model size. More data centers doesn't change math.</p>
+<p>Heuristics can solve many specific instances of the halting problem, but not all of them. You can write a tool that correctly identifies most simple loops as terminating or not. In practice, that covers a lot of real-world code. But for any decision procedure, there will always exist programs it can't decide. You can keep making the heuristic smarter, but the set of undecidable cases never goes to zero.</p>
+<p>Humans don't solve the general halting problem either. We solve specific instances using a mix of pattern recognition, mathematical reasoning, and intuition. The advantage humans have is the ability to switch strategies, invent new proof techniques, and reason creatively about a specific program. But we're still bounded by the same mathematical limits.</p>
+<p>LLMs and humans are in a similar boat in some ways. Both use heuristics, both can handle many specific cases, neither can solve the general problem. The key difference is that humans can invent new proof techniques. LLMs can only recombine patterns from their training data. They can apply existing proofs to new problems, sometimes impressively well, but they cannot originate a novel mathematical proof the way Turing, Gödel, or any working mathematician can. There have been cases where AI systems like DeepMind's AlphaProof produced novel results in math, but these were narrow systems with humans assisting the discovery and guiding the process. The model didn't wake up one morning and decide to prove something new.</p>
+<p>There's also the problem of model rot. As more AI-generated content floods the internet, future models end up training on the output of previous models. The data gets flatter, less original, more homogeneous. Models trained on model output lose the edge cases, the weird insights, the human creativity that made the training data valuable in the first place. The more we rely on AI-generated content, the worse the next generation of models gets. It's a feedback loop that degrades over time, not one that converges on intelligence.</p>
+<p>LLMs are a powerful tool when used correctly but will not be a replacement for human intelligence and critical thinking. We don't even have a metric to determine what AGI is. It's a goal with a moving fence post depending on who you talk to. Nothing can be human other than humans. Humans attributing personalities to inanimate objects goes back as far as history. Believing an LLM has a soul or real intelligence is simply a more advanced form of animism.</p>
+<h2 id="mass-surveillance-weaponization-of-ai-palantir-fusion-centers-corruption">Mass Surveillance, Weaponization of AI, Palantir Fusion Centers, Corruption</h2>
+<p>Not only do we not need more data centers, we shouldn't want them. Palantir provides tools like <a href="https://en.wikipedia.org/wiki/Project_Maven">Project Maven</a> for automated military targeting. Their AI platforms have been <a href="https://www.business-humanrights.org/en/latest-news/palantir-allegedly-enables-israels-ai-targeting-amid-israels-war-in-gaza-raising-concerns-over-war-crimes/">linked to operations murdering civilians in Gaza</a>, with concerns that the <a href="https://oecd.ai/en/incidents/2026-05-10-71bc">&quot;human in the loop&quot; amounts to a rubber stamp</a>. Domestically, congressional Democrats are <a href="https://fedscoop.com/palantir-irs-mega-database-democrats-letter/">questioning Palantir's role in building an IRS &quot;mega-database&quot;</a> of Americans' sensitive information, and their tools have been used for <a href="https://thehill.com/policy/technology/5667232-palantir-trump-administration-surveillance/">algorithmic deportation targeting</a>. The software is proprietary. The algorithms and the specific ways data is weighed are not visible to the public or elected officials.</p>
+<p>The data center lobby is growing fast. <a href="https://www.opensecrets.org/news/2025/11/data-centers-are-fueling-the-lobbying-industry-not-just-the-growth-of-ai/">OpenAI went from 3 lobbyists to 18 in a single year. Meta hired 21 additional lobbyists in 2024.</a> The Data Center Coalition <a href="https://www.techpolicy.press/amidst-boom-data-center-lobby-expands-its-influence-spending-and-tactics/">more than doubled its lobbying spend</a> in Q3 2025. <a href="https://www.spotlightpa.org/news/2026/01/data-centers-tech-industry-lobby-energy-federal-government/">53% of lobbyists in the electric manufacturing sector are former government officials.</a></p>
+<p>The buildout looks like a bubble. Utilities have contracted 127 GW of new data center capacity, but projected demand is only <a href="https://insights.som.yale.edu/insights/this-is-how-the-ai-bubble-bursts">108 GW by 2030</a>. That's 64 GW of potential overbuild, backed by <a href="https://www.npr.org/2025/11/23/nx-s1-5615410/ai-bubble-nvidia-openai-revenue-bust-data-centers">$182 billion in debt in 2025 alone</a>. At least <a href="https://thehill.com/policy/technology/5605667-data-center-criticism-study/">16 data center projects worth $64 billion have already been blocked</a> by local communities that don't want their water and power consumed by server farms.</p>
+<p>I think most of us could live very fulfilling lives without AI-generated videos of our dogs smoking a joint. Just learn how to draw. Let's leave the creativity to humans and have the machines do the boring things like spellcheck. What kind of soulless monster wants to automate art and music anyway? Probably the same people that don't mind when robots decide who to bomb.</p>
+<blockquote>
+<p>&quot;Once men turned their thinking over to machines in the hope that this would set them free. But that only permitted other men with machines to enslave them.&quot;
+― Frank Herbert, Dune</p>
+</blockquote>
+<blockquote>
+<p>&quot;Technology is both a tool for helping humans and for destroying them. This is the paradox of our times which we're compelled to face.&quot;
+― Frank Herbert</p>
+</blockquote>
+
+      </div>
+      <br/>
+      <div class="footer">
+        <!-- socials -->
+         Socials:
+         <a href="https://mastodon.world/@zerocool">
+          <img
+            src="https://raw.githubusercontent.com/jottenlips/jottenlips.github.io/refs/heads/main/mastodon.png"
+            style="width: 16px; height: 16px"
+            alt="mastodon"
+          />
+          Mastodon
+         </a>
+        <a class="link" href="https://github.com/jottenlips">
+          <img
+            style="width: 16px; height: 16px"
+            src="https://img.icons8.com/ios-filled/50/000000/git.png"
+            alt="github"
+          />
+          Github
+        </a>
+        <a class="link" href="https://ottobahn.bandcamp.com/">
+          <img
+            style="width: 16px; height: 16px"
+            src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Bandcamp-button-circle-green.svg"
+            alt="bandcamp"
+          />
+          Bandcamp
+        </a>
+        
+        <a
+          class="link"
+          href="https://www.mountainproject.com/user/201166134/john-ottenlips-franke"
+        >
+          <img
+            style="width: 16px; height: 16px"
+            src="https://images.ctfassets.net/7x51vl0shezi/bPsKzYsWACGBTHstqFgpp/d143cbc129b57cbed94e59aee1996793/best-overall-climbing-app-mountain-project-mobile-app-logo.png"
+            alt="mountainproject"
+          />
+          Mountain Project
+        </a>
+
+        <a
+          class="link"
+          href="https://www.goodreads.com/user/show/101087185-john-ottenlips"
+        >
+        <img
+            style="width: 16px; height: 16px"
+            src="https://cdn-icons-png.flaticon.com/512/4494/4494707.png"
+            alt="goodreads"
+          />
+          Goodreads
+        </a>
+         
+        <p>
+          &copy; 2025 John Ottenlips Franke | Built with HTML, CSS, and a bit of
+          JavaScript. This blog was created with a static site generator I wrote in ReasonML that turns markdown files (.md) into custom styled html and css. Learn more at <a href="https://agavessg.com">agavessg.com</a>.
+        </p>
+        <!-- https://raw.githubusercontent.com/jottenlips/jottenlips.github.io/refs/heads/main/vim_editor.gif -->
+        <a href="https://www.vim.org/">
+          <img
+            style="width: 100px"
+            src="https://raw.githubusercontent.com/jottenlips/jottenlips.github.io/refs/heads/main/vim_editor.gif"
+            alt="vim editor"
+          />
+          </a>
+       </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", (event) => {
+        document.querySelectorAll("pre code").forEach((el) => {
+          hljs.highlightElement(el);
+        });
+      });
+    </script>
+
+    <script type="module">
+      // import { fairyDustCursor } from "https://unpkg.com/cursor-effects@latest/dist/esm.js";
+
+      // new fairyDustCursor({
+      //   colors: ["#ef7455", "#e84c7e", "#32a6d6", "#23eeab"],
+      //   fairySymbol: "★",
+      // });
+    </script>
+    <footer>
+    <a href="/sitemap/">Sitemap</a>
+  </footer>
+</body>
+</html>
