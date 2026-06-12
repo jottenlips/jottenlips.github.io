@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github-dark.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/typescript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/bash.min.js"></script>
+  
+    <meta property="og:title" content="Your First Web Page with HTML and Vim" />
+    <meta name="twitter:title" content="Your First Web Page with HTML and Vim" />
+    <meta name="description" content="Before you touch a framework, a package manager, or a build tool, you should know what's actually happening under the hood. Every website you've ever visited is HTML. That's it. Everything else is built on top of it." />
+    <meta property="og:description" content="Before you touch a framework, a package manager, or a build tool, you should know what's actually happening under the hood. Every website you've ever visited is HTML. That's it. Everything else is built on top of it." />
+    <meta name="twitter:description" content="Before you touch a framework, a package manager, or a build tool, you should know what's actually happening under the hood. Every website you've ever visited is HTML. That's it. Everything else is built on top of it." />
+    <meta name="twitter:card" content="summary" />
+  </head>
+
+  <body>
+    <div class="coverimage"></div>
+    <div class="container">
+      <nav>
+    <a href="/">Home</a>
+    <a href="/cancer/">Cancer</a>
+    <a href="/climbing/">Climbing</a>
+    <a href="/coding/">Coding</a>
+    <a href="/music/">Music</a>
+  </nav>
+      <!-- <div class="nav">
+        <a class="link" href="/">Home 🏡</a>
+        <a class="link" href="/programming">Programming 💻</a>
+        <a class="link" href="/music">Music 🎸</a>
+        <a class="link" href="/climbing">Climbing 🧗</a>
+      </div> -->
+      <div class="block">
+        <a href="/coding/" style="display:inline-block;margin-bottom:1em;text-decoration:none;color:currentColor;opacity:0.7;" aria-label="Go back"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg></a>
+<h1 id="your-first-web-page-with-html-and-vim">Your First Web Page with HTML and Vim</h1>
+<p>Before you touch a framework, a package manager, or a build tool, you should know what's actually happening under the hood. Every website you've ever visited is HTML. That's it. Everything else is built on top of it.</p>
+<p>In this tutorial you'll create an HTML file from scratch using Vim, a text editor that runs in your terminal. No downloads, no installs, no IDE. Just you and the command line.</p>
+<h2 id="open-your-terminal">Open your terminal</h2>
+<p>On macOS, open Terminal from Applications &gt; Utilities, or hit Cmd + Space and type &quot;Terminal&quot;.</p>
+<p>On Linux, you probably already know where it is.</p>
+<h2 id="create-a-folder-for-your-project">Create a folder for your project</h2>
+<pre><code class="language-bash">mkdir ~/my-first-site
+cd ~/my-first-site
+</code></pre>
+<h2 id="create-an-html-file-with-vim">Create an HTML file with Vim</h2>
+<pre><code class="language-bash">vim index.html
+</code></pre>
+<p>You are now inside Vim. It has two main modes:</p>
+<ul>
+<li><strong>Normal mode</strong> is for navigating and running commands. This is what you start in.
+</li>
+<li><strong>Insert mode</strong> is for typing text.
+</li>
+</ul>
+<p>Press <code>i</code> to enter insert mode. You'll see <code>-- INSERT --</code> at the bottom of the screen.</p>
+<p>Type the following:</p>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;My First Page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello, world!&lt;/h1&gt;
+    &lt;p&gt;I made this with Vim.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>Now save and quit:</p>
+<ol>
+<li>Press <code>Esc</code> to go back to normal mode
+</li>
+<li>Type <code>:wq</code> and press Enter
+</li>
+</ol>
+<p>That's <code>:w</code> to write (save) and <code>:q</code> to quit.</p>
+<h2 id="open-it-in-your-browser">Open it in your browser</h2>
+<p>On macOS:</p>
+<pre><code class="language-bash">open index.html
+</code></pre>
+<p>On Linux:</p>
+<pre><code class="language-bash">xdg-open index.html
+</code></pre>
+<p>You should see a page with &quot;Hello, world!&quot; and a paragraph underneath. That's a real web page. No server, no JavaScript, no build step.</p>
+<h2 id="edit-the-file">Edit the file</h2>
+<p>Let's add to it. Open it back up:</p>
+<pre><code class="language-bash">vim index.html
+</code></pre>
+<p>In normal mode, you can navigate with these keys:</p>
+<ul>
+<li><code>h</code> left, <code>j</code> down, <code>k</code> up, <code>l</code> right
+</li>
+<li><code>w</code> jump forward a word
+</li>
+<li><code>b</code> jump back a word
+</li>
+<li><code>gg</code> go to the top of the file
+</li>
+<li><code>G</code> go to the bottom
+</li>
+</ul>
+<p>Move your cursor to the line after the <code>&lt;p&gt;</code> tag. Press <code>o</code> to open a new line below and enter insert mode. Add a list:</p>
+<pre><code class="language-html">    &lt;h2&gt;Things I want to learn&lt;/h2&gt;
+    &lt;ul&gt;
+      &lt;li&gt;HTML&lt;/li&gt;
+      &lt;li&gt;CSS&lt;/li&gt;
+      &lt;li&gt;JavaScript&lt;/li&gt;
+    &lt;/ul&gt;
+</code></pre>
+<p>Press <code>Esc</code>, then type <code>:wq</code> to save and quit. Open the file again in your browser to see your changes.</p>
+<h2 id="what-you-just-learned">What you just learned</h2>
+<ul>
+<li>HTML is the structure of every web page
+</li>
+<li><code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;ul&gt;</code>, <code>&lt;li&gt;</code> are some of the basic building blocks
+</li>
+<li>Vim is a terminal text editor with normal mode and insert mode
+</li>
+<li>You can create and edit files without ever leaving the command line
+</li>
+</ul>
+<h2 id="vim-cheat-sheet">Vim cheat sheet</h2>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Mode</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>i</code></td>
+<td>Normal</td>
+<td>Enter insert mode at cursor</td>
+</tr>
+<tr>
+<td><code>o</code></td>
+<td>Normal</td>
+<td>Open new line below, enter insert mode</td>
+</tr>
+<tr>
+<td><code>Esc</code></td>
+<td>Insert</td>
+<td>Back to normal mode</td>
+</tr>
+<tr>
+<td><code>:w</code></td>
+<td>Normal</td>
+<td>Save</td>
+</tr>
+<tr>
+<td><code>:q</code></td>
+<td>Normal</td>
+<td>Quit</td>
+</tr>
+<tr>
+<td><code>:wq</code></td>
+<td>Normal</td>
+<td>Save and quit</td>
+</tr>
+<tr>
+<td><code>dd</code></td>
+<td>Normal</td>
+<td>Delete a line</td>
+</tr>
+<tr>
+<td><code>u</code></td>
+<td>Normal</td>
+<td>Undo</td>
+</tr>
+<tr>
+<td><code>hjkl</code></td>
+<td>Normal</td>
+<td>Navigate left, down, up, right</td>
+</tr>
+</tbody>
+</table>
+<p>Next up: <a href="../functions/">Intro to Node.js, local development, and JavaScript functions</a></p>
+
+      </div>
+      <br/>
+      <div class="footer">
+        <!-- socials -->
+         Socials:
+         <a href="https://mastodon.world/@zerocool">
+          <img
+            src="https://raw.githubusercontent.com/jottenlips/jottenlips.github.io/refs/heads/main/mastodon.png"
+            style="width: 16px; height: 16px"
+            alt="mastodon"
+          />
+          Mastodon
+         </a>
+        <a class="link" href="https://github.com/jottenlips">
+          <img
+            style="width: 16px; height: 16px"
+            src="https://img.icons8.com/ios-filled/50/000000/git.png"
+            alt="github"
+          />
+          Github
+        </a>
+        <a class="link" href="https://ottobahn.bandcamp.com/">
+          <img
+            style="width: 16px; height: 16px"
+            src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Bandcamp-button-circle-green.svg"
+            alt="bandcamp"
+          />
+          Bandcamp
+        </a>
+        
+        <a
+          class="link"
+          href="https://www.mountainproject.com/user/201166134/john-ottenlips-franke"
+        >
+          <img
+            style="width: 16px; height: 16px"
+            src="https://images.ctfassets.net/7x51vl0shezi/bPsKzYsWACGBTHstqFgpp/d143cbc129b57cbed94e59aee1996793/best-overall-climbing-app-mountain-project-mobile-app-logo.png"
+            alt="mountainproject"
+          />
+          Mountain Project
+        </a>
+
+        <a
+          class="link"
+          href="https://www.goodreads.com/user/show/101087185-john-ottenlips"
+        >
+        <img
+            style="width: 16px; height: 16px"
+            src="https://cdn-icons-png.flaticon.com/512/4494/4494707.png"
+            alt="goodreads"
+          />
+          Goodreads
+        </a>
+         
+        <p>
+          &copy; 2025 John Ottenlips Franke | Built with HTML, CSS, and a bit of
+          JavaScript. This blog was created with a static site generator I wrote in ReasonML that turns markdown files (.md) into custom styled html and css. Learn more at <a href="https://agavessg.com">agavessg.com</a>.
+        </p>
+        <!-- https://raw.githubusercontent.com/jottenlips/jottenlips.github.io/refs/heads/main/vim_editor.gif -->
+        <a href="https://www.vim.org/">
+          <img
+            style="width: 100px"
+            src="https://raw.githubusercontent.com/jottenlips/jottenlips.github.io/refs/heads/main/vim_editor.gif"
+            alt="vim editor"
+          />
+          </a>
+       </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", (event) => {
+        document.querySelectorAll("pre code").forEach((el) => {
+          hljs.highlightElement(el);
+        });
+      });
+    </script>
+
+    <script type="module">
+      // import { fairyDustCursor } from "https://unpkg.com/cursor-effects@latest/dist/esm.js";
+
+      // new fairyDustCursor({
+      //   colors: ["#ef7455", "#e84c7e", "#32a6d6", "#23eeab"],
+      //   fairySymbol: "★",
+      // });
+    </script>
+    <footer>
+    <a href="/sitemap/">Sitemap</a>
+  </footer>
+</body>
+</html>
