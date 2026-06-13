@@ -6,13 +6,13 @@
 
 Everyone keeps saying we need more compute. New data centers are going up everywhere, burning through land, water, and electricity. But are we even using the compute we already have?
 
-For a lot of software, no. Not even close. The average server utilization rate in data centers [hovers between 12-18%](https://fortune.com/2025/08/11/data-centers-are-eating-the-economy-and-were-not-even-using-them/), with an estimated 10 million servers sitting completely idle. An idle server still draws about 60% of its peak power while doing absolutely nothing. US data centers operated at over [50 gigawatts of capacity at the end of 2025](https://www.goldmansachs.com/insights/articles/us-data-center-power-demand-projected-to-double-by-2027), and the plan is to double that by 2027. Headroom for traffic spikes and failover is important, but 12-18% utilization is not headroom. Maybe we should use what we already have first.
+For a lot of software, no. Not even close. The average server utilization rate in data centers [hovers between 12-18%](https://fortune.com/2025/08/11/data-centers-are-eating-the-economy-and-were-not-even-using-them/), with an estimated 10 million servers sitting completely idle. An idle server still draws about 60% of its peak power while doing absolutely nothing. US data center power demand hit [31 gigawatts in 2025 and is projected to reach 95 GW by the end of 2027](https://www.goldmansachs.com/insights/articles/us-data-center-power-demand-projected-to-double-by-2027), more than tripling in two years. Headroom for traffic spikes and failover is important, but 12-18% utilization is not headroom. Maybe we should use what we already have first.
 
 ## The Software Got Lazy
 
 At some point we decided developer time was infinitely more expensive than compute. That's true sometimes. But it became an excuse to stop caring. We ship Electron apps that idle at 500MB of RAM to display a chat window. We run entire Kubernetes clusters to serve what could be a static site. We provision machines that sit at 10% CPU utilization because autoscaling is "too complex" to get right.
 
-The average web page is now over 2MB. In the 90s we put a man on the moon's worth of computing power into a Game Boy and got Tetris to run on it. Chris Sawyer wrote nearly all of RollerCoaster Tycoon by himself in assembly language. One person, the lowest level language there is, and he made one of the best-selling PC games of its era. Now we need a gigabyte of JavaScript and a 16-core build machine to render a to-do list.
+The average web page is now over 2MB. In the 90s we put a man on the moon's worth of computing power into a Game Boy and got Tetris to run on it. Chris Sawyer wrote [99% of RollerCoaster Tycoon in x86 assembly language](https://en.wikipedia.org/wiki/RollerCoaster_Tycoon_(video_game)), with the remaining 1% in C. One person, the lowest level language there is, and he made one of the best-selling PC games of its era. Now we need a gigabyte of JavaScript and a 16-core build machine to render a to-do list.
 
 | Level | Example | Human Friendliness | Wasted Compute |
 |-------|---------|-------------------|----------------|
@@ -27,13 +27,13 @@ Every layer of abstraction trades compute for convenience. We've gotten soft. Th
 
 ## There Are Too Many Robots
 
-According to [Imperva's 2024 Bad Bot Report](https://thebestvpn.com/statistics/what-percent-of-internet-traffic-is-bots/), internet traffic breaks down roughly like this:
+According to [Imperva's 2025 Bad Bot Report](https://www.imperva.com/blog/2025-imperva-bad-bot-report-how-ai-is-supercharging-the-bot-threat/), internet traffic in 2024 breaks down roughly like this:
 
-- Human traffic: ~42%
-- Good bots: ~13% (search engine indexers, AI model training scrapers)
-- Bad bots: ~44% (automated scripts that commit ad fraud, perform credential stuffing, or scrape content)
+- Human traffic: ~49%
+- Good bots: ~14% (search engine indexers, AI model training scrapers)
+- Bad bots: ~37% (automated scripts that commit ad fraud, perform credential stuffing, or scrape content)
 
-Less than half of all internet traffic is actual humans. Bad bots alone outnumber human traffic.
+Less than half of all internet traffic is actual humans.
 
 So many internet communities are useless now because of AI slop and bot accounts. That person you're arguing with in the comments is probably the mecha-hitler bot 6000 whose sole purpose is being an edge lord to raise engagement and clicks. We used to live by a simple rule online: do not feed the trolls. This is even more relevant now that the trolls are not even human. I will not be adding a comment section to my blog.
 
@@ -75,7 +75,7 @@ Same idea on the database side. DynamoDB on-demand mode only consumes capacity w
 
 ## The AI Excuse
 
-A lot of the new data center demand is driven by AI training and inference. Training a large model takes enormous compute, that's real. But how much compute is actually necessary? DeepSeek proved you can build a frontier model for a fraction of the cost. [DeepSeek-V3 was trained in 55 days on 2,000 Nvidia H800 GPUs for about $5.6 million](https://www.maginative.com/article/deepseek-v3-achieves-frontier-ai-performance-at-a-fraction-of-the-cost/). GPT-4 is estimated to have cost somewhere between $50-100 million to train. DeepSeek-V3 performs comparably to GPT-4o and Claude 3.5 Sonnet on standard benchmarks at roughly 1/10th the training cost. The "we need unlimited compute" narrative falls apart when a team in China does it for the price of a nice house.
+A lot of the new data center demand is driven by AI training and inference. Training a large model takes enormous compute, that's real. But how much compute is actually necessary? DeepSeek proved you can build a frontier model for a fraction of the cost. [DeepSeek-V3 was trained on 2,048 Nvidia H800 GPUs using 2.78 million GPU-hours for about $5.6 million](https://arxiv.org/pdf/2412.19437), with pre-training completing in under two months. That cost covers only the final training run, not prior research and experiments. GPT-4 is estimated to have cost somewhere between $50-100 million to train. DeepSeek-V3 performs comparably on standard benchmarks at roughly 1/10th the training cost. The "we need unlimited compute" narrative falls apart when a team in China does it for the price of a nice house.
 
 Inference can also be [optimized dramatically](https://huggingface.co/docs/optimum/en/concept_guides/quantization). Quantization, distillation, speculative decoding, running smaller models for simpler tasks. These can cut inference costs by 10x or more. Not every query needs a 400B parameter model. Sometimes a well-tuned 7B model or even a regex will do the job.
 
@@ -138,7 +138,7 @@ The computing power available today is staggering. We just have to stop wasting 
 
 There are legitimate reasons to want more compute. Scientific research, climate modeling, genomics, drug discovery. These are real workloads that benefit humanity. We should be prioritizing compute for these with incentives and grants, not letting social media apps and AI slop generators eat the lion's share of capacity.
 
-The human brain runs on about [20 watts and performs at roughly exaflop scale](https://www.nist.gov/blogs/taking-measure/brain-inspired-computing-can-help-us-create-faster-more-energy-efficient). The El Capitan supercomputer finally rivals that raw speed at 1.8 exaFLOPS, but it draws 30 megawatts to do it. A million-to-one difference in energy efficiency. Stop offloading every task to a data center to avoid critical thinking. Build software like mass compute is a privilege, not a given.
+The human brain runs on about [20 watts and performs at roughly exaflop scale](https://www.nist.gov/blogs/taking-measure/brain-inspired-computing-can-help-us-create-faster-more-energy-efficient). The El Capitan supercomputer finally rivals that raw speed at 1.742 exaFLOPS, but it draws 30 megawatts to do it. A million-to-one difference in energy efficiency. Stop offloading every task to a data center to avoid critical thinking. Build software like mass compute is a privilege, not a given.
 
 ![mentat](https://raw.githubusercontent.com/jottenlips/jottenlips.github.io/refs/heads/main/mentat.jpg)
 
