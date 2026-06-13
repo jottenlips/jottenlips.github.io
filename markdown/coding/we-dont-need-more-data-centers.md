@@ -164,33 +164,13 @@ LLMs are a powerful tool when used correctly but they're not going to replace hu
 
 ## Mass Surveillance, Weaponization of AI, Palantir Fusion Centers, Corruption
 
-Not only do we not need more data centers, we shouldn't want them. Palantir provides tools like [Project Maven](https://en.wikipedia.org/wiki/Project_Maven) for automated military targeting. Their AI platforms have been [linked to operations murdering civilians in Gaza](https://www.business-humanrights.org/en/latest-news/palantir-allegedly-enables-israels-ai-targeting-amid-israels-war-in-gaza-raising-concerns-over-war-crimes/), with concerns that the ["human in the loop" amounts to a rubber stamp](https://oecd.ai/en/incidents/2026-05-10-71bc). Domestically, congressional Democrats are [questioning Palantir's role in building an IRS "mega-database"](https://fedscoop.com/palantir-irs-mega-database-democrats-letter/) of Americans' sensitive information, and their tools have been used for [algorithmic deportation targeting](https://thehill.com/policy/technology/5667232-palantir-trump-administration-surveillance/). The software is proprietary. Nobody outside the company can see how the algorithms work or how data is weighed.
+Not only do we not need more data centers, we shouldn't want them. More compute enables more surveillance at scale. Palantir provides tools like [Project Maven](https://en.wikipedia.org/wiki/Project_Maven) for automated military targeting. Their AI platforms have been [linked to operations murdering civilians in Gaza](https://www.business-humanrights.org/en/latest-news/palantir-allegedly-enables-israels-ai-targeting-amid-israels-war-in-gaza-raising-concerns-over-war-crimes/), with concerns that the ["human in the loop" amounts to a rubber stamp](https://oecd.ai/en/incidents/2026-05-10-71bc). Domestically, congressional Democrats are [questioning Palantir's role in building an IRS "mega-database"](https://fedscoop.com/palantir-irs-mega-database-democrats-letter/) of Americans' sensitive information, and their tools have been used for [algorithmic deportation targeting](https://thehill.com/policy/technology/5667232-palantir-trump-administration-surveillance/). The software is proprietary. Nobody outside the company can see how the algorithms work or how data is weighed.
 
 The data center lobby is growing fast. [OpenAI went from 3 lobbyists to 18 in a single year. Meta hired 21 additional lobbyists in 2024.](https://www.opensecrets.org/news/2025/11/data-centers-are-fueling-the-lobbying-industry-not-just-the-growth-of-ai/) The Data Center Coalition [more than doubled its lobbying spend](https://www.techpolicy.press/amidst-boom-data-center-lobby-expands-its-influence-spending-and-tactics/) in Q3 2025. [53% of lobbyists in the electric manufacturing sector are former government officials.](https://www.spotlightpa.org/news/2026/01/data-centers-tech-industry-lobby-energy-federal-government/)
 
 The buildout looks like a bubble. Utilities have contracted 127 GW of new data center capacity, but projected demand is only [108 GW by 2030](https://insights.som.yale.edu/insights/this-is-how-the-ai-bubble-bursts). That's 64 GW of potential overbuild, backed by [$182 billion in debt in 2025 alone](https://www.npr.org/2025/11/23/nx-s1-5615410/ai-bubble-nvidia-openai-revenue-bust-data-centers). At least [16 data center projects worth $64 billion have already been blocked](https://thehill.com/policy/technology/5605667-data-center-criticism-study/) by local communities that don't want their water and power consumed by server farms. Good for them.
 
 Most of us could live very fulfilling lives without AI-generated videos of our dogs smoking a joint. Just learn how to draw. Leave the creativity to humans and have the machines do the boring things like spellcheck. What kind of soulless monster wants to automate art and music anyway? Probably the same people that don't mind when robots decide who to bomb.
-
-## Things to Do Instead of Consuming AI Slop
-
-If you find yourself doom-scrolling or asking a chatbot to generate pictures of your cat as Napoleon for the third time today, here are some better options.
-
-1. Call or text a friend. If you want to know what someone is up to, just ask them instead of stalking their Instagram.
-2. Go outside. Enjoy nature. It's still out there.
-3. Pick up an instrument and learn how to make music with your own skills and abilities.
-4. Learn how to draw instead of asking a robot to do it.
-5. Read a book.
-6. Find an old camera and start taking photos, even if it's digital. It will likely look better than your phone camera.
-7. Ride your bike.
-8. Cook a meal for your partner or friends.
-9. Write a blog.
-10. Lift weights.
-11. Go swim.
-12. Go thrifting.
-13. Listen to an album.
-14. Refactor a backend service to use a language that is 100x faster, like rewriting some Ruby code in Rust.
-15. Start a group chat with all your friends. You can communicate like on social media but without the ads and slop.
 
 > "Once men turned their thinking over to machines in the hope that this would set them free. But that only permitted other men with machines to enslave them."
 > ― Frank Herbert, Dune
