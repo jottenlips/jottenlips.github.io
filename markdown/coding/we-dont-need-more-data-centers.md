@@ -2,9 +2,11 @@
 
 ![oldmanyellsatcloud](https://raw.githubusercontent.com/jottenlips/jottenlips.github.io/refs/heads/main/oldmanyellsatcloud.png)
 
+**TLDR:** Server utilization is 12-18%. Most internet traffic is bots. We're measuring engineer productivity by how many AI tokens they burn. Fix the software, ban the bots, and stop building data centers to chase AGI that isn't coming.
+
 Everyone keeps saying we need more compute. New data centers are going up everywhere, burning through land, water, and electricity. But are we even using the compute we already have?
 
-For a lot of software, no. Not even close. The average server utilization rate in data centers [hovers between 12-18%](https://fortune.com/2025/08/11/data-centers-are-eating-the-economy-and-were-not-even-using-them/), with an estimated 10 million servers sitting completely idle. An idle server still draws about 60% of its peak power while doing absolutely nothing. US data centers operated at over [50 gigawatts of capacity at the end of 2025](https://www.goldmansachs.com/insights/articles/us-data-center-power-demand-projected-to-double-by-2027), and the plan is to double that by 2027. Headroom for traffic spikes and failover is important, but 12-18% utilization is not headroom. That's a parking garage that's 85% empty. Maybe we should use what we already have first.
+For a lot of software, no. Not even close. The average server utilization rate in data centers [hovers between 12-18%](https://fortune.com/2025/08/11/data-centers-are-eating-the-economy-and-were-not-even-using-them/), with an estimated 10 million servers sitting completely idle. An idle server still draws about 60% of its peak power while doing absolutely nothing. US data centers operated at over [50 gigawatts of capacity at the end of 2025](https://www.goldmansachs.com/insights/articles/us-data-center-power-demand-projected-to-double-by-2027), and the plan is to double that by 2027. Headroom for traffic spikes and failover is important, but 12-18% utilization is not headroom. Maybe we should use what we already have first.
 
 ## The Software Got Lazy
 
