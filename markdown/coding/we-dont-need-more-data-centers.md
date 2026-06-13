@@ -12,7 +12,16 @@ Somewhere along the way we decided that developer time was infinitely more expen
 
 The average web page is now over 2MB. In the 90s we put a man on the moon's worth of computing power into a Game Boy and got Tetris to run on it. Chris Sawyer wrote nearly all of RollerCoaster Tycoon by himself in assembly language. One person, the lowest level language there is, and he made one of the best-selling PC games of its era. Now we need a gigabyte of JavaScript and a 16-core build machine to render a to-do list.
 
-We have gotten soft as engineers. This is not a hardware problem. This is a software problem.
+| Level | Example | Human Friendliness | Wasted Compute |
+|-------|---------|-------------------|----------------|
+| Binary | 0s and 1s | Nightmare | None |
+| Assembly | MOV, JMP | Painful | Almost none |
+| C | malloc, pointers | Difficult | Minimal |
+| Rust | Safe, fast | Better | Minimal |
+| Python | Easy, slow | Very easy | Significant |
+| AI-generated Python | "write me a script" | Effortless | Massive |
+
+Every layer of abstraction trades compute for convenience. We have gotten soft as engineers. This is not a hardware problem. This is a software problem.
 
 ## There Are Too Many Robots
 
@@ -36,11 +45,11 @@ Reduce bot traffic by deploying a layered, edge-based security strategy. Start b
 
 ### Write Less Wasteful Software
 
-Languages like Rust, Go, OCaml, Kotlin, Elixir, Swift, and Zig exist. They produce binaries that are tiny, fast, and memory efficient. You don't have to rewrite everything, but for hot paths, background workers, and infrastructure tooling, the gains are real and immediate. They are also much easier to write than C, but still retain many of the efficiency benefits of a lower level language compared to languages like Python or JavaScript. The argument that developer velocity requires slow languages is weaker than ever. Modern tooling, cross-platform libraries, package managers, and AI-assisted development have made writing in faster languages more accessible than at any point in history.
+Languages like Rust, Go, OCaml, Kotlin, Elixir, Swift, and Zig exist. They produce binaries that are tiny, fast, and memory efficient. You don't have to rewrite everything, but for hot paths, background workers, and infrastructure tooling, the gains are real and immediate. They are also much easier to write than C, but still retain many of the efficiency benefits of a lower level language compared to languages like Python or JavaScript. The argument that developer velocity requires slow languages is weaker than ever. Modern tooling, cross-platform libraries, package managers, and AI-assisted development have made writing in faster languages more accessible than at any point in history. Language choice is especially important on the backend, where we have more flexibility and options than the frontend. The browser limits you to JavaScript or WebAssembly, but on the server you can pick whatever runs best for the job.
 
 SQLite can handle way more than people give it credit for. A single Hetzner box can serve millions of requests a day if the software running on it isn't fighting itself. [Ben Hoyt's research on counting words](https://benhoyt.com/writings/count-words/) is a great example of how language choice and implementation details dramatically affect performance for the same task.
 
-Erlang and the BEAM VM can handle [up to 2 million websocket connections on a single 24 CPU machine](https://www.erlang-factory.com/upload/presentations/558/efsf2012-whatsapp-scaling.pdf).
+Erlang and the BEAM VM can handle [up to 2 million websocket connections on a single 24 CPU machine](https://www.erlang-factory.com/upload/presentations/558/efsf2012-whatsapp-scaling.pdf). Phoenix LiveView takes this further by keeping rendering on the server and pushing diffs over a websocket instead of shipping a massive JavaScript bundle to the client. You get real-time, interactive UIs with a fraction of the client-side code and the BEAM handling concurrency for you.
 
 ### Cache Everything, Compute Once
 
@@ -50,15 +59,23 @@ Most requests to most web apps are serving the same content over and over. Put a
 
 If your staging environment is a carbon copy of production, you're burning money and energy for no reason. If your dev environment spins up 15 Docker containers to serve a landing page, something has gone sideways. Audit what's running and ask whether it needs to be. Pick the correct size machines for your production code. Do not pick a big machine just in case your app becomes popular. When it becomes popular, that is a good problem to have. Scale up then.
 
-Do you have a read replica you are running analytics on? Switch it to an event-driven analytics system instead of doing massive SQL queries every night. Know what you want to measure when you make a feature. Know your access patterns and optimize your database reads and writes for them.
+Do you have a read replica you are running analytics on? Switch it to an event-driven analytics system instead of doing massive SQL queries every night. Know what you want to measure when you make a feature. Know your access patterns and optimize your database reads and writes for them. Write your application in a way that [avoids being IO bound](https://berk.es/2022/08/09/ruby-slow-database-slow/). A slow language making too many database calls is a compounding problem.
 
 Use the correct database for the task. Can your data be a simple in-memory cache or do you need to write it to long-term storage? How long does your data need to stick around? Will anyone be looking for this data?
 
 I have come across too many buckets of logs that no one will look at or have forgotten about. One time I even found 7TB of unnecessary logs in cloud storage that were half a decade old. Delete the bucket, set a TTL on data that doesn't need to last forever, pick the correct database size.
 
+### Scale to Zero
+
+If your app gets 10 requests an hour at 3am, it shouldn't be running on a dedicated server at 3am. Serverless platforms like AWS Lambda, Fly.io, and Railway let you scale down to zero machines when there's no traffic. No traffic, no compute, no energy wasted. For the majority of apps that sit idle most of the time, this is a massive win over a server running 24/7. Serverless has real caveats like cold starts, per-invocation overhead, and vendor lock-in that can discourage optimization. But for apps that are idle 90% of the time, those tradeoffs beat a machine drawing power around the clock to serve nothing.
+
+On the database side, services like DynamoDB on-demand mode only consume capacity when you're actually reading or writing. A traditional SQL database runs on a provisioned instance whether you're querying it or not. DynamoDB has its own tradeoffs like limited query flexibility and higher per-request cost at scale, but if your access patterns are key-value lookups or simple queries, a serverless database that scales with demand and idles at near-zero is far more efficient than a Postgres instance sitting at 5% utilization all night.
+
 ## The AI Excuse
 
-A lot of the new data center demand is driven by AI training and inference. Training a large model takes enormous compute, that's real. But inference can be [optimized dramatically](https://huggingface.co/docs/optimum/en/concept_guides/quantization). Quantization, distillation, speculative decoding, and running smaller models for simpler tasks can cut inference costs by 10x or more. Not every query needs a 400B parameter model. Sometimes a well-tuned 7B model or even a regex will do the job.
+A lot of the new data center demand is driven by AI training and inference. Training a large model takes enormous compute, that's real. But how much compute is actually necessary? DeepSeek proved you can build a frontier model for a fraction of the cost. [DeepSeek-V3 was trained in 55 days on 2,000 Nvidia H800 GPUs for about $5.6 million](https://www.maginative.com/article/deepseek-v3-achieves-frontier-ai-performance-at-a-fraction-of-the-cost/). GPT-4 is estimated to have cost somewhere between $50-100 million to train. DeepSeek-V3 performs comparably to GPT-4o and Claude 3.5 Sonnet on standard benchmarks at roughly 1/10th the training cost. The "we need unlimited compute to train models" narrative falls apart when a team in China does it for the price of a very nice house.
+
+Inference can also be [optimized dramatically](https://huggingface.co/docs/optimum/en/concept_guides/quantization). Quantization, distillation, speculative decoding, and running smaller models for simpler tasks can cut inference costs by 10x or more. Not every query needs a 400B parameter model. Sometimes a well-tuned 7B model or even a regex will do the job.
 
 Even with heavy AI usage, there's a ton of waste we can cut just by being smarter about how we use models. Context management is a big one. If you're stuffing your entire codebase into every prompt, you're burning tokens and compute for no reason. Give the model what it needs and nothing more. Summarize, chunk, and cache context so you're not reprocessing the same information over and over.
 
@@ -80,7 +97,14 @@ Even with responsible use of AI we have enough compute. Let's stop wasting compu
 
 The combination of right-sized models, good context management, and tool use through MCP means we can do a lot more meaningful AI work with a lot less compute than the "just build more data centers" crowd would have you believe.
 
-We're also starting to see models that can generate efficient code. The irony of using AI to write code that reduces the need for data centers is not lost on me. But if AI tools help us write tighter software, that's a net win. I recently had Claude help me tune some workloads and figure out an effective caching strategy to cut our Kubernetes server count in half as well as spin down a database replica.
+### Use the Right Model for the Job
+
+AI is built into pretty much every developer environment at this point. Cursor, VS Code, JetBrains, Xcode, you name it. If you're a software engineer in 2026 you probably have some kind of AI assistant running while you code. That's fine, but be smart about which model you're using and when.
+
+Heavy models like Opus are great for planning architecture and helping work through hard problems. Use them to plan out work, not to type. Once you have a plan, hand the actual implementation off to a cheaper, faster model like Sonnet or Haiku. They're more than capable of writing boilerplate, filling in tests, and doing straightforward code generation. You don't need a flagship model to write a for loop or rename a variable.
+
+And if you're going to have your code be AI generated anyway, you might as well generate it to have optimal performance, use a fast language, and run with minimal resources. The "I don't know Rust" excuse disappears when the AI can interpret the pseudocode you give it while also explaining the more difficult Rust parts. Heck, generate the test next to it with your expected inputs and outputs.
+We now see models that can generate efficient code. The irony of using AI to write code that reduces the need for data centers is not lost on me. But if AI tools help us write tighter software that reduces overall compute, that's a net win. I recently had Claude help me tune some workloads and figure out an effective caching strategy. This spun down a read replica which halved our SQL database cost, and we also halved our Kubernetes compute cost.
 
 ## Too Many Ads
 
@@ -99,9 +123,9 @@ I won't go into all the details here, but [leaf computing](https://leafcomputing
 - Figure out your access patterns. What data can be cached? What data can expire?
 - Profile your app. Find the hot spots. Fix them before you scale horizontally.
 - Question every dependency. Do you really need that 50MB npm package to format a date?
-- Use SQLite or Postgres on a single machine before reaching for a distributed database.
+- Use SQLite for an MVP, a small PostgreSQL or MySQL instance if you have to, or better yet a serverless NoSQL database like DynamoDB.
 - Set up caching properly. Learn what `Cache-Control`, `ETag`, and `304 Not Modified` actually do.
-- If you are using dynamic languages like Python and JS, make sure you avoid doing the heavy lifting with them. Use C-backed libraries like NumPy for number crunching instead of pure Python loops. Your code will be cleaner and faster.
+- If you are using dynamic languages like Python and JS, make sure you avoid doing the heavy lifting with them. Use C-backed libraries like NumPy for number crunching instead of pure Python loops. React Native and Expo are another good example of this pattern. JavaScript is the glue, but rendering, animations, and native modules all run in C++, Swift, or Kotlin under the hood. Your code will be cleaner and faster.
 - Write a benchmark before you optimize, and after. Share the results. Make efficiency visible.
 - Treat HTTP requests like a limited resource. No one likes waiting for data to load anyway.
 
@@ -127,9 +151,9 @@ Even if someone did build AGI, fundamental results in computer science like the 
 
 Heuristics can solve many specific instances of the halting problem, but not all of them. You can write a tool that correctly identifies most simple loops as terminating or not. In practice, that covers a lot of real-world code. But for any decision procedure, there will always exist programs it can't decide. You can keep making the heuristic smarter, but the set of undecidable cases never goes to zero.
 
-Humans don't solve the general halting problem either. We solve specific instances using a mix of pattern recognition, mathematical reasoning, and intuition. The advantage humans have is the ability to switch strategies, invent new proof techniques, and reason creatively about a specific program. But we're still bounded by the same mathematical limits.
+Humans are significantly better at tackling difficult instances of the halting problem than LLMs. We use a mix of pattern recognition, mathematical reasoning, and intuition, but the real advantage is the ability to switch strategies, invent new proof techniques, and reason creatively about a specific program. When a mathematician stares at a tricky loop and invents a novel invariant to prove termination, that's something no LLM can do from scratch.
 
-LLMs and humans are in a similar boat in some ways. Both use heuristics, both can handle many specific cases, neither can solve the general problem. The key difference is that humans can invent new proof techniques. LLMs can only recombine patterns from their training data. They can apply existing proofs to new problems, sometimes impressively well, but they cannot originate a novel mathematical proof the way Turing, Gödel, or any working mathematician can. There have been cases where AI systems like DeepMind's AlphaProof produced novel results in math, but these were narrow systems with humans assisting the discovery and guiding the process. The model didn't wake up one morning and decide to prove something new.
+Both humans and LLMs use heuristics, and both can handle many specific cases. Neither can solve the general problem. But the key difference is that humans can invent new proof techniques. LLMs can only recombine patterns from their training data. They can apply existing proofs to new problems, sometimes impressively well, but they cannot originate a novel mathematical proof the way Turing, Gödel, or any working mathematician can. There have been cases where AI systems like DeepMind's AlphaProof produced novel results in math, but these were narrow systems with humans assisting the discovery and guiding the process. The model didn't wake up one morning and decide to prove something new.
 
 There's also the problem of model rot. As more AI-generated content floods the internet, future models end up training on the output of previous models. The data gets flatter, less original, more homogeneous. Models trained on model output lose the edge cases, the weird insights, the human creativity that made the training data valuable in the first place. The more we rely on AI-generated content, the worse the next generation of models gets. It's a feedback loop that degrades over time, not one that converges on intelligence.
 
@@ -144,6 +168,26 @@ The data center lobby is growing fast. [OpenAI went from 3 lobbyists to 18 in a 
 The buildout looks like a bubble. Utilities have contracted 127 GW of new data center capacity, but projected demand is only [108 GW by 2030](https://insights.som.yale.edu/insights/this-is-how-the-ai-bubble-bursts). That's 64 GW of potential overbuild, backed by [$182 billion in debt in 2025 alone](https://www.npr.org/2025/11/23/nx-s1-5615410/ai-bubble-nvidia-openai-revenue-bust-data-centers). At least [16 data center projects worth $64 billion have already been blocked](https://thehill.com/policy/technology/5605667-data-center-criticism-study/) by local communities that don't want their water and power consumed by server farms.
 
 I think most of us could live very fulfilling lives without AI-generated videos of our dogs smoking a joint. Just learn how to draw. Let's leave the creativity to humans and have the machines do the boring things like spellcheck. What kind of soulless monster wants to automate art and music anyway? Probably the same people that don't mind when robots decide who to bomb.
+
+## Things to Do Instead of Consuming AI Slop
+
+If you find yourself doom-scrolling or asking a chatbot to generate pictures of your cat as Napoleon for the third time today, here are some alternatives.
+
+1. Call or text a friend. If you want to know what someone is up to, just ask them instead of stalking their Instagram.
+2. Go outside. Enjoy nature. It's still out there.
+3. Pick up an instrument and learn how to make music with your own skills and abilities.
+4. Learn how to draw instead of asking a robot to do it.
+5. Read a book.
+6. Find an old camera and start taking photos, even if it's digital. It will likely look better than your phone camera.
+7. Ride your bike.
+8. Cook a meal for your partner or friends.
+9. Write a blog.
+10. Lift weights.
+11. Go swim.
+12. Go thrifting.
+13. Listen to an album.
+14. Refactor a backend service to use a language that is 100x faster, like rewriting some Ruby code in Rust.
+15. Start a group chat with all your friends. You can communicate like on social media but without the ads and slop.
 
 > "Once men turned their thinking over to machines in the hope that this would set them free. But that only permitted other men with machines to enslave them."
 > ― Frank Herbert, Dune
