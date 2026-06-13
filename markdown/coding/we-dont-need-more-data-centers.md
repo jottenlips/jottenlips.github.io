@@ -37,6 +37,8 @@ Less than half of all internet traffic is actual humans.
 
 So many internet communities are useless now because of AI slop and bot accounts. That person you're arguing with in the comments is probably the mecha-hitler bot 6000 whose sole purpose is being an edge lord to raise engagement and clicks. We used to live by a simple rule online: do not feed the trolls. This is even more relevant now that the trolls are not even human. I will not be adding a comment section to my blog.
 
+[Dead internet theory](https://en.wikipedia.org/wiki/Dead_Internet_theory) used to sound paranoid. The data suggests it was just early. AI-generated content creators are already fooling real people... and other bots. ["Emily Hart"](https://www.yahoo.com/news/articles/maga-influencer-emily-hart-exposed-155244422.html) was an entirely AI-generated MAGA influencer created by a 22-year-old in India using Gemini and Grok. The bot amassed thousands of followers, sold subscriptions and merchandise, and many did not notice until WIRED investigated. We are building data centers to power an internet where machines generate content for other machines to index while fake people extract money from real people. More AI compute means more synthetic media, and the harder it gets to distinguish real from fake.
+
 ## What We Could Do Instead
 
 ### Ban the Bots
@@ -111,7 +113,7 @@ The irony of using AI to write code that reduces the need for data centers is no
 
 ## Too Many Ads
 
-Every platform dies the same way. Every other post becomes an ad, then to keep engagement up they let bots in. The internet was better and more fun when it was you and your friends.
+Every platform dies the same way. Every other post becomes an ad, then to keep engagement up they let bots in. The internet was better and more fun when it was you and your friends, DARPA, and peer-to-peer game lobbies. Most of these data centers exist to power an attention economy that monetizes engagement regardless of whether the engagement is real, useful, or even human.
 
 ## What are your users doing?
 
