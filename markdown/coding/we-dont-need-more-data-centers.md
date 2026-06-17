@@ -109,7 +109,7 @@ Heavy models like Opus are great for planning architecture and working through h
 
 And if you're going to have your code be AI generated anyway, you might as well generate it in a fast language that runs with minimal resources. The "I don't know Rust" excuse disappears when the AI can interpret the pseudocode you give it while also explaining the difficult parts. Generate the test next to it with your expected inputs and outputs.
 
-The irony of using AI to write code that reduces the need for data centers is not lost on me. But if AI tools help us write tighter software that reduces overall compute, that's good. I recently had Claude help me tune some workloads and figure out an effective caching strategy. This spun down a read replica which halved our SQL database cost, and we also halved our Kubernetes compute cost.
+The irony of using AI to write code that reduces the need for data centers is not lost on me. But if AI tools help us write tighter software that reduces overall compute, that's good. I recently had an LLM help me tune some workloads and figure out an effective caching strategy. This spun down a read replica which halved our SQL database cost, and we also halved our Kubernetes compute cost.
 
 ## Too Many Ads
 
