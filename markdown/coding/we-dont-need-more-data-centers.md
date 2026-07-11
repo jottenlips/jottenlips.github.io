@@ -12,6 +12,8 @@ For a lot of software, no. Not even close. The average server utilization rate i
 
 We also don't need new data centers to train AI models. Google DeepMind unveiled [decoupled distributed low-communication (DiLoCo)](https://www.sdxcentral.com/news/google-unveils-way-to-train-ai-models-across-distributed-data-centers/) training, which allows training advanced models across distributed data centers using internet-scale bandwidth. They trained a 12-billion parameter model across four separate US regions with just 2-5 Gb/s of wide-area networking, achieving results more than 20-times faster than conventional synchronization methods. The system is self-healing, maintains nearly 90% goodput even under simulated hardware failures, and can mix different generations of TPUs in a single training run. As Google DeepMind researcher Arthur Douillard put it: "By enabling training jobs at internet-scale bandwidth, it can tap any unused compute wherever it sits, turning stranded resources into useful capacity." The compute we already have, scattered across thousands of partially-loaded data centers, is enough.
 
+We have enough compute and there is also plenty of fat to cut if we need more.
+
 ### There Are Too Many Robots
 
 According to [Imperva's 2025 Bad Bot Report](https://www.imperva.com/blog/2025-imperva-bad-bot-report-how-ai-is-supercharging-the-bot-threat/), internet traffic in 2024 breaks down roughly like this:
@@ -25,6 +27,10 @@ Less than half of all internet traffic are actual humans.
 So many internet communities are useless now because of AI slop and bot accounts. That person you're arguing with in the comments is probably the mecha-hitler bot 6000 whose sole purpose is being an edge lord to raise engagement and clicks. We used to live by a simple rule online: do not feed the trolls. This is even more relevant now that the trolls are not even human. I will not be adding a comment section to my blog.
 
 [Dead internet theory](https://en.wikipedia.org/wiki/Dead_Internet_theory) used to sound paranoid. The data suggests it was just early. AI-generated content creators are already fooling real people... and other bots. ["Emily Hart"](https://www.yahoo.com/news/articles/maga-influencer-emily-hart-exposed-155244422.html) was an entirely AI-generated MAGA influencer created by a 22-year-old in India using Gemini and Grok. The bot amassed thousands of followers, sold subscriptions and merchandise, and many did not notice until WIRED investigated. We are building data centers to power an internet where machines generate content for other machines to index while fake people extract money from real people. More AI compute means more synthetic media, and the harder it gets to distinguish real from fake.
+
+### Crytocurrency
+
+This is a grift too large for this single post, but it is a significant waste in compute.
 
 ### The AI Excuse
 
@@ -90,16 +96,16 @@ Even if we needed more compute, the programs running in these data centers are f
 
 At some point we decided developer time was infinitely more expensive than compute. That's true sometimes. But it became an excuse to stop caring. We ship Electron apps that idle at 500MB of RAM to display a chat window. We run entire Kubernetes clusters to serve what could be a static site. We provision machines that sit at 10% CPU utilization because autoscaling is "too complex" to get right.
 
-The average web page is now over 2MB. In the 90's, we put a man on the moon with a Game Boy's computing power, and got Tetris to run on it. Chris Sawyer wrote [99% of RollerCoaster Tycoon in x86 assembly language](https://en.wikipedia.org/wiki/RollerCoaster_Tycoon_(video_game)), with the remaining 1% in C. One person, the lowest level language there is, and he made one of the best-selling PC games of its era. Now we need a gigabyte of JavaScript and a 16-core build machine to render a to-do list.
+The average web page is now over 2MB. In the 90's, we put a man on the moon with a Game Boy's computing power, and got Tetris to run on it. Chris Sawyer wrote [99% of RollerCoaster Tycoon in x86 assembly language](<https://en.wikipedia.org/wiki/RollerCoaster_Tycoon_(video_game)>), with the remaining 1% in C. One person, the lowest level language there is, and he made one of the best-selling PC games of its era. Now we need a gigabyte of JavaScript and a 16-core build machine to render a to-do list.
 
-| Level | Example | Human Friendliness | Wasted Compute |
-|-------|---------|-------------------|----------------|
-| Binary | 0s and 1s | Nightmare | None |
-| Assembly | MOV, JMP | Painful | Almost none |
-| C | malloc, pointers | Difficult | Minimal |
-| Rust | Safe, fast | Better | Minimal |
-| Python | Easy, slow | Very easy | Significant |
-| AI-generated Python | "write me a script" | Effortless | Massive |
+| Level               | Example             | Human Friendliness | Wasted Compute |
+| ------------------- | ------------------- | ------------------ | -------------- |
+| Binary              | 0s and 1s           | Nightmare          | None           |
+| Assembly            | MOV, JMP            | Painful            | Almost none    |
+| C                   | malloc, pointers    | Difficult          | Minimal        |
+| Rust                | Safe, fast          | Better             | Minimal        |
+| Python              | Easy, slow          | Very easy          | Significant    |
+| AI-generated Python | "write me a script" | Effortless         | Massive        |
 
 Every layer of abstraction trades compute for convenience. We've gotten soft. This is not a hardware problem. It's a software problem.
 
