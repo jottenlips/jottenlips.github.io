@@ -18,4 +18,6 @@
 
 [We Don't Need More Data Centers](we-dont-need-more-data-centers/)
 
+[Cryptocurrency Is a Grift](cryptocurrency-is-a-grift/)
+
 [Ascend with Automation: Vestaboard and GitHub Actions Inspired Consistency in My Rock Climbing Training](https://docs.vestaboard.com/blog/vestaboard-github-actions)
