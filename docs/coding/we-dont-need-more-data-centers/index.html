@@ -24,15 +24,15 @@
   </head>
 
   <body>
-  <nav>
+    <div class="coverimage"></div>
+    <div class="container">
+      <nav>
     <a href="/">Home</a>
     <a href="/cancer/">Cancer</a>
     <a href="/climbing/">Climbing</a>
     <a href="/coding/">Coding</a>
     <a href="/music/">Music</a>
   </nav>
-    <div class="coverimage"></div>
-    <div class="container">
       <!-- <div class="nav">
         <a class="link" href="/">Home 🏡</a>
         <a class="link" href="/programming">Programming 💻</a>
@@ -48,6 +48,7 @@
 <p>Everyone keeps saying we need more compute. New data centers are going up everywhere, burning through land, water, and electricity. But are we even using the compute we already have?</p>
 <p>For a lot of software, no. Not even close. The average server utilization rate in data centers <a href="https://fortune.com/2025/08/11/data-centers-are-eating-the-economy-and-were-not-even-using-them/">hovers between 12-18%</a>, with an estimated 10 million servers sitting completely idle. An idle server still draws about 60% of its peak power while doing absolutely nothing. US data center power demand hit <a href="https://www.goldmansachs.com/insights/articles/us-data-center-power-demand-projected-to-double-by-2027">31 gigawatts in 2025 and is projected to reach 95 GW by the end of 2027</a>, more than tripling in two years. Headroom for traffic spikes and failover is important, but 12-18% utilization is not headroom. Maybe we should use what we already have first.</p>
 <p>We also don't need new data centers to train AI models. Google DeepMind unveiled <a href="https://www.sdxcentral.com/news/google-unveils-way-to-train-ai-models-across-distributed-data-centers/">decoupled distributed low-communication (DiLoCo)</a> training, which allows training advanced models across distributed data centers using internet-scale bandwidth. They trained a 12-billion parameter model across four separate US regions with just 2-5 Gb/s of wide-area networking, achieving results more than 20-times faster than conventional synchronization methods. The system is self-healing, maintains nearly 90% goodput even under simulated hardware failures, and can mix different generations of TPUs in a single training run. As Google DeepMind researcher Arthur Douillard put it: &quot;By enabling training jobs at internet-scale bandwidth, it can tap any unused compute wherever it sits, turning stranded resources into useful capacity.&quot; The compute we already have, scattered across thousands of partially-loaded data centers, is enough.</p>
+<p>We have enough compute and there is also plenty of fat to cut if we need more.</p>
 <h3 id="there-are-too-many-robots">There Are Too Many Robots</h3>
 <p>According to <a href="https://www.imperva.com/blog/2025-imperva-bad-bot-report-how-ai-is-supercharging-the-bot-threat/">Imperva's 2025 Bad Bot Report</a>, internet traffic in 2024 breaks down roughly like this:</p>
 <ul>
@@ -61,6 +62,8 @@
 <p>Less than half of all internet traffic are actual humans.</p>
 <p>So many internet communities are useless now because of AI slop and bot accounts. That person you're arguing with in the comments is probably the mecha-hitler bot 6000 whose sole purpose is being an edge lord to raise engagement and clicks. We used to live by a simple rule online: do not feed the trolls. This is even more relevant now that the trolls are not even human. I will not be adding a comment section to my blog.</p>
 <p><a href="https://en.wikipedia.org/wiki/Dead_Internet_theory">Dead internet theory</a> used to sound paranoid. The data suggests it was just early. AI-generated content creators are already fooling real people... and other bots. <a href="https://www.yahoo.com/news/articles/maga-influencer-emily-hart-exposed-155244422.html">&quot;Emily Hart&quot;</a> was an entirely AI-generated MAGA influencer created by a 22-year-old in India using Gemini and Grok. The bot amassed thousands of followers, sold subscriptions and merchandise, and many did not notice until WIRED investigated. We are building data centers to power an internet where machines generate content for other machines to index while fake people extract money from real people. More AI compute means more synthetic media, and the harder it gets to distinguish real from fake.</p>
+<h3 id="crytocurrency">Crytocurrency</h3>
+<p>This is a grift too large for this single post, but it is a significant waste in compute.</p>
 <h3 id="the-ai-excuse">The AI Excuse</h3>
 <p>A lot of the new data center demand is driven by AI training and inference. Training a large model takes enormous compute, that's real. But how much compute is actually necessary? DeepSeek proved you can build a frontier model for a fraction of the cost. <a href="https://arxiv.org/pdf/2412.19437">DeepSeek-V3 was trained on 2,048 Nvidia H800 GPUs using 2.78 million GPU-hours for about $5.6 million</a>, with pre-training completing in under two months. That cost covers only the final training run, not prior research and experiments. GPT-4 is estimated to have cost somewhere between $50-100 million to train. DeepSeek-V3 performs comparably on standard benchmarks at roughly 1/10th the training cost. The &quot;we need unlimited compute&quot; narrative falls apart when a team in China does it for the price of a nice house.</p>
 <p>Inference can also be <a href="https://huggingface.co/docs/optimum/en/concept_guides/quantization">optimized dramatically</a>. Quantization, distillation, speculative decoding, running smaller models for simpler tasks. These can cut inference costs by 10x or more. Not every query needs a 400B parameter model. Sometimes a well-tuned 7B model or even a regex will do the job.</p>
