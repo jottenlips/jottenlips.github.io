@@ -13,7 +13,7 @@ June 2026
 - Rained out, lots of thunder
 - Found V0s and V1s around Lava Lake as the cancellation prize
 - Next day: Neat Rock in the desert, scrambling and boulders
-- Finished with a soak at the hot springs, met some funny locals
+- Finished with the hot springs
 - Oh yeah, also got some white water rafting and MTB at Big Sky in
 
 ## Intro (work trip)
@@ -48,13 +48,13 @@ _placeholder: V0s and V1s as the consolation prize_
 
 _placeholder: scrambling in the desert, the boulders we found_
 
-## Hot springs and the locals
+## Hot springs
 
 ![small](https://github.com/jottenlips/jottenlips.github.io/blob/main/montana-2026-img/hotspringsneatrock.JPG?raw=true)
 
 ![small](https://github.com/jottenlips/jottenlips.github.io/blob/main/montana-2026-img/huckleberryicecream.JPG?raw=true)
 
-_placeholder: the soak, the funny locals we met_
+_placeholder: the hot springs_
 
 ## Oh yeah, also white water rafting
 
