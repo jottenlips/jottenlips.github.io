@@ -24,7 +24,11 @@ Every February, I climb for charity. This year I will donate $1 for every route 
 
 [Montana June 2026](montana-2026/)
 
+[Building MiniMoonboard 2026](building-minimoonboard-2026/)
+
 ## Indoor Climbing Stats
+
+A lot of the V3s since summer 2026 have been on the minimoonboard I built in my garage and they feel hella hard.
 
 I have been tracking most of my indoor climbing sessions with a Garmin to get the approximate feet and grade. Sometimes the altimeter is off.
 The code to generate these charts can be found here: [Garmin Climbing Charts](https://github.com/jottenlips/garminclimb)
