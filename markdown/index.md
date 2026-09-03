@@ -1,6 +1,6 @@
 @title John Ottenlips Franke | Blog | Music | Programming | Climbing
 @description Hey, my name is John. I am a programmer and musician living in the midwest.
-@image https://github.com/jottenlips/jottenlips.github.io/blob/main/keyboard.jpg?raw=true
+@image https://innovative-project-q9p9v.ampt.app/static/keyboard.jpg
 
 # Welcome!
 

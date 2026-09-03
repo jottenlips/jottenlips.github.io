@@ -7,7 +7,8 @@
         "doc": "docs"
     },
     "scripts": {
-        "build": "agave -p docs"
+        "build": "agave -p docs",
+        "sync:images": "node sync-images.mjs"
     },
     "repository": {
         "type": "git",

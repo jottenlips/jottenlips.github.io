@@ -1,6 +1,6 @@
 # Cancer
 
-![extrasmall](https://github.com/jottenlips/jottenlips.github.io/blob/main/finding-out-8-30-2025-img/cancerpet.png?raw=true)
+![extrasmall](https://innovative-project-q9p9v.ampt.app/static/finding-out-8-30-2025-img/cancerpet.png)
 
 [Summer 2025: The Summer I Got Cancer](finding-out-8-30-2025/)
 
