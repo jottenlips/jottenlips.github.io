@@ -1,6 +1,6 @@
 # Programming
 
-![extrasmall](https://innovative-project-q9p9v.ampt.app/static/hackers.jpg)
+![extrasmall](https://innovative-project-q9p9v.ampt.app/hackers.jpg)
 
 [1. Your First Web Page with HTML and Vim](html-and-vim/)
 

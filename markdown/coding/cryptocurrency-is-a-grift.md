@@ -1,6 +1,6 @@
 # Cryptocurrency Is a Grift
 
-![bitcoin](https://innovative-project-q9p9v.ampt.app/static/oldmanyellsatcloud.png)
+![bitcoin](https://innovative-project-q9p9v.ampt.app/oldmanyellsatcloud.png)
 
 **TLDR:** Cryptocurrency started with a genuine vision for peer-to-peer electronic cash outside the banking system. It has since become the most inefficient database ever built, consuming 150 TWh per year to process fewer transactions than a single Raspberry Pi. It is not anonymous, not decentralized in practice, and not secure for the average user. The people who got rich did so by getting in early and selling to later buyers, which is a Ponzi scheme by any other name.
 
