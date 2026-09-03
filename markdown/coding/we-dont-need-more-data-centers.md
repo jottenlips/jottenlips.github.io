@@ -1,6 +1,6 @@
 # We Don't Need More Data Centers
 
-![oldmanyellsatcloud](https://innovative-project-q9p9v.ampt.app/static/oldmanyellsatcloud.png)
+![oldmanyellsatcloud](https://innovative-project-q9p9v.ampt.app/oldmanyellsatcloud.png)
 
 **TLDR:** Server utilization is 12-18%. Google can already train models across distributed data centers using stranded compute. We write software so inefficiently there's massive optimization left on the table. And more compute means a cheaper barrier for surveillance and automated weapons. Stop building.
 
@@ -168,7 +168,7 @@ There are legitimate reasons to want more compute. Scientific research, climate 
 
 The human brain runs on about [20 watts and performs at roughly exaflop scale](https://www.nist.gov/blogs/taking-measure/brain-inspired-computing-can-help-us-create-faster-more-energy-efficient). The El Capitan supercomputer finally rivals that raw speed at 1.742 exaFLOPS, but it draws 30 megawatts to do it. A million-to-one difference in energy efficiency. Stop offloading every task to a data center to avoid critical thinking. Build software like mass compute is a privilege, not a given.
 
-![mentat](https://innovative-project-q9p9v.ampt.app/static/mentat.jpg)
+![mentat](https://innovative-project-q9p9v.ampt.app/mentat.jpg)
 
 ## Mass Surveillance, Weaponization of AI, Palantir Fusion Centers, Corruption
 
