@@ -2,34 +2,34 @@
 
 April 18th, 2026
 
-![small](https://github.com/jottenlips/jottenlips.github.io/blob/main/robinson-bluff-fest-2026-img/IMG_9283.JPG?raw=true)
+![small](https://innovative-project-q9p9v.ampt.app/static/robinson-bluff-fest-2026-img/IMG_9283.JPG)
 
 I tried to get to Robinson Bluff around 9 am, but Tiff Rd was flooded and impassable. Instead I followed some Illinois climbers, but we got lost. At one point we were across Big River looking right at the bluff and a disgruntled farmer came out to greet us. 🤦 Eventually we had to go further south to Bonne Terre, MO to get around the flooding.
 
-![small](https://github.com/jottenlips/jottenlips.github.io/blob/main/robinson-bluff-fest-2026-img/washed-out-road.JPG?raw=true)
+![small](https://innovative-project-q9p9v.ampt.app/static/robinson-bluff-fest-2026-img/washed-out-road.JPG)
 
 We made it. I started hiking in with one of the Illinois climbers. The trail was pretty washed out and one of the trail stairs was broken with decking screws littered everywhere. On the way in we ran into a photographer for [Terrain Magazine](https://terrain-mag.com/). It was cool learning about how he got into photography and climbing. He helped us get around some of the muddier terrain on the approach. We eventually found the other Illinois climbers and headed to The Den. We proceeded to climb and send some of the hardest V0s I have ever climbed. I broke a foothold on one of the V0s. Several V0- and V0-- jokes were made about how sandbagged a couple were.
 
 With all the flooding and mud on the way in, the boulders were a little wet and things were looking bleak.
 
-![small](https://github.com/jottenlips/jottenlips.github.io/blob/main/robinson-bluff-fest-2026-img/calcite-crystals.JPG?raw=true)
+![small](https://innovative-project-q9p9v.ampt.app/static/robinson-bluff-fest-2026-img/calcite-crystals.JPG)
 
 Eventually my friends James and Stephany caught up with me. We played around on the boulders a bit more, then headed to Whiskey Wall. I showed them some basics for outdoor climbing since they were new to the great outdoors. We had a wonderful time.
 
 Jackson caught up with us and we headed to Prison Wall. I got a few good leads in and even led a 5.10a outside without falling for the first time since finishing treatment.
 
-![small](https://github.com/jottenlips/jottenlips.github.io/blob/main/robinson-bluff-fest-2026-img/gulag-prison-wall.JPG?raw=true)
+![small](https://innovative-project-q9p9v.ampt.app/static/robinson-bluff-fest-2026-img/gulag-prison-wall.JPG)
 
 Jackson let us know there was another area that featured a "Super Crack," so we checked it out after everyone got their laps in on Prison Wall. I put up a nice 5.9+ called S+M. This one was tough! Eventually got through the crux and then a bunch of others followed on it, including the legendary [Jim Thurmond](https://willjackson.com/mountaineering-and-climbing-jim-thurmond/). Jim told us all kinds of stories about how they found this crag and about the routes they put up. He also opened the first gym in Missouri. Jim told me the nest I saw at the top of S+M with a calcite ceiling was a flying squirrel nest and sometimes you can see them jump out. It was great meeting him and getting to climb with him. Thanks for the intro Jackson!
 
-![small](https://github.com/jottenlips/jottenlips.github.io/blob/main/robinson-bluff-fest-2026-img/belaying-jim.JPG?raw=true)
+![small](https://innovative-project-q9p9v.ampt.app/static/robinson-bluff-fest-2026-img/belaying-jim.JPG)
 
-![small](https://github.com/jottenlips/jottenlips.github.io/blob/main/robinson-bluff-fest-2026-img/climbing-robinson-bluff.jpg?raw=true)
+![small](https://innovative-project-q9p9v.ampt.app/static/robinson-bluff-fest-2026-img/climbing-robinson-bluff.jpg)
 
-![small](https://github.com/jottenlips/jottenlips.github.io/blob/main/robinson-bluff-fest-2026-img/super-crack.JPG?raw=true)
+![small](https://innovative-project-q9p9v.ampt.app/static/robinson-bluff-fest-2026-img/super-crack.JPG)
 
 I finished the day trying to top rope the Super Crack. I made it up through the crack and onto the ledge just fine but couldn't figure out the bulge at the end. Eventually I gave up and just pulled myself over to clean the route since I had to head back home.
 
-![small](https://github.com/jottenlips/jottenlips.github.io/blob/main/robinson-bluff-fest-2026-img/view-from-top.JPG?raw=true)
+![small](https://innovative-project-q9p9v.ampt.app/static/robinson-bluff-fest-2026-img/view-from-top.JPG)
 
 The drive back was much easier than getting there. I made some new friends and it was a solid day out. I will probably be back to Robinson Bluff soon. The festival was sick. Thank you to the [Eastern Missouri Climbing Association](https://www.emclimbers.com/) for hosting. You can donate on their site to support local climbing access.

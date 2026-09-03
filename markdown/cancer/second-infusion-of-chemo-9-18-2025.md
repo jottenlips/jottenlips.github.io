@@ -8,7 +8,7 @@ The rest of the week I kept things chill. I spent some time reworking logic in a
 
 My brother and his wife came into town on the 12th, and we had an amazing time. We took my son to the zoo. The spider monkeys were a big hit, and he loved watching the seals eat. We grabbed BBQ at Pappy’s, shopped for baby stuff at IKEA (they’ve got one on the way), and set up the splash pad at home since it got hot again. I also traded in one of my guitars for a pretty cool 1980s Gretsch. It should arrive this weekend. Buying guitars online is risky, but I have a good feeling.
 
-![extrasmall](https://github.com/jottenlips/jottenlips.github.io/blob/main/gretsch.webp?raw=true)
+![extrasmall](https://innovative-project-q9p9v.ampt.app/static/gretsch.webp)
 
 On top of all that, we ate frozen custard and ice cream at least three times this week. Nothing beats Ted Drewes. Honestly, I’ve been doing a good job of distracting myself from the thought of Round 2 tomorrow. My main hope is that everything goes as smoothly as last time, with a little more medicine to deal with the side effects. I’ve been eating a lot while my mouth is healed up, kind of stockpiling calories in anticipation of not being able to eat much in the coming days.  
 
