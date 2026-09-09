@@ -12,6 +12,7 @@ body {
 
 nav {
   display: flex;
+  flex-wrap: wrap;
   gap: 16px;
   padding: 16px 0;
   border-bottom: 2px solid #2d5016;
