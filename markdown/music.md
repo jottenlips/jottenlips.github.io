@@ -24,7 +24,7 @@
 
 [My October 2020 Nashville Playlist](nasvhille-music-october-2020)
 
-[The 17 Best Fans, Musical Moments and Trends at LouFest 2012: Day One](top-ten-loufest-moments)
+[The 17 Best Fans, Musical Moments and Trends at LouFest 2012: Day One](the-17-best-fans-musical-moments-and-trends-at-loufest-2012-day-one)
 
 # 🎵 Music Theory
 
