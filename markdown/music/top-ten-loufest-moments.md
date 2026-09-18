@@ -1,7 +1,7 @@
-@title The Top Ten Moments at LouFest 2012: Day One
-@description The top ten moments at LouFest 2012 Day One, as ranked by RFT Music: 1) The Rain, 2) Dudes: Get Back, 3) Phantogram's Perfect Storm, 4) Sleepy Kitty's Festival Opening, 5) The Guy Playing Air Pedal-Steel Guitar, 6) J Mascis's Triple Double, 7) Rock & Rollers Living Among Us!, 8) Cotton Mather's Odd, Specific Love for St. Louis, 9) John Ottenlips' Count Off, 10) King Tuff's Royal Court.
+@title The 17 Best Fans, Musical Moments and Trends at LouFest 2012: Day One
+@description The 17 Best Fans, Musical Moments and Trends at LouFest 2012: Day One, as compiled by RFT Music (Kiernan Maletsky and Brian Heffernan): 1) The Rain, 2) Dudes: Get Back, 3) Phantogram's Perfect Storm, 4) Sleepy Kitty's Festival Opening, 5) The Guy Playing Air Pedal-Steel Guitar, 6) J Mascis's Triple Double, 7) Rock & Rollers Living Among Us!, 8) Cotton Mather's Odd, Specific Love for St. Louis, 9) John Ottenlips' Count Off, 10) King Tuff's Royal Court, 11) Lou Barlow Don't Need No Education, 12) The BYOB View, 13) The Life of the LouFest Party, 14) Jay Farrar's Banter, 15) Learning What Kind of Friend Phantogram's Sarah Barthel Would Be, 16) Most Valuable Instrument: Electric Guitar, 17) Twenty-Five Percent of the Girl Talk Crowd.
 
-# The Top Ten Moments at LouFest 2012: Day One
+# The 17 Best Fans, Musical Moments and Trends at LouFest 2012: Day One
 
 > By [RFT Music](https://web.archive.org/web/20120829235338/http://blogs.riverfronttimes.com/rftmusic/2012/08/loufest_review_photos_saturday.php) — Kiernan Maletsky and Brian Heffernan, Sun., Aug. 26 2012
 
@@ -50,3 +50,39 @@ We don't know why the long-dormant power-pop gem Cotton Mather chose to make St.
 How Kyle Thomas a.k.a. King Tuff managed to employ both Dazed and Confused-era Matthew McConaughey on bass and Kurt Cobain on second guitar, we'll never know. Nice work, your highness.
 
 Also, it may have been a good thing that his 2 p.m. audience was so young and sober; "Baby Just Break" could have broken the festival into an all-out frenzy if it was two hours later.
+
+## 11. Lou Barlow Don't Need No Education
+
+King Tuff is the biggest slacker every place he goes. Except when he goes places where Dinosaur Jr is also bumming around, in which case the King must bow to his old Witch bandmate J Mascis and the rest of the Dinos. Lou Barlow in particular is preaching the gospel of drop out, pledging a lifelong commitment to not getting degrees. "Fuck college," he says. Though he will hedge that sentiment after one song, offering that school's a good thing. He's not here to argue; he just wants to rock & roll.
+
+## 12. The BYOB View
+
+Chris sits in a folding chair and listens to the music from just inches behind a faded white chalk line belonging to one of the athletic fields about 150 yards from LouFest's entrance gate. There are two empty beer bottles on the ground, a third in his hand. This is where he can drink it. He tried sitting under the tree near the southeast corner of the festival wall. "They said, 'No, you gotta go past that line.'"
+
+## 13. The Life of the LouFest Party
+
+Music festivals are about endurance, and when we saw these two giving headliner-quality enthusiasm to the day's second band we were sure they'd be done by dusk. Not so -- we last noticed them a full six hours later, dancing with energy to spare.
+
+## 14. Jay Farrar's Banter
+
+"          ," says Jay Farrar, the local alt-country legend.
+
+## 15. Learning What Kind of Friend Phantogram's Sarah Barthel Would Be
+
+A conversation overheard during the Phantogram set:
+
+"I just want to be that girl's friend."
+
+"Yeah, she does seem like she'd be a good friend."
+
+"She'd be that one that's real artsy, but, you know, also kind of flakey."
+
+"Totally."
+
+## 16. Most Valuable Instrument: Electric Guitar
+
+LouFest has been, in its first two years, a fairly demure music festival. Acoustic instruments and elegant singers abounded. Not today: Five of the eight bands are shredders, led -- of course -- by Dinosaur Jr. and its legendary assault.
+
+## 17. Twenty-Five Percent of the Girl Talk Crowd
+
+Girl Talk only makes sense -- and I do mean only -- if you are dancing. Otherwise it's just your very pop-savvy friend's iTunes playlist on schizophrenic overdrive. So kudos to those bumping various body parts and whipping around beach balls -- there were heady times to be had front and center.
