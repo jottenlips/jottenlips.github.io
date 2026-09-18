@@ -20,9 +20,11 @@
 
 > - guitar
 
-# 📃 Music reviews
+# 📃 Music Articles
 
 [My October 2020 Nashville Playlist](nasvhille-music-october-2020)
+
+[The Top Ten Moments at LouFest 2012: Day One](top-ten-loufest-moments)
 
 # 🎵 Music Theory
 
