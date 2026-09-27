@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Site Stats</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
+    <style>
+      :root {
+        --bg: #0f1115;
+        --card: #1a1d24;
+        --border: #2a2f3a;
+        --text: #e6e6e6;
+        --muted: #8b93a1;
+        --accent: #34d399;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: system-ui, -apple-system, sans-serif;
+        line-height: 1.5;
+      }
+      .wrap { max-width: 960px; margin: 0 auto; padding: 32px 20px 64px; }
+      header {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 16px;
+        flex-wrap: wrap;
+        margin-bottom: 24px;
+      }
+      h1 { font-size: 1.6rem; margin: 0; }
+      .updated { color: var(--muted); font-size: 0.85rem; }
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        gap: 14px;
+        margin-bottom: 28px;
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 16px;
+      }
+      .card .num { font-size: 1.9rem; font-weight: 700; display: block; }
+      .card .label { color: var(--muted); font-size: 0.85rem; }
+      .panel {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 20px;
+        margin-bottom: 24px;
+      }
+      .panel h2 { font-size: 1.05rem; margin: 0 0 4px; }
+      .panel p { color: var(--muted); font-size: 0.85rem; margin: 0 0 16px; }
+      .chart-box { position: relative; height: 320px; }
+      .top-links a { color: var(--accent); text-decoration: none; margin-right: 12px; }
+      button {
+        background: var(--card);
+        color: var(--text);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 8px 16px;
+        cursor: pointer;
+        font-size: 0.9rem;
+      }
+      button:hover { border-color: var(--accent); }
+      .error { color: #f87171; padding: 24px; text-align: center; }
+      .page-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+      .page-table th, .page-table td { text-align: left; padding: 6px 10px; border-bottom: 1px solid var(--border); }
+      .page-table th { color: var(--muted); font-weight: 600; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <h1>Site Stats</h1>
+        <div class="updated" id="updated">loading…</div>
+      </header>
+
+      <div class="cards">
+        <div class="card"><span class="num" id="totalVisits">–</span><span class="label">Total visits</span></div>
+        <div class="card"><span class="num" id="uniqueIps">–</span><span class="label">Unique IPs</span></div>
+        <div class="card"><span class="num" id="pageCount">–</span><span class="label">Pages tracked</span></div>
+        <div class="card"><span class="num" id="countryCount">–</span><span class="label">Countries</span></div>
+      </div>
+
+      <div class="panel">
+        <h2>Visits per day</h2>
+        <p>Daily page visits since tracking began.</p>
+        <div class="chart-box"><canvas id="daysChart"></canvas></div>
+      </div>
+
+      <div class="panel">
+        <h2>Most popular pages</h2>
+        <p>Top pages by visit count.</p>
+        <div class="chart-box"><canvas id="pagesChart"></canvas></div>
+      </div>
+
+      <div class="canvas">
+        <div class="panel">
+          <h2>Visits by country</h2>
+          <p>Share of visits by country.</p>
+          <div class="chart-box" style="height: 360px;"><canvas id="countriesChart"></canvas></div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2>All pages</h2>
+        <p>Full breakdown of tracked pages.</p>
+        <table class="page-table" id="pageTable">
+          <thead><tr><th>Page</th><th>Visits</th></tr></thead>
+          <tbody id="pageRows"></tbody>
+        </table>
+      </div>
+
+      <p style="margin-top: 8px;">
+        <button onclick="load()">Refresh</button>
+        <span class="top-links" style="margin-left: 12px;">
+          <a href="/api/stats">raw JSON</a>
+        </span>
+      </p>
+    </div>
+
+    <script>
+      var charts = {};
+
+      var PALETTE = [
+        "#34d399", "#60a5fa", "#f472b6", "#facc15", "#a78bfa",
+        "#fb923c", "#22d3ee", "#4ade80", "#f87171", "#c084fc",
+        "#fbbf24", "#38bdf8", "#fb7185", "#a3e635", "#2dd4bf",
+        "#e879f9", "#fde047", "#5eead4"
+      ];
+
+      function flag(code) {
+        if (!code || code === "unknown") return "❓";
+        var base = 127397;
+        return code.toUpperCase().replace(/./g, function (c) {
+          return String.fromCodePoint(base + c.charCodeAt(0));
+        });
+      }
+
+      function destroy(name) {
+        if (charts[name]) {
+          charts[name].destroy();
+          delete charts[name];
+        }
+      }
+
+      function makeChart(name, canvasId, config) {
+        destroy(name);
+        var ctx = document.getElementById(canvasId).getContext("2d");
+        charts[name] = new Chart(ctx, config);
+      }
+
+      function render(data) {
+        document.getElementById("updated").textContent =
+          "updated " + new Date().toLocaleString();
+
+        document.getElementById("totalVisits").textContent = data.totalVisits;
+        document.getElementById("uniqueIps").textContent = data.uniqueIps;
+        document.getElementById("pageCount").textContent = data.pageCount;
+        document.getElementById("countryCount").textContent = data.countryCount;
+
+        var days = data.days.slice();
+        makeChart("days", "daysChart", {
+          type: "line",
+          data: {
+            labels: days.map(function (d) { return d.date; }),
+            datasets: [{
+              label: "Visits",
+              data: days.map(function (d) { return d.visits; }),
+              borderColor: "#34d399",
+              backgroundColor: "rgba(52, 211, 153, 0.15)",
+              fill: true,
+              tension: 0.3
+            }]
+          },
+          options: {
+            maintainAspectRatio: false,
+            plugins: { legend: { display: false } },
+            scales: {
+              x: { ticks: { color: "#8b93a1", maxTicksLimit: 12 } },
+              y: { ticks: { color: "#8b93a1", precision: 0 } }
+            }
+          }
+        });
+
+        var topPages = data.pages.slice(0, 15).reverse();
+        makeChart("pages", "pagesChart", {
+          type: "bar",
+          data: {
+            labels: topPages.map(function (p) { return p.path; }),
+            datasets: [{
+              label: "Visits",
+              data: topPages.map(function (p) { return p.visits; }),
+              backgroundColor: topPages.map(function (_, i) {
+                return PALETTE[i % PALETTE.length];
+              })
+            }]
+          },
+          options: {
+            indexAxis: "y",
+            maintainAspectRatio: false,
+            plugins: { legend: { display: false } },
+            scales: {
+              x: { ticks: { color: "#8b93a1", precision: 0 } },
+              y: { ticks: { color: "#8b93a1" } }
+            }
+          }
+        });
+
+        var countries = data.countries.slice();
+        countries.sort(function (a, b) { return b.visits - a.visits; });
+        makeChart("countries", "countriesChart", {
+          type: "doughnut",
+          data: {
+            labels: countries.map(function (c) {
+              return flag(c.country) + " " + c.country;
+            }),
+            datasets: [{
+              data: countries.map(function (c) { return c.visits; }),
+              backgroundColor: countries.map(function (_, i) {
+                return PALETTE[i % PALETTE.length];
+              })
+            }]
+          },
+          options: {
+            maintainAspectRatio: false,
+            cutout: "55%",
+            plugins: { legend: { position: "right", labels: { color: "#e6e6e6" } } }
+          }
+        });
+
+        var rows = data.pages.map(function (p) {
+          return "<tr><td>" + escapeHtml(p.path) + "</td><td>" + p.visits + "</td></tr>";
+        }).join("");
+        document.getElementById("pageRows").innerHTML =
+          rows || "<tr><td colspan='2'>No data yet</td></tr>";
+      }
+
+      function escapeHtml(s) {
+        return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+      }
+
+      function load() {
+        fetch("/api/stats")
+          .then(function (r) {
+            if (!r.ok) throw new Error("failed: " + r.status);
+            return r.json();
+          })
+          .then(render)
+          .catch(function (err) {
+            console.error(err);
+            document.querySelector(".wrap").innerHTML =
+              '<div class="error">Could not load stats.<br/>' +
+              escapeHtml(String(err)) + "</div>";
+          });
+      }
+
+      load();
+    </script>
+  </body>
+</html>
