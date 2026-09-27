@@ -12,6 +12,29 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/javascript.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/typescript.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/bash.min.js"></script>
+    <script>
+      (function () {
+        try {
+          var trackUrl = "https://innovative-project-q9p9v.ampt.app/api/track";
+          var body = JSON.stringify({
+            path: window.location.pathname,
+            referrer: (document.referrer || "").slice(0, 200),
+          });
+          if (navigator.sendBeacon) {
+            navigator.sendBeacon(
+              trackUrl,
+              new Blob([body], { type: "text/plain" })
+            );
+          } else {
+            fetch(trackUrl, {
+              method: "POST",
+              keepalive: true,
+              body: body,
+            });
+          }
+        } catch (e) {}
+      })();
+    </script>
   
     <meta property="og:title" content="Functional Harmony" />
     <meta name="twitter:title" content="Functional Harmony" />
