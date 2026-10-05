@@ -35,6 +35,56 @@
         } catch (e) {}
       })();
     </script>
+    <style>
+      .mac-window {
+        display: inline-block;
+        background: #fff;
+        border: 1px solid #000;
+        box-shadow: inset 1px 1px 0 #fff, inset -1px -1px 0 #808080;
+        font-family: Geneva, "Lucida Grande", Tahoma, sans-serif;
+        font-size: 11px;
+        line-height: 1.2;
+      }
+      .mac-titlebar {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        padding: 2px 4px;
+        border-bottom: 1px solid #000;
+      }
+      .mac-close {
+        flex: 0 0 auto;
+        width: 9px;
+        height: 9px;
+        border: 1px solid #000;
+        background: #fff;
+      }
+      .mac-stripes {
+        flex: 1 1 auto;
+        min-width: 14px;
+        height: 6px;
+        background: repeating-linear-gradient(
+          to bottom,
+          #000 0 1px,
+          transparent 1px 2px
+        );
+      }
+      .mac-title {
+        flex: 0 0 auto;
+        background: #fff;
+        font-size: 10px;
+      }
+      .mac-body {
+        display: block;
+        padding: 8px 14px;
+        text-align: center;
+      }
+      .mac-value {
+        color: #000;
+        font-size: 14px;
+        font-weight: bold;
+      }
+    </style>
   
     <meta property="og:title" content="Programming" />
     <meta name="twitter:title" content="Programming" />
@@ -143,6 +193,20 @@
             alt="vim editor"
           />
           </a>
+
+        <p id="site-views" style="display: none">
+          <span class="mac-window">
+            <span class="mac-titlebar">
+              <span class="mac-close"></span>
+              <span class="mac-stripes"></span>
+              <span class="mac-title">page views</span>
+              <span class="mac-stripes"></span>
+            </span>
+            <span class="mac-body">
+              <span class="mac-value" id="hit-digits">0</span>
+            </span>
+          </span>
+        </p>
        </div>
 
     <script>
@@ -151,6 +215,39 @@
           hljs.highlightElement(el);
         });
       });
+    </script>
+
+    <script>
+      (function () {
+        var wrap = document.getElementById("site-views");
+        var digits = document.getElementById("hit-digits");
+        if (!wrap || !digits) return;
+
+        function normalize(path) {
+          return path.replace(/\/+$/, "") || "/";
+        }
+
+        fetch("https://innovative-project-q9p9v.ampt.app/api/stats")
+          .then(function (res) {
+            return res.json();
+          })
+          .then(function (stats) {
+            var here = normalize(window.location.pathname);
+            var visits = 0;
+
+            for (var i = 0; i < stats.pages.length; i++) {
+              if (normalize(stats.pages[i].path) === here) {
+                visits = stats.pages[i].visits;
+                break;
+              }
+            }
+
+            if (!visits) return;
+            digits.textContent = String(visits);
+            wrap.style.display = "";
+          })
+          .catch(function () {});
+      })();
     </script>
 
     <script type="module">
